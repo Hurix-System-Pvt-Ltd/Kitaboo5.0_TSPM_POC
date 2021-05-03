@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutNotepopup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/enterprise_stickynote_dialog"
+    android:gravity="center"
+    android:padding="1dp">
+
+    <RelativeLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/popupFooter"
+            android:background="@drawable/dotted_line"
+            android:layerType="software" />
+
+        <LinearLayout
+            android:id="@+id/writeCommentHolder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:paddingTop="10dp">
+
+            <com.hurix.commons.utils.ClearableEditText
+                android:id="@+id/edtPostId"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="6"
+                android:background="@drawable/enterprise_select_comment_post_note_dialog_btn_bg"
+                android:hint="@string/comment_hint_msg"
+                android:maxLength="500"
+                android:paddingLeft="10dp"
+
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnPost"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:background="@drawable/enterprise_select_comment_post_note_dialog_btn_bg"
+                android:gravity="right|center"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:text="@string/note_post_txt"
+                android:textSize="30sp"
+
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/writeCommentHolder"
+            android:background="@color/note_divider_color"
+            android:layerType="software" />
+
+        <RelativeLayout
+            android:id="@+id/popup_header"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="@color/actionbar_bg_color"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/btnImportant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txtimptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/btnImportant"
+                android:layout_toRightOf="@+id/btnImportant"
+                android:paddingLeft="5dp"
+                android:text="@string/stickynote_imp_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:paddingRight="10dp"
+                android:textColor="@color/white_transparency"
+                android:textSize="25sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtviewHighlightedTxt"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/popup_header"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:padding="10dp"
+            android:scrollbars="vertical" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/txtviewHighlightedTxt"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/dotted_line"
+            android:layerType="software" />
+
+        <RelativeLayout
+            android:id="@+id/layoutNoteText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divider2"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <com.hurix.customui.views.KitabooEditTextCopyPasteDiabled
+                android:id="@+id/edtUserNote"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:autoLink="web"
+                android:background="@color/transparent"
+                android:focusableInTouchMode="true"
+                android:gravity="top|left"
+                android:hint="@string/note_hint_msg"
+                android:inputType="textMultiLine"
+                android:isScrollContainer="true"
+                android:linksClickable="true"
+                android:overScrollMode="ifContentScrolls"
+                android:paddingBottom="25dp"
+                android:singleLine="true"
+                android:textColorHint="@color/grey" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/popupFooter"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_below="@+id/layoutNoteText"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/bottomButtonContainer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4">
+
+                <View
+                    android:id="@+id/cancelButtonDivider"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/note_divider_color" />
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:singleLine="true"
+                    android:text="@string/cancel"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/postBtnDivider"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/note_divider_color" />
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:singleLine="true"
+                    android:text="@string/post"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/enterprise_note_btnShare_divider"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/note_divider_color" />
+
+                <Button
+                    android:id="@+id/btnShare"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:singleLine="true"
+                    android:text="@string/share"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/lastButtonDivider"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/note_divider_color" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/buttonBottomBorder"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/note_divider_color" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottomDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/layoutNoteText"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/mobile_bookshelf_open_archive_divider" />
+
+
+        <RelativeLayout
+            android:id="@+id/commentListHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/writeCommentHolder"
+            android:layout_below="@+id/divider3"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/commentTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/TotalComments"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/membersListCollHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commentTV"
+                android:clickable="false"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:paddingTop="10dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sharingLayoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></RelativeLayout>
+
+</RelativeLayout>

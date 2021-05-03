@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainHeaderPopup"
+    android:layout_width="@dimen/accesscode_dialog_width"
+    android:layout_height="wrap_content"
+    android:background="@drawable/profile_setting_drawable"
+    android:padding="10dp"
+    android:paddingBottom="20dp">
+
+    <RelativeLayout
+        android:id="@+id/userLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:padding="5dp">
+
+
+            <TextView
+                android:id="@+id/txtviewUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Rajiv Mahadevan"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/login_dialog_edittext_text_size"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+
+            <TextView
+                android:id="@+id/txtviewEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/txtviewUserName"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:text="Rajiv Mahadevan"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="@dimen/profile_email"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/clientLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userLayout"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/accountspage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingRight="5dp"
+            android:scrollHorizontally="true"
+            android:text="Rajiv Mahadevan"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/profile_name" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/common_size_privacy_terms"
+            android:layout_toRightOf="@+id/accountspage"
+            android:background="@color/grey"
+            android:paddingRight="5dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/profileSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/view"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:scrollHorizontally="true"
+            android:text="Rajiv Mahadevan"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="@dimen/profile_name" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/aboutuslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/clientLayout"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/aboutUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingRight="5dp"
+            android:scrollHorizontally="true"
+            android:text="Rajiv Mahadevan"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/profile_name" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/common_size_privacy_terms"
+            android:layout_toRightOf="@+id/aboutUs"
+            android:background="@color/grey"
+            android:paddingRight="5dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/privacypolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/view2"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:scrollHorizontally="true"
+            android:text="Rajiv Mahadevan"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/profile_name" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="1dp"
+            android:layout_height="@dimen/common_size_privacy_terms"
+            android:layout_toRightOf="@+id/privacypolicy"
+            android:background="@color/grey"
+            android:paddingRight="5dp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/termsAndConditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/view3"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:scrollHorizontally="true"
+            android:text="Rajiv Mahadevan"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="@dimen/profile_name" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutuslayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp"
+        android:text="version"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="@dimen/profile_email" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/version"
+        android:padding="5dp"
+        android:paddingTop="20dp">
+
+        <!--<TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/sinOutIcon"
+            android:textColor="@color/white_transparency"
+            android:text="Ꞷ"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:gravity="center"/>-->
+
+
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:text="@string/signout_text"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="@dimen/drawer_layout_name_text_size" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

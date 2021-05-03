@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingTop="10dp" >
+
+    <TextView
+        android:id="@+id/txtsrno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="text"
+        android:textColor="@color/analytics_selected_pos_color"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtchaptername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/txtsrno"
+        android:layout_toRightOf="@+id/txtsrno"
+        android:singleLine="true"
+        android:text="TextViewasdasdas as adsd asdgashjdgas dasd gasg dasdgasgjdg jaggsdfghjasdgfjkagfsdgfjasdgf asdfjsdfasdf"
+        android:textColor="@color/analytics_selected_pos_color"
+        android:textSize="18sp" />
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <item name="action_bar_bottom_pdf_land_margin" format="integer" type="integer" tools:ignore="MissingDefaultResource">320</item>
+    <item name="action_bar_bottom_reflowable_land_margin" format="integer" type="integer" tools:ignore="MissingDefaultResource">400</item>
+    <item name="action_bar_bottom_pdf_land_margin_chrombook" format="integer" type="integer" tools:ignore="MissingDefaultResource">90</item>
+
+    <item name="bottom_action_bar_land_FixedEpub_margin" type="integer" format="integer" tools:ignore="MissingDefaultResource">470</item>
+    <item name="action_bar_top_pen_land_margin" format="integer" type="integer" tools:ignore="MissingDefaultResource">630</item>
+    <dimen name="loginscreen_textsize" tools:ignore="MissingDefaultResource">18sp</dimen>
+
+    <item name="bottom_action_bar_land_FixedEpub_margin_320" type="integer" format="integer" tools:ignore="MissingDefaultResource">650</item>
+
+    <dimen name="close_height">39dp</dimen>
+    <dimen name="close_width">39dp</dimen>
+
+</resources>

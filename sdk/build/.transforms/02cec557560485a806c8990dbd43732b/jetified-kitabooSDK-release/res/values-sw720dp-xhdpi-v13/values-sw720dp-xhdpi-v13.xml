@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="book_gallery_thumbnail_item_height">240dp</dimen>
+    <dimen name="book_gallery_thumbnail_item_width">190dp</dimen>
+    <dimen name="font_setting_margin_from_top">45dp</dimen>
+    <dimen name="main_bottom_setting_panel_margin">250dp</dimen>
+    <dimen name="setting_left_right_margin">170dp</dimen>
+    <item format="integer" name="actionbar_menu_width_tab" type="integer">110</item>
+    <item format="integer" name="glossary_link_ic_font_size" type="integer">13</item>
+    <item format="integer" name="glossary_link_ic_size" type="integer">23</item>
+    <item format="integer" name="page_scroll_height" type="integer">330</item>
+</resources>

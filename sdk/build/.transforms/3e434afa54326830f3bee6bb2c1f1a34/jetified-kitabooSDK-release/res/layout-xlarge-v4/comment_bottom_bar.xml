@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottomBtnsHolder"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/black"
+    android:gravity="center" >
+
+    <com.hurix.customui.bookmark.ClearableEditText
+        android:id="@+id/edtPostId"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ugcitem_comments_post_bg"
+        android:padding="5dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:maxLength="500"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/edtPostId"
+        android:background="@drawable/select_comment_post_btn_bg"
+        android:text="@string/post"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

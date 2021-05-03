@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:id="@+id/topNavBar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:id="@+id/backBtnHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/backBtnTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="G"
+                android:textColor="@color/ugcItemSharingScreenTitleTextColor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="@string/action_settings"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/ugcItemSharingScreenTitleTextColor"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/topNavBar"
+        android:background="@color/ugcItemHeaderDividerColor" />
+
+  <LinearLayout
+        android:id="@+id/shareReceiveBtnsHolder"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_below="@id/divider1"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:orientation="horizontal" >
+
+   <TextView
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="3"
+       android:background="#00000000"
+       android:text=""
+       android:textColor="#B0D049" />
+
+   <TextView
+       android:id="@+id/shareTabTV"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:background="#00000000"
+       android:text="@string/share"
+       android:singleLine="true"
+       android:gravity="center"
+       android:textSize="18sp"
+       android:textColor="@color/white" />
+
+   <TextView
+       android:id="@+id/receiveTabTV"
+       android:layout_width="0dp"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:background="#00000000"
+       android:gravity="center"
+       android:text="@string/receive"
+       android:singleLine="true"
+         android:textSize="18sp"
+       android:textColor="@color/white" />
+
+    </LinearLayout>
+
+       <View
+            android:id="@+id/settingdividerID"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/divider_dashes"
+            android:layout_below="@+id/shareReceiveBtnsHolder"
+            android:layerType="software" />
+       
+    <RelativeLayout
+        android:id="@+id/classesDropDownContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/settingdividerID"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:clickable="true"
+        android:visibility="visible" >
+   
+          <TextView
+            android:id="@+id/shareThisNoteWithLableTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/select_class"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+            
+            <Spinner
+                android:id="@+id/classesSpinner"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                android:gravity="left|center"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/shareThisNoteWithLableTV"
+                android:dropDownWidth="200dp"
+                android:popupBackground="@android:color/transparent"
+                android:dropDownVerticalOffset="-2dp"
+                android:background="@android:color/transparent" />
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomBtnsHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/ugcItemSharing_bottom_bar_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_margin="10dp" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/ugcItemSharingCancelBtn_bg_colr_unsel"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/ugcItemSharingCancelBtn_text_colr_unsel"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/ugcItemSharingShareBtn_bg_colr_unsel"
+            android:gravity="center"
+            android:text="@string/done"
+            android:textColor="@color/ugcItemSharingShareBtn_text_colr_unsel"
+            android:textSize="25sp" />
+    </LinearLayout>
+     
+    <ListView
+        android:id="@+id/membersListHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomBtnsHolder"
+        android:listSelector="@drawable/listitem_selector"
+        android:layout_below="@id/classesDropDownContainer"
+        android:layout_marginLeft="20dp" />
+
+    <ProgressBar
+        android:id="@+id/settingProgressbarID"
+        android:layout_width="wrap_content"
+        android:indeterminateDrawable="@drawable/progress_drawable"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/messagetvID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/student"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

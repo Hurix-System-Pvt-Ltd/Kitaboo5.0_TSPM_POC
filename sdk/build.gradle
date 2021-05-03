@@ -1,0 +1,3 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('kitabooSDK-release.aar'))
+artifacts.add("default", file('Pdfium_release.aar'))

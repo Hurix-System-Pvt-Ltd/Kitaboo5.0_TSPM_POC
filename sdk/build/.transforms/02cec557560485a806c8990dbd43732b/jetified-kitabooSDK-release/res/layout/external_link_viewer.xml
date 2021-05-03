@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popup_element"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/buttonContainerID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/darker_gray"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+
+       <!-- <Button
+            android:id="@+id/webviewdonebtnID"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/link_webview_done_button_bg"
+            android:padding="5dp"
+            android:text="@string/done"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="visible" />-->
+    </RelativeLayout>
+    <com.hurix.epubreader.customview.WebActivityViewer
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonContainerID"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitCenter" />
+
+</RelativeLayout>

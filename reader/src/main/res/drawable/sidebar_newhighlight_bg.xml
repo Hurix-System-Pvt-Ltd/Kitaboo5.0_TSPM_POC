@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <stroke
+        android:width="1dp"
+        android:color="@color/white" />
+
+    <solid android:color="@color/new_highlight_count_bg" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/newHighlightcount_textview_margin"
+        android:bottomRightRadius="@dimen/newHighlightcount_textview_margin"
+        android:topLeftRadius="@dimen/newHighlightcount_textview_margin"
+        android:topRightRadius="@dimen/newHighlightcount_textview_margin" />
+
+</shape>

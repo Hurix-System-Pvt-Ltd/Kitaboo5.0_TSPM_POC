@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout_dialog"
+    android:layout_width="@dimen/dialog_width"
+    android:layout_height="@dimen/dialog_height"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="center_horizontal"
+    android:layout_centerInParent="true"
+    android:layout_marginBottom="10dp"
+    android:background="#00000000"
+    android:orientation="vertical"
+    android:visibility="visible"
+    android:weightSum="5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.2"
+        android:background="@drawable/delete_popup_shape"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/top_margin"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Are you sure you want to delete? \n This action is irreversible"
+            android:textSize="@dimen/textsize" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#ebebeb" />
+
+
+        <TextView
+            android:id="@+id/delete_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/top_margin_btnDlt"
+            android:clickable="true"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Delete"
+            android:textColor="#ff0000"
+            android:textSize="@dimen/textsize_cancel_btn" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:background="#00000000"></LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/cancel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1.5"
+        android:background="@drawable/delete_popup_shape"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Cancel"
+            android:textColor="#0066ff"
+            android:textSize="@dimen/textsize_cancel_btn" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="3dp"
+    android:background="@drawable/html_window_bg" >
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/image_caption_container_margin">
+
+        <TextView
+            android:id="@+id/move_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/image_caption_container_margin"
+            android:background="@android:color/transparent"
+            android:text="#"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/min_btn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_toLeftOf="@+id/close_btn"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/image_caption_container_margin"
+            android:background="@android:color/transparent"
+            android:text="__"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/close_btn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/image_caption_container_margin"
+            android:background="@android:color/transparent"
+            android:text="X"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@drawable/html_webview_bg"
+        android:padding="2dp"
+        android:layout_below="@+id/top_bar"/>
+
+</RelativeLayout>

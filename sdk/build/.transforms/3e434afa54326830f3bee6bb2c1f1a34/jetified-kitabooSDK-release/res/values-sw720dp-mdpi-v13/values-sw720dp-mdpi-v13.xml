@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="book_gallery_thumbnail_item_height">250dp</dimen>
+    <dimen name="book_gallery_thumbnail_item_width">190dp</dimen>
+    <dimen name="bottombar_approx_height">200dp</dimen>
+    <dimen name="keyboard_approx_height">450dp</dimen>
+    <item format="integer" name="actionbar_menu_width_tab" type="integer">95</item>
+    <item format="integer" name="seekbar_thumb_size" type="integer">33</item>
+</resources>

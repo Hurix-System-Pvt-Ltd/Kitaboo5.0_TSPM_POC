@@ -1,0 +1,562 @@
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, li,
+fieldset, form, label, legend, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, note {
+    margin: 0;
+    vertical-align: baseline;
+}
+
+mark.normalHighlight {
+ -webkit-user-select: none;
+}
+mark.importantHighlight {
+ -webkit-user-select: none;
+}
+mark.sharedHighlight {
+ -webkit-user-select: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* ePUB */
+html {
+    -webkit-text-size-adjust: none; /* Never autoresize text */
+    //padding: 10px 10px 10px 10px !important;
+    //margin-top : 40px;
+    overflow-x: hidden;
+    overflow-wrap:break-word;
+}
+
+/* Forced font overrides */
+code, kbd, pre, samp, tt {
+    font-family: monospace, monospace !important;
+    font-size: 1em;
+}
+/* Sub and Super */
+big { font-size: 1.15em !important; }
+small, sub, sup { font-size: .65em !important; }
+sub { vertical-align: sub !important; }
+sup {
+    font-family: monospace !important;
+    vertical-align: super !important;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 1.2;
+}
+h2 {
+    font-size: 1.5em;
+    line-height: 1.2;
+}
+h3 {
+    font-size: 1.17em;
+    line-height: 1.2;
+}
+h4 {
+    font-size: 1em;
+    line-height: 1.2;
+}
+h5 {
+    font-size: 0.83em;
+    line-height: 1.2;
+}
+h6 {
+    font-size: 0.67em;
+    line-height: 1.2;
+}
+p, span, div {
+    font-size: 1em;
+    line-height: 1.5 !important;
+}
+@media only screen and (min-device-width: 600px) {
+    div {
+        font-size: 1em;
+        line-height: 1.438em !important;
+    }
+    body {
+        -webkit-hyphens: none !important;
+        hyphens: none !important;
+    }
+}
+
+::-webkit-scrollbar {
+ display : none;
+}
+
+body {
+    //padding: 10px 10px 10px 10px !important;
+    overflow-x: hidden !important;
+    //margin-top : 40px;
+}
+
+/* Custom padding for tablets */
+@media only screen and (min-device-width: 768px){
+    body {
+       //padding: 10px 10px 10px 10px !important;
+       //margin-top : 40px;
+    }
+}
+
+@media only screen and (min-device-width: 600px) {
+    div {
+       /* font-size: 1em;
+                line-height: 1.438em !important;*/
+    }
+
+    body {
+        -webkit-hyphens: none !important;
+        hyphens: none !important;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    body {
+        //padding: 10px 30px 10px 30px !important;
+        //margin-top : 40px;
+    }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px){
+    body {
+        //padding: 0px 30px 0px 30px !important;
+        //margin-top : 40px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px){
+    body {
+        //padding: 0px 80px 0px 80px !important;
+        //margin-top : 40px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 2){
+    body {
+        //padding: 0px 80px 0px 80px !important;
+        //margin-top : 40px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (-webkit-min-device-pixel-ratio: 1)  {
+    body {
+        //padding: 10px 80px 10px 80px !important;
+        //margin-top : 40px;
+    }
+}
+
+div.cover {
+  text-align: center;
+  page-break-after: always;
+  padding: 0px;
+  margin: 0px; }
+  div.cover img {
+    height: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin: 0px;
+    background-color: #cccccc; }
+
+.half {
+  max-width: 50%; }
+
+.tenth {
+  max-width: 10%;
+  width: 10%; }
+
+.cover-img {
+  height: 100%;
+  max-width: 100%;
+  padding: 0px;
+  margin: 0px; }
+
+@page {
+  margin-top: 30px;
+  margin-bottom: 20px; }
+
+/* Table */
+/*table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+tbody, tfoot, thead {
+    vertical-align: middle !important;
+}
+td, th, tr {
+    vertical-align: inherit !important;
+}
+
+*//* List *//*
+dd, dir, menu, ol, ul { margin-left: 30px !important; }
+ol { list-style-type: decimal !important; }
+li { display: list-item !important; }
+ol ol, ol ul, ul ol, ul ul {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+}*/
+
+/* Links */
+.leftAlign p,.leftAlign font,.leftAlign h1,.leftAlign h2,.leftAlign h3,.leftAlign h4,.leftAlign div,.leftAlign span,.leftAlign table,.leftAlign td,.leftAlign mark,.leftAlign u,.leftAlign b{
+ text-align :left;
+}
+.rightAlign p,.rightAlign font,.rightAlign h1,.rightAlign h2,.rightAlign h3,.rightAlign h4,.rightAlign div,.rightAlign span,.rightAlign table,.rightAlign td,.rightAlign mark,.rightAlign u,.rightAlign b{
+ text-align :right;
+}
+.centerAlign p,.centerAlign font,.centerAlign h1,.centerAlign h2,.centerAlign h3,.centerAlign h4,.centerAlign div,.centerAlign span,.centerAlign table,.centerAlign td,.centerAlign mark,.centerAlign u,.centerAlign b{
+ text-align :center;
+}
+a { -webkit-touch-callout: none; } /* Disable link callback */
+
+* { -webkit-user-select: text; }
+
+img { -webkit-user-select: none;}
+
+/*p {
+    margin: 1.3em 0 1.5em 0;
+*//*    line-height: 1.40em !important;*//*
+    *//*text-indent: 1.25em;*//*
+}
+
+b, strong, th {font-weight: bolder !important;}
+
+*//* Forced font overrides *//*
+code, kbd, pre, samp, tt {
+    font-family: monospace, monospace !important;
+    font-size: 1em;
+}
+button, input, select, textarea { display: inline-block; }
+
+del, s, strike { text-decoration: line-through!important; }
+hr {
+    background-color: rgba(0,0,0,.1) !important;
+    border: none !important;
+    height: 1px !important;
+}*/
+
+
+/* Sub and Super */
+/*big { font-size: 1.15em !important; }
+small, sub, sup { font-size: .65em !important; }
+sub { vertical-align: sub !important; }
+sup {
+    font-family: monospace !important;
+    vertical-align: super !important;
+}*/
+
+
+/* iBooks like */
+a { text-decoration: none; }
+pre { white-space: pre-wrap; }
+@page { margin: 0 0 !important; }
+ol, il { text-align: -webkit-auto; }
+
+body {
+    overflow-wrap:break-word !important;
+    -webkit-hyphens: auto !important;
+    hyphens: auto !important;
+}
+
+
+h1 ,h2 ,h3 ,h4 ,h5 ,h6 {
+/*    text-align: -webkit-auto;*/
+    text-rendering: optimizelegibility;
+}
+
+/* allow breaking of words on headers and anchors as they tend to be larger font size or contain longer words */
+a, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap:break-word !important;
+    -webkit-hyphens: none !important;
+    hyphens: none !important;
+}
+
+/* Begin Ted */
+img, svg, audio, video {
+    max-height: 95% !important;
+    max-width: 100% !important;
+    box-sizing: border-box;
+    object-fit: contain;
+    page-break-inside: avoid;
+}
+
+/* End Ted */
+
+/* Divs are also used to size images so make sure the authors get what they intended */
+/* which is for the images boxed in them to be completely visible on screen */
+/*div { max-width: 100%; }*/
+aside[epub|type~="footnote"] { display: none !important; }
+ruby > rt, ruby > rp { -webkit-user-select: none; }
+* { -webkit-font-smoothing: subpixel-antialiased }
+
+/* Kitaboo Author */
+div.table-wrap.panel {
+    max-height: 100%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+div.table-wrap.panel table {
+    word-break: normal;
+}
+
+/* Remove tap highlight */
+input, textarea, button, highlight, select, a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/*
+ *
+ * Font classes
+ *
+ */
+
+body.mediumFont { font-size: medium }
+body.smallFont { font-size: small }
+body.xSmallFont { font-size: x-small }
+body.xxSmallFont { font-size: xx-small }
+body.largeFont { font-size: large }
+body.xLargeFont { font-size: x-large }
+body.xxLargeFont { font-size: xx-large }
+
+html.mediumFont { font-size: medium }
+html.smallFont { font-size: small }
+html.xSmallFont { font-size: x-small }
+html.xxSmallFont { font-size: xx-small }
+html.largeFont { font-size: large }
+html.xLargeFont { font-size: x-large }
+html.xxLargeFont { font-size: xx-large }
+
+font.mediumFont { font-size: medium }
+font.smallFont { font-size: small }
+font.xSmallFont { font-size: x-small }
+font.xxSmallFont { font-size: xx-small }
+font.largeFont { font-size: large }
+font.xLargeFont { font-size: x-large }
+font.xxLargeFont { font-size: xx-large }
+
+/*
+ *
+ * Reader mode
+ *
+ */
+
+/* Sepia mode */
+html.sepiaMode {
+    background-color: #FAF3E8 !important;
+}
+
+.sepiaMode body {
+    background-color: transparent !important;
+}
+
+.sepiaMode a {
+    background-color: transparent !important;
+}
+
+.sepiaMode p, .sepiaMode div, .sepiaMode li, .sepiaMode span:not(.epub-media-overlay-playing) {
+    color: #603E22 !important;
+    background-color: transparent !important;
+}
+
+.sepiaMode h1, .sepiaMode h2, .sepiaMode h3, .sepiaMode h4, .sepiaMode h5, .sepiaMode h6 {
+    color: #603E22 !important;
+    background-color: transparent !important;
+}
+
+.sepiaMode i, .sepiaMode cite, .sepiaMode em, .sepiaMode font{
+    color: #603E22 !important;
+    background-color: transparent !important;
+}
+
+
+/* Night mode */
+html.nightMode {
+    background-color: #131313 !important;
+}
+
+body.nightMode *,body.nightMode{
+   background-color : #131313 !important;
+    color:white !important;
+}
+
+.nightMode body {
+    background-color: transparent !important;
+}
+
+.nightMode a {
+    background-color: transparent !important;
+}
+
+.nightMode p, .nightMode div, .nightMode li, .nightMode span:not(.epub-media-overlay-playing) {
+    color: #f1f1f1 !important;
+    background-color: transparent !important;
+}
+
+.nightMode h1, .nightMode h2, .nightMode h3, .nightMode h4, .nightMode h5, .nightMode h6 {
+    color: #f1f1f1 !important;
+    background-color: transparent !important;
+}
+
+.nightMode i, .nightMode cite, .nightMode em, .nightMode font{
+    color: #FFFFFF !important;
+    background-color: transparent !important;
+}
+
+.nightMode td, .nightMode tr{
+    background-color: transparent !important;
+}
+
+.nightMode table{
+    border-color: #636466;
+    border-width: 1px;
+}
+
+/* Remove tap highlight */
+input, textarea, button, highlight, select, a {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+/* Highlight classes */
+kitabooHighlight {
+    display: inline !important;
+}
+
+kitabooNote, kitabooHighlight,kitaboospan{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+kitaboonote {
+    text-indent: 0em;
+    //padding: 0px;
+    margin: 0px;
+    font-family: kitabooread;
+    text-align: center;
+    position: absolute;
+    font-size:40px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    z-index : 1;
+}
+
+.normalHighlight {
+    background-color: #F4D631 !important;
+    display:initial;
+}
+
+.tmptag {
+    background-color: #F4D631 !important;
+    display:initial;
+        height: 100px;
+        width: 100px;
+        position: absolute;
+}
+
+
+.importantHighlight {
+    background-color: #F06666 !important;
+    display:initial;
+}
+
+.nightMode .normalHighlight {
+    background-color: #CDAE01 !important;
+    color: black !important;
+    display:initial;
+}
+
+.nightMode .importantHighlight {
+    background-color: #A40509 !important;
+    display:initial;
+}
+
+@font-face {
+    font-family: "kitabooread";
+    font-style: normal;
+    font-weight: normal;
+    src: url("file:///android_asset/kitabooread.ttf");
+}
+
+table{
+    table-layout: fixed;
+    width: 100%;
+
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+.sharedHighlight{
+    background-color: #92cadc !important;
+ }
+
+.nightMode .sharedHighlight{
+    background-color: #92cadc !important;
+}
+.searchhighlight {
+   background-color: #800080 !important;
+   color:white;
+
+}
+
+.nightMode .searchhighlight{
+  background-color: white !important;
+  color:black;
+}
+
+
+
+.tempsearch{
+background-color: transparent !important;
+}
+
+
+
+/*
+ *
+ * Font classes
+ *
+ */
+
+@font-face {
+    font-family: 'andada';
+    src: url('file:///android_asset/fonts/andada/Andada-Regular.otf');
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url('file:///android_asset/fonts/lato/Lato-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'lora';
+    src: url('file:///android_asset/fonts/lora/Lora-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'raleway';
+    src: url('file:///android_asset/fonts/raleway/Raleway-Regular.ttf');
+}
+
+.andada, .andada p, .andada span, .andada div {
+     font-family: "andada", sans-serif !important;
+ }
+.lato, .lato p, .lato span, .lato div {
+     font-family: "lato", serif !important;
+ }
+.lora, .lora p, .lora span, .lora div {
+     font-family: "lora", serif !important;
+ }
+.raleway, .raleway p, .raleway span, .raleway div {
+     font-family: "raleway", sans-serif !important;
+ }
+

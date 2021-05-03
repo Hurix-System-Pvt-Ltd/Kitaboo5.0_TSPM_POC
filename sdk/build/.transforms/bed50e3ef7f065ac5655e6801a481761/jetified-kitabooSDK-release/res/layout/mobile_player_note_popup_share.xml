@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="@android:color/black"
+    android:clickable="true" >
+
+    <RelativeLayout
+        android:id="@+id/sharingTopContainer"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:clickable="true" >
+
+
+        <TextView
+            android:id="@+id/sharewithmetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="@string/note_share_title"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/noteShareDividerId"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/sharingTopContainer"
+        android:layout_marginRight="7dp"
+        android:layout_marginLeft="7dp"
+        android:background="@color/mobile_bookshelf_open_archive_divider"
+        android:layerType="software"
+        android:visibility="visible" />
+
+    <View
+        android:id="@+id/btnHorizontalDividerViewBottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:background="@color/grey_transparency" />
+
+    <LinearLayout
+        android:id="@+id/sharingBottomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_above="@+id/btnHorizontalDividerViewBottom"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <View
+            android:id="@+id/btnDividerViewStart"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey_transparency" />
+
+        <TextView
+            android:id="@+id/sharingBtnCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/btnDividerView"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey_transparency" />
+
+        <TextView
+            android:id="@+id/sharingBtnShare"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="@string/share"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/btnDividerViewEnd"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey_transparency" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/btnHorizontalDividerView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_above="@+id/sharingBottomContainer"
+        android:background="@color/grey_transparency" />
+
+    <View
+        android:id="@+id/listBottomDivider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/btnHorizontalDividerView"
+        android:background="@color/grey_transparency" />
+
+    <LinearLayout
+        android:id="@+id/classesDropDownContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/noteShareDividerId"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/shareNote"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="@android:color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="1dp"
+            android:layout_gravity="left"
+            android:text="@string/note_share_tag"
+            android:textColor="@color/black"
+            style="@style/autoscroll"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/classesSpinner"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/check_box_bg"
+            android:dropDownWidth="180dp"
+            android:popupBackground="@drawable/assessments_pentool_bg"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/note_share_middle_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/sharingBottomContainer"
+        android:listSelector="@android:color/transparent"
+        android:layout_below="@id/classesDropDownContainer"
+        android:padding="18dp" />
+
+    <TextView
+        android:id="@+id/noUserInGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="@string/noUserGroup"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/progressContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/sharingBottomContainer"
+        android:layout_below="@+id/noteShareDividerId"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

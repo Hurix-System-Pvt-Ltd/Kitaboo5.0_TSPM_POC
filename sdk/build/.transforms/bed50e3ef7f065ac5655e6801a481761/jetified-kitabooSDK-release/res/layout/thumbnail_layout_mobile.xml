@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pagenav_mainIDmobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="0dp"
+    android:focusable="true" android:focusableInTouchMode="true"
+     >
+
+    <RelativeLayout
+        android:id="@+id/controllersContainermobile"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white_transparency"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/btnGoArrowmobile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/link_webview_done_btn_bg"
+            android:textSize="35sp" />
+
+        <RelativeLayout
+            android:id="@+id/etPageNavHolder"
+            android:layout_width="100dp"
+            android:layout_height="41dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btnGoArrowmobile" >
+
+            <com.hurix.customui.views.KEditText
+                android:id="@+id/etPageNavmobile"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:hint="@string/thumbnail_nav_page"
+                android:background="@drawable/go_to_page_box_bg"
+                android:gravity="center"
+                android:textCursorDrawable="@color/white"
+                android:imeOptions="actionGo"
+                android:padding="3dp"
+                android:inputType="text"
+                android:focusableInTouchMode="true"
+                android:maxLength="100"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/gotoPopupAnchormobile"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/etPageNavmobile"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/controllerbuttons"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp" >
+
+            <Button
+                android:id="@+id/btnHistoryPreviousmobile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/transparent"
+                android:textColor="@color/white_transparency"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnHistoryNextmobile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/btnHistoryPreviousmobile"
+                android:background="@color/transparent"
+                android:textColor="@color/white_transparency"
+                android:textSize="35sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/controlsThumbsDevider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@id/controllersContainermobile"
+        android:layout_marginRight="20dp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/filterBtnsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:id="@+id/filtersThumbsDevider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/filterBtnsContainer" />
+    <GridView
+        android:id="@+id/thumbnailsGallerymobile"
+        android:layout_width="match_parent"
+        android:animateLayoutChanges="true"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/controllersContainermobile"
+        android:layout_alignParentLeft="true"
+        android:fastScrollEnabled="true"
+        android:listSelector="@color/transparent"
+        android:numColumns="@integer/thumbnail_column_count"
+        android:padding="20dp"
+        android:scrollbars="vertical"
+        android:layout_marginRight="7dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:smoothScrollbar="true" >
+    </GridView>
+
+</RelativeLayout>

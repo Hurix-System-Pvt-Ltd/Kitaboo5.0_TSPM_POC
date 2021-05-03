@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/PentoolRelativeLayoutID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#44444444"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/mainpopupholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#BB000000"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+         android:clickable="true">
+
+        <Button
+            android:id="@+id/btnpentoolicon"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:background="@android:color/transparent"
+            android:padding="4dp"
+            android:text="t"
+            android:textSize="35sp" />
+
+        <View
+            android:id="@+id/topline"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/btnpentoolicon"
+            android:background="#FF000000" />
+
+        <Button
+            android:id="@+id/btnpentooldefaultcolor"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/topline"
+            android:background="@null"
+            android:padding="4dp"
+            android:text="e"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/btnpentoolbluecolor"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/btnpentooldefaultcolor"
+            android:background="@null"
+            android:padding="4dp"
+            android:text="e"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/btnpentoolyellowcolor"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/btnpentoolbluecolor"
+            android:background="@null"
+            android:text="t"
+            android:textSize="35sp" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/btnpentoolyellowcolor"
+            android:background="#FF000000" />
+
+        <Button
+            android:id="@+id/btnpentoolthickbigid"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/view5"
+            android:background="@null"
+            android:padding="4dp"
+            android:text="t"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/btnpentoolthickmediumid"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/btnpentoolthickbigid"
+            android:background="@null"
+            android:padding="4dp"
+            android:text="t"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnpentoolthicksmallid"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/btnpentoolthickmediumid"
+            android:background="@null"
+            android:padding="4dp"
+            android:text="t"
+            android:textSize="8sp" />
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/btnpentoolthicksmallid"
+            android:background="#FF000000" />
+
+        <Button
+            android:id="@+id/btnpentooleraser"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/view8"
+            android:background="@null"
+            android:padding="4dp"
+            android:text="t"
+            android:textSize="35sp" />
+
+        <View
+            android:id="@+id/view9"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/btnpentooleraser"
+            android:background="#FF000000" />
+
+        <Button
+            android:id="@+id/btnpentooldiscard"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/view10"
+            android:background="@null"
+            android:padding="4dp"
+            android:text="3"
+            android:textSize="35sp" />
+
+        <View
+            android:id="@+id/view10"
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/btnpentoolclose"
+            android:background="#FF000000" />
+
+        <Button
+            android:id="@+id/btnpentoolclose"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/pentool_done_bg_selector"
+            android:gravity="center"
+           android:layout_marginRight="10dp"    
+            android:text="@string/done"
+            android:textColor="@drawable/done_btn_state"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="20dp" >
+
+    <TextView
+        android:id="@+id/btnresourcetype"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="4dp"
+        android:background="@null"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/txtChapterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnresourcetype"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/btnresourcetype"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="chpater name"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtChapterName"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/btnresourcetype"
+        android:text="Date"
+        android:textColor="@color/darkgrey"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtdate"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/btnresourcetype"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Title"
+        android:textColor="@color/grey"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/txthighlightdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txttitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/btnresourcetype"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:text="Data of note or highlight"
+        android:textColor="@color/grey"
+        android:textSize="16sp" />
+
+</RelativeLayout>

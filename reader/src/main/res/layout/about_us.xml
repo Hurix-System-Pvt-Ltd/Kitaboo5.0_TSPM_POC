@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parentlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/layout_padding"
+    android:background="@drawable/about_us_bg">
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="back"
+        android:textColor="#1e709f"
+        android:paddingTop="5dp"
+        android:textSize="18sp"
+        android:layout_marginStart="10dp"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/svg_holder"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/about_us_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true">
+
+
+
+            <ImageView
+                android:id="@+id/logo_image"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="5"
+                android:layout_gravity="center"
+                android:padding="4dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/aboutus_logo"/>
+
+
+<!--            <ImageView-->
+<!--                android:id="@+id/logo_image"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_weight="5"-->
+<!--                android:background="@color/transparent"-->
+<!--                android:padding="4dp"-->
+<!--                android:paddingBottom="5dp"-->
+<!--                android:paddingTop="5dp"-->
+<!--                android:scaleType="fitCenter"-->
+<!--                android:src="@drawable/logo"-->
+<!--                />-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kitaboo"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:textSize="40sp"
+                android:paddingBottom="@dimen/kitaboo_name_bottom"
+                android:id="@+id/prodectName"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/img_logo_padding"
+                android:layout_gravity="center">
+                <ImageView
+                    android:layout_width="@dimen/ic_launcher_width"
+                    android:layout_height="@dimen/ic_launcher_height"
+                    android:id="@+id/ic_lancher"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_launcher"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_above="@+id/copyrights"
+                android:paddingTop="@dimen/version_no"
+                android:paddingBottom="@dimen/version_no"
+                android:textSize="22sp"
+                android:id="@+id/version"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/copyrights"
+                android:text="@string/copy_rights"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_above="@+id/tvPowerByID"
+                android:paddingTop="@dimen/copy_rights"
+                android:paddingLeft="@dimen/login_dialog_headertext_padding_left"
+                android:paddingRight="@dimen/login_dialog_headertext_padding_left"
+                android:textSize="@dimen/login_dialog_header_text_size"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/powered_by_kitaboo_pad"
+            >
+            <TextView
+                android:id="@+id/tvPowerByID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/powered_by"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:paddingRight="2dp"
+                android:layout_gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/kitabooLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:text="Ù"
+                android:textColor="@color/white"
+                android:gravity="end"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center" 
+    android:background="@color/Thumb"
+     >
+
+    <RelativeLayout
+        android:id="@+id/controllayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/help_screen_bg"
+        android:padding="@dimen/audio_player_margin"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="@dimen/audio_player_button_width"
+            android:layout_height="@dimen/audio_player_button_width"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="K"
+            android:textColor="@color/white"
+            android:textSize="@dimen/audio_popup_text_size" />
+
+        <TextView
+            android:id="@+id/currentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/audio_player_button_width"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/audio_player_margin"
+            android:layout_marginRight="@dimen/audio_player_margin"
+            android:layout_toRightOf="@+id/play"
+            android:gravity="center_vertical"
+            android:text="00:00"
+            android:visibility="gone"
+            android:textColor="@color/white" />
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="@dimen/seekbar_width"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/currentTime"
+            android:visibility="gone"
+            android:progressDrawable="@drawable/video_seekbar_progress"
+            android:thumb="@drawable/video_seekbar_thumb"
+            android:thumbOffset="10dp"/>
+
+        <TextView
+            android:id="@+id/totaltime"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/audio_player_button_width"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/audio_player_margin"
+            android:layout_marginRight="@dimen/audio_player_margin"
+            android:layout_toRightOf="@+id/seekbar"
+            android:gravity="center_vertical"
+            android:text="00:00"
+            android:visibility="gone"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/close"
+            android:layout_width="@dimen/audio_player_button_width"
+            android:layout_height="@dimen/audio_player_button_width"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/audio_player_margin"
+            android:layout_marginRight="@dimen/audio_player_margin"
+            android:layout_toRightOf="@+id/totaltime"
+            android:background="@null"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/audio_popup_text_size" />
+
+        <Button
+            android:id="@+id/draghandle"
+            android:layout_width="@dimen/audio_player_button_width"
+            android:layout_height="@dimen/audio_player_button_width"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/close"
+            android:background="@null"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="@dimen/audio_popup_text_size"
+             />
+    </RelativeLayout>
+
+</RelativeLayout>

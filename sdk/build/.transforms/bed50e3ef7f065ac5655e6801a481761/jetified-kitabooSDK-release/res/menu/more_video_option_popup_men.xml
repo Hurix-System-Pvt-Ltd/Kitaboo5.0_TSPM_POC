@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/language"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Search"/>
+    <item
+        android:id="@+id/quality"
+        android:tooltipText="@android:drawable/ic_menu_add"
+        android:title="Add"/>
+    <item
+        android:id="@+id/subTitle"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="Edit">
+
+    </item>
+
+</menu>

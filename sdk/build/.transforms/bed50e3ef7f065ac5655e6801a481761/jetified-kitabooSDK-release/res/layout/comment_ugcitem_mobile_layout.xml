@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:id="@+id/backBtnHolder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"    
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/backBtnTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:text="a"
+            android:textColor="@color/ugcItemCommentScreenTitleTextColor"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:text="@string/comments"
+            android:textColor="@color/ugcItemCommentScreenTitleTextColor"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/backBtnHolder"
+        android:background="@color/ugcItemHeaderDividerColor" />
+
+    <RelativeLayout
+        android:id="@+id/ugcItemHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider1"
+        android:clickable="true"
+        android:padding="10dp" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/ugc_item"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutToHideSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ugcItemHolder"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@drawable/divider_dashes"
+            android:layerType="software" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/gotoPopupAnchor"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent" />
+
+       <View
+        android:id="@+id/divider4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/bottomBtnsHolder"
+        android:background="@color/mobile_bookshelf_open_archive_divider"
+        android:layerType="software" />
+    <LinearLayout
+        android:id="@+id/bottomBtnsHolder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@id/gotoPopupAnchor"
+        android:paddingTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:paddingRight="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="center" >
+
+
+        <com.hurix.customui.bookmark.ClearableEditText
+            android:id="@+id/edtPostId"
+            android:layout_width="@dimen/dialogfragment_comment_post"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/enterprise_note_dialogue_comments_post_bg"
+            android:text=""
+            android:hint="@string/comment_hint_msg"
+            android:singleLine="true"
+            android:textColor="@color/darkgrey"
+            android:maxLength="500"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/btnPost"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/edtPostId"
+            android:background="@drawable/enterprise_select_comment_post_note_dialog_btn_bg"
+            android:text="@string/post"
+            android:singleLine="true"
+           android:paddingBottom="5dp"
+            android:textSize="30sp"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/commentListHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomBtnsHolder"
+        android:layout_below="@id/layoutToHideSpinner"
+        android:padding="10dp"
+        android:layout_marginLeft="25dp" >
+
+        <TextView
+            android:id="@+id/commentTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/TotalComments"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:id="@+id/membersListCollHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/commentTV"
+            android:clickable="true"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:id="@+id/commentList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progressContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomBtnsHolder"
+        android:layout_below="@id/layoutToHideSpinner"
+        android:visibility="gone"
+        android:clickable="true" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

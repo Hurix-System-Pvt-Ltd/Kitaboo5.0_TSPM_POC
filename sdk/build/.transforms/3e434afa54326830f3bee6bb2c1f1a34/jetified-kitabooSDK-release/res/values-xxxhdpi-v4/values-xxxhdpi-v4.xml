@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item format="integer" name="actionbar_menu_width_mobile" type="integer">133</item>
+</resources>

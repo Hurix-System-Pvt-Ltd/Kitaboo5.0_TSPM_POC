@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:id="@+id/backBtnHolder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/backBtnTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:text="G"
+            android:textColor="@color/ugcItemCommentScreenTitleTextColor"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:clickable="false"
+            android:text="@string/comments"
+            android:textColor="@color/ugcItemCommentScreenTitleTextColor"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/backBtnHolder"
+        android:background="@color/ugcItemHeaderDividerColor" />
+
+    <RelativeLayout
+        android:id="@+id/ugcItemHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider1"
+        android:clickable="true"
+        android:padding="15dp" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/ugc_item"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutToHideSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ugcItemHolder"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/divider_dashes"
+            android:layerType="software" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/gotoPopupAnchor"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent" />
+
+    <RelativeLayout
+        android:id="@+id/bottomBtnsHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/gotoPopupAnchor"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+         >
+
+        <TextView
+            android:id="@+id/edtPostId"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:background="@drawable/ugcitem_comments_post_bg"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnPost"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/edtPostId"
+            android:background="@drawable/select_comment_post_btn_bg"
+            android:text="@string/post"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/commentListHolder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottomBtnsHolder"
+        android:layout_below="@id/layoutToHideSpinner"
+        android:padding="10dp"
+        android:layout_marginLeft="25dp" >
+
+        <TextView
+            android:id="@+id/commentTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/TotalComments"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ScrollView
+            android:id="@+id/membersListCollHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/commentTV"
+            android:clickable="true"
+            android:paddingTop="10dp" >
+
+            <LinearLayout
+                android:id="@+id/commentList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp" >
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/progressContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomBtnsHolder"
+        android:layout_below="@id/layoutToHideSpinner"
+        android:visibility="gone"
+        android:clickable="true" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

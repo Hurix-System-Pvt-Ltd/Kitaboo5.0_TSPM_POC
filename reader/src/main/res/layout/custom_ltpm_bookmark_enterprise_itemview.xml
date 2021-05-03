@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <!-- <View
+        android:id="@+id/selectedView"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:visibility="gone"/> -->
+
+    <RelativeLayout
+        android:id="@+id/mainBookmarkLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true" >
+
+        <TextView
+            android:id="@+id/txtViewUnitNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:id="@+id/selectedview"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@null" />
+
+        <FrameLayout
+            android:id="@+id/wrapParent"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/white_transparency"
+            >
+
+            <TextView
+                android:id="@+id/expandableIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txtViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:layout_toLeftOf="@id/wrapParent"
+            android:layout_toRightOf="@id/txtViewUnitNum"
+            android:ellipsize="end"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"  />
+    </RelativeLayout>
+
+</LinearLayout>

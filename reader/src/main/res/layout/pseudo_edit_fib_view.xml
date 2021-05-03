@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_layout_tab"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="@color/search_edit_text_background_color"
+    android:baselineAligned="false"
+    android:orientation="horizontal"
+    android:visibility="gone"
+    android:weightSum="10"
+    android:windowSoftInputMode="adjustPan">
+
+    <RelativeLayout
+        android:id="@+id/edittextholder"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="8"
+
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="start">
+
+        <TextView
+            android:id="@+id/search_icon_text"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Ç"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/kitaboo_main_color"
+            android:textSize="15sp" />
+
+        <com.hurix.customui.views.KitabooSearchView
+            android:id="@+id/editTxtSearchBox"
+            style="@style/SearchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/search_icon_text"
+            android:background="@android:color/transparent"
+            android:gravity="start|center"
+            android:padding="0dp"
+            app:iconifiedByDefault="false"
+            app:searchIcon="@null">
+
+        </com.hurix.customui.views.KitabooSearchView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/search_cancel_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/kitaboo_main_color"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

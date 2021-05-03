@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_mobile_login_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_portrait">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginContainer">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/kitab_logo_mobile"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:id="@+id/kitabLogo"
+            android:layout_centerHorizontal="true" />
+        <RelativeLayout
+            android:id="@+id/login_scroll1"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:layout_below="@+id/kitabLogo">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabTextColor="@color/white"
+                app:tabIndicatorColor="#095e8e"
+                app:tabSelectedTextColor="@color/white"
+                app:tabMode="fixed"
+                app:tabTextAppearance="@style/TabLayoutTextStylelogin"
+                app:tabGravity="fill"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:id="@+id/line"
+                android:layout_below="@+id/tabs1"
+                android:visibility="visible"
+                android:background="#095e8e" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vwpager"
+                android:layout_below="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_banner"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/IIS_bottom_banner_name"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:layout_centerInParent="true">
+
+            </TextView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animationCache="true"
+    android:background="@drawable/background_portrait"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="@dimen/oup_white_container_width"
+        android:layout_height="@dimen/oup_white_container_height"
+        android:background="@drawable/oup_login_white_container"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_child_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/kitabLogotab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/oup_white_container_topmargin"
+                android:src="@drawable/kitab_logo" />
+
+            <LinearLayout
+                android:id="@+id/logo_lineiarlayout21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/kitabLogotab"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/oup_white_container_margin"
+                android:layout_marginRight="@dimen/oup_white_container_margin"
+                android:alpha="1.0"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="#095e8e"
+                    app:tabSelectedTextColor="@color/white"
+                    app:tabTextAppearance="@style/TabLayoutTextStylelogin"
+                    app:tabTextColor="@color/white" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:background="#095e8e" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vwpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/tvPowerByIDContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tvPowerByID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="2dp"
+            android:text="@string/powered_by"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kitabooLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="2dp"
+            android:paddingBottom="2dp"
+            android:text="Ù"
+            android:textSize="@dimen/kitaboo_logo_textsize" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

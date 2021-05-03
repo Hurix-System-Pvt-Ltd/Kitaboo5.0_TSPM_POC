@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="book_gallery_thumbnail_item_height">200dp</dimen>
+    <dimen name="book_gallery_thumbnail_item_width">250dp</dimen>
+    <item format="integer" name="actionbar_menu_width_tab" type="integer">110</item>
+</resources>

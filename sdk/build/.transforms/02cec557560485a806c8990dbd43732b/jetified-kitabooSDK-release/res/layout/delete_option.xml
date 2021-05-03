@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/delete_popup">
+
+        <RadioButton
+            android:id="@+id/deleteProtractor"
+            android:layout_width="@dimen/audio_player_button_width"
+            android:layout_height="@dimen/sidebar_width"
+            android:layout_gravity="center"
+            android:buttonTint="@color/actionlayout_background"
+            android:textSize="@dimen/highlightpopup_icon_size" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sidebar_width"
+            android:id="@+id/protactorText"
+            android:text="@string/protractor"
+            android:textColor="@color/actionlayout_background"
+            android:gravity="center"
+            android:layout_toRightOf="@+id/deleteProtractor"/>
+
+
+        <RadioButton
+            android:id="@+id/deleteNote"
+            android:layout_width="@dimen/audio_player_button_width"
+            android:layout_height="@dimen/sidebar_width"
+            android:layout_gravity="center"
+            android:buttonTint="@color/actionlayout_background"
+            android:textSize="@dimen/highlightpopup_icon_size"
+            android:layout_below="@+id/deleteProtractor"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/sidebar_width"
+            android:id="@+id/noteText"
+            android:text="@string/note_and_highlight"
+            android:textColor="@color/actionlayout_background"
+            android:gravity="center"
+            android:paddingRight="5dp"
+            android:layout_below="@+id/protactorText"
+            android:layout_toRightOf="@+id/deleteNote"/>
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

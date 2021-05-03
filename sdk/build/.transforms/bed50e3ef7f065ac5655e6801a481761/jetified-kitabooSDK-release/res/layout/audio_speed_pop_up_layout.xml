@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/audio_view_border"
+    android:id="@+id/speedPopUpRelativeLayout"
+
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/audio_view_border">
+
+        <TextView
+            android:id="@+id/speedTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="@string/audio_book_narration_speed_title"
+            android:layout_margin="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textColor="@color/black_grey"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/speedRecyclerView"
+            android:layout_below="@+id/speedTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"/>
+
+        <LinearLayout
+            android:layout_below="@+id/speedRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <Button
+                android:id="@+id/cancelSpeedButton"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:layout_margin="15dp"
+                android:text="@string/cancel"
+                android:textColor="@color/black_grey"
+                android:background="@drawable/roundedwhitebuttons"
+                android:textAllCaps="false"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/applySpeedButton"
+                android:layout_below="@+id/speedRecyclerView"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/blue_rounded_square"
+
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:layout_margin="15dp"
+                android:text="@string/audio_book_narration_speed_apply"
+                android:textAllCaps="false"
+                android:paddingStart="10dp"
+
+                android:paddingEnd="10dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>

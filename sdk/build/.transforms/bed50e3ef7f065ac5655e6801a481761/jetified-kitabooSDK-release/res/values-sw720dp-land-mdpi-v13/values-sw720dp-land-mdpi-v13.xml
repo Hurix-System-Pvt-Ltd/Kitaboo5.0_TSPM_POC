@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="book_gallery_thumbnail_item_height">250dp</dimen>
+    <dimen name="book_gallery_thumbnail_item_width">200dp</dimen>
+    <dimen name="bottombar_approx_height">200dp</dimen>
+    <dimen name="keyboard_approx_height">500dp</dimen>
+</resources>

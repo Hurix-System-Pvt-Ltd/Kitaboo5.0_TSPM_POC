@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/selectedSpeedTextView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/default_user"
+        android:layout_alignParentEnd="true"
+        android:padding="10dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/kitaboo_main_color"
+        android:textStyle="bold"
+       android:textSize="16sp"
+        android:gravity="center"
+        android:lineSpacingExtra="54.5sp"
+        />
+
+    <TextView
+        android:id="@+id/audioSpeedTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/black_grey"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:padding="10dp"
+        android:textSize="20sp"
+        />
+
+
+</RelativeLayout>

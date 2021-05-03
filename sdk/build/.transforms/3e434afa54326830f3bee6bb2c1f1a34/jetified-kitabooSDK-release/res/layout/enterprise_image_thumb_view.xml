@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/thumbView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:divider="@null"
+    android:orientation="horizontal">
+
+    <include
+        android:id="@+id/chapter_layout"
+        layout="@layout/chapter_thumbnail_item"
+        android:layout_width="@dimen/book_gallery_thumbnail_item_width"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/thumbnails_holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <include
+            android:id="@+id/thumb_layout_1"
+            layout="@layout/enterprise_thumb_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <include
+            android:id="@+id/thumb_layout_2"
+            layout="@layout/enterprise_thumb_view"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/thumb_layout_1"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+</FrameLayout>
+

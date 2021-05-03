@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <corners android:radius="8dp" />
+
+    <solid android:color="@color/shareBtn_bg_solid_colr_sel" />
+
+    <stroke
+        android:width="2dp"
+        android:color="@color/shareBtn_bg_stroke_colr_sel" />
+
+</shape>

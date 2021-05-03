@@ -1,0 +1,1074 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string-array name="help_screens">
+        <item>help_screen1</item>
+        <item>help_screen2</item>
+    </string-array>
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    <string name="theme_reader">reader_theme.json</string>
+    <string name="reader_theme_json_5_0">reader_theme_json_5.0.json</string>
+    <string name="no_internet_try_again">No internet connection. Please check your connection and try again.</string>
+    <string name="bookshelf_category_default_category">Show All Items</string>
+    <string name="bookshelf_category_default_category_books">All Items</string>
+    <string name="bookshelf_category_download">Show Downloaded</string>
+    <string name="bookshelf_category_download_books">Downloaded</string>
+    <string name="action_settings">Settings</string>
+    <string name="dummy_accessCode">55555</string>
+    <string name="need_permission">Need to give permission</string>
+    <string name="forgot_email_send_success_msg">Instructions to reset your password has been sent to your eMail.</string>
+    <string name="forgot_email_send_fail_msg">Entered mail id not register please try again with different mail id</string>
+    <string name="alert_empty_accesscode">Please enter Access Code</string>
+    <string name="alert_empty_emailid">Please enter Email id</string>
+    <string name="alert_invalid_accesscode">Please enter valid Access Code</string>
+    <string name="network_error">Internet connection unavailable.</string>
+    <string name="network_error_new">Internet connection unavailable.</string>
+    <string name="alert_bookshelf_empty">Shelf name can not be empty</string>
+    <string name="alert_bookshelf_already_exist">Shelf already exists. Please edit shelf name.</string>
+    <string name="alert_book_delete">Do you wish to delete this book?</string>
+    <string name="alert_video_delete">Do you wish to delete this video?</string>
+    <string name="alert_delete_book_title">Delete this Book?</string>
+    <string name="alert_delete_book_msg">This action is irreversible</string>
+    <string name="alert_shelf_delete">Do you wish to delete book Shelf?</string>
+    <string name="pentool_delete_alert_msg">This action will permanently clear the selected drawings. Do you wish to continue?</string>
+    <string name="pentool_delete_alert_title">Clear all pen marks</string>
+    <string name="shelf_delete_alert_title">Delete Shelf</string>
+    <string name="delete_note_title">Delete</string>
+    <string name="delete_protractor">Are you sure you want to delete?</string>
+    <string name="delete_note_message">Do you wish to delete this Note?</string>
+    <string name="alert_title">Alert</string>
+    <string name="booktype_epub">ePub</string>
+    <string name="logout_title">Log out</string>
+    <string name="sync_title">Submit Data</string>
+    <string name="sync_clear_title">Clear Data</string>
+    <string name="sync_message">Answers will be submitted and cannot be changed.\nDo you wish to continue?</string>
+    <string name="individual_sync_message">Answers will be submitted. Do you wish to continue?</string>
+    <string name="sync_clear_message">Answers will be cleared. Do you wish to continue?</string>
+    <string name="sync_message_nodata">No data to submit.</string>
+    <string name="sync_message_fib_data_clear">Selected Fib has been cleared.</string>
+    <string name="al_book_delete_title">Delete Book</string>
+    <string name="al_video_delete_title">Delete Video</string>
+    <string name="msg_accesscode_and_downloading">Access code is not allowed while a book is downloading.</string>
+    <string name="page_not_found">Please enter a valid page number.</string>
+    <string name="page_not_exist">Page not Exist.</string>
+    <string name="alert_no_shared_notes">No shared notes found.</string>
+    <string name="alert_no_notes">No notes found.</string>
+    <string name="alert_no_shared_highlight">No shared highlights found.</string>
+    <string name="al_no_highlight">No highlights found.</string>
+    <string name="alert_no_shared_all_data">No shared data found.</string>
+    <string name="alert_no_data">No data found</string>
+    <string name="alert_exit_title">Exit</string>
+    <string name="delete_all">Delete All</string>
+    <string name="delete_all_message_while_download_all">Your all downloaded books will be deleted &amp; rest will continue downloading, do you wish to continue?</string>
+    <string name="alert_password_validation">Password must be between 8 and 15 characters.</string>
+    <string name="alert_password_minimum_limit">Your password must be at least 8 characters long. Please try another.</string>
+    <string name="alert_password_maximum_limit">Your password must smaller than 20 characters. Please try another.</string>
+    <string name="ugc_setting_select_message">Please select atleast one</string>
+    <string name="validation_empty_data">No Data found, Please try again.</string>
+    <string name="server_sucess_msg">No Data found, Please try again.</string>
+    <string name="server_fail_msg">No Data found, Please try again.</string>
+    <string name="server_empty_field_msg">Please enter all the fields.</string>
+    <string name="server_invalid_field_msg">Please enter valid data for all the fields.</string>
+    <string name="server_invalid_type_msg">Please enter valid data for all the fields.</string>
+    <!--    <string name="server_token_expired_msg">Your session has expired, Please login again to sync your data.</string>-->
+    <string name="server_token_expired_msg">The session is not valid.</string>
+    <string name="reset_setting">Reset to default</string>
+    <string name="not_purchased">you are not authorized to access this book,it is not assigned or purchased by you.</string>
+    <string name="error_on_file_access_content">Sorry ePub kindly contact</string>
+    <string name="server_multiple_client_msg">Multiple client. Please try again!</string>
+    <string name="server_multiple_institutes_msg">Multiple institutes, Please try again.</string>
+    <string name="server_duplicate_emailid_msg">Entered eMail ID already exists.</string>
+    <string name="server_accesscode_invalid_msg">Access code entered is Invalid !</string>
+    <string name="server_accesscode_invalid_with_other_user_msg">Access code entered is redeemed by a different user !</string>
+    <string name="server_accesscode_invalid_with_same_user_msg">Access code entered is already redeemed !</string>
+    <string name="server_accesscode_invalid_with_other_institute">You are not allowed to redeem Access code for this Institute.</string>
+    <string name="server_accesscode_invalid_distribustion_fail_msg">Error in redeeming Access code. Please try again later.</string>
+    <string name="server_client_invalid_msg">No Data found, Please try again.</string>
+    <string name="server_book_licence_limit_reached">You have exceeded the limit to download the book on multiple devices.</string>
+    <string name="server_video_licence_limit_reached">You have exceeded the limit to download the video on multiple devices.</string>
+    <string name="server_book_licence_expired">The book cannot be downloaded as the license of the book has expired.</string>
+    <string name="server_book_not_available">The book not available.</string>
+    <string name="server_client_trial_redirect">Client trial redirect.</string>
+    <string name="server_account_inactive">Account inactive.</string>
+    <string name="server_time_out_erros">Server not reacheble right now please try again later</string>
+    <string name="server_unknown_error">Low network connectivity, Please try again</string>
+    <string name="please_wait">Please wait&#8230;</string>
+    <string name="alert_invalid_emailid">Please enter a valid Email ID</string>
+    <string name="alert_empty_mail_id">Email ID is required</string>
+    <string name="alert_empty_password">Password is required</string>
+    <string name="alert_empty_first_name">First Name is required</string>
+    <string name="alert_empty_user_name">Full Name is required</string>
+    <string name="alert_downloading_progress">Book downloading is in progress. \nPlease wait</string>
+    <!--<string name="first_name_mandatory">First name is mandatory</string>-->
+    <string name="alert_invalid_input">Invalid input</string>
+    <string name="alert_full_name_character_limit">Full Name must be between 1 and %1$s characters</string>
+    <string name="alert_user_name_character_limit">User Name must be between 1 and %1$s characters</string>
+    <string name="alert_empty_confirm_password">Confirm your password</string>
+    <string name="alert_empty_last_name">Last Name is required</string>
+    <string name="alert_last_name_character_limit">Last Name must be between 1 and %1$s characters</string>
+    <string name="alert_emailid_character_limit">Email ID must be between 1 and %1$s characters</string>
+    <string name="alert_password_character_limit">Password must be between %1$s and %2$s characters</string>
+    <string name="alert_wrong_password">Passwords entered do not match</string>
+    <string name="alert_wrong_email_id">Email ID belongs to an existing account</string>
+    <string name="confirm_password_not_match">Passwords do not match.</string>
+    <string name="password_not_match">Old Password and New Password Cannot be Same.</string>
+    <string name="password_and_newpassword_match">Please enter different password</string>
+    <string name="confirmpassword_and_newpassword_mismatch">New password and Confirm new password does not match</string>
+    <string name="alert_all_field_required">Required field cannot be left blank</string>
+    <string name="toast_rest_password_success">Your password has been changed successfully</string>
+    <string name="toast_rest_password_in_progress">Please wait</string>
+    <string name="alert_rest_password_success">Your password has been reset. Please check your eMail for new password..</string>
+    <string name="alert_rest_password_title">Reset Password</string>
+    <string name="download_browser_dialog_message">You will be redirected to install Firefox browser. Do you want to continue?</string>
+    <string name="download_browser_dialog_title">Download Firefox?</string>
+    <string name="wrong_password">Wrong Password</string>
+    <string name="alert_highlight_delete_title">Delete</string>
+    <string name="alert_highlight_delete_message">Do you wish to delete this highlight?</string>
+    <string name="toast_message">Toast message</string>
+    <string name="alert_signout_message">Do you wish to Sign Out?</string>
+    <string name="alert_signout_title">Sign Out</string>
+    <string name="alert_signout_message_internet_unavailable">Internet Connection Unavailable unable to sync data Do you still want to Sign Out?</string>
+    <string name="alert_signout_message_data_syncing">Data Syncing in Progress Do you still want to Sign Out?</string>
+    <string name="alert_signout_title_while_data_sync_going">Sign Out</string>
+    <string name="alert_error_save_settings">Error in saving settings</string>
+    <string name="alert_successfully_submit_data">Your data has been successfully saved.</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="resource_search_hint">Search with Keywords</string>
+    <string name="no_search_result_found">No search result found.</string>
+    <string name="coverage">Coverage</string>
+    <string name="time_spent">Time Spent</string>
+    <string name="network_not_available_msg">Internet connection unavailable.</string>
+    <string name="ugc_data_all">All</string>
+    <string name="ugc_tab_notes">Notes</string>
+    <string name="ugc_tab_highlights">Highlights</string>
+    <string name="ugc_tab_bookmark">Bookmarks</string>
+    <string name="btn_note">Notes</string>
+    <string name="ugc_mobile_tab_my_data">My data</string>
+    <string name="ugc_mobile_tab_my_notes">My Note</string>
+    <string name="ugc_mobile_tab_shared_with_me">Shared with me</string>
+    <string name="btn_highlight">Highlights</string>
+    <string name="toc_not_found">No TOC found !</string>
+    <string name="btn_all_data">All Data</string>
+    <string name="btn_shared_with_me">Shared with Me</string>
+    <string name="btn_settings">Settings</string>
+    <string name="comments">Comments</string>
+    <string name="share">Share</string>
+    <string name="receive">Receive</string>
+    <string name="done">Done</string>
+    <string name="teacher">Teachers</string>
+    <string name="student">All Students</string>
+    <string name="share_this_note_with">Share this note with</string>
+    <string name="select_class">Select Class</string>
+    <string name="post">Post</string>
+    <string name="TotalComments">Comments</string>
+    <string name="note_share_title">Share note</string>
+    <string name="stickynote_imp_text">Tap to make this note important</string>
+    <string name="enterprise_stickynote_imp_text">Tap to make this note important</string>
+    <string name="stickynote_imp_undo_text">Tap to make this note normal</string>
+    <string name="note_empty_msg">Please enter the note data</string>
+    <string name="BOOKMARK_READONLY_TITLE">Read only</string>
+    <string name="BOOKMARK_READONLY_MSG">Please connect to internet to edit the bookmark.</string>
+    <string name="UGC_ACCESS_INTERNET_NEEDED_TITLE">Internet connection needed</string>
+    <string name="UGC_ACCESS_INTERNET_NEEDED_MSG">Make sure you are connected to the internet and try again.</string>
+    <string name="powered_by">Powered by</string>
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="status">Status</string>
+    <string name="empty_message">00:00</string>
+    <string name="analytics_server_error_message">Some error from server !</string>
+    <string name="analytics_server_nodata_message">No data found.</string>
+    <string name="teacher_review_class_text">Class</string>
+    <string name="teacher_review_select_student_text">Select Student</string>
+    <string name="teacher_review_generate_report_text">Generate Report</string>
+    <string name="teacher_review_student_text">Student</string>
+    <string name="teacher_review_teacher_text">Teacher</string>
+    <string name="teacher_review_done_text">Done</string>
+    <string name="ugc_mydata_chapter_label">Chapter:&#160;</string>
+    <string name="ugc_mydata_chapter_label_fixedLayout">Chapter:&#160;</string>
+    <string name="ugc_mydata_page_label">Chapter:&#160;</string>
+    <string name="ugc_mydata_shared_by_label">Shared by : </string>
+    <string name="alert_toc_no_bookmarks_found">No bookmarks found.</string>
+    <string name="alert_tor_no_resources_found">Resource not found.</string>
+    <string name="ok">OK</string>
+    <string name="bookmark_page_label">"page - "</string>
+    <string name="delete_shelf_title">Delete Category</string>
+    <string name="delete_shelf_msg">Are you sure if you want to delete this category?</string>
+    <string name="delete_book_msg">Are you sure if you want to delete selected book?</string>
+    <string name="category_name_already_exists_msg">Shelf already exists. Please edit Shelf name.</string>
+    <string name="download_btn_text">Downloadable eBooks</string>
+    <string name="login_btn_text">Login</string>
+    <string name="login_header_text">Sign in</string>
+    <string name="login_webview_text">LOGIN</string>
+    <string name="dialog_login_email_id_text">Email ID</string>
+    <string name="dialog_login_email_id_hint_text">Enter Email ID</string>
+    <string name="dialog_login_username_hint_text">Username</string>
+    <string name="dialog_login_password_text">Password</string>
+    <string name="dialog_login_password_hint_text">Enter Password</string>
+    <string name="dialog_login_submit_text">Sign in</string>
+    <string name="dialog_login_forgot_password_text">Forgot Password?</string>
+    <string name="remember_me">Remember me</string>
+    <string name="dialog_login_accesscode_have_text">Have an Access Code?</string>
+    <string name="dialog_login_accesscode_message_text">Use access code to view the eBooks</string>
+    <string name="dialog_login_edit_access_code">Access Code</string>
+    <string name="dialog_login_btn_go_text">Go</string>
+    <string name="access_code_text">Redeem Access Code</string>
+    <string name="forgot_password_text">Forgot Password</string>
+    <string name="forgot_password_hint">Email ID </string>
+    <string name="access_code_submit_text">Submit</string>
+    <string name="access_code_cancel_text">Cancel</string>
+    <string name="registration_header_text">Sign Up</string>
+    <string name="new_to_profil">New to Profile?</string>
+    <string name="registration_first_name_text">First Name</string>
+    <string name="registration_first_name_hint_text">Enter First Name</string>
+    <string name="registration_last_name_text">Last Name</string>
+    <string name="registration_last_name_hint_text">Enter Last Name</string>
+    <string name="registration_email_id_text">Email ID</string>
+    <string name="registration_email_id_hint_text">Email Address</string>
+    <string name="registration_Password_text">Password</string>
+    <string name="registration_Password_hint_text">Password</string>
+    <string name="registration_ComfirmPassword_text">Confirm Password</string>
+    <string name="registration_ComfirmPassword_hint_text">Confirm Password</string>
+    <string name="registration_bottom_text">You are 1 step away from viewing your eBooks!</string>
+    <string name="registration_bottom_msg">By clicking on Submit you confirm that you are at least \n 13 years of age and agree to our </string>
+    <string name="registration_bottom_msg1"><u>Terms and conditions</u></string>
+    <string name="terms_of_services_txt"><u>Terms of Service</u></string>
+    <string name="accesscode_condition_msg">I have read and accept the </string>
+    <string name="registration_msg">Create your %1$s account by entering the information below.</string>
+    <string name="No_Downloadable_Books_Msg">No eBooks available for download</string>
+    <string name="signout_text">Sign Out</string>
+    <string name="profile_setting_button_text">Profile Settings</string>
+    <string name="help_text">Help</string>
+    <string name="profile_setting_welcome_text">Welcome, %1$s</string>
+    <string name="profile_setting_emailid_text">&lt;B&gt;Email ID:&lt;/B&gt; %1$s</string>
+    <string name="profile_setting_change_btn_text">Change Password</string>
+    <string name="profile_setting_change_btn_text_header">User Settings</string>
+    <string name="profile_setting_change_btn_description">Change current password</string>
+    <string name="profile_setting_cancel_btn_text">Cancel</string>
+    <string name="profile_setting_current_password_text">Current Password</string>
+    <string name="profile_setting_current_new_password_text">New Password</string>
+    <string name="profile_setting_current_confirm_new_password_text">Confirm New Password</string>
+    <string name="profile_setting_change_animation_header_text">Change Page Animation</string>
+    <string name="profile_setting_change_animation_category_header">Page Animation</string>
+    <string name="profile_setting_change_animation_category_description">Change the page animation type of the book</string>
+    <string name="exit_msg_when_downloading">Can not exit when a book is being downloaded</string>
+    <string name="exit_msg_when_refreshing">Can not refresh when a book is being downloaded</string>
+    <string name="exit_msg">Do you want to exit ?</string>
+    <string name="logout_msg_when_downloading">Cannot logout when a book is being downloaded</string>
+    <string name="logout_msg">Do you wish to log out?</string>
+    <string name="loading_ebook_msg">Loading your eBook</string>
+    <string name="login_forgot_password">Forgot Password?</string>
+    <string name="login_new_user">New User?</string>
+    <string name="registration_bottom_last_msg">You are 1 Step away from viewing your eBooks! </string>
+    <string name="launch_msg_for_epub">Launch an ePub Book</string>
+    <string name="launch_msg_for_ebook">Loading your eBook</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+    <string name="addnewcategory">Add new shelf</string>
+    <string name="addnewcategory_hint">Enter shelf title</string>
+    <string name="menu_settings">Settings</string>
+    <string name="no_internet">Internet connection unavailable.</string>
+    <string name="custome_url_download_book">Do you want to download book</string>
+    <string name="blank_field">All Fields Are Mandatory.</string>
+    <string name="failed_login">Invalid Login Credentials.</string>
+    <string name="book_delete_alert">Are you sure if you want to delete selected book?</string>
+    <string name="register_submit_button">Sign Up</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forgot_password_email_id_label">Reset Password</string>
+    <string name="registration_user_name_text">User Name</string>
+    <string name="registration_user_name_hint_text">Full Name</string>
+    <string name="alert_invalid_userName">Please enter valid Full Name</string>
+    <string name="alert_youtube_player_initialisation_error">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="alert_instant_feedback_title">Correct Answer is \"</string>
+    <string name="alert_kaltura_player_initialisation_error">Error occurred while initializing Kaltura Video.</string>
+    <string name="alert_video_player_initialisation_error">Error occurred while initializing Video.</string>
+    <string name="alert_vimeo_player_initialisation_error">Error occurred while initializing Vimeo Video.</string>
+    <string name="alert_no_space_left_on_device">No space error</string>
+    <string name="alert_no_space_left_msg">You do not have enough space to download the book. Please remove some files and try again...</string>
+    <string name="alert_bookshelf_no_search_found_title">Sorry</string>
+    <string name="alert_bookshelf_no_search_found_message">No search result found.</string>
+    <string name="alert_webView_loading_error">Error occurred while loading web url.</string>
+    <string name="alert_session_expired">Your session has expired, Please login again.</string>
+    <string name="bookshelf_category_all_books">All Books</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="copy">Copy the below text</string>
+    <string name="select">Copy the below text</string>
+    <string name="dialog_yes_button">YES</string>
+    <string name="dialog_no_button">NO</string>
+    <string name="ugc_share_note_message">started sharing data with you.</string>
+    <string name="alert_book_download_waiting">Waiting&#8230;</string>
+    <string name="alert_book_download_installing">Installing&#8230;</string>
+    <string name="toc_tab_resource">Resources</string>
+    <string name="toc_tab_contents">Contents</string>
+    <string name="thumbnail_nav_page">Go to</string>
+    <string name="thumbnail_chaptername_not_present">Chapter Not Found</string>
+    <string name="ugc_data_important">Important</string>
+    <string name="alert_search_validation">Search text  must be between %1$s and %2$s characters.</string>
+    <string name="alert_download_intrupt">Internet connection unavailable.</string>
+    <string name="user_search_hint">Search by keywords</string>
+    <string name="note_hint_msg">Enter your note</string>
+    <string name="comment_hint_msg">Enter your comment</string>
+    <string name="note_comment_hint_msg">Write your comment here.</string>
+    <string name="dialog_login_kitaboo_message_text">Sign in to your %1$s to experience the digital eBooks.</string>
+    <string name="login_help_worldbook">Sign in to your personal ebooks account.\nDon’t have an account? Sign up for one on World Book Online. </string>
+    <string name="dialog_login_accesscode_body_text">Use access code to view the eBooks.</string>
+    <string name="alert_book_licence_limit_reached">You have exceeded the limit to download the book on multiple devices.</string>
+    <string name="alert_book_licence_expired">The book cannot be downloaded as the license of the book has expired.</string>
+    <string name="emailid_field_character_allowed">0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM.@_-</string>
+    <string name="forgetpassword_field_character_allowed">0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM.@_-</string>
+    <string name="msg_progress_when_downloading">Cannot proceed while eBooks are being downloaded!</string>
+    <string name="reader_page">Page:&#160;</string>
+    <string name="reader_page_epub">Chapter:&#160;</string>
+    <string name="privacy_policy_text">I agree to the Kitaboo</string>
+    <string name="privacy_policy"><u>Privacy Policy</u></string>
+    <string name="privacy"><u>Privacy Policy</u></string>
+    <string name="terms_conditions"><u>Terms &amp; Conditions</u></string>
+    <string name="privacy_text_new">By clicking Sign Up, you agree to our Privacy Policy and Terms &amp; Conditions&#160;&#160; </string>
+    <string name="only_privacy_text">By clicking Sign Up, you agree to our Privacy Policy&#160;&#160; </string>
+    <string name="only_terms_text">By clicking Sign Up, you agree to our Terms &amp; Conditions&#160;&#160; </string>
+
+    <string name="reader_page_of">of</string>
+    <string name="msg_invalid_login_kois">Password or User ID are either empty or invalid.</string>
+    <string name="msg_invalid_login">Invalid Username or Password.</string>
+    <string name="msg_youtub_video_not_supported">Youtube video not supported.</string>
+    <string name="stickynote_add_msg">Please tap anywhere to place a note.</string>
+    <string name="stickynote_tap_outside_msg">Please tap inside the page to add stickynote.</string>
+    <string name="dialog_forgetPassword_body_text">Enter your email address to reset your password.</string>
+    <string name="dialog_forgetPassword_new">Enter your email address below and we will send you a link with a new password!</string>
+    <string name="msg_unable_to_play_video">Unable to play video.</string>
+    <string name="alert_bookshelf_no_search_found_message_bookshelf">No books match that search.</string>
+    <string name="profile_pic_camera">Camera</string>
+    <string name="profile_pic_gallery">Library</string>
+    <string name="profile_pic_option">Change your profile picture</string>
+    <string name="profile_pic_option_mob">Change your profile\npicture</string>
+    <string name="profile_pic_option_message">How do you want to set your picture?</string>
+    <string name="profile_pic_not_found">Some problem in parsing image, select another one</string>
+    <string name="note_share_tag">Share this note with</string>
+    <!-- EPUB reader Messages start -->
+    <string name="epub_initialization_error">ePub not supported</string>
+    <!-- EPUB reader Messages end -->
+
+    <!-- Enterprise New Mydata texts -->
+
+
+    <!-- Enterprise New Mydata texts end -->
+    <string name="enterprise_my_data">My Data</string>
+    <string name="enterprise_my_notes">My Note</string>
+    <string name="enterprise_my_highlights">My Highlights</string>
+    <!-- Corporate Messages Start -->
+
+    <string name="corporate_preview_loading_error">Error occurred while loading preview.</string>
+    <string name="category_list_heading">Category</string>
+
+    <!-- Corporate Messages End -->
+    <!-- New Bookshelf Text -->
+    <string name="preview_launch_button">Open</string>
+    <string name="preview_download_button">Download</string>
+    <string name="preview_resume_button">Resume</string>
+    <string name="preview_archive_button">Delete</string>
+    <string name="preview_open_button">OPEN</string>
+    <string name="preview_statistics_button">Analytics</string>
+    <string name="preview_update_button">Update</string>
+    <string name="preview_video_launch_button">Play Video</string>
+    <string name="preview_video_delete_button">Delete Video</string>
+    <string name="preview_downloading_button">Downloading</string>
+    <string name="preview_read_now">Read Now</string>
+    <string name="preview_continoue_reading">Continue Reading</string>
+    <!-- Topbar localizations start -->
+
+    <item name="topbar_ugc_data" type="id" />
+
+    <string name="check_message_nodata">No data to clear.</string>
+
+    <string name="topbar_ugc_data">My Data</string>
+
+    <item name="topbar_pen_tool" type="id" />
+
+    <string name="topbar_book_data">Book Data</string>
+
+    <item name="topbar_book_data" type="id" />
+
+    <string name="topbar_pen_tool">Pen</string>
+
+    <item name="topbar_search" type="id" />
+
+    <string name="topbar_search">Search</string>
+
+    <item name="topbar_review" type="id" />
+
+
+    <string name="topbar_review">Review</string>
+    <string name="topbar_submit">User Submission</string>
+
+    <item name="topbar_readaloud" type="id" />
+
+    <string name="topbar_readaloud">Read Aloud</string>
+
+    <item name="topbar_aloudplay" type="id" />
+    <string name="topbar_aloudplay">Auto Play</string>
+
+    <item name="topbar_settings" type="id" />
+
+    <string name="topbar_settings">Settings</string>
+    <string name="accessibility_overflow">More options</string>
+    <string name="color_picker_default_title">Select Color</string>
+    <string name="pentool_size_default_title">Select Size</string>
+
+    <item name="topbar_stickynote" type="id" />
+    <string name="topbar_stickynote">Note</string>
+
+    <item name="topbar_clear" type="id" />
+    <string name="topbar_clear">Clear</string>
+
+    <item name="topbar_protractor" type="id" />
+    <string name="topbar_protractor">Protractor</string>
+    <!-- Topbar localizations end -->
+
+
+    <!-- BottomBar localizations start -->
+
+    <string name="bottombar_thumbnail">Thumbnails</string>
+    <string name="bottombar_toc">Table Of Contents</string>
+    <string name="topbar_teacher_review">Teacher Assesment</string>
+
+    <!-- BottomBar localizations end -->
+
+    <!-- New Analytics heading start -->
+    <string name="analytics">Statistics</string>
+    <string name="book_opened_assigned">Book Opened/Assigned</string>
+    <string name="video_opened_assigned">Video Launched/Assigned</string>
+    <string name="video_opened">Video Launched</string>
+    <string name="video_completed_assigned">Video Completed/Assigned</string>
+    <string name="video_completed">Video completed</string>
+    <string name="avg_reading_sessions">Avg. Reading Sessions</string>
+    <string name="total_reading_sessions">Reading Sessions</string>
+    <string name="avg_video_reading_sessions">Average no. of views</string>
+    <string name="total_video_reading_sessions">No. of views</string>
+
+    <string name="avg_notes_shared_created">Avg. Notes Shared/Created</string>
+    <string name="notes_shared_created">Notes Shared/Created</string>
+    <string name="avg_reading_time">Avg. Reading Time</string>
+    <string name="reading_time">Reading Time</string>
+    <string name="video_reading_time">Total Time spent</string>
+    <string name="avg_reading_time_session">Avg. Reading Time/Session</string>
+    <string name="avg_video_reading_time_session">Average Time Spent per session</string>
+    <string name="avg_highlight_created_shared">Avg. Highlights Shared/Created</string>
+    <string name="highlight_created_shared">Highlights Shared/Created</string>
+    <string name="avg_pages_read">Avg. Pages Read</string>
+    <string name="pages_read">Pages Read</string>
+    <string name="avg_pages_read_session">Avg. Pages Read/Session</string>
+    <string name="avg_resources_viewed_available">Avg. Resources viewed/Available</string>
+    <string name="resources_viewed_available">Resources viewed/Available</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="statistics_pages">pages</string>
+    <string name="statistics_mins">mins</string>
+    <!-- New Analytics heading end -->
+
+    <string name="alert_cannot_delete_book">Unable to delete book at the moment. Please contact admin.</string>
+    <string name="msg_sticky_note_cannot_placed">Sticky note can\'t be placed on resource markups.</string>
+    <string name="ERROR_BOOK_UNAVAILABLE">This eBook is not available for download.</string>
+    <string name="ERROR_VIDEO_UNAVAILABLE">This Video is not available for download.</string>
+
+
+    <!--Profile setting-->
+    <string name="profile_setting_pic_change_text">Change Profile Picture</string>
+    <string name="default_text">Default</string>
+    <string name="profile_pic_upload_failed">Profile pic Upload failed! Please try again.</string>
+    <string name="or">Or</string>
+    <string name="porto_title_access">No access data?</string>
+    <string name="porto_hint_access">Enter your e-mail ID</string>
+    <string name="alert_invalid_porto_email">Please enter valid Email ID</string>
+    <string name="porto_registration_success">Your registration has been successful. Check your email for login details.</string>
+    <string name="porto_profile_setting_account_manager">Account Manager</string>
+    <string name="porto_profile_setting_device_manager">Device Manager</string>
+    <string name="crop_save_text">Crop</string>
+    <string name="runningFaceDetection">Please wait\u2026</string>
+    <string name="wallpaper">Setting wallpaper\u2026</string>
+    <string name="savingImage">Saving picture\u2026</string>
+    <string name="device_not_supported">This feature is not supported in your device.</string>
+    <string name="wrote">&#160;</string>
+    <string name="book_download_alert">This book size is %1$s MB. \nYour device is currently connected on Mobile network. Do you still wish to download the ebook?</string>
+    <string name="book_download_alert_wifi">This book size is %1$s MB. \nDo you still wish to download the eBook?</string>
+    <string name="refreshing_books">Refreshing books</string>
+    <string name="glossary_no_description_message">Description not available.</string>
+    <string name="download_package_filesize">Size: %1$s MB</string>
+    <string name="author_name">Author:&#160;</string>
+    <string name="series_title">Series Title:&#160;</string>
+    <string name="publisher_name">Publisher:&#160;</string>
+    <string name="book_reference_id">Book Reference Id:&#160;</string>
+    <string name="copy_right_year">Copyright Year:&#160;</string>
+    <string name="isbn">ISBN:&#160;</string>
+    <string name="pages">Pages:&#160;</string>
+    <string name="interest_level">Interest Level:&#160;</string>
+    <string name="lexile_measure">Lexile Measure:&#160;</string>
+    <string name="a_r_level">AR Level:&#160;</string>
+    <string name="subject">Subject:&#160;</string>
+    <string name="description">Description:</string>
+    <string name="category_name">Category:&#160;</string>
+
+
+    <string name="no_application_available">No application available to open this document.</string>
+    <string name="noUserGroup">Annotations sharing not allowed for this class.</string>
+    <string name="sticky_note_not_supported">This feature can be best used in portrait mode. Please rotate the screen.</string>
+    <string name="protractor_not_supported">This feature can be best used in portrait mode. Please rotate the screen.</string>
+    <string name="default_category_name">Others</string>
+    <string name="unzipping">Unzipping...</string>
+    <string name="alert_error">Error</string>
+    <string name="no_instruction_markup">No instruction available </string>
+    <!--<string name="choose_readaloud_option">Choose your mode</string>
+    <string name="let_me_read_text_option_title">Select to open the book without audio.</string>
+    <string name="auto_play_option_title">Select to open the book in read aloud and auto flips to next page.</string>
+    <string name="read_to_me_option_title">Select to open the book in read aloud on page by page basis.</string>
+    <string name="let_me_read_text">Let me read</string>
+    <string name="auto_play_text">Auto play</string>
+    <string name="read_to_me_text">Read to me</string>-->
+    <string name="text_download_all">Download All</string>
+    <string name="text_delete_all">Delete All</string>
+    <string name="text_collection_lebel">Items</string>
+    <string name="text_collection_lebel_mobile">All Items</string>
+    <string name="text_collection_page_lebel">Pages</string>
+    <string name="Others_collection_Catogory">Others</string>
+    <string name="book_mode_Online">Online</string>
+
+    <string name="dictHeaderText">Dicionário da Língua Portuguesa da Porto Editora</string>
+    <string name="alert_check_coorect_answer_submit_data">Tap on incorrect response to view the answer.</string>
+    <string name="incorrect_answer_message">That is an incorrect answer !</string>
+    <string name="book_error">Book Error</string>
+    <string name="error_in_open_book">Some error in book package. Do you want to download again?</string>
+    <string name="my_collection">Collection:&#160;</string>
+    <string name="loading_items">Loading Items....Please wait</string>
+    <string name="no_downloaded_books">No Downloaded Books</string>
+    <string name="loading">Loading items...</string>
+    <string name="loading_progress">Loading...</string>
+    <string name="search_drawable_position_name">RIGHT</string>
+    <string name="noAccount">No account?</string>
+    <string name="profile_setting_email_text">Email ID:</string>
+    <string name="mobile_profile_setting_change_btn_text">Change</string>
+    <string name="submitted_pentool_error">Sorry, this answer is already submitted and cannot be changed.</string>
+    <string name="pentool_enabled_error">Pen tool can\'t be placed on resource markups.</string>
+    <string name="msg_dropdown_cannot_open">Dropdown can\'t open when search open</string>
+    <string name="msg_resources_not_open">Resources not open when serch box open</string>
+    <string name="bookmark_hint">Add Bookmark Title </string>
+    <string name="first_name_mandatory">First name is mandatory</string>
+    <string name="permission_request">Request Permission</string>
+    <string name="permission_grantd_message">Permission Granted. Now you can continue using the app.</string>
+    <string name="storage_permission_not_granted">Permission required to Read/Write External Storage. \n\nEnable through Device Setting -> Apps -> Permission -> Enable Storage.></string>
+    <string name="camera_permission_not_granted">Permission  required to access camera. \nEnable through Device Setting -> Apps -> Permission -> Camera.</string>
+    <string name="video_download_alert">This video size is %1$s MB. \nYour device is currently connected on Mobile network. Do you still wish to proceed with downloading the video?</string>
+    <string name="video_download_alert_wifi">This video size is %1$s MB. \nDo you still wish to proceed with downloading the video?</string>
+    <string name="window_permission_not_granted">Permission denied for system alert window. \nClick again to enable permission.</string>
+    <string name="no_items_available">No Items available</string>
+    <string name="resource_not_available">Please buy to get access to this chapter.</string>
+    <string name="msg_max_authorised_device">It has reached the maximum number of authorized devices</string>
+    <string name="forgot_password_submit_text">Submit</string>
+
+    <string name="try_again">Try again</string>
+    <string name="no_book_downloade">No e-books are downloaded or downloading is in progress</string>
+
+
+    <string name="about_us">Skip</string>
+
+    <!--for World Ebooks-->
+    <string name="about_us_world_e_books"><u>About World Book eBooks</u></string>
+
+    <!--Help Screen-->
+    <string name="help_skip_txt"><u>Skip</u></string>
+    <string name="help_got_txt"><u>Got it</u></string>
+    <string name="help_Accesscode_txt">Enter Access Code</string>
+    <string name="view_profile_setting_text">View Profile Settings</string>
+    <string name="help_screen_search_text">Search for books by Author,Title &amp; ISBN </string>
+    <string name="help_table_content_text">Table Contents Help</string>
+    <string name="help_my_data_text">My Data Help</string>
+    <string name="help_add_pen_annotation">Add Pen Annotation</string>
+    <string name="help_add_protractor_annotation">Use Protractor</string>
+    <string name="help_audio_to_Bookshelf">Audio To BookShelf</string>
+    <string name="help_play_pause">Play/Pause</string>
+    <string name="help_addbookmark_txt">Add Bookmark</string>
+    <string name="help_placenote_txt">Tap Anywhere to place a note</string>
+    <string name="help_submit_data_txt">Submit Data</string>
+    <string name="help_clear_data_txt">Clear Data</string>
+    <string name="help_search_content_txt">Search for book content</string>
+    <string name="help_show_thumbnail_txt">Show Thumbnails</string>
+    <string name="help_view_categories">View Categories</string>
+    <string name="review_enabled_error">Markup cant be opened in Review mode</string>
+    <string name="terms_conditon"><u>Terms &amp; Conditions</u></string>
+    <string name="AboutUs"><u>About Us</u></string>
+    <string name="PrivacyPolicy"><u>Privacy Policy</u></string>
+    <string name="and">and</string>
+
+    <string name="delete_all_books">Delete All books</string>
+    <string name="delete_conformation">Are you sure you want to delete all books from this collection?</string>
+
+    <string name="delete_book">Delete</string>
+
+    <string name="signout_title">Are you sure you want to sign out ?</string>
+    <string name="signout_message">You will be returned to the signin screen</string>
+    <string name="app_exit_message">Please click BACK again to exit</string>
+
+    <string name="delete_all_error">Delete All get error from server</string>
+    <string name="delete_error">Delete get error from server</string>
+
+    <string name="overall">Overall</string>
+    <string name="permission_title">Need Permission</string>
+    <string name="permission_msg"> %1$s saves your eBooks and data to device storage, kindly allow access to continue reading using device storage.</string>
+    <string name="permission_never_ask_msg">Storage permission allows us to access storage data. Please allow in App Settings for additional functionality.</string>
+    <string name="alert_book_error">This chapter of the book can not be opened.</string>
+    <string name="protractor">Delete Protractor</string>
+    <string name="note_and_highlight">Use Highlight and Note</string>
+
+    <string name="signin">Sign In</string>
+    <string name="accesscode">Access code</string>
+    <string name="watermarktext">This work is protected by law, including but not limited to United States Copyright law and international treaties. All Rights Reserved by the publisher and/or licensor.</string>
+    <string name="hint_access">Enter Access Code</string>
+    <string name="page_no">Page No. </string>
+    <string name="syncing">Loading</string>
+    <string name="more_info_title">About this</string>
+
+
+    // Strings not having translations.
+    <string name="MyData_Bookmark_Comment_title">Comment</string>
+
+    <string name="inline_video_play_icon">ɼ</string>
+
+    <string name="msg_no_fib_data">No data to clear.</string>
+
+    <string name="update_coverpic_text">Change Cover</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="title_activity_newprofile_setting">Newprofile_setting</string>
+    <string name="title_activity_new_profilesetting">New_profilesetting</string>
+    <string name="profile_username">Username</string>
+    <string name="last_name">Last Name</string>
+    <string name="update_profile_text">Edit</string>
+    <string name="Changepassword_text">Change Password</string>
+    <string name="Resetpassword_text"><u>Change Password</u></string>
+    <string name="Savebtn">Save</string>
+    <string name="saveclick">Save Click</string>
+    <string name="Cancelbtn">Cancel</string>
+    <string name="version_txt">Version</string>
+    <string name="poweredBy">Powered by HurixDigital</string>
+
+    <string name="search_empty">Please enter valid data.</string>
+
+
+    <!--Strings related to analytics-->
+    <string name="header_text_open_book_per_assign">Book Opened/Assigned</string>
+    <string name="text_avg_reading_time">Average Reading Time</string>
+    <string name="text_avg_reading_time_unit">mins</string>
+    <string name="text_avg_reading_time_unit_in_sec">sec</string>
+    <string name="text_avg_pages_read">Average Pages Read</string>
+    <string name="avg_reading_session">Average Reading Session</string>
+    <string name="avg_reading_time_per_session">Average Reading Time/Session</string>
+    <string name="avg_reading_time_per_session_unit">min</string>
+    <string name="average_pages_read_per_session">Average Pages Read/Session</string>
+    <string name="average_pages_read_per_session_unit">page</string>
+    <string name="avg_notes_share_per_create">Average Notes Shared/Created</string>
+    <string name="avg_highlight_shared_per_create">Average Highlight Shared/Created</string>
+    <string name="avg_resource_viewed_per_available">Avg. Resource Viewed/Available</string>
+    <string name="text_reading_time">Reading Time</string>
+    <string name="text_pages_read">Pages Read</string>
+    <string name="reading_session">Reading Session</string>
+    <string name="notes_share_per_create">Notes Shared/Created</string>
+    <string name="highlight_shared_per_create">Highlight Shared/Created</string>
+    <string name="resource_viewed_per_available">Resource Viewed/Available</string>
+    <string name="all_students_text">"All Students"</string>
+    <string name="alert_search_fetch_book_error">Error occurred while fetching book.</string>
+    <string name="book_not_found">Book Not Found.</string>
+    <string name="topic">Topic: </string>
+    <string name="search_result_found_for">search results found for</string>
+    <string name="text_select_a_student">Select a Student</string>
+    <string name="text_cancel">Cancel</string>
+
+    <!-- Strings Related Bookshelf-->
+    <string name="bookshelf_category_view_all">View All</string>
+    <string name="bookshelf_book_category_ebook">eBook</string>
+    <string name="bookshelf_book_category_collection">Collection</string>
+    <string name="bookshelf_book_category_video">Video</string>
+    <string name="bookshelf_book_category_audio">Audio</string>
+    <string name="moreinfo_popup_title_tab">More Info</string>
+    <string name="profile_setting_text_profile">Profile</string>
+    <string name="bookshelf_book_category_digibook">DigiBook</string>
+
+
+    <!--5.0 reader settings-->
+
+    <string name="search_no_result_found_hint">search result not found</string>
+    <string name="note_yellow_color">#ffc000</string>
+    <string name="note_red_color">#fc816c</string>
+    <string name="note_purple_color">#d68fff</string>
+    <string name="note_lightgreen_color">#a5d94c</string>
+    <string name="note_skyblue_color">#38d1db</string>
+
+    <string name="note_orange_color">#D17D00</string>
+    <string name="note_pink_color">#FC5454</string>
+    <string name="note_new_purple_color">#C061FF</string>
+    <string name="note_green_color">#6F9C21</string>
+    <string name="note_blue_color">#009CC7</string>
+
+    <!--    Navneet highlight/note Colors    -->
+    <string name="nv_note_yellow_color">#F4DA20</string>
+    <string name="nv_note_red_color">#ff8f8f</string>
+    <string name="nv_note_voilet_color">#C9B3D7</string>
+    <string name="nv_note_green_color">#C0D464</string>
+    <string name="nv_note_blue_color">#6BC8EA</string>
+
+
+    <string name="note_lightyellow_color">#fcf9a3</string>
+    <string name="sticky_note_title">Note</string>
+    <string name="sticky_just_now_text">Just Now</string>
+
+    <string name="toc_title">Table of Contents</string>
+    <string name="bottombar_toc_title">Contents</string>
+    <string name="ugc_tab_bookmark_title">Bookmark</string>
+    <string name="search_result_hint_text">Search Result</string>
+
+    <string name="note_title">Notes</string>
+    <string name="terms_conditons"><u>Terms &amp; Conditions</u></string>
+    <string name="about_us_text"><u>About us</u></string>
+    <string name="version_text">Version</string>
+    <string name="my_data_filter_text">Filter By</string>
+    <string name="my_data_filter_all_text">All</string>
+    <string name="new_kitaboo_v5_font_file">kitabooread_new_design.ttf</string>
+    <string name="recently_viewed">Recently Viewed</string>
+
+    <string name="my_data_apply_all_text">Apply</string>
+    <string name="open">ª</string>
+    <string name="delete">C</string>
+    <string name="bookshelf_Video">L</string>
+    <string name="bookshelf_Audio">i</string>
+    <string name="download">s</string>
+    <string name="pause_state">K</string>
+    <string name="empty_note_first_line">Notes added/shared with</string>
+    <string name="empty_note_second_line">will appear color coded on</string>
+    <string name="empty_note_third_line">the basis of recently created/shared.</string>
+    <string name="empty_highlight_first_line">Highlight text to add a note or</string>
+    <string name="empty_highlight_second_line">mark them as important.</string>
+    <string name="ugc_accept_all_text">Accept All</string>
+    <string name="ugc_decline_all_text">Decline All</string>
+    <string name="ugc_accept_btn_text">Accept</string>
+    <string name="ugc_decline_btn_text">Decline</string>
+    <string name="accept_reject_title">My Data: Notifications</string>
+
+    <string name="highlight_title">Highlights</string>
+    <string name="no_filter_note_msg">No filtered note is available.</string>
+    <string name="no_filter_highlight_msg">No filtered highlight is available.</string>
+
+    // Delete conformation
+
+    <string name="delete_popup_title">Are you sure you want to delete</string>
+    <string name="delete_popup_message">The nuggets will return to its non-downloaded state.</string>
+    <string name="delete_popup_ok">OK</string>
+    <string name="delete_popup_cancel">Cancel</string>
+
+    <!-- Cleae All-->
+
+    <string name="clearAll_title">Clear All</string>
+    <string name="clearAll_message">Pen tool data will get removed. Do you want to continue?</string>
+    <string name="clearAll_Data_message">It will delete all Textbox data, Are you sure you want to delete?</string>
+    <string name="no_books_found">No Books Found</string>
+
+
+    <string name="font_setting">Font Setting</string>
+    <string name="font_setting_">Font Setting</string>
+
+    <string name="reader_setting">Reader Setting</string>
+    <string name="align">Align</string>
+    <string name="justify">Justify</string>
+    <string name="margins">Margins</string>
+    <string name="scroll_setting">Scroll Enabled</string>
+    <string name="spacings">Line Spacing</string>
+    <string name="mode">Mode</string>
+    <string name="font">Font</string>
+    <string name="scroll_view">Scroll View</string>
+    <string name="need_internet_to_play_audio">Need internet connection to play Audio.</string>
+
+
+    <string name="accounts_page"><u>Accounts Page</u></string>
+    <string name="profile_setting"><u>Profile Setting</u></string>
+    <string name="refresh">Refresh</string>
+
+    <!--Help Screen 5.0-->
+    <string name="more_Settings">More Settings</string>
+    <string name="more_Settings_">Click to see more tools</string>
+    <string name="more_Settings_extra">Add Contents and Profile Settings</string>
+    <string name="search">Search</string>
+    <string name="search_">Search words in</string>
+    <string name="search_1">the content</string>
+    <string name="helpsearch">Search words in the content</string>
+    <string name="profile">Profile</string>
+    <string name="profile_">Personalize your settings</string>
+    <string name="more_setting">More settings</string>
+    <string name="more_setting_">Click to see Add Content</string>
+    <string name="more_setting_1">and Profile Settings</string>
+    <string name="home">Home</string>
+    <string name="home_">Redirect to library</string>
+    <string name="toc">Table of Content</string>
+    <string name="pen">Pen Tool</string>
+    <string name="pen_content1">Annotate and doodle</string>
+    <string name="pen_content2">in different color</string>
+
+    <string name="addnote">Add note</string>
+    <string name="thumbnail">Thumbnail</string>
+    <string name="settings">Settings</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="addnote_">Make notes and share</string>
+    <string name="thumbnail_1">Thumbnail view of</string>
+    <string name="thumbnail_2">the content</string>
+    <string name="settings_">See detail analysis</string>
+    <string name="bookmark_">Bookmark this page</string>
+    <string name="clearall">ClearAll</string>
+    <string name="clearall_">Clear All FIB data</string>
+
+    <string name="add_new">Add New</string>
+    <string name="add_new_content">Add new content</string>
+    <string name="help_screen_search_text_new">Search for content by</string>
+    <string name="help_screen_search_text_new_">Author, Title &amp; ISBN</string>
+
+    <string name="bookMark">Bookmark</string>
+    <string name="bookMark_">Bookmark this page</string>
+    <string name="table_Contents">Table of Content</string>
+    <string name="table_Contents_">Brief listing of the content</string>
+    <string name="my_data">My data</string>
+    <string name="my_data_1">Consolidated view of notes</string>
+    <string name="my_data_2">and highlights</string>
+    <string name="pentool">Pentool</string>
+    <string name="pentool_">Annonate and doodle in different colors</string>
+
+    <string name="student_profile">Student Profile</string>
+    <string name="student_profile1">View and change from</string>
+    <string name="student_profile2">students list</string>
+    <string name="marker_1">Marker</string>
+    <string name="marker_2">Nomarkercolor</string>
+    <string name="marker1">Annotate and doodle</string>
+    <string name="marker2">in green and red</string>
+    <string name="arrow1">Arrow</string>
+    <string name="arrow2"></string>
+    <string name="arrow_1">Go forward and backward</string>
+    <string name="arrow_2">in the content</string>
+
+
+    <string name="eraser">Eraser</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="clear_All">Clear All</string>
+    <string name="done1">Done</string>
+
+
+    <string name="eraser_">Erase your data</string>
+    <string name="undo_">Undo and redo</string>
+    <string name="undo_1">your data</string>
+    <string name="clear_all">Clear all the data</string>
+    <string name="done2">Submit your edit</string>
+
+
+    <!--Help Screen 5.0-->
+    <string name="auto_log_out_alert_msg">You need to be online for login using your account.</string>
+
+    <!--  Read Aloud -->
+    <string name="choose_readaloud_option">Choose your mode</string>
+    <string name="let_me_read_text_option_title">Select to open the book without audio.</string>
+    <string name="auto_play_option_title">Select to open the book in read aloud and auto flips to next page.</string>
+    <string name="read_to_me_option_title">Select to open the book in read aloud on page by page basis.</string>
+    <string name="let_me_read_text">Let me read</string>
+    <string name="auto_play_text">Auto play</string>
+    <string name="read_to_me_text">Read to me</string>
+
+    <!--  tabs for 5.0 -->
+    <string name="all_tab">All</string>
+    <string name="downloaded_tab">Downloaded</string>
+    <string name="recently_viewd_tab">Recently Viewed</string>
+    <string name="favourites">Favourites</string>
+    <string name="my_book">My Books</string>
+
+    <string name="favourites_book_tab">My Books</string>
+    <string name="favorites">Favorites</string>
+    <string name="explore">Explore</string>
+    <string name="analytics_text">Analytics</string>
+    <string name="profile_text">Profile</string>
+    <string name="enter_note">Enter note</string>
+    <string name="contextual_note">Contextual Notes</string>
+    <string name="added_bookmark">Your Added Bookmarks</string>
+    <string name="bookmark_list">will be listed here</string>
+    <string name="more_info">More Info</string>
+    <string name="language">Language:&#160;</string>
+    <string name="series">Series:&#160;</string>
+    <string name="dialog_districtID_text">District ID (Optional)</string>
+    <string name="add_percentage">%%</string>
+
+    <string name="min_left">&#160;min left</string>
+    <string name="category_sort_by_msg">This will not be applied to All, Downloaded, Recently Viewed and Favorite category.</string>
+
+    <!--Insight Changes-->
+    //forgot password
+    <string name="forgotpassword_hinttext">Email Address</string>
+    <string name="forgotpassword_send">Send</string>
+    <string name="forgotpassword_cancel">Cancel</string>
+    <string name="forgotpassword_title">Forgot your Password?</string>
+    <string name="forgotpassword_label">Enter your email address below and we\'ll send \n you the link to reset your password.</string>
+    <string name="forgotpassword_successful_msg">Password reset link  sent to registered email address</string>
+
+    <string name="txt_preview_char">©</string>
+    <string name="password_icon_char">¶</string>
+    <string name="confirm_password_icon_char">1</string>
+    <string name="facebook_icon">ƒ</string>
+    <string name="email_icon_char">ă</string>
+    <string name="share_icon_char">ƽ</string>
+    <string name="delete_icon_char">C</string>
+    <string name="page_number_toast">Page Number :</string>
+
+    <string name="acep_view_book_text">View Book</string>
+
+    <string name="oup_login_register_msg">Don\'t have an account?Register here</string>
+    <string name="aboutus_for_millsandboon">About US</string>
+    <string name="privacy_policy_millsandBoon">Privacy Policy</string>
+    <string name="terms_conditonsmillsandboon">Terms &amp; Conditions</string>
+
+    <string-array name="font_item">
+        <item>Default</item>
+        <item>Open Sans</item>
+        <item>Georgia</item>
+        <item>Noto Serif</item>
+    </string-array>
+
+    <string name="thumbnails">Thumbnails</string>
+    <string name="more_setting_2"></string>
+    <string name="downlaod_fail">Download fail</string>
+    <string name="profile_update_msg">Profile Updated Successfully!</string>
+    <string name="sign_in_btn_text">CONTINUE</string>
+
+    <!--Islamic Publication strings-->
+    <string name="My_Bookshelf">My Bookshelf</string>
+    <string name="Register">Register</string>
+    <string name="IIS_bottom_banner_name">The IIS Digital Curriculum App</string>
+
+    <string name="acep_log_in_text">Log In</string>
+    <string name="acep_log_out_text">Log Out</string>
+    <string name="no_audio_sync">No Audio available for this Chapter.</string>
+    <string name="is_thumbnails_visibile">THUMBNAILS_VISIBLE</string>
+
+    <!-- ******OUP_CLIENT_SPRCIFIC_STRINGS******-->
+    <string name="isbn_code_info">Enter ISBN Number</string>
+    <string name="alert_invalid_isbncode">Please enter valid ISBN code</string>
+    <string name="dialog_login_edit_isbn_code">ISBN Code</string>
+    <string name="bookshelf_book_category_book">DigiBook</string>
+    <string name="bookshelf_book_category_chapter">Chapter</string>
+    <string name="legal"><u>Legal</u></string>
+    <string name="cookie_policy"><u>Cookie Policy</u></string>
+    <string name="contact_us"><u>Contact us</u></string>
+    <string name="access_code_success">Success</string>
+    <string name="generate_report_select_chapter">Select Chapter</string>
+    <string name="generate_report_select_student">Select Student</string>
+    <string name="generate_report_select_chapter_student">Select Chapter &amp; Student to generate report</string>
+    <string name="generate_report_next">Next</string>
+    <string name="generate_report_cancel">Cancel</string>
+    <string name="generate_report">Generate Report</string>
+    <string name="generated_report">Generated Report</string>
+    <string name="generate_report_content">Generated report will share on your registered email ID</string>
+    <string name="generate_report_hint">Enter another email ID</string>
+    <string name="generate_report_receive_report">You will receive the report at the email shared within 30 minutes from</string>
+    <string name="generate_report_service_success_header">Success</string>
+    <string name="generate_report_service_success_content">Report sent successfully to the user</string>
+    <string name="generate_report_service_failure_header">Next</string>
+    <string name="generate_report_service_failure_content">Sorry, Something went wrong, please try again.</string>
+    <string name="generate_report_invalid_emailID">Invalid email ID.</string>
+    <string name="select_student_to_review">Select student to review</string>
+    <string name="default_client_id">898443957132-9gmaaghlr83to4vd5hhd638avtsartu1.apps.googleusercontent.com</string>
+
+    <!-- ******WILLO_LABS_CLIENT_SPRCIFIC_STRINGS***************************************************************************************** -->
+    <string name="generatepin_code"> A pincode is required to access your bookshelf.</string>
+    <string name="pingeneration_steps">How do I generate pin code?</string>
+    <string name="enterpin_code">Enter your 12 digits pin code to access your bookshelf.</string>
+    <string name="pin_content_desc">PIN input field</string>
+    <string name="pin_label_text">PIN</string>
+    <string name="fetch_data">Validating pin code and fetching data</string>
+    <string name="dialog_login_enter_pin_code">Enter Pin Code</string>
+    <string name="validate_Pincode_error">The pin is invalid or expired. Please try again or Regenerate the pin</string>
+    <string name="generate_pincode_msg">Navigate to your LMS course and click your ebook link.Once inside Willo Reader,click the profile icon in top right,then click Generate Pin code.</string>
+    <string name="alert_error_pincode">How do I generate a pin code</string>
+    <string name="pin_expired_error">Pin Expired</string>
+    <string name="btn_submit">Submit</string>
+    <string name="book_download_alert_wifi_willo">This can take several minutes depending on file size. \nDo you still wish to download this eBook? </string>
+    <string name="book_download_alert_mobile_data">This can take several minutes depending on file size.\nYour device is currently connected to a mobile network. Do you still wish to download this eBook?</string>
+    <string name="sign_out_ok_text">OK</string>
+    <string name="search_pages">Page:</string>
+    <string name="text_book_type">eBook</string>
+    <string name="access_code_info">Use Access Code to add content on your shelf.</string>
+    <string name="view_all">View All</string>
+
+    <!-- ********************************************************************************************************************-->
+    <!--Audio-Sync sentence highlight Color-->
+    <string name="as_yellow_col">#E8BD7F</string>
+    <string name="as_red_col">#FDA9A9</string>
+    <string name="as_violet_col">#DFAFFF</string>
+    <string name="as_green_col">#B6CD8F</string>
+    <string name="as_blue_col">#7FCDE3</string>
+
+    <!--Audio-Sync color menu Color-->
+    <string name="as_menu_orange_col">#D17D00</string>
+    <string name="as_menu_pink_col">#FC5454</string>
+    <string name="as_menu_purple_col">#C061FF</string>
+    <string name="as_menu_green_col">#6F9C21</string>
+    <string name="as_menu_blue_col">#009CC7</string>
+
+
+    <!--        Navneet Strings        -->
+    <string name="new_user_text">New Subscriber?</string>
+    <string name="new_user_btn">Click to Register</string>
+
+    <string name="navneet_server_book_not_available">The DigiBook not available.</string>
+    <string name="navneet_server_book_licence_limit_reached">You have exceeded the limit to download the DigiBook on multiple devices.</string>
+    <string name="navneet_al_book_delete_title">Delete DigiBook</string>
+    <string name="navneet_alert_book_delete">Do you wish to delete this DigiBook?</string>
+    <string name="navneet_alert_delete_book_title">Delete this DigiBook?</string>
+    <string name="navneet_msg_accesscode_and_downloading">Access code is not allowed while a DigiBook is downloading.</string>
+    <string name="navneet_alert_downloading_progress">DigiBook downloading is in progress. \nPlease wait</string>
+    <string name="navneet_delete_book_msg">Are you sure if you want to delete selected DigiBook?</string>
+    <string name="navneet_exit_msg_when_downloading">Can not exit when a DigiBook is being downloaded</string>
+    <string name="navneet_exit_msg_when_refreshing">Can not refresh when a DigiBook is being downloaded</string>
+    <string name="navneet_book_opened_assigned">DigiBook Opened/Assigned</string>
+    <string name="navneet_error_in_open_book">Some error in DigiBook package. Do you want to download again?</string>
+    <string name="navneet_header_text_open_book_per_assign">DigiBook Opened/Assigned</string>
+    <string name="navneet_book_not_found">DigiBook Not Found.</string>
+    <string name="navneet_bookshelf_book_category_ebook">DigiBook</string>
+    <string name="navneet_book_download_alert">This DigiBook size is %1$s MB. \nYour device is currently connected on Mobile network. Do you still wish to download the DigiBook?</string>
+    <string name="navneet_book_download_alert_wifi">This DigiBook size is %1$s MB. \nDo you still wish to download the DigiBook?</string>
+
+    <string name="navneet_logout_msg_when_downloading">Cannot logout when a DigiBook is being downloaded</string>
+    <string name="navneet_custome_url_download_book">Do you want to download DigiBook</string>
+    <string name="navneet_book_delete_alert">Are you sure if you want to delete selected DigiBook?</string>
+    <string name="navneet_bookshelf_book_category_book">DigiBook</string>
+    <string name="toc_Standard">Standards</string>
+
+    <string name="advanced_search_title">Narrow your search :</string>
+    <string name="author">Author</string>
+    <string name="book_title">Book Title</string>
+    <string name="popup_txt_retry">Retry</string>
+    <string name="alert_title_teacher_review_popup">Alert!</string>
+    <string name="alert_msg_teacher_review_popup">Unable to save data, please try again.</string>
+    <string name="series_title_search">Series Title</string>
+    <string name="category">Category</string>
+    <string name="eisbn">eISBN</string>
+    <string name="subject_search">Subject</string>
+    <string name="publisher">Publisher</string>
+    <string name="book_content">Book Content</string>
+    <string name="interest_level_search">Interest Level:</string>
+    <string name="reset_filter">reset filter</string>
+    <string name="apply">apply</string>
+
+</resources>

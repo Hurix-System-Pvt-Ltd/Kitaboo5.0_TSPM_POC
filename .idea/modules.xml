@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Android_DemoReaderWithKitabooSDK_-_TSPM.iml" filepath="$PROJECT_DIR$/.idea/modules/Android_DemoReaderWithKitabooSDK_-_TSPM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/demoReader/Android_DemoReaderWithKitabooSDK_-_TSPM.demoReader.iml" filepath="$PROJECT_DIR$/.idea/modules/demoReader/Android_DemoReaderWithKitabooSDK_-_TSPM.demoReader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/reader/Android_DemoReaderWithKitabooSDK_-_TSPM.reader.iml" filepath="$PROJECT_DIR$/.idea/modules/reader/Android_DemoReaderWithKitabooSDK_-_TSPM.reader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sdk/Android_DemoReaderWithKitabooSDK_-_TSPM.sdk.iml" filepath="$PROJECT_DIR$/.idea/modules/sdk/Android_DemoReaderWithKitabooSDK_-_TSPM.sdk.iml" />
+    </modules>
+  </component>
+</project>

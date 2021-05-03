@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pagenav_mainIDmobile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="0dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <RelativeLayout
+        android:id="@+id/controllersContainermobile"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/mobile_bottom_thumbnail_background"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <RelativeLayout
+            android:id="@+id/controllerbuttons"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnHistoryPreviousmobile"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30dp"
+                android:background="@color/transparent"
+                android:textColor="@color/white_transparency"
+                android:textSize="35sp" />
+
+            <com.hurix.customui.views.KEditText
+                android:id="@+id/etPageNavmobile"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_toRightOf="@+id/btnHistoryPreviousmobile"
+                android:background="@color/transparent"
+                android:focusableInTouchMode="true"
+                android:gravity="end|center"
+                android:imeOptions="actionGo"
+                android:inputType="text"
+                android:maxLength="10"
+                android:minWidth="20dp"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:textColor="@color/kitaboo_main_color"
+                android:textColorHint="@color/white"
+                android:textCursorDrawable="@drawable/edit_text_cursor"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/total_page"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/etPageNavmobile"
+                android:gravity="center"
+                android:textColor="@color/kitaboo_main_color"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnHistoryNextmobile"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/total_page"
+                android:background="@color/transparent"
+                android:textColor="@color/white_transparency"
+                android:textSize="35sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/controllersContainermobile"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <GridView
+            android:id="@+id/thumbnailsGallerymobile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="4.9"
+
+            android:listSelector="@color/transparent"
+            android:numColumns="@integer/thumbnail_column_count"
+
+            android:scrollIndicators="none"
+            android:scrollbars="none"></GridView>
+
+        <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBar
+                android:id="@+id/seekbarProgress"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:splitTrack="false"
+                app:seekBarRotation="CW90" /> <!-- Rotation: CW90 or CW270 -->
+        </com.h6ah4i.android.widget.verticalseekbar.VerticalSeekBarWrapper>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

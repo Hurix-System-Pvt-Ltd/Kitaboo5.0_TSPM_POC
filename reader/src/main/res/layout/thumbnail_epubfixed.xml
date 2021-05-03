@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pagenav_mainID"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/thumbnailImagelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rlSeekBar"
+        android:background="@color/white"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:dividerHeight="10sp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:listSelector="@android:color/transparent"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/custom_mobile_image_thumb_view" />
+
+    <RelativeLayout
+        android:id="@+id/controllerbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <View
+            android:id="@+id/dummy_center_view"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" />
+
+
+        <Button
+            android:id="@+id/btnHistoryPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/dummy_center_view"
+            android:background="@android:color/transparent"
+            android:gravity="end|center"
+            android:paddingLeft="5dp"
+            android:text="I"
+
+            android:textSize="35sp" />
+
+
+        <com.hurix.customui.views.KEditText
+            android:id="@+id/goto_pg_no"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnHistoryPrevious"
+            android:background="@null"
+            android:gravity="end|center"
+            android:imeOptions="actionGo"
+            android:inputType="text"
+            android:maxLength="100"
+            android:minWidth="30dp"
+            android:padding="3dp"
+            android:singleLine="true"
+            android:textColor="@color/kitaboo_main_color"
+            android:textCursorDrawable="@drawable/edit_text_cursor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/total_page"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/goto_pg_no"
+            android:ellipsize="end"
+            android:gravity="center"
+
+            android:maxLines="1"
+            android:scrollHorizontally="true"
+            android:textColor="@color/kitaboo_main_color"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnHistoryNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/total_page"
+            android:background="@android:color/transparent"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="J"
+            android:textSize="35sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_above="@+id/controllerbuttons"
+        android:background="@drawable/mobile_bottom_thumbnail_background">
+
+        <TextView
+            android:id="@+id/tvThumb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/seekbarProgress"
+            android:background="@drawable/rect_tv"
+            android:padding="6dp"
+            android:text="page 0"
+            android:textAlignment="center"
+            android:textColor="@color/kitaboo_main_color"
+            android:visibility="visible" />
+
+        <SeekBar
+            android:id="@+id/seekbarProgress"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:indeterminate="false" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/mainContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/bottomContainer"
+            android:background="@drawable/dotted_line"
+            android:layerType="software"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/writeCommentHolder"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:background="@android:color/white"
+            android:visibility="gone">
+
+            <com.hurix.customui.bookmark.ClearableEditText
+                android:id="@+id/edtPostId"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="6"
+                android:hint="Enter your comment"
+                android:maxLength="500"
+                android:paddingLeft="10dp"
+
+                android:singleLine="true"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnPost"
+                android:layout_width="0dp"
+                android:layout_height="43dp"
+                android:layout_weight="1"
+                android:gravity="right|center"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="@string/post"
+                android:textSize="30sp"
+
+                />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/writeCommentHolder"
+            android:background="@color/mobile_bookshelf_open_archive_divider"
+            android:layerType="software" />
+
+        <RelativeLayout
+            android:id="@+id/importantbtnHolder"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="@color/note_header_bg"
+            android:clickable="true">
+
+            <TextView
+                android:id="@+id/btnImportant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txtimptext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/btnImportant"
+                android:layout_toRightOf="@+id/btnImportant"
+                android:paddingLeft="5dp"
+                android:text="enterprise_stickynote_imp_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:visibility="gone"
+                android:paddingRight="10dp"
+                android:textColor="@color/white_transparency"
+                android:textSize="25sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvHighlightedData"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_below="@+id/importantbtnHolder"
+            android:background="@android:color/transparent"
+            android:gravity="top"
+            android:padding="10dp"
+            android:scrollbars="vertical"/>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@id/tvHighlightedData"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/dotted_line"
+            android:layerType="software" />
+
+        <RelativeLayout
+            android:id="@+id/editNoteLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/divider2"
+            android:layout_above="@+id/bottomContainer"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <EditText
+                android:id="@+id/edtUserNote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:focusableInTouchMode="true"
+                android:gravity="top|left"
+                android:textColorHint="@color/grey_transparency"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:textColor="@android:color/black"
+                android:hint="@string/note_hint_msg"
+                android:inputType="textMultiLine"
+                android:isScrollContainer="true"
+                android:maxLength="500"
+                android:overScrollMode="ifContentScrolls"
+                android:singleLine="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomContainer"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <LinearLayout
+                android:id="@+id/bottomButtonContainer"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4">
+
+                <View
+                    android:id="@+id/cancelButtonDivider"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/mobile_bookshelf_open_archive_divider" />
+
+                <Button
+                    android:id="@+id/mobile_btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="@string/cancel"
+                    android:singleLine="true"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/postBtnDivider"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/mobile_bookshelf_open_archive_divider" />
+
+                <Button
+                    android:id="@+id/mobile_note_btnSave"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="@string/post"
+                    android:singleLine="true"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/mobile_note_btnShare_divide"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/mobile_bookshelf_open_archive_divider" />
+
+                <Button
+                    android:id="@+id/mobile_note_btnShare"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="@string/share"
+                    android:singleLine="true"
+                    android:textSize="20sp" />
+
+                <View
+                    android:id="@+id/lastButtonDivider"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/mobile_bookshelf_open_archive_divider" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/buttonBottomBorder"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mobile_bookshelf_open_archive_divider" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bottomDivider"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/editNoteLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/mobile_bookshelf_open_archive_divider" />
+
+
+        <RelativeLayout
+            android:id="@+id/commentListHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/writeCommentHolder"
+            android:layout_below="@+id/divider3"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/commentTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/TotalComments"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/membersListCollHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/commentTV"
+                android:clickable="false"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:paddingTop="10dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sharingLayoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"></RelativeLayout>
+
+</RelativeLayout>

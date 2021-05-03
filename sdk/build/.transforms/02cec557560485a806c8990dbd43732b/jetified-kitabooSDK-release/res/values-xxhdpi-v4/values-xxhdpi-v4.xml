@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="font_setting_margin_from_top">12dp</dimen>
+    <dimen name="link_fib_font_size">3sp</dimen>
+    <dimen name="main_bottom_setting_panel_margin">100dp</dimen>
+    <dimen name="reader_setting_margin_from_top">50dp</dimen>
+    <dimen name="setting_left_right_margin">40dp</dimen>
+    <item format="integer" name="actionbar_menu_width_mobile" type="integer">133</item>
+    <item format="integer" name="link_ic_font_size" type="integer">14</item>
+    <item format="integer" name="link_ic_size" type="integer">24</item>
+    <item format="integer" name="page_scroll_height" type="integer">495</item>
+</resources>

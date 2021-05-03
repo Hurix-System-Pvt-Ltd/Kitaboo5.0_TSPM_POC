@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="0.7"
+    android:background="@android:color/black"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/signup_top_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="@string/signup_label"
+            android:textAllCaps="false"
+            android:textColor="@color/signup_font_color"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.5">
+
+                    <EditText
+                        android:id="@+id/signup_firstname_edittxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_bottom_border"
+                        android:hint="@string/firstname_hinttext"
+                        android:lines="1"
+                        android:padding="4dp"
+                        android:singleLine="true"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:textAllCaps="false"
+                        android:textColor="@color/signup_font_color"
+                        android:textColorHint="@color/signup_hint_color"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/til1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="0.5">
+
+                    <EditText
+                        android:id="@+id/signup_lastname_edittxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_bottom_border"
+                        android:hint="@string/lastname_hinttext"
+                        android:lines="1"
+
+                        android:singleLine="true"
+                        android:textAllCaps="false"
+                        android:textColor="@color/signup_font_color"
+                        android:textColorHint="@color/signup_hint_color"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/signup_email_edittxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bottom_border"
+                    android:hint="@string/email_address_hinttext"
+                    android:lines="1"
+                    android:padding="4dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/signup_font_color"
+                    android:textColorHint="@color/signup_hint_color"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/signup_password_edittxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/edit_text_bottom_border"
+                    android:hint="@string/password_hinttext"
+                    android:inputType="textPassword"
+                    android:lines="1"
+                    android:padding="4dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="@color/signup_font_color"
+                    android:textColorHint="@color/signup_hint_color"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/signup_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@color/signin_signout_btnbg"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/signup_label"
+                android:textAllCaps="false"
+                android:textColor="@color/signup_font_color" />
+
+            <TextView
+                android:id="@+id/signup_buttom_label"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="4dp"
+                android:text="@string/signup_tems_condition_label"
+                android:textAllCaps="false"
+                android:textColor="@color/signup_font_color" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:weightSum="3"
+    android:orientation="horizontal"
+    android:id="@+id/main_container"
+    android:background="@color/white">
+    <FrameLayout
+        android:id="@+id/thirdPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_weight="1">
+
+
+        <com.hurix.epubreader.fixedepubreader.Views.FixedEpubWebView
+            android:id="@+id/thirdEpubWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:scrollbars="none"></com.hurix.epubreader.fixedepubreader.Views.FixedEpubWebView>
+
+        <LinearLayout
+            android:id="@+id/rightbookmarklayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/firstpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+        <ProgressBar
+            android:id="@+id/mpageprogress"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:indeterminate="false"
+            android:visibility="gone" />
+
+        <com.hurix.epubreader.fixedepubreader.Views.FixedEpubWebView
+            android:id="@+id/firstEpubWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"></com.hurix.epubreader.fixedepubreader.Views.FixedEpubWebView>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/secondPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:layout_weight="1">
+
+
+        <com.hurix.epubreader.fixedepubreader.Views.FixedEpubWebView
+            android:id="@+id/secondEpubWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:scrollbars="none"></com.hurix.epubreader.fixedepubreader.Views.FixedEpubWebView>
+        <LinearLayout
+            android:id="@+id/leftbookmarklayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/leftprintlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:layout_marginRight="35dp"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            android:visibility="visible">
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

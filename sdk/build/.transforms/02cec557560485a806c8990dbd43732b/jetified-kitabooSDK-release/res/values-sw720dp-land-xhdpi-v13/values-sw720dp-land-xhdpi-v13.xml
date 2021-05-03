@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="book_gallery_thumbnail_item_height">230dp</dimen>
+    <dimen name="book_gallery_thumbnail_item_width">180dp</dimen>
+    <dimen name="font_setting_margin_from_top">35dp</dimen>
+    <dimen name="main_bottom_setting_panel_margin">180dp</dimen>
+    <dimen name="setting_left_right_margin">170dp</dimen>
+</resources>

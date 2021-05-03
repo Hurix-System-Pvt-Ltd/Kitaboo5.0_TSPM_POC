@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/dateTvId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="date"
+        android:padding="1dp"
+        android:textColor="@color/ugcItemCommentScreendateTextColor"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/personDetailTvId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dateTvId"
+        android:text="perSonDetail"
+        android:padding="1dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/descriptionTvId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/personDetailTvId"
+        android:linksClickable="true"
+        android:autoLink="web"
+        android:padding="1dp"
+        android:maxEms="50"
+        android:singleLine="false"
+        android:text="description"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>

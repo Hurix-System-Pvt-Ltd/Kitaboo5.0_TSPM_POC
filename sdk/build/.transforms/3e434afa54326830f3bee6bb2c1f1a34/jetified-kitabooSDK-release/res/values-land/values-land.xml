@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottombar_approx_height">0dp</dimen>
+    <dimen name="keyboard_approx_height">0dp</dimen>
+    <dimen name="text_annotation_menu_item_width">100dp</dimen>
+    <item format="integer" name="glossary_link_ic_font_size" type="integer">21</item>
+    <item format="integer" name="glossary_link_ic_size" type="integer">36</item>
+    <item format="integer" name="link_ic_default_size" type="integer">45</item>
+    <item format="integer" name="link_ic_default_size_mobile" type="integer">45</item>
+    <item format="integer" name="link_ic_font_size" type="integer">14</item>
+    <item format="integer" name="link_ic_size" type="integer">24</item>
+    <item format="integer" name="mpo_link_ic_font_size" type="integer">21</item>
+    <item format="integer" name="mpo_link_ic_size" type="integer">36</item>
+    <item format="integer" name="note_highlight_font_size" type="integer">21</item>
+    <item format="integer" name="note_highlight_ic_size" type="integer">36</item>
+</resources>

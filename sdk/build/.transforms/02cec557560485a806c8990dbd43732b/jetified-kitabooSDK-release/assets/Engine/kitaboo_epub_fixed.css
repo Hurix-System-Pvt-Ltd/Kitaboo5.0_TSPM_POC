@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "kitabooread";
+    font-style: normal;
+    font-weight: normal;
+    src: url("file:///android_asset/kitabooread.ttf");
+}
+
+kitabooNote ,kitaboospan{
+     -webkit-user-select: none;
+
+}

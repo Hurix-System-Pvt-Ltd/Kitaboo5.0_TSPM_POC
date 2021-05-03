@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+
+    <com.hurix.epubreader.fixedepubreader.Views.CustomViewPagerFixedEpub
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foregroundGravity="center">
+    </com.hurix.epubreader.fixedepubreader.Views.CustomViewPagerFixedEpub>
+
+    <ProgressBar
+        android:id="@+id/pageprogress"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:indeterminate="false"
+        android:layout_gravity="center"
+        />
+    <!-- <LinearLayout
+         android:id="@+id/bottomholder"
+         android:layout_width="match_parent"
+         android:layout_height="30dp"
+         android:layout_alignParentBottom="true"
+         android:background="@drawable/toolbottombarbg"
+         android:gravity="bottom"
+         android:padding="3dp">
+
+         <TextView
+             android:id="@+id/txtview"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:gravity="center_vertical"
+             android:padding="2dp"
+             android:text=""
+             android:textAllCaps="false"
+             android:textSize="20sp" />
+
+         <TextSwitcher
+             android:id="@+id/txtpagecounts"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_gravity="center"
+             android:layout_weight="1"
+             android:gravity="center"
+             android:padding="2dp"
+             android:textColor="@color/bottom_banner_pageno_color"
+             android:textSize="8sp" />
+
+     </LinearLayout>-->
+    <RelativeLayout
+        android:id="@+id/assetlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</FrameLayout>

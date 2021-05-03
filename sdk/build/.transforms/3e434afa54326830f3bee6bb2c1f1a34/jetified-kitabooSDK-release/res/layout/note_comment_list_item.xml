@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:paddingTop="3dp"
+    android:paddingBottom="7dp">
+
+
+    <com.hurix.customui.note.CircleImageView
+        android:id="@+id/teacherImage"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="60dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="left"
+        android:src="@drawable/default_user"
+        android:visibility="visible"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="30dp"
+        android:layout_weight="4"
+        >
+
+        <TextView
+            android:id="@+id/dateTvId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="date"
+            android:padding="1dp"
+            android:textColor="@color/ugcItemCommentScreendateTextColor"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/personDetailTvId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dateTvId"
+            android:text="perSonDetail"
+            android:padding="1dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/descriptionTvId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/personDetailTvId"
+            android:maxEms="50"
+            android:linksClickable="true"
+            android:autoLink="web"
+            android:textStyle="italic"
+            android:singleLine="false"
+            android:text="description"
+            android:padding="1dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+

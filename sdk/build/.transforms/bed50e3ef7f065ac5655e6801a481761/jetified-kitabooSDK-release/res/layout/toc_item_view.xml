@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="16dp"
+    android:background="@color/mobile_bookshelf_open_archive_normal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:padding="@dimen/viewpadding"
+        android:id="@+id/txtpageno"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/table_of_toc_text_color"
+        android:text="Medium Text"
+        android:padding="@dimen/viewpadding"
+        android:minLines="2"
+        android:id="@+id/txttocname"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtpageno"
+        android:layout_toEndOf="@+id/txtpageno" />
+
+    <TextView
+        android:padding="@dimen/viewpadding"
+        android:textColor="@color/table_of_toc_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0%"
+        android:id="@+id/txtprogress"
+        android:visibility="invisible"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

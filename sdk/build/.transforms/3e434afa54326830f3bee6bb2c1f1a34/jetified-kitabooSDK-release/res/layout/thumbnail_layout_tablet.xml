@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pagenav_mainID"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="50dp"
+     >
+
+    <RelativeLayout
+        android:id="@+id/controllersContainer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/controllerbuttons"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true" >
+
+            <Button
+                android:id="@+id/btnHistoryPrevious"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/transparent"
+                android:textColor="@color/white_transparency"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnHistoryNext"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="40dp"
+                android:layout_toRightOf="@+id/btnHistoryPrevious"
+                android:background="@color/transparent"
+                android:textColor="@color/white_transparency"
+                android:textSize="35sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnGoArrow"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        <RelativeLayout
+            android:id="@+id/etPageNavHolder"
+            android:layout_width="100dp"
+            android:layout_height="41dp"
+            android:layout_toLeftOf="@id/btnGoArrow" >
+
+            <TextView
+                android:id="@+id/etPageNav"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/jump_to_page_box_bg"
+                android:gravity="center"
+                android:imeOptions="actionGo"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:textColor="@color/white_transparency"
+                android:textSize="20sp" />
+
+            <View
+                android:id="@+id/gotoPopupAnchor"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/etPageNav"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/controlsThumbsDevider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@id/controllersContainer"
+        android:layout_marginRight="20dp" />
+    <LinearLayout
+        android:id="@+id/filterBtnsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <View
+        android:id="@+id/filtersThumbsDevider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/filterBtnsContainer" />
+    <GridView
+        android:id="@+id/thumbnailsGallery"
+        android:layout_width="match_parent"
+        android:animateLayoutChanges="true"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/controllersContainer"
+        android:layout_alignParentLeft="true"
+        android:fastScrollEnabled="true"
+        android:listSelector="@color/transparent"
+        android:numColumns="3"
+        android:padding="20dp"
+        android:scrollbars="vertical"
+        android:layout_marginRight="7dp"
+        android:scrollbarStyle="outsideInset"
+        android:smoothScrollbar="true"
+        >
+    </GridView>
+
+</RelativeLayout>

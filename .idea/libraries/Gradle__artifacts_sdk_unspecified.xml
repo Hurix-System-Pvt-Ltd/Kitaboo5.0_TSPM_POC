@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:sdk:unspecified">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/sdk/build/.transforms/bed50e3ef7f065ac5655e6801a481761/jetified-kitabooSDK-release/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/sdk/build/.transforms/bed50e3ef7f065ac5655e6801a481761/jetified-kitabooSDK-release/AndroidManifest.xml" />
+      <root url="file://$PROJECT_DIR$/sdk/build/.transforms/bed50e3ef7f065ac5655e6801a481761/jetified-kitabooSDK-release/res" />
+      <root url="jar://$PROJECT_DIR$/sdk/build/.transforms/bed50e3ef7f065ac5655e6801a481761/jetified-kitabooSDK-release/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

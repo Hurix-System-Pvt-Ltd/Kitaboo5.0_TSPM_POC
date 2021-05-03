@@ -1,0 +1,40 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.3.72'
+    repositories {
+        google()
+        /*maven {
+            url 'https://maven.fabric.io/public'
+        }*/
+        flatDir {
+            dirs 'libs'
+        }
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.2'
+        classpath 'com.google.gms:google-services:4.3.3'
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        //classpath 'io.fabric.tools:gradle:1.31.2'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        flatDir {
+            dirs 'src/main/libs'
+        }
+    }
+}
+ext {
+    compileSdkVersion = 28
+    buildToolsVersion = "28.0.3"
+    targetSdkVersion = 28
+    minSDKVersion = 19
+    supportLibVersion = "28.0.3"
+
+}

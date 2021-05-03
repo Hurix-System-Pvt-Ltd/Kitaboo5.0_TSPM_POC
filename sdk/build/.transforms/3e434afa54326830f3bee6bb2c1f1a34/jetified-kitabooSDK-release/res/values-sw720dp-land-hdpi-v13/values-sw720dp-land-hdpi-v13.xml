@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="book_gallery_thumbnail_item_height">230dp</dimen>
+    <dimen name="book_gallery_thumbnail_item_width">200dp</dimen>
+    <item format="integer" name="glossary_link_ic_font_size" type="integer">28</item>
+    <item format="integer" name="glossary_link_ic_size" type="integer">45</item>
+</resources>

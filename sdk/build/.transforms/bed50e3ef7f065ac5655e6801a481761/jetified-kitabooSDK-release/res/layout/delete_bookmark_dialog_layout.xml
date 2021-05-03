@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/audio_view_border"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/bookMarkTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/audio_book_narration_delete_bookmark_title"
+        android:textColor="@color/black_grey"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/audioBookMarkTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bookMarkTextView"
+        android:background="@null"
+        android:layout_marginTop="20dp"
+        android:maxLines="3"
+        android:enabled="false"
+        android:padding="10dp"
+        android:textColor="@color/black_grey" />
+    <View
+        android:id="@+id/mDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="1dp"
+        android:layout_below="@+id/audioBookMarkTextView"
+        android:background="@color/grey"/>
+
+    <TextView
+        android:id="@+id/audioBookMarkDurationTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/audioBookMarkTextView"
+        android:padding="10dp"
+        android:textColor="@color/gray_active_icon" />
+
+
+    <Button
+        android:id="@+id/deleteCancelButton"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/audioBookMarkDurationTextView"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedwhitebuttons"
+        android:padding="10dp"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/black_grey" />
+
+    <Button
+        android:id="@+id/deleteBookMarkButton"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/audioBookMarkDurationTextView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/red_rounded_square"
+        android:padding="10dp"
+        android:text="@string/audio_book_narration_delete_bookmark"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+{
+	"AudioVideoBookPlayer": {
+		"toppanel": {
+			"background": "#ffffff",
+			"icons_color": "#000000",
+			"BookTitle_text_color": "#000000",
+			"Bottom_line": "#B9B9B9"
+		},
+		"sidepanel": {
+			"background": "#ffffff",
+			"tab_bg": "#ffffff",
+			"tab_border": "#095e8e",
+			"tab_text-color": "#6697B4",
+			"selected_tab_border": "#095e8e",
+			"selected_text-color": "#095e8e",
+			"selected_Chapter": {
+				"background": "#E6F5FF",
+				"title-color": "#131313",
+				"Chapter-Time-color": "#96AECE",
+				"icon_color": "#131313"
+			},
+			"title-color": "#4E4D4D",
+			"description-color": "#4E4D4D",
+			"time-color": "#96AECE",
+			"icons-color": "#8FA9C9",
+			"delete_icon-color": "#940808",
+			"divider-color": "#DBDBDB"
+		},
+		"AudioBookCover" : {
+			"Shadow-color": "#2E2E2E",
+			"opacity": "0.50",
+			"box-shadow": "0 10px 10px 0",
+			"rgba": "rgba(46,46,46,0.5)",
+			"background-color": "#000000"
+		},
+		"AudioVideo_Slider": {
+			"slider-color": "#D5DADC",
+			"chapter_icon_color": "#FFCB21",
+			"slider-filled-color": "#0091CA",
+			"Slide_controller": {
+				"controller_color": "#0091CA",
+				"opacity": "0.40",
+				"background_HTML": "rgba(0,145,202,0.40)"
+			},
+			"default_timetext_color": "#A2A2A2",
+			"current_timetext_color": "#000000",
+			"chapter_title_color": "#000000",
+			"chapter-count-text_color": "#8B8B8B",
+			"navigation_arrow_color": "#000000",
+			"disabled_navigation_arrow_color": "#B9B9B9",
+			"icon_color": "#095e8e",
+			"selected_icon-color": "#ffffff",
+			"selected_icon_bg": "#095e8e"
+		},
+		"All_Popups": {
+			"overlay_panel": {
+				"background": "#000000",
+				"opacity": "0.60",
+				"background_HTML": "rgba(0,0,0,0.60)"
+			},
+			"popup": {
+				"background": "#ffffff",
+				"border": "#707070",
+				"title_text_color": "#000000",
+				"hint_text_color": "#595959",
+				"input_text_color": "#1D1D1D",
+				"line_color": "#707070",
+				"Selected_line_colour": "#0071BC",
+				"time_text_color": "#96AECE",
+				"speed_text_color": "#828282",
+				"Selected_speed_text_color": "#095e8e",
+				"check-icon_color": "#095e8e",
+				"action_button": {
+					"main": {
+						"background": "#095e8e",
+						"text-color": "#ffffff"
+					},
+					"cancel": {
+						"border_color": "#D1D1D1",
+						"text-color": "#828282"
+					}
+				},
+				"description_text_color": "#202124",
+				"Delete_button": {
+					"background": "#962222",
+					"text-color": "#ffffff"
+				}
+			}
+		},
+		"OnVideo_Player": {
+			"background": "#000000",
+			"icon_color": "#ffffff",
+			"text_color": "#ffffff",
+			"Play_icon":{
+				"icon_color": "#ffffff",
+				"icon_overlay": {
+					"background": "#000000",
+					"opacity": "0.60",
+					"background_HTML": "rgba(0,0,0,0.60)"
+				}
+			}
+		}
+	}
+}
+
+	

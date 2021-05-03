@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btnstatus"
+        android:layout_alignParentTop="true"
+        android:paddingRight="5dp"
+        style="@style/spinner_style_white"
+        android:dropDownWidth="match_parent"
+        android:spinnerMode="dropdown"/>
+
+    <TextView
+        android:id="@+id/btnstatus"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/btnanswer"
+          android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="btnstatus" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/btnanswer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="btnanswer"
+        android:visibility="gone" />
+
+</RelativeLayout>

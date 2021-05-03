@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mobile_highlight_popup_bg"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/colorYelloIB"
+        android:layout_width="@dimen/highlightpopup_btn_width"
+        android:layout_height="@dimen/highlightpopup_btn_height"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:background="@null"
+        android:textSize="@dimen/highlightpopup_icon_size" />
+
+    <Button
+        android:id="@+id/colorRedIB"
+        android:layout_width="@dimen/highlightpopup_btn_width"
+        android:layout_height="@dimen/highlightpopup_btn_height"
+        android:layout_gravity="center"
+        android:layout_margin="2dp"
+        android:background="@null"
+        android:textSize="@dimen/highlightpopup_icon_size" />
+
+
+    <Button
+        android:id="@+id/sNotesH"
+        android:layout_width="@dimen/highlightpopup_btn_width"
+        android:layout_height="@dimen/highlightpopup_btn_height"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:textSize="@dimen/highlightpopup_icon_size" />
+
+    <Button
+        android:id="@+id/searchH"
+        android:layout_width="@dimen/highlightpopup_btn_width"
+        android:layout_height="@dimen/highlightpopup_btn_height"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:textSize="@dimen/highlightpopup_icon_size" />
+
+    <Button
+        android:id="@+id/glossaryH"
+        android:layout_width="@dimen/highlightpopup_btn_width"
+        android:layout_height="@dimen/highlightpopup_btn_height"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:textSize="@dimen/highlightpopup_icon_size"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/deleteH"
+        android:layout_width="@dimen/highlightpopup_btn_width"
+        android:layout_height="@dimen/highlightpopup_btn_height"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:textSize="@dimen/highlightpopup_icon_size" />
+
+    <Button
+        android:id="@+id/closeH"
+        android:layout_width="@dimen/highlightpopup_btn_width"
+        android:layout_height="@dimen/highlightpopup_btn_height"
+        android:layout_gravity="center"
+        android:background="@null"
+        android:textSize="@dimen/highlightpopup_icon_size"
+        android:visibility="gone" />
+
+</LinearLayout>

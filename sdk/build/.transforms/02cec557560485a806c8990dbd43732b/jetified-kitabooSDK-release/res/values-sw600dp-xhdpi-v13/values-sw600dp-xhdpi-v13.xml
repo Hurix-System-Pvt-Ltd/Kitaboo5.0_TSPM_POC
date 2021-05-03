@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="book_gallery_thumbnail_item_height">200dp</dimen>
+    <dimen name="book_gallery_thumbnail_item_width">150dp</dimen>
+    <item format="integer" name="page_scroll_height" type="integer">330</item>
+</resources>

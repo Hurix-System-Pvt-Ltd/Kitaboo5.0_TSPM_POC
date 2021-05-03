@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/nextpriviousbuttonholder"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical" >
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+        <EditText
+            android:id="@+id/editpageno"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:hint="@string/thumbnail_nav_page"
+            android:maxLength="100"
+            android:background="@color/kitaboo_main_color"
+            android:inputType="text"
+            android:imeOptions="actionGo"
+            android:paddingLeft="5dp"
+            android:textSize="20sp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"/>
+
+        <Button
+            android:id="@+id/imgbtnnext"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/kitaboo_main_color"
+            android:text="¤"
+            android:textColor="@color/white_transparency"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

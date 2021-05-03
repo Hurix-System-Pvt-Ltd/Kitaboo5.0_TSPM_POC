@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="accesscode_popup_padding">2dp</dimen>
+    <dimen name="book_title_text_size">16sp</dimen>
+    <dimen name="bookview_padding">17dp</dimen>
+    <dimen name="camera_gallery_item_textsize">14sp</dimen>
+    <dimen name="camera_gallery_label_textsize">20sp</dimen>
+    <dimen name="highlightpopup_icon_size">16sp</dimen>
+    <dimen name="multisharing_bookview_padding">1.5dp</dimen>
+    <dimen name="multisharing_btn_height">50dp</dimen>
+    <dimen name="multisharing_btn_padding">10dp</dimen>
+    <dimen name="multisharing_btn_textsize">16sp</dimen>
+    <dimen name="multisharing_btn_width">50dp</dimen>
+    <dimen name="profile_icon_size">12sp</dimen>
+    <dimen name="sharing_btn_textsize">18sp</dimen>
+    <dimen name="sub_menufab_padding">16dp</dimen>
+    <item format="integer" name="actionbar_menu_width_mobile" type="integer">105</item>
+    <item format="integer" name="seekbar_thumb_size" type="integer">40</item>
+</resources>

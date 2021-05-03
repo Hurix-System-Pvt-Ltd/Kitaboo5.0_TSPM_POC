@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mediaplayerParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:id="@+id/mediaplayercontainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="#99000000">
+
+        <RelativeLayout
+            android:id="@+id/videoPlayArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="#99000000">
+
+            <com.hurix.bookreader.views.link.VideoPlayer
+                android:id="@+id/videoview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminate="true" />
+
+            <Button
+                android:id="@+id/playPause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/play_pause_btn_circle"
+                android:padding="@dimen/media_icon_padding"
+                android:text="K"
+                android:textColor="#FFFFFF"
+                android:textSize="@dimen/media_icon_text_size" />
+
+            <TextView
+                android:id="@+id/tv_mediaplayer_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/buttonContainerID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignTop="@+id/videoPlayArea"
+            android:background="@color/transparent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/buttonBookshelf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:minWidth="50dp"
+                android:text="3"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/buttonBookshelf"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="Ravi"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/controllayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/videoPlayArea"
+            android:layout_alignLeft="@+id/videoPlayArea"
+            android:layout_alignRight="@+id/videoPlayArea"
+            android:background="@color/transparent"
+            android:visibility="visible">
+
+            <!--<Button
+                android:id="@+id/btn_cc"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:text="K"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp" />-->
+
+            <!--<com.hurix.docket.sdkRenderer.customviews.CustomFontSizeSeekBar
+                android:id="@+id/media_progress_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/totaltime"
+                android:layout_toRightOf="@+id/videotimeprogress"
+                android:paddingLeft="7dip"
+                android:paddingRight="8dp"
+                android:progress="20"
+                android:paddingTop="18dp"
+                android:layout_marginTop="20dp"
+                android:paddingBottom="18dp"
+                android:background="#00FFFFFF"
+                app:tickMarkFixed="@drawable/setting_size_seekbar_rect"
+                android:layout_centerInParent="true" />-->
+
+            <com.hurix.bookreader.views.audiovideo.CustomMediaSeekbar
+                android:id="@+id/seekbarcontrol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/videotimeprogress"
+                android:paddingBottom="15dp"
+                android:paddingRight="@dimen/media_padding"
+                android:paddingTop="15dp"
+                android:progress="20"
+                app:mediatickMarkFixed="@drawable/seekbar_tick_media" />
+
+            <TextView
+                android:id="@+id/videotimeprogress"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/totaltime"
+                android:gravity="center_vertical"
+                android:text="00:00"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/totaltime"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/btn_sound"
+                android:gravity="center_vertical"
+                android:text="00:00"
+                android:textColor="#FFFFFFFF" />
+
+            <Button
+                android:id="@+id/btn_sound"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/media_padding"
+                android:layout_marginRight="@dimen/media_padding"
+                android:layout_toLeftOf="@+id/fullscreen"
+                android:background="@null"
+                android:text="2"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp" />
+
+            <Button
+                android:id="@+id/fullscreen"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:text="("
+                android:textColor="#FFFFFF"
+                android:textSize="28sp"
+                android:visibility="gone" />
+
+            <!--<Button
+                android:id="@+id/btnclose"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/fullscreen"
+                android:background="@null"
+                android:text="2"
+                android:textColor="#FFFFFF"
+                android:textSize="28sp" />-->
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

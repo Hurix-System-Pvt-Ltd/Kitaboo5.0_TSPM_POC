@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:slideswitch="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/parent"
+        android:minWidth="@dimen/setting_popup_width"
+        android:minHeight="@dimen/setting_popup_height"
+        android:background="@drawable/toc_popup_bg"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/fontholder"
+            android:weightSum="7"
+            android:background="@drawable/setting_font_bg">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="A"
+                android:id="@+id/textView"
+                android:background="@drawable/font_size_line"/>
+
+
+            <SeekBar
+                android:id="@+id/seekfontsize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:paddingBottom="3dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="3dp"
+
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center"
+                android:text="A"
+                android:textSize="18sp"
+                android:background="@drawable/font_size_line_left"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/fontholder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="5dp"
+            android:id="@+id/modeHolder"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Night Mode"
+                android:textSize="20sp"
+                android:layout_marginRight="15dp"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nightTogglemode"
+                slideswitch:shape="oval"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/PageScroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/fontholder"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="Scroll Enabled"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/pagetogglemode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                slideswitch:shape="oval" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

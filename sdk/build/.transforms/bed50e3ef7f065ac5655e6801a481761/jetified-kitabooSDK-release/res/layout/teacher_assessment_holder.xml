@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <View
+        android:id="@+id/mainline"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/black_grey" />
+
+    <LinearLayout
+        android:id="@+id/toplayout"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_below="@id/mainline"
+        android:background="@color/black_grey"
+        android:clickable="true" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp" >
+
+            <Button
+                android:id="@+id/btnstudent"
+                android:layout_height="match_parent"
+                android:layout_width="210dp"
+                android:singleLine="true"
+                android:lines="1"
+                android:textAllCaps="false"
+                android:ellipsize="end"
+                android:background="@android:color/transparent"
+                android:text="@string/teacher_review_select_student_text"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnDropDown"
+                android:layout_width="45dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="2" >
+
+            <LinearLayout
+                android:id="@+id/assessment_pen_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_toLeftOf="@+id/btnassessmetsubmit"
+                android:layout_toStartOf="@+id/btnassessmetsubmit"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp" >
+
+                <Button
+                    android:id="@+id/btnassessmetpen"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:padding="1dp"
+                    android:text="M"
+                    android:textSize="21sp" />
+
+                <Button
+                    android:id="@+id/btnassessmetRed"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:padding="1dp"
+                    android:text="M"
+                    android:textSize="21sp" />
+
+                <Button
+                    android:id="@+id/btnassessmetGreen"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:padding="1dp"
+                    android:text=""
+                    android:textSize="21sp" />
+
+                <Button
+                    android:id="@+id/btnassessmeteraser"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:padding="1dp"
+                    android:textSize="21sp" />
+
+                <Button
+                    android:id="@+id/btnassessmetdelete"
+                    android:layout_width="45dp"
+                    android:layout_height="match_parent"
+                    android:padding="1dp"
+                    android:textSize="21sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnassessmetsubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:textAllCaps="false"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:color/white"
+                android:text="@string/done"
+                android:textColor="@color/white"
+                android:textSize="21sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/topline"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/toplayout"
+        android:background="@color/black_grey" />
+
+    <LinearLayout
+        android:id="@+id/studentandclassholder"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topline"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:weightSum="3" >
+
+        <RelativeLayout
+            android:id="@+id/classholder"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtclasslabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:text="@string/teacher_review_class_text"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/lstclasslist"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtclasslabel"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:divider="@null" >
+            </ListView>
+
+            <TextView
+                android:id="@+id/txtclassempty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+               />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/topline1"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/black_grey" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/teacherlabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="10dp"
+                android:text="@string/teacher_review_student_text"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/lstuserList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/teacherlabel"
+                android:divider="@null"
+                android:layout_margin="5dp" >
+            </ListView>
+
+            <ProgressBar
+                android:id="@+id/progressloading"
+                android:indeterminateDrawable="@drawable/progress_drawable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtstudentmsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+              />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnnext"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"
+        android:text=""
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btnprivious"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:text=""
+         android:layout_margin="5dp"
+        android:textSize="25sp" />
+
+</RelativeLayout>

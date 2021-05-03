@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="isTablet">true</bool>
+    <integer name="html_window_height">600</integer>
+    <integer name="html_window_width">600</integer>
+</resources>

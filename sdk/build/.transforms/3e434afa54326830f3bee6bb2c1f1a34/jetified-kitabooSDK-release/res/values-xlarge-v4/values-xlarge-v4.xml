@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialogfragment_comment_post">300dp</dimen>
+    <dimen name="mydata_settings_text_size">18dp</dimen>
+    <item format="integer" name="actionbar_menu_width" type="integer">150</item>
+    <item format="integer" name="glossary_link_ic_font_size" type="integer">28</item>
+    <item format="integer" name="glossary_link_ic_size" type="integer">48</item>
+    <item format="integer" name="link_ic_font_size" type="integer">42</item>
+    <item format="integer" name="link_ic_size" type="integer">72</item>
+    <item format="integer" name="mpo_link_ic_font_size" type="integer">28</item>
+    <item format="integer" name="mpo_link_ic_size" type="integer">48</item>
+    <item format="integer" name="note_highlight_font_size" type="integer">28</item>
+    <item format="integer" name="note_highlight_ic_size" type="integer">48</item>
+    <item format="integer" name="seekbar_thumb_size" type="integer">45</item>
+</resources>

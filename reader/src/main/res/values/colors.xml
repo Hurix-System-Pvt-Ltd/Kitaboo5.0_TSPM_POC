@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="transparent">#00000000</color>
+    <color name="holo_purple">#ffaa66cc</color>
+    <color name="holo_blue">#FF33E5B5</color>
+    <color name="mask_overlay">#77000000</color>
+    <color name="note_header_bg">#fffb82</color>
+    <color name="imp_layout_bg">#e86161</color>
+    <color name="blue">#165b84</color>
+    <color name="light_blue">#73b5ca</color>
+    <color name="topbar_bg_color">#ffffff</color>
+    <color name="new_bookshelf_topbar_bg_color">#ffffff</color>
+    <color name="gried_bg_shelf">#dae5e7</color>
+    <color name="gried_bg_topbar">#e6eef1</color>
+    <color name="profile_setting_panal_bg">#dae4e6</color>
+    <color name="grey">#b5b7b6</color>
+    <color name="blue_dark">#ff00719b</color>
+    <color name="orange">#ffff6600</color>
+    <color name="orange_dark">#ffe65c00</color>
+    <color name="red">#ffff4444</color>
+    <color name="red_dark">#ffcd3a3a</color>
+    <color name="green">#ff99cc00</color>
+    <color name="green_dark">#ff6d9b00</color>
+    <color name="white">#fffefefe</color>
+    <color name="darkgrey">#656565</color>
+    <color name="black_grey">#2d2d2d</color>
+    <color name="light_grey">#ebebeb</color>
+    <color name="black">#000000</color>
+    <color name="mobile_sticky_note_border">#666658</color>
+    <color name="mobile_sticky_note_bg_color">#fcf9a3</color>
+    <color name="mobile_bookshelf_open_archive_normal">#F2F2F2</color>
+    <color name="mobile_bookshelf_open_archive_pressed">#E3E3E3</color>
+    <color name="mobile_bookshelf_open_archive_divider">#B3B3B3</color>
+    <color name="preview_layout_master_background">#EFEFEF</color>
+    <color name="image_caption_background">#d2d2d2</color>
+    <color name="stickynote_cooment_btn">#4baf7b</color>
+    <!-- Analatics color code-->
+    <color name="avg_pages_read_session">#f47979</color>
+    <color name="avg_pages_read">#f282a1</color>
+    <color name="avg_reading_session">#fb725f</color>
+    <color name="avg_notes_created_shared">#f1a90f</color>
+    <color name="avg_reading_time">#fb705e</color>
+    <color name="avg_reading_time_per_session">#3696cd</color>
+    <color name="avg_highlight_shared_created">#a5c953</color>
+    <color name="avg_resources_viewed">#3e97c8</color>
+    <color name="book_assigned">#f17c9d</color>
+    <color name="book_viewed">#09b788</color>
+    <color name="book_not_viewed">#f288a5</color>
+    <color name="icon_color">#d4d4d4</color>
+    <color name="analytics_component_heading_color">#53adcd</color>
+    <color name="image_background">#7A7A7A</color>
+
+    <color name="book_coll_close_btn_color">#969393</color>
+    <color name="book_collection_close_btn_color">#191919</color>
+    <color name="book_collection_main_container_color">#e7e7e7</color>
+    <color name="book_collection_card_container_color">#FFFFFF</color>
+    <color name="book_collection_detail_container_color">#d7d7d7</color>
+    <color name="book_collection_preview_container_color">#C7C7C7</color>
+    <color name="book_collection_preview_sub_container_color">#D7D7D7</color>
+    <color name="book_collection_detail_container_color_arrow">#fb705e</color>
+    <color name="book_collection_text_color_1">#252525</color>
+    <color name="book_collection_text_color_2">#191919</color>
+    <color name="book_collection_detail_container_divider_color">#c6c6c6</color>
+    <color name="list_divider_color">#30000000</color>
+    <color name="download_all_text_color">#04709d</color>
+    <color name="kitaboo_branding_color">#52AE78</color>
+    <color name="about_us_bg_color">#032230</color>
+    <color name="Thumb">#99000000</color>
+    <color name="night_font_text">#ffffff</color>
+    <color name="font_color">#333333</color>
+    <color name="table_of_contain_text_color">#454d4e</color>
+        <color name="table_of_toc_text_color">#454d4e</color>
+        <color name="bottom_banner_pageno_color">#323232</color>
+        <color name="link_webview_done_btn_bg">#5490ff</color>
+        //DAY MODE
+        <color name="font_background">#e7e7e7</color>
+        <color name="font_border">#80333333</color>
+        <color name="disabled_font_text">#50333333</color>
+        <color name="actionlayout_background">#f7ffffff</color>
+        <color name="resetLayout_background">#ffffff</color>
+        <color name="night_actionlayout_background">#f7333333</color>
+        <color name="night_resetLayout_background">#333333</color>
+        <color name ="ugcdata_important_select">#ca2b01</color>
+
+        <!--     Comment button -->
+        <color name="commentBtn_text_colr_sel">#000000</color>
+        <color name="commentBtn_text_colr_unsel">#FFFFFF</color>
+        <color name="commentBtn_bg_stroke_colr_sel">#51645E</color>
+        <color name="commentBtn_bg_stroke_colr_unsel">#51645E</color>
+        <color name="commentBtn_bg_solid_colr_sel">#BADF2F</color>
+        <color name="commentBtn_bg_solid_colr_unsel">#000000</color>
+
+        <!--     Share button -->
+        <color name="shareBtn_text_colr_sel">#000000</color>
+        <color name="shareBtn_text_colr_unsel">#FFFFFF</color>
+        <color name="shareBtn_bg_stroke_colr_sel">#51645E</color>
+        <color name="shareBtn_bg_stroke_colr_unsel">#51645E</color>
+        <color name="shareBtn_bg_solid_colr_sel">#BADF2F</color>
+        <color name="shareBtn_bg_solid_colr_unsel">#000000</color>
+
+        <color name ="class_dropdown_item_bg_color">#ffffffff</color>
+
+        <color name="white_transparency">#ffffffff</color>
+        <!--     UGC ITEM SHARING SCREEN -->
+        <color name="ugcItemSharingScreenTitleTextColor">#ffffff</color>
+
+        <!--     Ugc item sharing cancel,share buttons holder -->
+        <color name="ugcItemSharing_bottom_bar_bg">#0A1517</color>
+
+        <!--     Ugc item sharing screen bg -->
+        <color name="ugcItemSharing_bg">#EE040E10</color>
+
+        <!--     Ugc item sharing cancel button -->
+        <color name="ugcItemSharingCancelBtn_text_colr_sel">#ff000000</color>
+        <color name="ugcItemSharingCancelBtn_text_colr_unsel">#ff000000</color>
+        <color name="ugcItemSharingCancelBtn_bg_colr_sel">#828A8C</color>
+        <color name="ugcItemSharingCancelBtn_bg_colr_unsel">#b2b2b2</color>
+
+        <!--     Ugc item share button -->
+        <color name="ugcItemSharingShareBtn_text_colr_sel">#ff000000</color>
+        <color name="ugcItemSharingShareBtn_text_colr_unsel">#ff000000</color>
+        <color name="ugcItemSharingShareBtn_bg_colr_sel">#D3D7D8</color>
+        <color name="ugcItemSharingShareBtn_bg_colr_unsel">#D3D7D8</color>
+
+        <!--     Ugc item comments screen bg -->
+        <color name="ugcItemComments_bg">#EE040E10</color>
+
+        <!--     UGC ITEM Comments SCREEN -->
+        <color name="ugcItemCommentScreenTitleTextColor">#ffffff</color>
+        <color name="ugcItemCommentScreendateTextColor">#8fd5e1</color>
+
+        <!--     Ugc divider colour-->
+        <color name="ugcItemHeaderDividerColor">#55efefef</color>
+
+        <color name ="comment_post_btn_bg_pressed">#BADF2F</color>
+        <color name="pentool_done_pressed_bg">#BADF2F</color>
+
+        <!--     UGC SCREEN COLOR COMPONENTS -->
+        <color name="ugc_screen_bg_colr">#0c1719</color>
+        <color name="btn_allData_btn_shared_holder_bg_colr">#00000000</color>
+        <color name="btn_allData_btn_shared_holder_stroke_colr">#BADF2F</color>
+        <color name="btn_allData_btn_shared_holder_divider_colr">#88BADF2F</color>
+         <color name="toc_divider_color">#e4e2e2</color>
+        <color name="mMyDataView_background">#ffffff</color>
+    <color name="mSharedwithmeview_background">#ffffff</color>
+    <color name="analytics_heading">#2d9ac3</color>
+    <color name="class_and_student_holder">#f2f2f2</color>
+    <color name="light_skyblue">#1e709f</color>
+    <color name="analytics_stroke_color">#e1e1e1</color>
+    <color name="analytics_selected_pos_color">#6fbcb7</color>
+    <color name="analytics_unselected_bg_color">#f2f2f2</color>
+    <color name="pie_chart_backpaint">#099b88</color>
+    <color name="dictionary_popup_bg">#bababa</color>
+    <color name="reader_search_bg">#b0b0b0</color>
+    <color name="help_screen_bg">#AA000000</color>
+    <color name="bookmark_view">#337b89</color>
+    <color name="highlight_popup_view">#4e6e76</color>
+    <color name="grey_transparency">#11000000</color>
+    <color name="black_transparency">#FF000000</color>
+
+    <bool name="default_circle_indicator_centered">true</bool>
+    <color name="default_circle_indicator_fill_color">#FFFFFFFF</color>
+    <color name="default_circle_indicator_page_color">#00000000</color>
+    <integer name="default_circle_indicator_orientation">0</integer>
+    <dimen name="default_circle_indicator_radius">3dp</dimen>
+    <bool name="default_circle_indicator_snap">false</bool>
+    <color name="default_circle_indicator_stroke_color">#FFDDDDDD</color>
+    <dimen name="default_circle_indicator_stroke_width">1dp</dimen>
+
+    <color name="mobile_preview_background_color">#e5e5e5</color>
+    <color name="shared_color">#479CC3</color>
+    <color name="linkiFy_color">#1155cc</color>
+
+    <color name="bottom_search_background_color">#E7E7E7</color>
+    <color name="search_edit_text_background_color">#E7E7E7</color>
+    <color name="self_note_comment_title">#3399cc</color>
+    <color name="overflow_panel_background">#F8F8F8</color>
+
+    <color name="highlight_popup_background_color">#E7E7E7</color>
+
+    <color name="top_bar_stroke_color">#8E8E8E</color>
+    <color name="top_bar_bk_grnd_color">#fdfdfd</color>
+    <color name="colorPrimary">#125688</color>
+    <color name="toast_background_color">#90000000</color>
+    <color name="search_background_color">#efefef</color>
+    <color name="SwipeUp_Background_Color">#f1f1f1</color>
+    <color name="gray_active_icon">#787878</color>
+
+    <color name="seekbar_thumb_color">#095e8e</color>
+    <color name="light_green">#ABE950</color>
+    <color name="trans_parent">#00ffffff</color>
+
+</resources>

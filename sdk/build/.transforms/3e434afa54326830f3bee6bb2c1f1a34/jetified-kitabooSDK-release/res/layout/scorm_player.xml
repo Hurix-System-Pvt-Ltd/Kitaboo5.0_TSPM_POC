@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainview"
+    tools:context="com.hurix.bookreader.views.link.ScormActivity"
+    android:background="@android:color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/buttonContainerID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/buttonDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="50dp"
+            android:minHeight="50dp"
+            android:layout_alignParentLeft="true"
+            android:textAlignment="center"
+            android:visibility="visible"
+            android:textSize="20sp"
+            android:text="3"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/buttonDone"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="Ravi"
+            android:layout_centerVertical="true"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"/>
+
+
+    </RelativeLayout>
+    <com.hurix.bookreader.views.link.ScormPlayer
+        android:layout_below="@+id/buttonContainerID"
+        android:id="@+id/scormplayer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"/>
+
+</RelativeLayout>

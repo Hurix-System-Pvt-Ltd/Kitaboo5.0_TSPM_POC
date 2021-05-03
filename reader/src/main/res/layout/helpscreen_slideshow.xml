@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Thumb"
+    >
+    <TextView
+        android:id="@+id/txtViewCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:minWidth="12dp"
+        android:paddingTop="@dimen/help_categories_padding"
+        android:paddingLeft="3dp"
+        android:paddingRight="5dp"
+        android:text="3"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/imagelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/tvcaption"/>
+    <TextView
+        android:id="@+id/txthelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/help_got_txt"
+        android:textSize="12dp"
+        android:textAllCaps="true"
+        android:padding="9dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@drawable/ripple"
+        />
+</FrameLayout>

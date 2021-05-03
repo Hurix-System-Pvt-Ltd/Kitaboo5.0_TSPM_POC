@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Larger blue circle -->
+    <item>
+        <shape android:shape="oval">
+            <padding
+                android:bottom="2dp"
+                android:left="2dp"
+                android:right="2dp"
+                android:top="2dp" />
+            <size
+                android:width="30dp"
+                android:height="30dp" />
+            <stroke
+                android:width="2dp"
+                android:color="#00BCD4" />
+        </shape>
+    </item>
+    <!-- Green circle in middle -->
+    <item>
+        <shape android:shape="oval">
+            <padding
+                android:bottom="30dp"
+                android:left="30dp"
+                android:right="30dp"
+                android:top="30dp" />
+            <stroke
+                android:width="8dp"
+                android:color="@color/light_green" />
+            <solid android:color="@color/seekbar_thumb_color" />
+        </shape>
+    </item>
+    <!-- Smaller circle at front -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#4CAF50" />
+        </shape>
+    </item>
+</layer-list>

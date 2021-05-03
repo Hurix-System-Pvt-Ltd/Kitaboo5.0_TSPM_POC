@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/webViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <com.hurix.epubreader.reflowableViewPager.ReflowableWebViewPager
+            android:id="@+id/webViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.hurix.epubreader.reflowableViewPager.ReflowableWebView
+            android:id="@+id/folioWebView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/empty_view"
+            layout="@layout/empty_view"
+            />
+
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar_reflowable"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:progressBackgroundTint="@color/kitaboo_main_color"
+        android:progressTint="@color/kitaboo_main_color"
+        android:visibility="gone"
+        tools:indeterminateTint="@color/kitaboo_main_color" />
+
+    <TextView
+        android:id="@+id/product_logo_reflow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/bookmarkviewlayout"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:id="@+id/toplayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+
+        <TextView
+            android:id="@+id/tv_check_connection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connection establised !"
+            android:padding="5dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:gravity="center"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/backRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/backTextViewView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:paddingStart="5dp"
+                android:paddingEnd="10dp"
+                android:lineSpacingExtra="-11.5sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/tvSleepTimer"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:background="@drawable/audio_sleep_timer_circle"
+                android:text="x"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+
+
+
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/playerControllerRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_weight="5">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tabsRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="4.1">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            app:tabIndicatorColor="@color/kitaboo_main_color"
+            app:tabSelectedTextColor="@color/kitaboo_main_color"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabTextColor="@color/transparent_kitaboo_main_color" />
+
+
+        <View
+            android:id="@+id/tabLineView"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tabs"
+            android:background="@color/kitaboo_main_color" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/audioBookPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tabLineView"
+            android:background="@color/white" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

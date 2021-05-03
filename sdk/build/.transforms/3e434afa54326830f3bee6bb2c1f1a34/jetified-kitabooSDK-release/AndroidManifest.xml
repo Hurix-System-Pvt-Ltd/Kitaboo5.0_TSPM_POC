@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hurix.epubreader"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:supportsRtl="true" >
+        <activity
+            android:name="com.hurix.epubreader.WebViewerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|fontScale"
+            android:resizeableActivity="true"
+            android:theme="@style/Theme.Transparent"
+            android:windowSoftInputMode="adjustPan" />
+        <activity android:name="com.hurix.epubreader.PrefActivity" />
+        <activity
+            android:name="com.hurix.renderer.MobileBackEnabledActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|fontScale|layoutDirection|locale"
+            android:resizeableActivity="true"
+            android:theme="@style/CustomActionBarThemeMobile" />
+        <activity
+            android:name="com.hurix.bookreader.views.link.LinkVideoPlayer"
+            android:configChanges="orientation|keyboardHidden|screenSize|fontScale|layoutDirection|locale"
+            android:resizeableActivity="true"
+            android:theme="@style/TransparentActivity" />
+        <activity
+            android:name="com.hurix.bookreader.views.link.LinkWebViewPlayer"
+            android:configChanges="orientation|keyboardHidden|screenSize|fontScale|layoutDirection|locale"
+            android:resizeableActivity="true"
+            android:theme="@style/CustomActionBarThemeMobile" />
+        <activity
+            android:name="com.hurix.bookreader.views.link.Webplayer"
+            android:configChanges="orientation|keyboardHidden|screenSize|fontScale|layoutDirection|locale"
+            android:resizeableActivity="true"
+            android:theme="@style/CustomActionBarThemeMobile" />
+        <activity
+            android:name="com.hurix.bookreader.views.link.LinkSlideShowActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|fontScale|layoutDirection|locale"
+            android:resizeableActivity="true"
+            android:theme="@style/TransparentActivity" />
+        <activity
+            android:name="com.hurix.epubreader.LinkWebViewPlayerepub"
+            android:configChanges="orientation|keyboardHidden|screenSize|fontScale|layoutDirection|locale"
+            android:resizeableActivity="true"
+            android:theme="@style/TransparentActivity" />
+
+        <service
+            android:name="com.hurix.bookreader.views.floatinghtmlview.FloatingHTMLViewService"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <service android:name="com.hurix.bookreader.views.audiobook.services.AudioBookService" />
+
+        <activity
+            android:name="com.hurix.customui.toc.standard.TocStandardWebview"
+            android:configChanges="orientation|keyboardHidden|screenSize|fontScale|layoutDirection|locale"
+            android:resizeableActivity="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.hurix.htmlinteractivity.HtmlnterActivity"
+            android:configChanges="keyboard|orientation|screenSize|fontScale"
+            android:resizeableActivity="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.hurix.bookreader.views.link.ScormResourceWebViewActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|fontScale"
+            android:resizeableActivity="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.hurix.epubreader.reflowableViewPager.WebViewPrintActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|fontScale"
+            android:resizeableActivity="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+    </application>
+
+</manifest>

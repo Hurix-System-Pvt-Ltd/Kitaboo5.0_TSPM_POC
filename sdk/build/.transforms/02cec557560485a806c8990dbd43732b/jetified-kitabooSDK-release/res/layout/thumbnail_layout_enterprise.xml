@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hint="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/pagenav_mainID"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/enterprise_thumbnail_holder"
+    android:background="@color/Thumb"
+    android:focusable="true"
+    android:clickable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/controllerbuttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="21dp"
+        android:gravity="center"
+        android:layout_marginRight="21dp"
+        android:padding="10dp">
+
+        <View
+            android:id="@+id/dummy_center_view"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+        <Button
+            android:id="@+id/btnHistoryNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/dummy_center_view"
+            android:background="@android:color/transparent"
+            android:textSize="35sp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="J"/>
+
+        <Button
+            android:id="@+id/btnHistoryPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btnHistoryNext"
+            android:background="@android:color/transparent"
+            android:textSize="35sp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:text="I"/>
+
+        <TextView
+            android:id="@+id/page"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="@string/reader_page"
+            android:gravity="center_vertical"
+            android:textSize="20sp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_toRightOf="@+id/dummy_center_view"
+            />
+
+
+        <com.hurix.customui.views.KEditText
+            android:id="@+id/goto_pg_no"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:gravity="center"
+            android:hint="@string/thumbnail_nav_page"
+            android:textColorHint="@color/white"
+            android:maxLength="100"
+            android:inputType="text"
+            android:imeOptions="actionGo"
+            android:textCursorDrawable="@color/black"
+            android:focusableInTouchMode="true"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:layout_toRightOf="@+id/page"
+            android:layout_alignParentTop="true" />
+        <Button
+            android:id="@+id/goto_pg_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/transparent"
+            android:layout_toRightOf="@+id/goto_pg_no"
+            android:textSize="35sp" />
+    </RelativeLayout>
+
+    <com.hurix.customui.views.SeekBarHint
+        android:id="@+id/seekbarProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_above="@+id/controllerbuttons"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:layout_marginTop="10dp"
+        android:indeterminate="false"
+        hint:yOffset="20dp" />
+
+    <it.sephiroth.android.library.widget.HListView
+        android:id="@+id/thumbnailImagelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/seekbarProgress"
+        android:choiceMode="singleChoice"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"
+        android:focusable="true"
+        android:dividerHeight="10sp"
+        android:focusableInTouchMode="true" />
+</RelativeLayout>
