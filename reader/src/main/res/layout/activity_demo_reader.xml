@@ -8,8 +8,8 @@
         android:id="@+id/downloadProgressBar"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:visibility="gone"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -17,7 +17,6 @@
         android:layout_centerInParent="true"
         android:layout_margin="15dp"
         android:gravity="center">
-
 
 
         <TextView
@@ -47,7 +46,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/divider"
-            android:layout_marginBottom="60dp"
             android:gravity="center"
             android:lineSpacingExtra="2sp"
             android:padding="5dp"
@@ -63,13 +61,14 @@
             android:layout_below="@+id/txtmsg"
             android:orientation="vertical">
 
+
             <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
 
                 <ProgressBar
-                    android:id="@+id/pdfProgressBar"
+                    android:id="@+id/fixedProgressBar"
                     style="?android:attr/progressBarStyleHorizontal"
                     android:layout_width="40dp"
                     android:layout_height="40dp"
@@ -77,83 +76,20 @@
                     android:background="@drawable/circle_shape"
                     android:indeterminate="false"
                     android:max="100"
-                    android:translationZ="90dp"
                     android:progress="0"
-                    android:visibility="gone"
-                    android:progressDrawable="@drawable/circular_progress_bar" />
+                    android:progressDrawable="@drawable/circular_progress_bar"
+                    android:translationZ="90dp"
+                    android:visibility="gone" />
 
                 <Button
                     android:id="@+id/buttonpdf"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
-                    android:text="Download PDF ebook"
+                    android:text="LAUNCH PDF"
                     android:textAllCaps="false"
-                    android:visibility="visible" />
 
-            </FrameLayout>
-
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp">
-
-                <ProgressBar
-                    android:id="@+id/reflowProgressBar"
-                    style="?android:attr/progressBarStyleHorizontal"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="center"
-                    android:background="@drawable/circle_shape"
-                    android:indeterminate="false"
-                    android:max="100"
-                    android:translationZ="90dp"
-                    android:progress="0"
-                    android:visibility="gone"
-                    android:progressDrawable="@drawable/circular_progress_bar" />
-
-                <Button
-                    android:id="@+id/reflow_v3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:background="@color/white"
-                    android:text="Download Reflowable ebook"
-                    android:textAllCaps="false"
-                    android:visibility="visible" />
-            </FrameLayout>
-
-
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp">
-
-            <ProgressBar
-                android:id="@+id/fixedProgressBar"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:background="@drawable/circle_shape"
-                android:indeterminate="false"
-                android:max="100"
-                android:translationZ="90dp"
-                android:progress="0"
-                android:visibility="gone"
-                android:progressDrawable="@drawable/circular_progress_bar" />
-
-            <Button
-                android:id="@+id/fixed_v3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/white"
-                android:text="LAUNCH In10 Media Book"
-                android:textAllCaps="false"
-
-                />
+                    />
             </FrameLayout>
         </LinearLayout>
 
