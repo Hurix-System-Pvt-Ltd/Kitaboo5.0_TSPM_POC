@@ -6358,6 +6358,8 @@ public class PlayerActivity extends AppCompatActivity implements OnPlayerEventsL
         if (mReaderType == EBookType.FIXEDKITABOO) {
             GlobalDataManager.getInstance().setCurrentAScolor(getResources().getString(R.string.as_yellow_col));
             GlobalDataManager.getInstance().setCurrentASMenucolor(getResources().getString(R.string.as_menu_orange_col));
+
+            GlobalDataManager.getInstance().clearPdfPageData();
         }
 
         super.onBackPressed();
