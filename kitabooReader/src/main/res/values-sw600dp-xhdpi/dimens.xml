@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="close_width">37.5dp</dimen>
+    <dimen name="close_height">37.5dp</dimen>
+    <dimen name="registration_dialog_width_new">400dp</dimen>
+
+    <dimen name="book_gallery_thumbnail_item_width">150dp</dimen>
+    <dimen name="book_gallery_thumbnail_item_height">200dp</dimen>
+    <dimen name="book_thumbnail_item_height">220dp</dimen>
+    <dimen name="book_thumbnail_item_width">171dp</dimen>
+    <dimen name="profile_setting_container_top_margin">350dp</dimen>
+    <dimen name="edit_profile_setting_txt_top_margin">100dp</dimen>
+    <dimen name="profile_picture_margin_top">40dp</dimen>
+
+    <dimen name="search_result_test_top_margin">20dp</dimen>
+    <dimen name="search_container_height">160dp</dimen>
+    <dimen name="search_bookthumb_width">100dp</dimen>
+    <dimen name="search_bookthumb_height">140dp</dimen>
+    <dimen name="search_container_left_right_margin">22dp</dimen>
+    <dimen name="search_container_top_margin">15dp</dimen>
+    <dimen name="search_container_bottom_margin">50dp</dimen>
+    <dimen name="search_common_margin">10dp</dimen>
+    <dimen name="search_margin_between_text_view">10dp</dimen>
+    <dimen name="search_left_margin_to_instances">30dp</dimen>
+
+    <item name="action_bar_bottom_pdf_margin" format="integer" type="integer">400</item>
+
+    <item name="action_bar_bottom_reflowable_margin" type="integer" format="integer">520</item>
+
+    <item name="teacher_review_topbar_margin" type="integer" format="integer">35</item>
+
+    <!--Bottom action bar icons size-->
+    <item name="action_icon_size" format="integer" type="integer">20</item>
+    <item name="action_icon_min_width" format="integer" type="integer">90</item>
+</resources>

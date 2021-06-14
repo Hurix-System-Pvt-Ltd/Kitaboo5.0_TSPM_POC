@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="book_thumbnail_layout_weight">4</integer>
+    <integer name="small_book_thumbnail_layout_weight">1</integer>
+
+    <integer name="btn_layout_margintop">20</integer>
+    <integer name="btn_layout_marginbutton">5</integer>
+
+    <integer name="world_book_thumbnail_layout_weight">3</integer>
+    <integer name="world_book_textContainer_layout_weight">6</integer>
+    <dimen name="layoutshadow_Container_hight">430dp</dimen>
+    <dimen name="layoutshadow_Container_width">550dp</dimen>
+
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txtsynccount"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#57acca" />
+
+    <RelativeLayout
+        android:id="@+id/editHeaderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/shelfDeleteIB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/delete_shelf"
+            android:minHeight="35dp"
+            android:minWidth="35dp"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/editHeaderCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toLeftOf="@id/shelfDeleteIB"
+            android:background="@drawable/categroy_shift_arrows_bg"
+            android:gravity="center_vertical"
+            android:minHeight="35dp" >
+
+            <Button
+                android:id="@+id/ivCatMovUp"
+                android:layout_width="47dp"
+                android:layout_height="35dp"
+                android:background="@color/transparent"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="#FF688D9D" />
+
+            <Button
+                android:id="@+id/ivCatMovDown"
+                android:layout_width="47dp"
+                android:layout_height="35dp"
+                android:background="@color/transparent"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <com.hurix.kitaboocloud.common.ClearableEditText
+            android:id="@+id/catagoryEdit"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@id/editHeaderCenter"
+            android:background="@drawable/bookshelf_edit_mode_txt_bg"
+            android:ems="8"
+            android:imeOptions="actionDone"
+            android:maxLength="100"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="@color/kitaboo_main_color"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+</FrameLayout>

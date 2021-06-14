@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_height="100dp">
+        <TextView
+            android:id="@+id/swipe_hint_text"
+            android:layout_width="wrap_content"
+            android:text="A"
+            android:gravity="center"
+            android:shadowColor="@color/black"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <ViewFlipper
+        android:id="@+id/viewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="@android:color/transparent">
+    </ViewFlipper>
+
+</LinearLayout>

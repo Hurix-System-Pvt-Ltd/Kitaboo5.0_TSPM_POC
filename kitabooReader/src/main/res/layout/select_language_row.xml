@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="10dp">
+
+
+
+    <RadioButton
+        android:id="@+id/countryCodeSelectedRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:clickable="false"
+        android:buttonTint="@color/kitaboo_main_color"
+        android:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/langTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/countryCodeSelectedRadioButton"
+        android:layout_centerVertical="true"
+        android:textColor="@color/night_mode"
+        android:gravity="start"
+        android:textSize="20sp"
+        android:text="English"
+
+        />
+
+
+</RelativeLayout>

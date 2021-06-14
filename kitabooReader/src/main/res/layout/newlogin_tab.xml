@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/background_img"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:animationCache="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--  Header  Starts-->
+
+        <RelativeLayout
+            android:id="@+id/bottom_banner"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+            android:layout_above="@+id/languageChangeRelativeLayout"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:text="@string/IIS_bottom_banner_name"
+                android:layout_centerInParent="true">
+            </TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/languageChangeRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:id="@+id/tvPowerByIDContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/tvPowerByID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="@string/powered_by"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/kitabooLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:paddingRight="2dp"
+                    android:text="Ù"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="@dimen/kitaboo_logo_textsize" />
+
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/languageRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/tvPowerByIDContainer"
+                >
+
+                <TextView
+                    android:id="@+id/langLeftTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:lineSpacingExtra="-21sp"
+                    android:textColor="#fefefe"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+
+                    />
+
+                <TextView
+                    android:id="@+id/selectedLangTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/langLeftTextView"
+                    android:lineSpacingExtra="-21sp"
+                    android:text=""
+                    android:textColor="#fefefe"
+
+                    android:textSize="15sp"
+
+                    android:textStyle="bold"
+
+
+                    />
+
+                <TextView
+                    android:id="@+id/langDropDownTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/selectedLangTextView"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:lineSpacingExtra="-21sp"
+                    android:textColor="#fefefe"
+                    android:textSize="15sp" />
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/nv_PoweredBy_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/nv_PowerByID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    android:layout_centerVertical="true"
+                    android:text="@string/powered_by"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/nvPoweredbyLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/nv_PowerByID"
+                    android:padding="2dp"
+                    android:src="@drawable/bottom_logo_signin_2"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/login_header_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/newlogintab_logo_margin_top">
+            <!-- Logo Start-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/kitabLogotab"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="300dp"
+                android:id="@+id/txtTdee"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/kitabLogotab"
+                android:visibility="gone"
+                android:text="Ingresa tus credenciales y empieza a  disfrutar tus contenidos digitales"
+                />
+            <!-- Logo Ends -->
+        </RelativeLayout>
+
+        <!--  Header Ends -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header"
+            android:gravity="center"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.15"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/logo_lineiarlayout21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_below="@+id/header"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.7"
+                android:orientation="vertical">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tabs1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    app:tabGravity="fill"
+                    app:tabIndicatorColor="#095e8e"
+                    app:tabTextAppearance="@style/TabLayoutTextStylelogin"
+                    app:tabSelectedTextColor="@color/white"
+                    app:tabTextColor="@color/white"/>
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:background="#095e8e"/>
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/vwpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2.2"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.15"></LinearLayout>
+        </LinearLayout>
+        <!-- Footer Start -->
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"></LinearLayout>
+        <!-- Footer Ends -->
+    </RelativeLayout>
+</RelativeLayout>

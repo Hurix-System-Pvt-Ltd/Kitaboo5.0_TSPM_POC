@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="help_screens">
+        <item>help_screen1</item>
+        <item>help_screen2</item>
+    </string-array>
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+  /  <string name="no_internet_try_again">Angitt e-ID ikke registrert. Vennligst prøv igjen med en annen e-ID.</string>
+    <string name="resource_not_supported">Denne ressursen er ikke støttet.</string>
+    <string name="bookshelf_category_default_category">Show All Items</string>
+    <string name="bookshelf_category_default_category_books">All Items</string>
+    <string name="bookshelf_category_download">Show Downloaded</string>
+    <string name="bookshelf_category_download_books">Downloaded</string>
+    <string name="action_settings">innstillinger</string>
+    <string name="dummy_accessCode">55555</string>
+    <string name="need_permission">Need to give permission</string>
+  //  <string name="forgot_email_send_success_msg">Instruksjoner for tilbakestilling av passord har blitt sendt til din e-post.</string>
+  /  <string name="forgot_email_send_fail_msg">Angitt e-ID ikke registrert. Vennligst prøv igjen med en annen e-ID.</string>
+  /  <string name="alert_empty_accesscode">Oppgi tilgangskode</string>
+    <string name="alert_empty_emailid">Please enter Email id</string>
+   / <string name="alert_invalid_accesscode">Fyll inn gyldig tilgangskode</string>
+   / <string name="network_error">Internett-tilkobling tilgjengelig.</string>
+    <string name="network_error_new">Internet connection unavailable.</string>
+    <string name="alert_bookshelf_empty">Shelf name can not be empty</string>
+    <string name="alert_bookshelf_already_exist">Shelf already exists. Please edit shelf name.</string>
+  /  <string name="alert_book_delete">Ønsker du å slette denne boken?</string>
+/    <string name="alert_video_delete">Ønsker du å slette denne videoen?</string>
+    <string name="alert_audio_delete">Ønsker du å slette denne lyden?</string>
+    <string name="alert_delete_book_title">Slett denne boken?</string>
+    <string name="alert_delete_book_msg">Denne handlingen er irreversibel</string>
+    <string name="alert_shelf_delete">Do you wish to delete book Shelf?</string>
+    <string name="pentool_delete_alert_msg">This action will permanently clear the selected drawings. Do you wish to continue?</string>
+    <string name="pentool_delete_alert_title">Clear all pen marks</string>
+    <string name="shelf_delete_alert_title">Delete Shelf</string>
+    <string name="delete_note_title">Delete</string>
+    <string name="delete_protractor">Are you sure you want to delete?</string>
+    <string name="delete_note_message">Do you wish to delete this Note?</string>
+ /   <string name="alert_title">Varsling</string>
+    <string name="alert_title_teacher_review_popup">Varsling!</string>
+    <string name="alert_msg_teacher_review_popup">Kan ikke lagre data, kan du prøve på nytt.</string>
+    <string name="logout_title">Log out</string>
+    <string name="sync_title">Submit Data</string>
+    <string name="sync_clear_title">Clear Data</string>
+    <string name="sync_message">Svar vil bli sendt, og kan ikke endres. \ NVil du fortsette?</string>
+    <string name="individual_sync_message">Answers will be submitted. Do you wish to continue?</string>
+    <string name="sync_clear_message">Svarene vil bli slettet. Ønsker du å fortsette?</string>
+    <string name="sync_message_nodata">Ingen data å sende.</string>
+    <string name="check_message_nodata">No data to clear.</string>
+    <string name="sync_message_fib_data_clear">Selected Fib has been cleared.</string>
+//    <string name="al_book_delete_title">Slett bok</string>
+//    <string name="al_video_delete_title">Slett video</string>
+    <string name="msg_accesscode_and_downloading">Genererer Tilgangskode er ikke tillatt mens en bok lastes ned.</string>
+    <string name="page_not_found">Skriv inn et gyldig sidenummer.</string>
+    <string name="page_not_exist">Page not Exist.</string>
+    <string name="alert_no_shared_notes">No shared notes found.</string>
+    <string name="alert_no_notes">No notes found.</string>
+    <string name="alert_no_shared_highlight">No shared highlights found.</string>
+    <string name="al_no_highlight">No highlights found.</string>
+    <string name="alert_no_shared_all_data">No shared data found.</string>
+    <string name="alert_no_data">Ingen data funnet</string>
+  /  <string name="alert_exit_title">Exit</string>
+    <string name="alert_password_validation">Passordet må være mellom 8 og 15 tegn.</string>
+    <string name="alert_password_minimum_limit">Your password must be at least 8 characters long. Please try another.</string>
+    <string name="alert_password_maximum_limit">Your password must smaller than 20 characters. Please try another.</string>
+    <string name="ugc_setting_select_message">Velg minst ett.</string>
+    <string name="validation_empty_data">Ingen data funnet. Vær så snill, prøv på nytt.</string>
+    <string name="server_sucess_msg">No Data found, Please try again.</string>
+    <string name="server_fail_msg">No Data found, Please try again.</string>
+    <string name="server_empty_field_msg">Fyll ut alle feltene.</string>
+    <string name="server_invalid_field_msg">Fyll inn gyldige data for alle feltene.</string>
+    <string name="server_invalid_type_msg">Please enter valid data for all the fields.</string>
+    <!--    <string name="server_token_expired_msg">Your session has expired, Please login again to sync your data.</string>-->
+    <string name="server_token_expired_msg">Økten er ikke gyldig.</string>
+    <string name="server_multiple_client_msg">Flere klienter. Vær så snill, prøv på nytt!</string>
+    <string name="server_multiple_institutes_msg">Flere institutter. Vær så snill, prøv på nytt.</string>
+//    <string name="server_duplicate_emailid_msg">Angitt e-ID finnes allerede.</string>
+    <string name="not_purchased">Du er ikke autorisert til å få tilgang til denne boken, det er ikke tildelt eller kjøpt av deg.</string>
+    <string name="error_on_file_access_content">Sorry epub kindly contact</string>
+    <string name="server_accesscode_invalid_msg">Adgangskode skrevet inn er ugyldig!</string>
+    <string name="server_accesscode_invalid_with_other_user_msg">Tilgangskode har blitt innløst av en annen bruker!</string>
+    <string name="server_accesscode_invalid_with_same_user_msg">Adgangskode har allerede blitt innløst.</string>
+//    <string name="server_accesscode_invalid_with_other_institute">Du har ikke lov til å innløse adgangskoden for dette instituttet.</string>
+//    <string name="server_accesscode_invalid_distribustion_fail_msg">Feil på forsontilgangskode. Prøv igjen senere.</string>
+    <string name="server_client_invalid_msg">No Data found, Please try again.</string>
+    <string name="server_book_licence_limit_reached">Du har overskredet grensen for å laste ned denne boken på flere enheter.</string>
+    <string name="server_video_licence_limit_reached">You have exceeded the limit to download the video on multiple devices.</string>
+    <string name="server_book_licence_expired">Denne boken kan ikke lastes ned som lisensen av boken er utløpt.</string>
+    <string name="server_book_not_available">The book not available.</string>
+    <string name="server_client_trial_redirect">Client rettssaken viderekobling.</string>
+    <string name="server_account_inactive">Konto inaktiv.</string>
+    <string name="server_time_out_erros">Server ikke tilgjengelig akkurat nå, prøv igjen senere.</string>
+//    <string name="server_unknown_error">Lav nettverkstilkobling, prøv igjen</string>
+    <string name="please_wait">Vennligst vent…&#8230;</string>
+    <string name="alert_invalid_emailid">Please enter a valid Email ID</string>
+ /   <string name="alert_empty_mail_id">Email ID kreves</string>
+    <string name="alert_empty_password">Password is required</string>
+    <string name="alert_empty_first_name">First Name is required</string>
+  //  <string name="alert_empty_user_name">Fullt navn er påkrevd</string>
+    <!--<string name="first_name_mandatory">First name is mandatory</string>-->
+/    <string name="alert_invalid_input">ugyldige inndata</string>
+ //   <string name="alert_full_name_character_limit">Fullt navn må være mellom 1 og% 1 $ s tegn</string>
+ //   <string name="alert_user_name_character_limit">Brukernavn må være mellom 1 og% 1 $ s tegn</string>
+  /  <string name="alert_empty_confirm_password">Bekreft passordet ditt</string>
+    <string name="alert_empty_last_name">Last Name is required</string>
+    <string name="alert_last_name_character_limit">Last Name must be between 1 and %1$s characters</string>
+ //   <string name="alert_emailid_character_limit">Email ID må være mellom 1 og% 1 $ s tegn</string>
+  /  <string name="alert_password_character_limit">Passordet må være mellom% 1 $ s og% 2 $ s tegn</string>
+   / <string name="alert_wrong_password">Passord samsvarte ikke</string>
+/    <string name="alert_wrong_email_id">Email ID tilhører en eksisterende konto</string>
+/    <string name="confirm_password_not_match">Passordene er ikke like.</string>
+//    <string name="password_not_match">Gammelt passord og det nye passordet kan ikke være det samme.</string>
+    <string name="password_and_newpassword_match">Please enter different password</string>
+    <string name="confirmpassword_and_newpassword_mismatch">New password and Confirm new password does not match</string>
+    <string name="alert_all_field_required">Required field cannot be left blank</string>
+ /   <string name="toast_rest_password_success">Byttingen av passordet ditt er velykket</string>
+ /   <string name="toast_rest_password_in_progress">Vennligst vent</string>
+    <string name="alert_rest_password_success">Your password has been reset. Please check your eMail for new password..</string>
+    <string name="alert_rest_password_title">Reset Password</string>
+    <string name="download_browser_dialog_message">You will be redirected to install Firefox browser. Do you want to continue?</string>
+    <string name="download_browser_dialog_title">Download Firefox?</string>
+   // <string name="wrong_password">Feil passord</string>
+    <string name="alert_highlight_delete_title">Delete</string>
+    <string name="alert_highlight_delete_message">Do you wish to delete this highlight?</string>
+    <string name="toast_message">Toast message</string>
+  //  <string name="alert_signout_message">Ønsker du å logge ut?</string>
+  //  <string name="alert_signout_title">Logg ut</string>
+    <string name="alert_signout_message_internet_unavailable">Internet Connection Unavailable unable to sync data Do you still want to Sign Out?</string>
+    <string name="alert_signout_message_data_syncing">Data Syncing in Progress Do you still want to Sign Out?</string>
+    <string name="alert_signout_title_while_data_sync_going">Sign Out</string>
+    <string name="alert_error_save_settings">Feil på Lagre innstillinger</string>
+    <string name="alert_successfully_submit_data">Dine data er lagret.</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+ //   <string name="resource_search_hint">Søk med nøkkelord</string>
+  //  <string name="no_search_result_found">Søkeresultat ikke funnet</string>
+    <string name="coverage">Coverage</string>
+    <string name="time_spent">Time Spent</string>
+    <string name="network_not_available_msg">Internet connection unavailable.</string>
+    <string name="ugc_data_all">Alle</string>
+    <string name="ugc_tab_notes">Merknader</string>
+    <string name="ugc_tab_highlights">Høydepunkter</string>
+    <string name="ugc_tab_bookmark">bokmerker</string>
+    <string name="btn_note">Merknader</string>
+    <string name="ugc_mobile_tab_my_data">My data</string>
+    <string name="ugc_mobile_tab_my_notes">Mine notater</string>
+    <string name="ugc_mobile_tab_shared_with_me">Delt med meg</string>
+    <string name="btn_highlight">Høydepunkter</string>
+    <string name="toc_not_found">No TOC found !</string>
+    <string name="btn_all_data">Alle Data</string>
+    <string name="btn_shared_with_me">Delt med meg</string>
+    <string name="btn_settings">Settings</string>
+    <string name="comments">kommentarer</string>
+    <string name="share">Dele</string>
+    <string name="receive">Motta</string>
+    <string name="done">Ferdig</string>
+    <string name="teacher">lærere</string>
+ //   <string name="student">alle studenter</string>
+    <string name="share_this_note_with">Del dette notatet med</string>
+ //   <string name="select_class">Velg klasse</string>
+    <string name="post">Post</string>
+    <string name="TotalComments">Comments</string>
+    <string name="note_share_title">Del notat</string>
+    <string name="stickynote_imp_text">Tap to make this note important</string>
+    <string name="enterprise_stickynote_imp_text">Tap to make this note important</string>
+    <string name="stickynote_imp_undo_text">Tap to make this note normal</string>
+    <string name="note_empty_msg">Please enter the note data</string>
+    <string name="BOOKMARK_READONLY_TITLE">Read only</string>
+    <string name="BOOKMARK_READONLY_MSG">Please connect to internet to edit the bookmark.</string>
+    <string name="UGC_ACCESS_INTERNET_NEEDED_TITLE">Internet connection needed</string>
+    <string name="UGC_ACCESS_INTERNET_NEEDED_MSG">Make sure you are connected to the internet and try again.</string>
+    <string name="powered_by">Drevet av</string>
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="status">Status</string>
+    <string name="empty_message">00:00</string>
+    <string name="analytics_server_error_message">Some error from server !</string>
+    <string name="analytics_server_nodata_message">No data found.</string>
+    <string name="teacher_review_class_text">Klasse</string>
+ //   <string name="teacher_review_select_student_text">Velg student</string>
+    <string name="teacher_review_student_text">Student</string>
+    <string name="teacher_review_teacher_text">Teacher</string>
+    <string name="teacher_review_done_text">Done</string>
+    <string name="ugc_mydata_chapter_label">Kapittel::&#160;</string>
+    <string name="ugc_mydata_chapter_label_fixedLayout">Kapittel::&#160;</string>
+    <string name="ugc_mydata_page_label">Kapittel::&#160;</string>
+    <string name="ugc_mydata_shared_by_label">Delt av: </string>
+    <string name="alert_toc_no_bookmarks_found">No bookmarks found.</string>
+    <string name="alert_tor_no_resources_found">Ressurs ikke funnet.</string>
+    <string name="ok">OK</string>
+    <string name="bookmark_page_label">"page - "</string>
+    <string name="delete_shelf_title">Delete Category</string>
+    <string name="delete_shelf_msg">Are you sure if you want to delete this category?</string>
+    <string name="delete_book_msg">Are you sure if you want to delete selected book?</string>
+    <string name="category_name_already_exists_msg">Shelf already exists. Please edit Shelf name.</string>
+    <string name="download_btn_text">Downloadable eBooks</string>
+ /   <string name="login_btn_text">Logg Inn</string>
+  /  <string name="login_header_text">Logg inn</string>
+    <string name="login_webview_text">LOGIN</string>
+    <string name="dialog_login_email_id_text">Epost id</string>
+//    <string name="dialog_login_email_id_hint_text">Skriv inn e-ID</string>
+  /  <string name="dialog_login_username_hint_text">Brukernavn</string>
+ /   <string name="dialog_login_password_text">Passord</string>
+    <string name="dialog_login_password_hint_text">Enter Password</string>
+    <string name="dialog_login_submit_text">Sign in</string>
+//    <string name="dialog_login_forgot_password_text">Glemt passord?</string>
+ /   <string name="remember_me">Husk meg</string>
+    <string name="dialog_login_accesscode_have_text">Have an Access Code?</string>
+    <string name="dialog_login_accesscode_message_text">Use access code to view the eBooks</string>
+//    <string name="dialog_login_edit_access_code">Tilgangskode</string>
+    <string name="dialog_login_btn_go_text">Go</string>
+ //   <string name="access_code_text">Løs inn tilgangskode</string>
+ //   <string name="forgot_password_text">Glemt passord</string>
+  /  <string name="forgot_password_hint">Epost id </string>
+    <string name="access_code_submit_text">Sende inn</string>
+    <string name="access_code_cancel_text">Avbryt</string>
+  //  <string name="registration_header_text">Melde deg på</string>
+    <string name="new_to_profil">New to Profile?</string>
+  //  <string name="registration_first_name_text">Fornavn</string>
+  //  <string name="registration_first_name_hint_text">Skriv inn fornavn</string>
+  //  <string name="registration_last_name_text">Etternavn</string>
+   // <string name="registration_last_name_hint_text">Skriv inn etternavn</string>
+    <string name="registration_email_id_text">Email ID</string>
+  //  <string name="registration_email_id_hint_text">Epostadresse</string>
+    <string name="registration_Password_text">Password</string>
+    <string name="registration_Password_hint_text">Password</string>
+   // <string name="registration_ComfirmPassword_text">bekreft passord</string>
+    <string name="registration_ComfirmPassword_hint_text">Confirm Password</string>
+    <string name="registration_bottom_text">You are 1 step away from viewing your eBooks!</string>
+    <string name="registration_bottom_msg">By clicking on Submit you confirm that you are at least \n 13 years of age and agree to our </string>
+    <string name="registration_bottom_msg1"><u>Terms and conditions</u></string>
+    <string name="registration_msg">Create your %1$s account by entering the information below.</string>
+    <string name="No_Downloadable_Books_Msg">No eBooks available for download</string>
+    <string name="signout_text">Logg ut</string>
+  //  <string name="profile_setting_button_text">Profilinnstillinger</string>
+   / <string name="help_text">Hjelp</string>
+  /  <string name="forgot_submit">Sende inn</string>
+    <string name="profile_setting_welcome_text">Velkommen,% 1 $ s</string>
+    <string name="profile_setting_emailid_text"><b> E-ID: </b>% 1 $ s</string>
+//    <string name="profile_setting_change_btn_text">Bytt passord</string>
+    <string name="profile_setting_change_btn_text_header">User Settings</string>
+    <string name="profile_setting_change_btn_description">Change current password</string>
+    <string name="profile_setting_cancel_btn_text">Avbryt</string>
+  //  <string name="profile_setting_current_password_text">Nåværende passord</string>
+   // <string name="profile_setting_current_new_password_text">Nytt passord</string>
+   // <string name="profile_setting_current_confirm_new_password_text">Bekrefte nytt passord</string>
+    <string name="profile_setting_change_animation_header_text">Change Page Animation</string>
+    <string name="profile_setting_change_animation_category_header">Page Animation</string>
+    <string name="profile_setting_change_animation_category_description">Change the page animation type of the book</string>
+//    <string name="exit_msg_when_downloading">Kan ikke gå ut når en bok blir lastet ned.</string>
+//    <string name="exit_msg_when_refreshing">Kan ikke oppdatere når en bok blir lastet ned.</string>
+    <string name="exit_msg">Do you want to exit ?</string>
+ //   <string name="logout_msg_when_downloading">Kan ikke logge ut når en bok blir lastet ned</string>
+    <string name="logout_msg">Do you wish to log out?</string>
+    <string name="loading_ebook_msg">Loading your eBook</string>
+    <string name="login_forgot_password">Forgot Password?</string>
+    <string name="login_new_user">New User?</string>
+    <string name="registration_bottom_last_msg">You are 1 Step away from viewing your eBooks! </string>
+    <string name="launch_msg_for_epub">Launch an ePub Book</string>
+    <string name="launch_msg_for_ebook">Loading your eBook</string>
+   / <string name="cancel">Avbryt</string>
+    <string name="add">Add</string>
+    <string name="addnewcategory">Add new shelf</string>
+    <string name="addnewcategory_hint">Enter shelf title</string>
+    <string name="menu_settings">innstillinger</string>
+  /  <string name="no_internet">Internett-tilkobling tilgjengelig.</string>
+    <string name="custome_url_download_book">Do you want to download book</string>
+    <string name="blank_field">All Fields Are Mandatory.</string>
+    <string name="failed_login">Invalid Login Credentials.</string>
+    <string name="book_delete_alert">Are you sure if you want to delete selected book?</string>
+  //  <string name="register_submit_button">Melde deg på</string>
+    <string name="enter_password">Enter Password</string>
+   // <string name="forgot_password_email_id_label">Tilbakestille passord</string>
+    <string name="registration_user_name_text">User Name</string>
+   // <string name="registration_user_name_hint_text">Fullt navn</string>
+   // <string name="alert_invalid_userName">Fyll inn gyldig fullt navn</string>
+    <string name="alert_youtube_player_initialisation_error">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="alert_instant_feedback_title">Correct Answer is \"</string>
+    <string name="alert_kaltura_player_initialisation_error">Error occurred while initializing Kaltura Video.</string>
+    <string name="alert_video_player_initialisation_error">Error occurred while initializing Video.</string>
+    <string name="alert_vimeo_player_initialisation_error">Error occurred while initializing Vimeo Video.</string>
+ /   <string name="alert_no_space_left_on_device">Ingen plass feil</string>
+  /  <string name="alert_no_space_left_msg">Du har ikke nok plass til å laste ned boken. Fjern noen filer og prøv igjen ...</string>
+  /  <string name="alert_bookshelf_no_search_found_title">Beklager</string>
+ /   <string name="alert_bookshelf_no_search_found_message">Ingen søkeresultat funnet.</string>
+    <string name="alert_webView_loading_error">Error occurred while loading web url.</string>
+   // <string name="alert_session_expired">Økten er utløpt, kan du logge inn på nytt.</string>
+    <string name="bookshelf_category_all_books">Alle Books</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="copy">Copy the below text</string>
+    <string name="select">Copy the below text</string>
+    <string name="dialog_yes_button">JA</string>
+    <string name="dialog_no_button">NEI</string>
+    <string name="ugc_share_note_message">begynte å dele data med deg.</string>
+    <string name="alert_book_download_waiting">Waiting&#8230;</string>
+    <string name="alert_book_download_installing">Installing&#8230;</string>
+    <string name="toc_tab_resource">ressurser</string>
+    <string name="toc_tab_contents">innhold</string>
+    <string name="thumbnail_nav_page">Go to</string>
+//    <string name="thumbnail_chaptername_not_present">Kapittel ikke funnet</string>
+    <string name="ugc_data_important">Important</string>
+    <string name="alert_search_validation">Search text  must be between %1$s and %2$s characters.</string>
+ /   <string name="alert_download_intrupt">Internett-tilkobling tilgjengelig.</string>
+ /   <string name="user_search_hint">Søk med nøkkelord</string>
+    <string name="note_hint_msg">Enter your note</string>
+    <string name="comment_hint_msg">Enter your comment</string>
+    <string name="dialog_login_kitaboo_message_text">Sign in to your %1$s to experience the digital eBooks.</string>
+    <string name="login_help_worldbook">Sign in to your personal ebooks account.\nDon’t have an account? Sign up for one on World Book Online. </string>
+    <string name="dialog_login_accesscode_body_text">Use access code to view the eBooks.</string>
+    <string name="alert_book_licence_limit_reached">You have exceeded the limit to download the book on multiple devices.</string>
+    <string name="alert_book_licence_expired">The book cannot be downloaded as the license of the book has expired.</string>
+    <string name="emailid_field_character_allowed">0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM.@_-</string>
+    <string name="forgetpassword_field_character_allowed">0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM.@_-</string>
+  /  <string name="msg_progress_when_downloading">Kan ikke fortsette mens ebøker lastes ned!</string>
+    <string name="reader_page">Side:&#160;</string>
+    <string name="reader_page_epub">Kapittel::&#160;</string>
+
+    <string name="reader_page_of">av</string>
+    <string name="msg_invalid_login_kois">Password or User ID are either empty or invalid.</string>
+  //  <string name="msg_invalid_login">Ugyldig brukernavn eller passord.</string>
+    <string name="msg_youtub_video_not_supported">Youtube video not supported.</string>
+    <string name="stickynote_add_msg">Vennligst trykk noe sted å plassere et notat.</string>
+    <string name="stickynote_tap_outside_msg">Please tap inside the page to add stickynote.</string>
+  /  <string name="dialog_forgetPassword_body_text">Skriv inn din e-postadresse for å tilbakestille passordet.</string>
+  /  <string name="dialog_forgetPassword_new">Skriv inn din e-postadresse nedenfor, og vi vil sende deg en link med et nytt passord!</string>
+    <string name="msg_unable_to_play_video">Kan ikke spille av video.</string>
+    <string name="alert_bookshelf_no_search_found_message_bookshelf">No books match that search.</string>
+ /   <string name="profile_pic_camera">Kamera</string>
+   / <string name="profile_pic_gallery">Bibliotek</string>
+ /   <string name="profile_pic_option">Endre profilbildet ditt</string>
+ /   <string name="profile_pic_option_mob">Endre profilen din \ npicture</string>
+    <string name="profile_pic_option_message">Hvordan vil du stille inn bilde?</string>
+    <string name="profile_pic_not_found">Some problem in parsing image, select another one</string>
+    <string name="note_share_tag">Share this note with</string>
+    <!-- EPUB reader Messages start -->
+    <string name="epub_initialization_error">Epub not supported</string>
+    <!-- EPUB reader Messages end -->
+
+    <!-- Enterprise New Mydata texts -->
+
+
+    <!-- Enterprise New Mydata texts end -->
+    <string name="enterprise_my_data">Mine data</string>
+    <string name="enterprise_my_notes">Mine notater</string>
+    <string name="enterprise_my_highlights">My Highlights</string>
+    <!-- Corporate Messages Start -->
+    <string name="corporate_preview_loading_error">Error occurred while loading preview.</string>
+    <string name="category_list_heading">Category</string>
+    <!-- Corporate Messages End -->
+    <!-- New Bookshelf Text -->
+   / <string name="preview_launch_button">Åpen</string>
+   / <string name="preview_download_button">nedlasting</string>
+  /  <string name="preview_resume_button">Gjenoppta</string>
+  /  <string name="preview_archive_button">Slett</string>
+    <string name="preview_statistics_button">ANALYTICS</string>
+    <string name="preview_open_button">OPEN</string>
+  /  <string name="preview_update_button">Oppdater</string>
+ //   <string name="preview_video_launch_button">Spill Video</string>
+    <string name="preview_video_delete_button">Delete Video</string>
+ /   <string name="preview_downloading_button">nedlasting</string>
+    <!-- Topbar localizations start -->
+
+    <item name="topbar_ugc_data" type="id"/>
+
+    <string name="topbar_ugc_data">Mine data</string>
+
+    <item name="topbar_pen_tool" type="id"/>
+
+    <string name="topbar_book_data">Book Data</string>
+
+    <item name="topbar_book_data" type="id"/>
+
+    <string name="topbar_pen_tool">Pen</string>
+
+    <item name="topbar_search" type="id"/>
+
+ /   <string name="topbar_search">Søk</string>
+
+    <item name="topbar_review" type="id"/>
+
+
+    <string name="topbar_review">Review</string>
+    <string name="topbar_submit">User Submission</string>
+
+    <item name="topbar_readaloud" type="id"/>
+
+    <string name="topbar_readaloud">Read Aloud</string>
+
+    <item name="topbar_aloudplay" type="id"/>
+    <string name="topbar_aloudplay">Auto Play</string>
+
+    <item name="topbar_settings" type="id"/>
+
+    <string name="topbar_settings">innstillinger</string>
+    <string name="accessibility_overflow">More options</string>
+//    <string name="color_picker_default_title">Velg farge</string>
+    <string name="pentool_size_default_title">Select Size</string>
+
+    <item name="topbar_stickynote" type="id" />
+    <string name="topbar_stickynote">Note</string>
+
+    <item name="topbar_clear" type="id" />
+    <string name="topbar_clear">Clear</string>
+
+    <item name="topbar_protractor" type="id" />
+    <string name="topbar_protractor">vinkelmåler</string>
+    <!-- Topbar localizations end -->
+
+
+    <!-- BottomBar localizations start -->
+
+    <string name="bottombar_thumbnail">miniatyrbilder</string>
+ //   <string name="bottombar_toc">Innholdsfortegnelse</string>
+    <string name="topbar_teacher_review">Teacher Assesment</string>
+
+    <!-- BottomBar localizations end -->
+
+    <!-- New Analytics heading start -->
+    <string name="analytics">Statistics</string>
+//    <string name="book_opened_assigned">Book åpnes / tildelt</string>
+    <string name="video_opened_assigned">Video Launched/Assigned</string>
+    <string name="video_opened">Video Launched</string>
+    <string name="video_completed_assigned">Video Completed/Assigned</string>
+    <string name="video_completed">Video completed</string>
+ //   <string name="avg_reading_sessions">Gjennomsnittlig leseøkten</string>
+    <string name="total_reading_sessions">Reading Session</string>
+    <string name="avg_video_reading_sessions">Average no. of views</string>
+    <string name="total_video_reading_sessions">No. of views</string>
+    <string name="avg_notes_shared_created">Avg. Notes Shared/Created</string>
+    <string name="notes_shared_created">Notes Shared/Created</string>
+//    <string name="avg_reading_time">Gjennomsnittlig lesetid</string>
+    <string name="reading_time">Reading Time</string>
+    <string name="video_reading_time">Total Time spent</string>
+//    <string name="avg_reading_time_session">Gjennomsnittlig lesetid / sesjon</string>
+    <string name="avg_video_reading_time_session">Average Time Spent per session</string>
+    <string name="avg_highlight_created_shared">Avg. Highlights Shared/Created</string>
+ //   <string name="highlight_created_shared">Høydepunkter delt / opprettet</string>
+ //   <string name="avg_pages_read">Gjennomsnittlig sider lest</string>
+    <string name="pages_read">Pages Read</string>
+ //   <string name="avg_pages_read_session">Gjennomsnittlig sider lese / sesjon</string>
+ //   <string name="avg_resources_viewed_available">Nr. ressurser sett / tilgjengelig</string>
+ //   <string name="resources_viewed_available">Ressurser sett / tilgjengelig</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="statistics_pages">pages</string>
+    <string name="statistics_mins">mins</string>
+    <!-- New Analytics heading end -->
+
+ /   <string name="alert_cannot_delete_book">Kan ikke slette boken i øyeblikket. Vennligst kontakt admin.</string>
+//    <string name="msg_sticky_note_cannot_placed">Gul lapp kan ikke plasseres på ressurspåslag.</string>
+    <string name="ERROR_BOOK_UNAVAILABLE">This eBook is not available for download.</string>
+//    <string name="ERROR_VIDEO_UNAVAILABLE">Denne videoen er ikke tilgjengelig for nedlasting.</string>
+
+
+    <!--Profile setting-->
+    <string name="profile_setting_pic_change_text">Change Profile Picture</string>
+  /  <string name="default_text">Misligholde</string>
+//    <string name="profile_pic_upload_failed">Profil bilde opplasting mislyktes! Vær så snill, prøv på nytt.</string>
+    <string name="or">Or</string>
+    <string name="porto_title_access">No access data?</string>
+    <string name="porto_hint_access">Enter your e-mail ID</string>
+//    <string name="alert_invalid_porto_email">Vennligst skriv inn en gyldig e-ID.</string>
+    <string name="porto_registration_success">Your registration has been successful. Check your email for login details.</string>
+    <string name="porto_profile_setting_account_manager">Account Manager</string>
+    <string name="porto_profile_setting_device_manager">Device Manager</string>
+    <string name="crop_save_text">Avling</string>
+    <string name="runningFaceDetection">Vennligst vent</string>
+    <string name="wallpaper">innstilling tapet\u2026</string>
+    <string name="savingImage">besparende bilde\u2026</string>
+ //   <string name="device_not_supported">Denne funksjonen støttes ikke av enheten.</string>
+    <string name="wrote">&#160;</string>
+ //   <string name="book_download_alert">Denne boken er %1$s MB. \nDin innretning er koblet til et mobilnettverk. Har du fortsatt ønsker å laste ned denne eBok?</string>
+ //   <string name="book_download_alert_wifi">Denne boken er %1$s MB. \nHar du fortsatt ønsker å laste ned denne eBok?</string>
+ /   <string name="refreshing_books">forfriskende bøker</string>
+    <string name="glossary_no_description_message">Description not available.</string>
+    <string name="download_package_filesize">Størrelse: %1$s MB</string>
+    <string name="author_name">Forfatter::&#160;</string>
+    <string name="series_title">Series Title :&#160;</string>
+    <string name="publisher_name">Publisher:&#160;</string>
+    <string name="book_reference_id">Book Referanse-ID::&#160;</string>
+    <string name="copy_right_year">Copyright År::&#160;</string>
+    <string name="isbn">ISBN:&#160;</string>
+    <string name="pages">side -:&#160;</string>
+    <string name="language">Språk::&#160;</string>
+    <string name="skill_level">Ferdighetsnivå:&#160;</string>
+    <string name="series">Serie::&#160;</string>
+    <string name="subject">Emne:&#160;</string>
+    <string name="interest_level">Rente nivå:&#160;</string>
+    <string name="lexile_measure">Lexile Mål:&#160;</string>
+    <string name="a_r_level">AR nivå:&#160;</string>
+    <string name="description">Beskrivelse:</string>
+    <string name="category_name">Kategori:&#160;</string>
+    <string name="app_updateMessage">Ikke lukk app .... oppdateringen pågår.</string>
+
+
+    <string name="no_application_available">Ingen programmer kan åpne dette dokumentet.</string>
+    <string name="noUserGroup">Stempler deling ikke tillatt for denne klassen.</string>
+    <string name="sticky_note_not_supported">This feature can be best used in portrait mode. Please rotate the screen.</string>
+    <string name="protractor_not_supported">This feature can be best used in portrait mode. Please rotate the screen.</string>
+    <string name="default_category_name">andre</string>
+    <string name="unzipping">Utpakking ...</string>
+    <string name="alert_error">Feil</string>
+ //   <string name="no_instruction_markup">Ingen instruksjoner tilgjengelige </string>
+    <string name="choose_readaloud_option">Velg modus</string>
+    <string name="let_me_read_text_option_title">Velg for å åpne boken uten lyd.</string>
+    <string name="auto_play_option_title">Velg for å åpne boken i skrive høyt modus med auto flip til neste side.</string>
+    <string name="read_to_me_option_title">Velg for å åpne boken i lese høyt modus på side-by-side basis.</string>
+    <string name="let_me_read_text">La meg lese</string>
+    <string name="auto_play_text">Auto play</string>
+    <string name="read_to_me_text">Les for meg</string>
+ //   <string name="text_download_all">Last ned alle</string>
+ //   <string name="text_delete_all">Slette alle</string>
+    <string name="text_collection_lebel">elementer</string>
+ //   <string name="text_collection_lebel_mobile">Alle ting</string>
+    <string name="text_collection_page_lebel">side -</string>
+    <string name="Others_collection_Catogory">andre</string>
+    <string name="book_mode_Online">på nett</string>
+
+    <string name="dictHeaderText">Dicionário da Língua Portuguesa da Porto Editora</string>
+    <string name="alert_check_coorect_answer_submit_data">Trykk på feil svar for å se svaret.</string>
+    <string name="incorrect_answer_message">That is an incorrect answer !</string>
+ //   <string name="book_error">Book feil</string>
+    <string name="error_in_open_book">Feil på bok pakke. Ønsker du å laste ned på nytt?</string>
+    <string name="my_collection">Samling:&#160;</string>
+    <string name="book_error_hash">Oops</string>
+    <string name="error_in_open_book_hash">Noe er galt. Du dont synes å være autorisert til å få tilgang dette innholdet. Klikk her for å feilsøke.</string>
+    <string name="error_in_open_book_hash1">Noe er galt. Du dont synes å være autorisert til å få tilgang dette innholdet.</string>
+    <string name="error_in_open_book_hash2">Klikk for å feilsøke.</string>
+    <string name="api_error_hash">Oops</string>
+    <string name="error_in_api_hash1">Du er ikke autorisert til å få tilgang til innholdet.</string>
+    <string name="error_in_api_hash2">Klikk for å feilsøke.</string>
+    <string name="error_linkiFy_color">#1155cc</string>
+    <string name="loading_items">Loading Items....Please wait</string>
+    <string name="no_downloaded_books">No Downloaded Books</string>
+    <string name="loading">Loading items...</string>
+    <string name="loading_progress">Laster ...</string>
+    <string name="search_drawable_position_name">IKKE SANT</string>
+    <string name="noAccount">No account?</string>
+    <string name="profile_setting_email_text">Email ID:</string>
+    <string name="mobile_profile_setting_change_btn_text">Change</string>
+    <string name="submitted_pentool_error">Sorry, this answer is already submitted and cannot be changed.</string>
+    <string name="pentool_enabled_error">Pen tool can\'t be placed on resource markups.</string>
+    <string name="msg_dropdown_cannot_open">Dropdown can\'t open when search open</string>
+    <string name="msg_resources_not_open">Resources not open when serch box open</string>
+ //   <string name="bookmark_hint">Legg bokmerketittel</string>
+    <string name="first_name_mandatory">First name is mandatory</string>
+ //   <string name="permission_request">be om tillatelse</string>
+    <string name="permission_grantd_message">Permission Granted. Now you can continue using the app.</string>
+    <string name="storage_permission_not_granted">Tillatelse kreves for å lese / skrive Ekstern lagring. \ N \ nEnable gjennom enhetsinnstillinger -> Programmer -> Tillatelse -> Aktiver Lagring>.</string>
+    <string name="camera_permission_not_granted">Tillatelse kreves for å få tilgang kamera. \ NEnable gjennom enhetsinnstillinger -> Programmer -> Tillatelse -> Kamera.</string>
+    <string name="video_download_alert">Denne videoen er %1$s MB. \nDin enheten er koblet til et mobilnett. Har du fortsatt ønsker å fortsette med å laste ned videoen?</string>
+ //   <string name="video_download_alert_wifi">Denne videoen er %1$s MB. \nVil du likevel ønsker å fortsette med å laste ned videoen?</string>
+    <string name="window_permission_not_granted">Permission denied for system alert window. \nClick again to enable permission.</string>
+    <string name="no_items_available">No Items available</string>
+    <string name="resource_not_available">Vennligst kjøpe for å få tilgang til dette kapitlet.</string>
+    <string name="msg_max_authorised_device">Du har nådd maksimalt antall autoriserte enheter.</string>
+    <string name="forgot_password_submit_text">Sende inn</string>
+
+    <string name="try_again">Try again</string>
+    <string name="no_book_downloade">No e-books are downloaded or downloading is in progress</string>
+
+
+    <string name="about_us"><u>Skip</u></string>
+
+    <!--for World Ebooks-->
+    <string name="about_us_world_e_books"><u>About World Book eBooks</u></string>
+
+    <!--Help Screen-->
+    <string name="help_skip_txt"><u>Skip</u></string>
+    <string name="help_got_txt"><u>Har det</u></string>
+    <string name="help_Accesscode_txt">Enter Access Code</string>
+    <string name="view_profile_setting_text">View Profile Settings</string>
+    <string name="help_screen_search_text">Forfatter, tittel og ISBN</string>
+    <string name="help_table_content_text">Table Contents Help</string>
+    <string name="help_my_data_text">My Data Help</string>
+    <string name="help_add_pen_annotation">Add Pen Annotation</string>
+    <string name="help_add_protractor_annotation">Use Protractor</string>
+    <string name="help_audio_to_Bookshelf">Audio To BookShelf</string>
+    <string name="help_play_pause">Play/Pause</string>
+    <string name="help_addbookmark_txt">Add Bookmark</string>
+    <string name="help_placenote_txt">Tap Anywhere to place a note</string>
+ //   <string name="help_submit_data_txt">Send inn data</string>
+    <string name="help_clear_data_txt">Clear Data</string>
+    <string name="help_search_content_txt">Søk etter bok innhold</string>
+ //   <string name="help_show_thumbnail_txt">Vis miniatyrbilder</string>
+ //   <string name="help_view_categories">Vis kategorier</string>
+    <string name="review_enabled_error">Markup cant be opened in Review mode</string>
+    <string name="terms_conditon"><u>Betingelser og vilkår</u></string>
+    <string name="AboutUs"><u>Om oss</u></string>
+    <string name="PrivacyPolicy"><u>personvern</u></string>
+    <string name="and">and</string>
+
+ //   <string name="delete_all_books">Slett alle bøker</string>
+    <string name="delete_conformation">Er du sikker på at du vil slette alle bøker fra denne samlingen?</string>
+    <string name="delete_popup_ok">OK</string>
+    <string name="sign_out_ok_text">OK</string>
+    <string name="delete_book">Delete</string>
+    <string name="delete_popup_cancel">Avbryt</string>
+    <string name="popup_txt_retry">Prøv på nytt</string>
+    <string name="signout_title">Er du sikker på at du vil logge ut?</string>
+    <string name="signout_message">Du vil bli returnert til påloggingsskjermen</string>
+    <string name="app_exit_message">Vennligst klikk tilbake til exit</string>
+
+    <string name="delete_all_error">Slett alle GET-feil fra serveren</string>
+    <string name="delete_error">Delete get error from server</string>
+
+    <string name="overall">Overall</string>
+    <string name="permission_title">Tillatelse kreves</string>
+    <string name="permission_msg">% 1 $ s lagrer ebøker og data til enheten lagring, vennligst gi tilgang til fortsette å lese ved hjelp av enheten lagring.</string>
+    <string name="permission_never_ask_msg">Lagring tillatelse tillater oss å få tilgang til lagring av data. Det kan ta i App innstillinger for ytterligere funksjonalitet.</string>
+    <string name="alert_book_error">This chapter of the book can not be opened.</string>
+    <string name="protractor">Delete Protractor</string>
+    <string name="note_and_highlight">Use Highlight and Note</string>
+
+    <string name="signin">Logg inn</string>
+//    <string name="accesscode">Tilgangskode</string>
+ //   <string name="hint_access">Tast inn tilgangskode</string>
+ //   <string name="page_no">side - nei. </string>
+ //   <string name="syncing">Venter på tilbakemelding</string>
+    <string name="more_info_title">Om dette</string>
+
+
+    // Strings not having translations.
+    <string name="MyData_Bookmark_Comment_title">Comment</string>
+
+    <string name="inline_video_play_icon">ɼ</string>
+
+    <string name="msg_no_fib_data">Ingen data for å fjerne.</string>
+
+ //   <string name="update_coverpic_text">Bytte deksel</string>
+    <string name="title_activity_camera">Kamera</string>
+    <string name="title_activity_newprofile_setting">Newprofile_setting</string>
+    <string name="title_activity_new_profilesetting">New_profilesetting</string>
+    <string name="profile_username">Brukernavn</string>
+ //   <string name="last_name">Etternavn</string>
+    <string name="update_profile_text">Redigere</string>
+    <string name="Changepassword_text">Change Password</string>
+    <string name="manage_my_account">Manage my Account</string>
+    <string name="faq">FAQ</string>
+    <string name="Resetpassword_text"><u>Bytt passord</u></string>
+    <string name="Savebtn">Lagre</string>
+    <string name="saveclick">Klikk på Lagre</string>
+    <string name="Cancelbtn">Cancel</string>
+    <string name="version_txt">Versjon</string>
+    <string name="poweredBy">Drevet av HurixDigital</string>
+
+    <string name="search_empty">Fyll inn gyldige data.</string>
+    <string name="Privacy_Policy_text">Ved å klikke Sign Up godtar du våre retningslinjer for personvern </string>
+    <string name="Privacy_Policy_link"> personvern</string>
+    <string name="Terms_and_Condition_text">and</string>
+    <string name="Terms_and_Condition_link">Betingelser og vilkår</string>
+
+    <!--Strings related to analytics-->
+    <string name="header_text_open_book_per_assign">Book Opened/Assigned</string>
+    <string name="text_avg_reading_time">Average Reading Time</string>
+    <string name="text_avg_reading_time_unit">mins</string>
+    <string name="text_avg_reading_time_unit_in_sec">sek</string>
+    <string name="text_avg_reading_time_unit_in_seconds">sek</string>
+    <string name="text_avg_pages_read">Average Pages Read</string>
+    <string name="avg_reading_session">Average Reading Session</string>
+    <string name="avg_reading_time_per_session">Average Reading Time/Session</string>
+    <string name="avg_reading_time_per_session_unit">min</string>
+    <string name="average_pages_read_per_session">Average Pages Read/Session</string>
+    <string name="average_pages_read_per_session_unit">sider</string>
+    <string name="average_pages_read_per_session_unit_multiple">sider</string>
+    <string name="avg_notes_share_per_create">Gjennomsnittlig notater delt / opprettet</string>
+ //   <string name="avg_highlight_shared_per_create">Average Highlight Shared/Created</string>
+    <string name="avg_resource_viewed_per_available">Gjennomsnittlig høydepunkter delt / opprettet</string>
+ //   <string name="text_reading_time">Lesetid</string>
+ //   <string name="text_pages_read">sider lest</string>
+    <string name="reading_session">Reading Session</string>
+ //   <string name="notes_share_per_create">Merknader delt / opprettet</string>
+//    <string name="highlight_shared_per_create">Høydepunkter delt / opprettet</string>
+ //   <string name="resource_viewed_per_available">Ressurser sett / tilgjengelig</string>
+    <string name="all_students_text">"alle studenter"</string>
+    <string name="alert_search_fetch_book_error">Det oppsto en feil under henting av boken.</string>
+//    <string name="book_not_found">Bestille ikke funnet.</string>
+    <string name="topic">Emne: </string>
+    <string name="search_result_found_for">søkeresultater funnet for</string>
+ //   <string name="text_select_a_student">Velg en student</string>
+    <string name="text_cancel">Avbryt</string>
+    <string name="add_content">Legge til innhold</string>
+    <string name="access_code_info">Bruk tilgangskode for å legge til innhold på hyllen.</string>
+    <string name="need_internet_to_play_audio">Internett-tilkobling for å spille av lyd.</string>
+
+    <string name="text_completion_status">Completion Status</string>
+    <string name="text_average_completion_status">Gjennomsnittlig Completion Status</string>
+    <string name="text_completion_status_unit">prosent</string>
+    <string name="average_cfid_read_per_session">Gjennomsnittlig Completion / økt</string>
+
+    <string name="client_add_content_data"><b>"\"You trail period runs out soon. Sign up for full \n membership to prevent losing access"\"</b></string>
+
+    //Standard TOC
+    <string name="toc_Standard">Standarder</string>
+
+    <!-- Advanced Search implementation strings-->
+
+    <string name="advanced_search_title">Narrow your search :</string>
+    <string name="author">Forfatter:</string>
+    <string name="book_title">Book Title</string>
+    <string name="series_title_search">Serietittel:</string>
+    <string name="category">Category</string>
+    <string name="eisbn">eISBN</string>
+    <string name="subject_search">Subject</string>
+    <string name="publisher">Forlegger:</string>
+    <string name="book_content">Book Content</string>
+    <string name="interest_level_search">Interest Level:</string>
+    <string name="reset_filter">reset filter</string>
+    <string name="apply">apply</string>
+
+    <string name="major_update_title">Obligatorisk Kitaboo eBook Reader App Update</string>
+    <string name="major_update_content">For å kunne fortsette, må du oppdatere Kitaboo eBook Reader app nå. Dette skal bare ta en liten stund.</string>
+    <string name="minor_update_title">Ny versjon er tilgjengelig!</string>
+    <string name="minor_update_content">Programmet er utdatert. Vennligst oppdatere den til den nyeste versjonen.</string>
+
+    <string name="all_tab">Alle</string>
+
+    <string name="recently_added">Trending</string>
+    <string name="trending">Trending</string>
+    <string name="explore">Explore</string>
+
+    <string name="my_book">My Books</string>
+
+    <string name="downloaded_tab">Nedla</string>
+//    <string name="recently_viewd_tab">Nylig sett</string>
+    <string name="favourites">Favourites</string>
+    <string name="favourites_book_tab">My Books</string>
+    <string name="favorites">Favoritter</string>
+    <string name="favorite">Favorite</string>
+    <string name="analytics_text">Analytics</string>
+    <string name="profile_text">Profil</string>
+    <string name="profile_setting_text_profile">Perfil</string>
+    <string name="min_left">&#160; min igjen i bok</string>
+
+
+    <string name="title_sort_a_to_z">TitleA to Z</string>
+    <string name="title_sort_z_to_a">TitleZ to A</string>
+    <string name="author_a_to_z">Forfatter:A to Z</string>
+    <string name="author_z_to_a">Forfatter: to A</string>
+    <string name="isbn_ascending">ISBNAscending order</string>
+    <string name="isbn_descending">ISBNDescending order</string>
+    <string name="published_date_old_to_new">DateOld to New</string>
+    <string name="published_date_new_to_old">DateNew to Old</string>
+    <string name="category_sort_a_to_z">CategoryA to Z</string>
+    <string name="category_sort_z_to_a">CategoryZ to A</string>
+
+    <string name="acep_view_book_text">View Book</string>
+
+
+    <string name="aboutus_for_millsandboon">Om oss</string>
+    <string name="privacy_policy_millsandBoon">personvern</string>
+    <string name="terms_conditonsmillsandboon">Betingelser og vilkår</string>
+    <string name="My_Bookshelf">My Bookshelf</string>
+    <string name="Register">Register</string>
+    <string name="IIS_bottom_banner_name">The IIS Digital Curriculum App</string>
+    <string name="Norwegian">no</string>
+    <string name="select_language">Velg språk</string>
+    <string name="language_change_toast">Språket er lagret</string>
+    <string name="profile_update_msg">Profilen ble oppdatert!</string>
+
+
+    <!-- AudioBook -->
+    <!-- AudioBook Tabs -->
+    <string name="toc_chapters">Chapters</string>
+    <string name="toc_bookmark">BookMarks</string>
+
+    <!-- AudioBook BookMarks, Pop Ups -->
+
+    <string name="audio_book_bookmark_already_exist">Bokmerke eksisterer allerede for valgt tid.</string>
+    <string name="audio_book_add_bookmark_title">Legg til bokmerke</string>
+    <string name="audio_book_add_bookmark">Legg til</string>
+    <string name="audio_book_bookmark_saved">Bokmerke lagret</string>
+
+    <string name="audio_book_narration_speed_title">Fortellerhastighet</string>
+    <string name="audio_book_narration_speed_apply">Søke om</string>
+
+    <string name="audio_book_narration_delete_bookmark_title">Slett bokmerke</string>
+    <string name="audio_book_narration_delete_bookmark">Delete</string>
+    <string name="no_audio_sync">No Audio available for this Chapter.</string>
+    <string name="no_previous_search_available">Ingen tidligere søk tilgjengelig</string>
+    <string name="no_next_search_available">Ingen neste søk tilgjengelig</string>
+    <string name="accesscode_send_txt">sende</string>
+
+
+</resources>

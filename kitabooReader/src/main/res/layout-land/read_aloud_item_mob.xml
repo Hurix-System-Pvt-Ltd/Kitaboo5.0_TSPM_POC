@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="@dimen/camera_gallery_item_padding">
+
+    <TextView
+        android:id="@+id/letmeReadIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:layout_marginLeft="20dp" />
+
+    <TextView
+        android:id="@+id/letmeread_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/letmeReadIcon"
+        android:text="@string/let_me_read_text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="45dp"
+        android:textSize="@dimen/book_title_text_size" />
+
+    <TextView
+        android:id="@+id/letmeread_text_"
+        android:layout_width="wrap_content"
+        android:textSize="14sp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/letmeReadIcon"
+        android:layout_below="@+id/letmeread_text"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="60dp"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

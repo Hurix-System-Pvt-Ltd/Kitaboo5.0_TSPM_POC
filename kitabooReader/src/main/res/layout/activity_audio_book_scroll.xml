@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:id="@+id/tv_check_connection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:translationZ="90dp"
+        android:text="Connection establised !"
+        android:visibility="gone"
+        android:layout_gravity="bottom" />
+
+
+    <ProgressBar
+        android:id="@+id/progressPreview"
+        android:layout_width="@dimen/previewlayout_progressbar_width"
+        android:layout_height="@dimen/previewlayout_progressbar_height"
+        android:layout_gravity="center"
+        android:translationZ="90dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:weightSum="10"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:id="@+id/toplayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            android:layout_weight="0.8">
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/backRelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/backTextViewView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:lineSpacingExtra="-11.5sp"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="10dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center" />
+
+                <TextView
+                    android:id="@+id/tvSleepTimer"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/audio_sleep_timer_circle"
+                    android:gravity="center"
+                    android:text="x"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@+id/playerControllerRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:minWidth="300dp"
+            android:background="@color/white"
+            android:gravity="center"></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/tabsRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="4.2">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                app:tabIndicatorColor="@color/kitaboo_main_color"
+                app:tabSelectedTextColor="@color/kitaboo_main_color"
+                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+                app:tabTextColor="@color/transparent_kitaboo_main_color" />
+
+
+            <View
+                android:id="@+id/tabLineView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/tabs"
+                android:background="@color/kitaboo_main_color" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/audioBookPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tabLineView"
+                android:background="@color/white" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

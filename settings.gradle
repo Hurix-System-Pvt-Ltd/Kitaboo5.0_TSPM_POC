@@ -1,5 +1,6 @@
+include ':kitabooReader'
+include ':constants'
 include ':demoReader'
-include ':reader'
 include ':sdk'
 
 

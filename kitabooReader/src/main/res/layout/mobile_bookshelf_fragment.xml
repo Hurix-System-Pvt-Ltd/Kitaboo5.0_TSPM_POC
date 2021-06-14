@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:id="@+id/bookshelfLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_grey">
+
+        <LinearLayout
+            android:id="@+id/mainContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_grey"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/mainContainer1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true">
+
+                    <TextView
+                        android:id="@+id/txtViewNothingToDownloadMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:text="@string/loading"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+                <com.hurix.kitaboocloud.views.KitabooSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/swipe_refresh_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ListView
+                        android:id="@+id/mobile_listView"
+                        style="@android:style/Widget.ListView.Menu"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:choiceMode="singleChoice"
+                        android:divider="@null"
+                        android:dividerHeight="10dp"></ListView>
+
+                </com.hurix.kitaboocloud.views.KitabooSwipeRefreshLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/parentbottomdottedline"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/light_grey"
+            android:layerType="software" />
+    </RelativeLayout>
+
+</RelativeLayout>

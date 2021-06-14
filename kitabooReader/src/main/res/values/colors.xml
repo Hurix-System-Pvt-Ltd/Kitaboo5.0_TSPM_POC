@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#125688</color>
+    <color name="colorPrimaryDark">#125688</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <color name="colorAccent">#c8e8ff</color>
+    <color name="resource_serach_layout_bg_color">#2f7769</color>
+    <color name="assessment_done_pressed_bg">#BADF2F</color>
+    <color name="settingsBtn_bg_solid_colr_sel">#BADF2F</color>
+    <color name="settingsBtn_bg_stroke_colr_sel">#51645E</color>
+    <color name="settingsBtn_bg_stroke_colr_unsel">#51645E</color>
+    <color name="link_webview_minimize_btn_bg">#4c4646</color>
+    <drawable name="focused">#66339b88</drawable>
+    <drawable name="selected">#66339b88</drawable>
+    <color name="resource_serach_edittext_bg_color">#7aa59c</color>
+    <color name="search_edittext_bg_color">#ffffff</color>
+    <color name="new_highlight_count_bg">#f50417</color>
+    <color name="settingsBtn_bg_solid_colr_unsel">#000000</color>
+    <color name="search_background_color">#efefef</color>
+    <color name="views_background_color">#fa6b6b70</color>
+    <color name="background_tint">#d28e8e93</color>
+    <color name="components_color">#ffffff</color>
+    <color name="Black_Color">#000000</color>
+    <color name="Circle_Blue">#095e8e</color>
+    <color name="SwipeUp_Background_Color">#f1f1f1</color>
+
+    <color name="search_edit_text_background_color">#E7E7E7</color>
+    <!-- kitaboo 5.0 reader -->
+    <color name="highlight_popup_background_color">#E7E7E7</color>
+    <color name="lighter_gray">#dddddd</color>
+    <color name="transparent_black">#66000000</color>
+
+
+    <color name="search_content_background">#f1f1f1</color>
+    <color name="search_description_text_color">#333333</color>
+    <color name="bottom_search_background_color">#E7E7E7</color>
+    <color name="search_adapter_default_background">#fafafa</color>
+
+    <color name="link_webview_done_btn_bg">#FF000000</color>
+
+   <!-- <color name="kitaboo_main_color">#3399cc</color>-->
+    <color name="top_bar_stroke_color">#8E8E8E</color>
+    <color name="top_bar_bk_grnd_color">#fdfdfd</color>
+
+    <color name="overflow_panel_background">#F8F8F8</color>
+    <color name="lightblue_comment_panel">#E5F9FE</color>
+    <color name="self_note_comment_content">#a1a1a1</color>
+    <color name="other_note_comment_content">#8d8d8d</color>
+    <color name="self_note_comment_title">#3399cc</color>
+    <color name="helpScreen_lineCircle">#80d4ff</color>
+    <color name="toast_background_color">#90000000</color>
+    <color name="acep_favourite_icon_color">#cc3300</color>
+    <color name="acep_unfavourite_icon_color">#007bc3</color>
+
+    <!--Insight-->
+    <color name="facebook_txt_bg_color">#406BC2</color>
+    <color name="statistics_button_color_background">#3696cd</color>
+    <color name="accesscode_edittext_border">#f55845</color>
+    <color name="signout">#ff0066</color>
+
+    <color name="continue_reading">#ff0066</color>
+    <color name="seekbar_thumb_color">#095e8e</color>
+    <color name="light_green">#ABE950</color>
+
+    <!---->
+</resources>

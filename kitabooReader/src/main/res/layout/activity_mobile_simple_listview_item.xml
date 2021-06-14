@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/topContainer"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/book_thumbnail_item_total_height"
+    android:background="@color/white"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:animateLayoutChanges="true"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/imagecontainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/rootlayoutbookview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/bookThumbImage"
+                    android:layout_width="@dimen/book_thumbnail_item_width"
+                    android:layout_height="@dimen/book_thumbnail_item_height"
+                    android:src="@drawable/placeholder" />
+
+                <FrameLayout
+                    android:id="@+id/maskOverlay"
+                    android:layout_width="@dimen/book_thumbnail_item_width"
+                    android:layout_height="@dimen/book_thumbnail_item_height"
+                    android:background="@color/mask_overlay"
+                    />
+
+                <TextView
+                    android:id="@+id/bookUpdateTV"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="O"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/bookshelf_preview_update_icon_size"
+                    android:visibility="invisible"
+                    android:background="@drawable/download_bg"/>
+
+
+                <TextView
+                    android:id="@+id/tvProgress"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <com.hurix.kitaboocloud.views.MobileCircularProgressButton
+                    android:id="@+id/circularProgress"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textSize="24sp"
+                    android:visibility="invisible"
+                    app:cpb_cornerRadius="30dp"
+                    android:focusable="false"
+                    android:background="@color/transparent"
+                    android:clickable="false"
+                    />
+
+                <TextView
+                    android:id="@+id/tvUnzipping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/previewlayout_progress_text_height"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:text="@string/unzipping"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            >
+
+            <TextView
+                android:id="@+id/txtBookTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding = "false"
+                android:gravity="top"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:layout_alignParentTop="true"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/txtBookDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:ellipsize="end"
+                android:singleLine="false"
+                android:layout_below="@+id/txtBookTitle"
+                android:maxLines="3"
+                android:minLines="2"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+            <RelativeLayout
+                android:id="@+id/moreInfo_layout"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="end"
+                android:background="@color/kitaboo_main_color"
+                android:layout_alignParentBottom="true"
+                android:clickable="true"
+                >
+                <TextView
+                    android:id="@+id/moreInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="more info"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15dp"
+                    android:textSize="18dp"/>
+                <TextView
+                    android:id="@+id/icontoidentify"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="`"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="12dp"
+                    android:end="@+id/moreInfo"
+                    android:layout_alignParentRight="true"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

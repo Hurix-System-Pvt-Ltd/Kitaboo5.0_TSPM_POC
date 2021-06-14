@@ -1,0 +1,772 @@
+package com.hurix.kitaboo.constants;
+
+public class PlayerUIConstants
+{
+	public static final String BOOK_ASSIGN_ICON = "Ş";
+	public static final String AVG_READ_ICON = "¨";
+	public static final String AVG_PAGE_ICON = "ª";
+	public static final String AVG_SESSION_ICON = "¦";
+	public static final String AVG_TIME_ICON = "¨";
+	public static final String PAGE_READ_ICON = "Ą";
+	public static final String AVG_NOTES_ICON = "ṋ";
+	public static final String AVG_HIGH_ICON = "Ḫ";
+	public static final String RESOURCE_ICON = "ả";
+	public static final String BOOK_TYPE_ICON = "Ἕ";
+	public static final String KITABOO_LOGO = "Ù";
+    public static final String BACK_ARROW = "Ọ";
+
+	public static float BASE_DPI = 160;
+	
+	public static int FOOTER_PANEL_BG_COLOR = 0XFFE8E8E8;
+	public static int FooterBasicHeight = 42;
+	public static int FOOTERHEIGHT = FooterBasicHeight;//default is 32dp for 160dpi
+	
+	//IC = ICON  ; FC = FONT COLOR ;BGC = BACKGROUND COLOR
+	public static int THUMBNAIL_GALLERY_IMAGE_HEIGHT = 160;//IN 160 DP 
+	public static int THUMBNAIL_GALLERY_SELECTED_ITEM_BOARDER_COLOR = 0XFFB0CF51;
+	
+	
+	//TB = TOP BAR ;
+
+    public static String TB_CLEAR_FIB_TEXT = "č";
+	public static String UNDO_PENTOOL_TEXT = "<";
+
+	public static String TB_BACK_TO_SHELF_IC_TEXT = "Ð";
+
+    public static String TB_BACK_TO_BOOKSHELF_IC_TEXT = "a";
+
+	public static String TB_SETTING_IC_TEXT = "B";
+
+	public static String TB_BOOK_DATA_IC_TEXT = "b";
+
+	public static String TB_MY_DATA_IC_TEXT = "0";
+	
+	public static String TB_SEARCH_IC_TEXT = "d";
+	
+	public static String TB_PEN_IC_TEXT = "f";
+
+	public static String TB_PROTRACTOR_IC_TEXT = "ọ";
+	
+	public static String TB_ANALAYSTICS_IC_TEXT = "Z";
+
+	public static String TB_STUDENT_IC_TEXT = ":";
+
+	public static String TB_TEACHER_IC_TEXT = "/";
+
+	public static String TB_ANALAYSTICS_IC_EXPAND_TEXT = "%";
+	
+	public static String TB_ANALAYSTICS_IC_COLAPSE_TEXT = "&";
+	
+	public static String TB_THUMBNAILS_IC_TEXT = "g";
+
+    public static String TB_THUMBNAILS_PHONE_IC_TEXT = "9";
+	
+	public static String TB_OVERFLOW_IC_TEXT = "ľ";
+	
+	public static String TB_STICKYNOTE_IC_TEXT = "¸";
+	
+	//HC = HIGHTLIGHT CONTEXT   ; IC = ICON
+	public static String HC_YELLOW_IC_TEXT = "e";
+	public static int HC_YELLOW_IC_SELECTED_FC = 0XFFFFF261;
+	public static int HC_YELLOW_IC_UNSELECTED_FC = 0XFFFFF261;
+	public static int HC_YELLOW_IC_SELECTED_BGC = 0XFF0E668C;
+	public static int HC_YELLOW_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String HC_RED_IC_TEXT = "e";
+	public static int HC_RED_IC_SELECTED_FC = 0XFFFF7061;
+	public static int HC_RED_IC_UNSELECTED_FC = 0XFFFF7061;
+	public static int HC_RED_IC_SELECTED_BGC = 0XFF0E668C;
+	public static int HC_RED_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String HC_NOTE_IC_TEXT = "u";
+	public static int HC_NOTE_IC_SELECTED_FC = 0XFFFFFFFF;
+	public static int HC_NOTE_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int HC_NOTE_IC_SELECTED_BGC = 0X00000000;
+	public static int HC_NOTE_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String HC_SEARCH_IC_TEXT = "d";
+	public static int HC_SEARCH_IC_SELECTED_FC = 0XFFFFFFFF;
+	public static int HC_SEARCH_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int HC_SEARCH_IC_SELECTED_BGC = 0X00000000;
+	public static int HC_SEARCH_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String HC_DELETE_IC_TEXT = "C";
+	public static int HC_DELETE_IC_SELECTED_FC = 0XFFFFFFFF;
+	public static int HC_DELETE_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int HC_DELETE_IC_SELECTED_BGC = 0X00000000;
+	public static int HC_DELETE_IC_UNSELECTED_BGC = 0X00000000;
+	public static int HC_DELETE_IC_DISABLED_FC = 0X80FFFFFF;
+	
+	public static String HC_CLOSE_IC_TEXT = "2";
+	public static int HC_CLOSE_IC_SELECTED_FC = 0XFFFFFFFF;
+	public static int HC_CLOSE_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int HC_CLOSE_IC_SELECTED_BGC = 0X00000000;
+	public static int HC_CLOSE_IC_UNSELECTED_BGC = 0X00000000;
+	public static int HC_CLOSE_IC_DISABLED_FC = 0X80FFFFFF;
+	
+	//MOBILE HIGHLIGHTPOPUP
+	public static int MOB_HC_SEARCH_IC_SELECTED_BGC = 0XFF000000;
+	public static int MOB_HC_SEARCH_IC_UNSELECTED_BGC = 0XFF484848;
+	
+	public static int MOB_HC_RED_IC_SELECTED_BGC = 0XFF000000;
+	public static int MOB_HC_RED_IC_UNSELECTED_BGC = 0XFF484848;
+	
+	public static int MOB_HC_YELLOW_IC_SELECTED_BGC = 0XFF000000;
+	public static int MOB_HC_YELLOW_IC_UNSELECTED_BGC = 0XFF484848;
+	
+	public static int MOB_HC_NOTE_IC_SELECTED_BGC = 0XFF484848;
+	public static int MOB_HC_NOTE_IC_UNSELECTED_BGC = 0XFF484848;
+	
+	public static int MOB_HC_DELETE_IC_SELECTED_BGC = 0XFF484848;
+	public static int MOB_HC_DELETE_IC_UNSELECTED_BGC = 0XFF484848;
+	
+	public static int MOB_HC_CLOSE_IC_SELECTED_BGC = 0XFF484848;
+	public static int MOB_HC_CLOSE_IC_UNSELECTED_BGC = 0XFF484848;
+	
+	
+	//NOTE - STICKY NOTE POPUP LAYOUT
+	public static String NOTE_IMPORTANT_IC_TEXT = "D";
+	public static int NOTE_IMPORTANT_IC_UNSELECTED_FC = 0XFF000000;
+	public static int NOTE_IMPORTANT_IC_SELECTED_FC = 0XFF000000;
+	public static int NOTE_IMPORTANT_IC_UNSELECTED_BGC = 0X00000000;
+	public static int NOTE_IMPORTANT_IC_SELECTED_BGC = 0X00000000;
+	
+	public static String NOTE_SHARE_ARROW_IC_TEXT = "H";
+	public static int NOTE_SHARE_ARROW_IC_FC = 0xFFC2CDC6;
+	
+	public static String NOTE_SHARE_BACK_ARROW_IC_TEXT = "G";
+	public static int NOTE_SHARE_BACK_ARROW_IC_FC = 0xFFFFFFFF;
+	
+	public static String NOTE_DELETE_IC_TEXT = "C";
+	public static int NOTE_DELETE_IC_NORMAL = 0xFFFFFFFF;
+	
+	public static int NOTE_HIGHLIGHT_TEXT_COLOUR =0XFFB89256;
+	
+	public static String NOTE_ARROW_IC_TEXT = "{";
+
+	//BM = BOOKMARK
+	public static int BM_IC_FONT_SIZE = 50;//IN 160 DP
+	public static int BM_IC_SIZE = 48;//IN 160 DP
+	
+	public static String BM_IC_TEXT = "q";
+	public static String BM_IC_ADDED_TEXT = "p";
+	public static int BM_IC_UNSELECTED_FC = 0XFFA7A4A6;
+	public static int BM_IC_SELECTED_BGC = 0X00000000;
+	public static int BM_IC_UNSELECTED_BGC = 0X00000000;
+	
+	//PEN TOOL
+	public static String PT_BLACK_IC_TEXT = "M";
+	public static int PT_BLACK_IC_SELECTED_FC = 0XFF000000;
+	public static int PT_BLACK_IC_UNSELECTED_FC = 0XFF000000;
+	public static int PT_BLACK_IC_SELECTED_BGC = 0XFF0E668C;
+	public static int PT_BLACK_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String PT_BLUE_IC_TEXT = "M";
+	public static int PT_BLUE_IC_SELECTED_FC = 0XFF00A9FD;
+	public static int PT_BLUE_IC_UNSELECTED_FC = 0XFF00A9FD;
+	public static int PT_BLUE_IC_SELECTED_BGC = 0XFF0E668C;
+	public static int PT_BLUE_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String PT_YELLOW_IC_TEXT = "M";
+	public static int PT_YELLOW_IC_SELECTED_FC = 0XFFF8B400;
+	public static int PT_YELLOW_IC_UNSELECTED_FC = 0XFFF8B400;
+	public static int PT_YELLOW_IC_SELECTED_BGC = 0XFF0E668C;
+	public static int PT_YELLOW_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String PT_WHITE_IC_TEXT = "M";
+	public static int PT_WHITE_IC_SELECTED_FC = 0XFFFFFFFF;
+	public static int PT_WHITE_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int PT_WHITE_IC_SELECTED_BGC = 0XFF0E668C;
+	public static int PT_WHITE_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String PT_DRAG_IC_TEXT = "3";
+	public static int PT_DRAG_IC_SELECTED_FC = 0XFF595B58;
+	public static int PT_DRAG_IC_UNSELECTED_FC = 0XFF595B58;
+	public static int PT_DRAG_IC_SELECTED_BGC = 0XFF0E668C;
+	public static int PT_DRAG_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String PT_DEFAULT_IC_TEXT = "f";
+	public static int PT_DEFAULT_IC_SELECTED_FC = 0XFFFFF071;
+	public static int PT_DEFAULT_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int PT_DEFAULT_IC_SELECTED_BGC = 0XFF000000;
+	public static int PT_DEFAULT_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String PT_CLOSE_IC_TEXT = "#";
+	public static int PT_CLOSE_IC_SELECTED_FC = 0XFF90dc0e;
+	public static int PT_CLOSE_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int PT_CLOSE_IC_SELECTED_BGC = 0XFF0E668C;
+	public static int PT_CLOSE_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String PT_ERASER_IC_TEXT = "$";
+	public static int PT_ERASER_IC_SELECTED_FC = 0XFFFFF071;
+	public static int PT_ERASER_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int PT_ERASER_IC_SELECTED_BGC = 0XFF000000;
+	public static int PT_ERASER_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String PT_DISCARD_IC_TEXT = "C";
+	public static int PT_DISCARD_IC_SELECTED_FC = 0XFFFFFFFF;
+	public static int PT_DISCARD_IC_UNSELECTED_FC = 0XFF7A7A7A;
+	public static int PT_DISCARD_IC_SELECTED_BGC = 0XFF0E668C;
+	public static int PT_DISCARD_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String PT_THICKNESS_BIG_IC_TEXT = "\"";
+	public static int PT_THICKNESS_BIG_IC_SELECTED_FC = 0XFF000000;
+	public static int PT_THICKNESS_BIG_IC_UNSELECTED_FC = 0XFF000000;
+	public static int PT_THICKNESS_BIG_IC_SELECTED_BGC = 0XFF0E668C;
+	public static int PT_THICKNESS_BIG_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String PT_THICKNESS_MED_IC_TEXT = "\"";
+	public static int PT_THICKNESS_MED_IC_SELECTED_FC = 0XFF000000;
+	public static int PT_THICKNESS_MED_IC_UNSELECTED_FC = 0XFF000000;
+	public static int PT_THICKNESS_MED_IC_SELECTED_BGC = 0XFF0E668C;
+	public static int PT_THICKNESS_MED_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String PT_THICKNESS_SMALL_IC_TEXT = "\"";
+	public static int PT_THICKNESS_SMALL_IC_SELECTED_FC = 0XFF000000;
+	public static int PT_THICKNESS_SMALL_IC_UNSELECTED_FC = 0XFF000000;
+	public static int PT_THICKNESS_SMALL_IC_SELECTED_BGC = 0XFF0E668C;
+	public static int PT_THICKNESS_SMALL_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static int TB_ANALAYSTICS_IC_SELECTED_FC = 0XFFfee50c;
+	public static int TB_ANALAYSTICS_IC_UNSELECTED_FC = 0XFFefefef;
+	public static int TB_ANALAYSTICS_IC_SELECTED_BGC = 0XFF010101;
+	public static int TB_ANALAYSTICS_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static int TB_ANALAYSTICS_IC_BG_TEXT = 0Xff13a2a2;
+	
+	//SN - STICKY NOTE
+	public static int SN_IC_FONT_SIZE = 28;//IN 160 DP
+	public static int SN_IC_SIZE = 48;//IN 160 DP
+
+    public static int OS_IC_FONT_SIZE = 20;
+
+	public static String SN_TEXT_IC_TEXT = "V";
+	public static int SN_TEXT_IC_NORMAL_FC = 0XFF51514F;
+	public static int SN_TEXT_IC_IMPORTANT_FC = 0XFF51514F;
+	public static int SN_TEXT_IC_NORMAL_BGC = 0XFFF4DE09;
+	public static int SN_TEXT_IC_IMPORTANT_BGC = 0XFFFF7061;
+	public static int SN_TEXT_IC_READ_ONLY_FC = 0XFF51514F;
+	public static int SN_TEXT_IC_READ_ONLY_BGC = 0XFF479CC3;
+	
+	public static String SN_IMAGE_IC_TEXT = "U";
+	public static int SN_IMAGE_IC_NORMAL_FC = 0XFF51514F;
+	public static int SN_IMAGE_IC_IMPORTANT_FC = 0XFF51514F;
+	public static int SN_IMAGE_IC_NORMAL_BGC = 0XFFF4DE09;
+	public static int SN_IMAGE_IC_IMPORTANT_BGC = 0XFFFF7061;
+	public static int SN_IMAGE_IC_READ_ONLY_FC = 0XFF51514F;
+	public static int SN_IMAGE_IC_READ_ONLY_BGC = 0XFF479CC3;
+	
+	public static String SN_AUDIO_IC_TEXT = "T";
+	public static int SN_AUDIO_IC_NORMAL_FC = 0XFF51514F;
+	public static int SN_AUDIO_IC_IMPORTANT_FC = 0XFF51514F;
+	public static int SN_AUDIO_IC_NORMAL_BGC = 0XFFF4DE09;
+	public static int SN_AUDIO_IC_IMPORTANT_BGC = 0XFFFF7061;
+	public static int SN_AUDIO_IC_READ_ONLY_FC = 0XFF51514F;
+	public static int SN_AUDIO_IC_READ_ONLY_BGC = 0XFF479CC3;
+	
+	public static String SN_VIDEO_IC_TEXT = "W";
+	public static int SN_VIDEO_IC_NORMAL_FC = 0XFF51514F;
+	public static int SN_VIDEO_IC_IMPORTANT_FC = 0XFF51514F;
+	public static int SN_VIDEO_IC_NORMAL_BGC = 0XFFF4DE09;
+	public static int SN_VIDEO_IC_IMPORTANT_BGC = 0XFFFF7061;
+	public static int SN_VIDEO_IC_READ_ONLY_FC = 0XFF51514F;
+	public static int SN_VIDEO_IC_READ_ONLY_BGC = 0XFF479CC3;
+	
+	public static String OS_LINK_IC_IMAGE_TEXT = "k";
+    public static String OS_LINK_IC_ZOOMIMAGE_TEXT = "Ĝ";
+
+	public static int OS_LINK_IC_IMAGE_SELECTED_FC = 0XFF;
+	public static int OS_LINK_IC_IMAGE_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int OS_LINK_IC_GLOSSARY_IMAGE_UNSELECTED_FC = 0XFF000000;
+
+	public static int OS_LINK_IC_IMAGE_SELECTED_BGC = 0XFF;
+	public static int OS_LINK_IC_IMAGE_UNSELECTED_BGC = 0XFF;
+	
+	public static String OS_LINK_IC_AUDIO_TEXT = "i";
+	public static int OS_LINK_IC_AUDIO_SELECTED_FC = 0XFF;
+	public static int OS_LINK_IC_AUDIO_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int OS_LINK_IC_GLOSSARY_AUDIO_UNSELECTED_FC = 0XFF000000;
+	public static int OS_LINK_IC_AUDIO_SELECTED_BGC = 0XFF;
+	public static int OS_LINK_IC_AUDIO_UNSELECTED_BGC = 0XFF;
+	
+	public static String OS_LINK_IC_VIDEO_TEXT = "j";
+	public static int OS_LINK_IC_VIDEO_SELECTED_FC = 0XFF;
+	public static int OS_LINK_IC_VIDEO_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int OS_LINK_IC_GLOSSARY_VIDEO_UNSELECTED_FC = 0XFF000000;
+	public static int OS_LINK_IC_VIDEO_SELECTED_BGC = 0XFF;
+	public static int OS_LINK_IC_VIDEO_UNSELECTED_BGC = 0XFF;
+	
+	public static String OS_LINK_IC_WEBLINK_TEXT = "n";
+	public static int OS_LINK_IC_WEBLINK_SELECTED_FC = 0XFF;
+	public static int OS_LINK_IC_WEBLINK_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int OS_LINK_IC_GLOSSARY_WEBLINK_UNSELECTED_FC = 0XFF000000;
+	public static int OS_LINK_IC_WEBLINK_SELECTED_BGC = 0XFF;
+	public static int OS_LINK_IC_WEBLINK_UNSELECTED_BGC = 0XFF;
+	
+	public static String OS_LINK_IC_DOCUMENT_TEXT = "h";
+	public static int OS_LINK_IC_DOCUMENT_SELECTED_FC = 0XFF;
+	public static int OS_LINK_IC_DOCUMENT_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int OS_LINK_IC_DOCUMENT_SELECTED_BGC = 0XFF;
+	public static int OS_LINK_IC_DOCUMENT_UNSELECTED_BGC = 0XFF;
+	
+	public static String OS_LINK_IC_TOCGOTO_TEXT = "o";
+	public static int OS_LINK_IC_TOCGOTO_SELECTED_FC = 0XFF;
+	public static int OS_LINK_IC_TOCGOTO_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int OS_LINK_IC_TOCGOTO_SELECTED_BGC = 0XFF;
+	public static int OS_LINK_IC_TOCGOTO_UNSELECTED_BGC = 0XFF;
+	
+	public static String OS_LINK_IC_INTERACTIVE_TEXT = "l";
+	public static int OS_LINK_IC_INTERACTIVE_SELECTED_FC = 0XFF;
+	public static int OS_LINK_IC_INTERACTIVE_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int OS_LINK_IC_INTERACTIVE_SELECTED_BGC = 0XFF;
+	public static int OS_LINK_IC_INTERACTIVE_UNSELECTED_BGC = 0XFF;
+	
+	public static String OS_LINK_IC_ACTIVITY_TEXT = "]";
+	public static int OS_LINK_IC_ACTIVITY_SELECTED_FC = 0XFF;
+	public static int OS_LINK_IC_ACTIVITY_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int OS_LINK_IC_ACTIVITY_SELECTED_BGC = 0XFF;
+	public static int OS_LINK_IC_ACTIVITY_UNSELECTED_BGC = 0XFF;
+	
+	public static String OS_LINK_IC_KITABOO_ACTIVITY_TEXT = "Ø";
+	public static int OS_LINK_IC_KITABOO_ACTIVITY_SELECTED_FC = 0XFF;
+	public static int OS_LINK_IC_KITABOO_ACTIVITY_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int OS_LINK_IC_KITABOO_ACTIVITY_SELECTED_BGC = 0XFF;
+	public static int OS_LINK_IC_KITABOO_ACTIVITY_UNSELECTED_BGC = 0XFF;	
+	
+	public static String OS_LINK_IC_COMMENT_TEXT = "[";
+	public static int OS_LINK_IC_COMMENT_SELECTED_FC = 0XFF;
+	public static int OS_LINK_IC_COMMENT_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int OS_LINK_IC_COMMENT_SELECTED_BGC = 0XFF;
+	public static int OS_LINK_IC_COMMENT_UNSELECTED_BGC = 0XFF;
+
+	public static String OS_LINK_IC_SLIDESHOW_TEXT = "Ã";
+    public static int OS_LINK_IC_SLIDESHOW_SELECTED_FC = 0XFF;
+    public static int OS_LINK_IC_SLIDESHOW_UNSELECTED_FC = 0XFFFFFFFF;
+    public static int OS_LINK_IC_SLIDESHOW_SELECTED_BGC = 0XFF;
+    public static int OS_LINK_IC_SLIDESHOW_UNSELECTED_BGC = 0XFF;
+
+    public static String OS_LINK_IC_MULTILINK_TEXT = "@";
+    public static int OS_LINK_IC_MULTILINK_SELECTED_FC = 0XFF;
+    public static int OS_LINK_IC_MULTILINK_UNSELECTED_FC = 0XFFFFFFFF;
+    public static int OS_LINK_IC_MULTILINK_SELECTED_BGC = 0XFF;
+    public static int OS_LINK_IC_MULTILINK_UNSELECTED_BGC = 0XFF;
+
+    public static String OS_LINK_IC_JUMP_TO_BOOK_TEXT = "ə";
+    public static int OS_LINK_IC_JUMP_TO_BOOK_SELECTED_FC = 0XFF;
+    public static int OS_LINK_IC_JUMP_TO_BOOK_UNSELECTED_FC = 0XFFFFFFFF;
+    public static int OS_LINK_IC_JUMP_TO_BOOK_SELECTED_BGC = 0XFF;
+    public static int OS_LINK_IC_JUMP_TO_BOOK_UNSELECTED_BGC = 0XFF;
+
+	public static String OS_LINK_IC_Standalone_Instruction_TEXT = "ā";
+	public static int OS_LINK_IC_Standalone_Instruction_SELECTED_FC = 0XFF;
+	public static int OS_LINK_IC_Standalone_Instruction_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int OS_LINK_IC_Standalone_Instruction_SELECTED_BGC = 0XFF;
+	public static int OS_LINK_IC_Standalone_Instruction_UNSELECTED_BGC = 0XFF;
+	
+	//BD- BOOK DATA 
+	public static String BD_INDEX_ARROW_IC_TEXT = "H";
+	public static int BD_INDEX_ARROW_IC_FC = 0xFF5E98A3;
+	
+	public static String BD_TOC_ARROW_IC_TEXT = "H";
+	public static int BD_TOC_ARROW_IC_FC = 0xFF2FA2E3;
+	
+	public static int BD_TABBAR_BGC = 0x00000000;
+	public static int BD_BGC = 0x8026565E;
+	
+	public static int BD_RESOURCES_LEFT_PANEL_BGC = 0xFF000000;
+	public static int BD_RESOURCES_LEFT_LIST_BGC = 0x00000000;
+	public static int BD_RESOURCES_LEFT_ITEM_SELECTED_BGC = 0xEE124C57;
+	public static int BD_RESOURCES_LEFT_ITEM_UNSELECTED_BGC = 0x00000000;
+	
+	public static int BD_RESOURCES_RIGHT_PANEL_BGC = 0xEE031217;
+	public static int BD_RESOURCES_RIGHT_LIST_BGC = 0xEE124C57;
+	public static int BD_RESOURCES_RIGHT_ITEM_SELECTED_BGC = 0xEE031217;
+	public static int BD_RESOURCES_RIGHT_ITEM_UNSELECTED_BGC = 0xEE031217;
+	
+	public static int BD_TOC_BGC = 0xEE031217;
+	
+	public static int BD_TOC_LEFT_PANEL_BGC = 0xFF000000;
+	public static int BD_TOC_LEFT_ITEM_SELECTED_BGC = 0XEE124C57;
+	public static int BD_TOC_LEFT_ITEM_UNSELECTED_BGC = 0x00000000;
+	
+	public static int BD_TOC_RIGHT_PANEL_BGC = 0XEE124C57;
+	public static int BD_TOC_RIGHT_ITEM_SELECTED_BGC = 0xEE031217;
+	public static int BD_TOC_RIGHT_ITEM_UNSELECTED_BGC = 0xEE031217;
+	
+	public static String BD_TABBAR_TOC_IC_TEXT = "Contents";
+	public static int BD_TABBAR_TOC_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_TABBAR_TOC_IC_SELECTED_FC = 0XFFB0CF51;
+	public static int BD_TABBAR_TOC_IC_UNSELECTED_BGC = 0x00000000;
+	public static int BD_TABBAR_TOC_IC_SELECTED_BGC = 0x00000000;
+	public static int BD_TABBAR_TOC_IC_BOTTOM_STRIP_UNSELECTED_BGC = 0x00000000;
+	public static int BD_TABBAR_TOC_IC_BOTTOM_STRIP_SELECTED_BGC = 0XFFB0CF51;
+	
+	
+	public static String BD_TABBAR_RESOURCES_IC_TEXT = "Resources";
+	public static int BD_TABBAR_RESOURCES_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_TABBAR_RESOURCES_IC_SELECTED_FC = 0XFFB0CF51;
+	public static int BD_TABBAR_RESOURCES_IC_UNSELECTED_BGC = 0x00000000;
+	public static int BD_TABBAR_RESOURCES_IC_SELECTED_BGC = 0x00000000;
+	public static int BD_TABBAR_RESOURCES_IC_BOTTOM_STRIP_UNSELECTED_BGC = 0x00000000;
+	public static int BD_TABBAR_RESOURCES_IC_BOTTOM_STRIP_SELECTED_BGC = 0XFFB0CF51;
+	
+	public static String BD_TABBAR_INDEX_IC_TEXT = "Index";
+	public static int BD_TABBAR_INDEX_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_TABBAR_INDEX_IC_SELECTED_FC = 0XFFB0CF51;
+	public static int BD_TABBAR_INDEX_IC_UNSELECTED_BGC = 0x00000000;
+	public static int BD_TABBAR_INDEX_IC_SELECTED_BGC = 0x00000000;
+	public static int BD_TABBAR_INDEX_IC_BOTTOM_STRIP_UNSELECTED_BGC = 0x00000000;
+	public static int BD_TABBAR_INDEX_IC_BOTTOM_STRIP_SELECTED_BGC = 0XFFB0CF51;
+	
+	public static String BD_TABBAR_BOOKMARKS_IC_TEXT = "Bookmarks";
+	public static int BD_TABBAR_BOOKMARKS_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_TABBAR_BOOKMARKS_IC_SELECTED_FC = 0XFFB0CF51;
+	public static int BD_TABBAR_BOOKMARKS_IC_UNSELECTED_BGC = 0x00000000;
+	public static int BD_TABBAR_BOOKMARKS_IC_SELECTED_BGC = 0x00000000;
+	public static int BD_TABBAR_BOOKMARKS_IC_BOTTOM_STRIP_UNSELECTED_BGC = 0x00000000;
+	public static int BD_TABBAR_BOOKMARKS_IC_BOTTOM_STRIP_SELECTED_BGC = 0XFFB0CF51;
+	
+	public static String BD_RESOURCES_ARROW_IC_TEXT = "H";
+	public static int BD_RESOURCES_ARROW_IC_FC = 0xFF2FA2E3;
+	
+	public static String BD_RESOURCES_IMAGE_IC_TEXT = "k";
+	public static int BD_RESOURCES_IMAGE_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_RESOURCES_IMAGE_IC_UNSELECTED_BGC = 0x00000000;
+	
+	public static String BD_RESOURCES_AUDIO_IC_TEXT = "i";
+	public static int BD_RESOURCES_AUDIO_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_RESOURCES_AUDIO_IC_UNSELECTED_BGC = 0x00000000;
+	
+	public static String BD_RESOURCES_TOC_IC_TEXT = "o";
+	public static int BD_RESOURCES_TOC_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_RESOURCES_TOC_IC_UNSELECTED_BGC = 0x00000000;
+
+    public static String HC_GLOSSARY_IC_TEXT = "ƣ";
+    public static int HC_GLOSSARY_IC_SELECTED_FC = 0XFFFFFFFF;
+    public static int HC_GLOSSARY_IC_UNSELECTED_FC = 0XFFFFFFFF;
+    public static int HC_GLOSSARY_IC_SELECTED_BGC = 0X00000000;
+    public static int HC_GLOSSARY_IC_UNSELECTED_BGC = 0X00000000;
+
+	public static String HC_GLOSSARY_POP_IC_TEXT = "Ä";
+	public static int HC_GLOSSARY_POP_IC_UNSELECTED_FC = 0XFFFFFFFF;
+
+	public static String BD_RESOURCES_VIDEO_IC_TEXT = "j";
+	public static int BD_RESOURCES_VIDEO_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_RESOURCES_VIDEO_IC_UNSELECTED_BGC = 0x00000000;
+	
+	public static String BD_RESOURCES_DOCUMENT_IC_TEXT = "h";
+	public static int BD_RESOURCES_DOCUMENT_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_RESOURCES_DOCUMENT_IC_UNSELECTED_BGC = 0x00000000;
+	
+	public static String BD_RESOURCES_INTERACTIVE_IC_TEXT = "l";
+	public static int BD_RESOURCES_INTERACTIVE_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_RESOURCES_INTERACTIVE_IC_UNSELECTED_BGC = 0x00000000;
+	
+	public static String BD_RESOURCES_WEBLINK_IC_TEXT = "n";
+	public static int BD_RESOURCES_WEBLINK_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_RESOURCES_WEBLINK_IC_UNSELECTED_BGC = 0x00000000;
+	
+	public static String BD_RESOURCES_TOCGOTO_IC_TEXT = "o";
+	public static int BD_RESOURCES_TOCGOTO_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_RESOURCES_TOCGOTO_IC_UNSELECTED_BGC = 0x00000000;
+	
+	public static String BD_RESOURCES_ACTIVITY_IC_TEXT = "]";
+	public static int BD_RESOURCES_ACTIVITY_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_RESOURCES_ACTIVITY_IC_UNSELECTED_BGC = 0x00000000;
+	
+	public static String BD_RESOURCES_KITABOO_ACTIVITY_IC_TEXT = "Ø";
+	public static int BD_RESOURCES_KITABOO_ACTIVITY_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_RESOURCES_KITABOO_ACTIVITY_IC_UNSELECTED_BGC = 0x00000000;
+	
+	public static String BD_RESOURCES_FIB_INPUT_IC_TEXT = "î";
+	public static int BD_RESOURCES_FIB_INPUT_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_RESOURCES_FIB_INPUT_IC_UNSELECTED_BGC = 0x00000000;
+	
+	public static String BD_RESOURCES_FIB_DROPDOWN_IC_TEXT = "í";
+	public static int BD_RESOURCES_FIB_DROPDOWN_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_RESOURCES_FIB_DROPDOWN_IC_UNSELECTED_BGC = 0x00000000;
+
+    public static String BD_RESOURCES_JUMP_TO_BOOK_IC_TEXT = "ə";
+    public static int BD_RESOURCES_JUMP_TO_BOOK_IC_UNSELECTED_FC = 0xFFFFFFFF;
+    public static int BD_RESOURCES_JUMP_TO_BOOK_UNSELECTED_BGC = 0x00000000;
+
+	//TG = THUMBNAILS GALLERY
+	public static int TG_PANEL_BG_COLOR = 0XEE192426;
+	public static int TG_FILTERSTHUMBSDEVIDER_BG_COLOR = 0XFFB3CE4D;
+	public static int TG_CONTROLSTHUMBSDEVIDER_BG_COLOR = 0XFF335254;
+	public static int TG_SEEKBARTHUMBSDEVIDER_BG_COLOR = 0XFF335254;
+	
+	public static String TG_CLOSE_IC_TEXT = "2";
+	public static int TG_CLOSE_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int TG_CLOSE_IC_UNSELECTED_BGC = 0XFF000000;
+	
+	public static String TG_GO_ARROW_IC_TEXT = "¤";
+	public static int TG_GO_ARROW_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int TG_GO_ARROW_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String TG_HISTORY_PREV_IC_TEXT = "I";
+	public static int TG_HISTORY_PREV_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int TG_HISTORY_PREV_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String TG_HISTORY_NEXT_IC_TEXT = "J";
+	public static int TG_HISTORY_NEXT_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int TG_HISTORY_NEXT_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String TG_FILTER_ALL_IC_TEXT = "All";
+	public static int TG_FILTER_ALL_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int TG_FILTER_ALL_IC_SELECTED_FC = 0XFFB3CE4D;
+	public static int TG_FILTER_ALL_IC_UNSELECTED_BGC = 0X00000000;
+	public static int TG_FILTER_ALL_IC_SELECTED_BGC = 0X00000000;
+	public static int TG_FILTER_ALL_BOTTOM_STRIP_IC_SELECTED_COLOR = 0XFFB3CE4D;
+	public static int TG_FILTER_ALL_BOTTOM_STRIP_IC_UNSELECTED_COLOR = 0X00000000;
+	
+	public static String TG_FILTER_AUDIO_IC_TEXT = "i";
+	public static int TG_FILTER_AUDIO_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int TG_FILTER_AUDIO_IC_SELECTED_FC = 0XFFB3CE4D;
+	public static int TG_FILTER_AUDIO_IC_UNSELECTED_BGC = 0X00000000;
+	public static int TG_FILTER_AUDIO_IC_SELECTED_BGC = 0X00000000;
+	public static int TG_FILTER_AUDIO_BOTTOM_STRIP_IC_SELECTED_COLOR = 0XFFB3CE4D;
+	public static int TG_FILTER_AUDIO_BOTTOM_STRIP_IC_UNSELECTED_COLOR = 0X00000000;
+	
+	public static String TG_FILTER_VIDEO_IC_TEXT = "j";
+	public static int TG_FILTER_VIDEO_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int TG_FILTER_VIDEO_IC_SELECTED_FC = 0XFFB3CE4D;
+	public static int TG_FILTER_VIDEO_IC_UNSELECTED_BGC = 0X00000000;
+	public static int TG_FILTER_VIDEO_IC_SELECTED_BGC = 0X00000000;
+	public static int TG_FILTER_VIDEO_BOTTOM_STRIP_IC_SELECTED_COLOR = 0XFFB3CE4D;
+	public static int TG_FILTER_VIDEO_BOTTOM_STRIP_IC_UNSELECTED_COLOR = 0X00000000;
+	
+	public static String TG_FILTER_IMAGE_IC_TEXT = "k";
+	public static int TG_FILTER_IMAGE_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int TG_FILTER_IMAGE_IC_SELECTED_FC = 0XFFB3CE4D;
+	public static int TG_FILTER_IMAGE_IC_UNSELECTED_BGC = 0X00000000;
+	public static int TG_FILTER_IMAGE_IC_SELECTED_BGC = 0X00000000;
+	public static int TG_FILTER_IMAGE_BOTTOM_STRIP_IC_SELECTED_COLOR = 0XFFB3CE4D;
+	public static int TG_FILTER_IMAGE_BOTTOM_STRIP_IC_UNSELECTED_COLOR = 0X00000000;
+	
+	public static String TG_FILTER_DOC_IC_TEXT = "h";
+	public static int TG_FILTER_DOC_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int TG_FILTER_DOC_IC_SELECTED_FC = 0XFFB3CE4D;
+	public static int TG_FILTER_DOC_IC_UNSELECTED_BGC = 0X00000000;
+	public static int TG_FILTER_DOC_IC_SELECTED_BGC = 0X00000000;
+	public static int TG_FILTER_DOC_BOTTOM_STRIP_IC_SELECTED_COLOR = 0XFFB3CE4D;
+	public static int TG_FILTER_DOC_BOTTOM_STRIP_IC_UNSELECTED_COLOR = 0X00000000;
+	
+	public static String TG_FILTER_WEB_IC_TEXT = "n";
+	public static int TG_FILTER_WEB_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int TG_FILTER_WEB_IC_SELECTED_FC = 0XFFB3CE4D;
+	public static int TG_FILTER_WEB_IC_UNSELECTED_BGC = 0X00000000;
+	public static int TG_FILTER_WEB_IC_SELECTED_BGC = 0X00000000;
+	public static int TG_FILTER_WEB_BOTTOM_STRIP_IC_SELECTED_COLOR = 0XFFB3CE4D;
+	public static int TG_FILTER_WEB_BOTTOM_STRIP_IC_UNSELECTED_COLOR = 0X00000000;
+	
+	public static String TG_FILTER_INTERACT_IC_TEXT = "l";
+	public static int TG_FILTER_INTERACT_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int TG_FILTER_INTERACT_IC_SELECTED_FC = 0XFFB3CE4D;
+	public static int TG_FILTER_INTERACT_IC_UNSELECTED_BGC = 0X00000000;
+	public static int TG_FILTER_INTERACT_IC_SELECTED_BGC = 0X00000000;
+	public static int TG_FILTER_INTERACT_BOTTOM_STRIP_IC_SELECTED_COLOR = 0XFFB3CE4D;
+	public static int TG_FILTER_INTERACT_BOTTOM_STRIP_IC_UNSELECTED_COLOR = 0X00000000;
+	
+	public static String TG_FILTER_TOCGOTO_IC_TEXT = "o";
+	public static int TG_FILTER_TOCGOTO_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int TG_FILTER_TOCGOTO_IC_SELECTED_FC = 0XFFB3CE4D;
+	public static int TG_FILTER_TOCGOTO_IC_UNSELECTED_BGC = 0X00000000;
+	public static int TG_FILTER_TOCGOTO_IC_SELECTED_BGC = 0X00000000;
+	public static int TG_FILTER_TOCGOTO_BOTTOM_STRIP_IC_SELECTED_COLOR = 0XFFB3CE4D;
+	public static int TG_FILTER_TOCGOTO_BOTTOM_STRIP_IC_UNSELECTED_COLOR = 0X00000000;
+	
+	//UD - UGC Data 
+	
+	public static String UD_TABBAR_ALL_IC_TEXT = "All";
+	public static int UD_TABBAR_ALL_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int UD_TABBAR_ALL_IC_SELECTED_FC = 0XFFB0CF51;
+	public static int UD_TABBAR_ALL_IC_UNSELECTED_BGC = 0x00000000;
+	public static int UD_TABBAR_ALL_IC_SELECTED_BGC = 0x00000000;
+	public static int UD_TABBAR_ALL_IC_BOTTOM_STRIP_UNSELECTED_BGC = 0x00000000;
+	public static int UD_TABBAR_ALL_IC_BOTTOM_STRIP_SELECTED_BGC = 0XFFB0CF51;
+	
+	public static String UD_TABBAR_NOTES_IC_TEXT = "Notes";
+	public static int UD_TABBAR_NOTES_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int UD_TABBAR_NOTES_IC_SELECTED_FC = 0XFFB0CF51;
+	public static int UD_TABBAR_NOTES_IC_UNSELECTED_BGC = 0x00000000;
+	public static int UD_TABBAR_NOTES_IC_SELECTED_BGC = 0x00000000;
+	public static int UD_TABBAR_NOTES_IC_BOTTOM_STRIP_UNSELECTED_BGC = 0x00000000;
+	public static int UD_TABBAR_NOTES_IC_BOTTOM_STRIP_SELECTED_BGC = 0XFFB0CF51;
+	
+	public static String UD_TABBAR_HIGHLIGHTS_IC_TEXT = "Highlights";
+	public static int UD_TABBAR_HIGHLIGHTS_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int UD_TABBAR_HIGHLIGHTS_IC_SELECTED_FC = 0XFFB0CF51;
+	public static int UD_TABBAR_HIGHLIGHTS_IC_UNSELECTED_BGC = 0x00000000;
+	public static int UD_TABBAR_HIGHLIGHTS_IC_SELECTED_BGC = 0x00000000;
+	public static int UD_TABBAR_HIGHLIGHTS_IC_BOTTOM_STRIP_UNSELECTED_BGC = 0x00000000;
+	public static int UD_TABBAR_HIGHLIGHTS_IC_BOTTOM_STRIP_SELECTED_BGC = 0XFFB0CF51;
+	
+	public static String UD_TABBAR_BOOKMARKS_IC_TEXT = "Bookmarks";
+	public static int UD_TABBAR_BOOKMARKS_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int UD_TABBAR_BOOKMARKS_IC_SELECTED_FC = 0XFFB0CF51;
+	public static int UD_TABBAR_BOOKMARKS_IC_UNSELECTED_BGC = 0x00000000;
+	public static int UD_TABBAR_BOOKMARKS_IC_SELECTED_BGC = 0x00000000;
+	public static int UD_TABBAR_BOOKMARKS_IC_BOTTOM_STRIP_UNSELECTED_BGC = 0x00000000;
+	public static int UD_TABBAR_BOOKMARKS_IC_BOTTOM_STRIP_SELECTED_BGC = 0XFFB0CF51;
+	
+	public static String UD_COMMENT_IC_TEXT = "É";
+	public static int UD_COMMENT_IC_UNSELECTED_FC = 0xFFBBBBBB;
+	public static int UD_COMMENT_IC_SELECTED_FC = 0xFF8FD5E1;
+	
+	public static String UD_SHARE_IC_TEXT = "Æ";
+	public static int UD_SHARE_IC_UNSELECTED_FC = 0xFFBBBBBB;
+	public static int UD_SHARE_IC_SELECTED_FC = 0xFF8FD5E1;
+	
+	//SHARE UGC ITEM SCREEN CONSTANTS
+	public static String UD_SHARE_UGC_ITEM_BACK_IC_TEXT = "G";
+	public static int UD_SHARE_UGC_ITEM_BACK_IC_FC = 0xFFFFFFFF;
+	
+	public static String UD_SHARE_SETTINGS_BACK_IC_TEXT = "G";
+	public static int UD_SHARE_SETTINGS_BACK_IC_FC = 0xFFFFFFFF;
+	
+	public static String UD_SHARE_ITEM_CHECKBOX_TEXT = "F";
+	public static int UD_SHARE_ITEM_CHECKBOX_FC = 0xFFFFFFFF;
+	
+	public static String UD_SETTINGS_ITEM_CHECKBOX_TEXT = "F";
+	public static int UD_SETTINGS_ITEM_CHECKBOX_FC = 0xFFFFFFFF;
+	
+	public static int UD_H_IC_NORMAL_FC = 0XFFFFF261;
+	public static int UD_H_IC_NORMAL_BGC = 0X00000000;
+	
+	public static int UD_H_IC_IMP_FC = 0XFFFF7061;
+	public static int UD_H_IC_IMP_BGC = 0X00000000;
+	
+	public static int UD_H_IC_READ_ONLY_FC = 0XFF479CC3;
+	public static int UD_H_IC_READ_ONLY_BGC = 0X00000000;
+	
+	public static String DOWN_ARROW_IC_TEXT = "7";
+	public static int DOWN_ARROW_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int DOWN_ARROW_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String UP_ARROW_IC_TEXT = "6";
+	public static int UP_ARROW_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int UP_ARROW_IC_UNSELECTED_BGC = 0X00000000;
+	
+	//SHARE UGC MOBILE SETTINGS CONSTANTS
+	public static String UD_MOBILE_SHARE_SETTINGS_BACK_IC_TEXT = "a";
+	public static int UD_MOBILE_SHARE_SETTINGS_BACK_IC_COLOR = 0xFFFFFFFF;
+	
+	//ANALYTICS ITEM SCREEN CONSTANTS
+	public static String AN_CLASS_EXPAND_IC_TEXT = "5";
+	public static String AN_CLASS_COLAPSE_IC_TEXT = "X";
+	
+	
+	//UGC New note Share
+	public static String UGC_NOTE_SHARE_ACCEPT_IC_TEXT = "8";
+	public static int UGC_NOTE_SHARE_ACCEPT_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int UGC_NOTE_SHARE_ACCEPT_IC_SELECTED_FC = 0XFF000000;
+	public static int UGC_NOTE_SHARE_ACCEPT_IC_UNSELECTED_BGC = 0XFFB3CE4D;
+	public static int UGC_NOTE_SHARE_ACCEPT_IC_SELECTED_BGC = 0XFFB3CE4D;
+	
+	public static String UGC_NOTE_SHARE_REJECT_IC_TEXT = "2";
+	public static int UGC_NOTE_SHARE_REJECT_IC_UNSELECTED_FC = 0XFFFFFFFF;
+	public static int UGC_NOTE_SHARE_REJECT_IC_SELECTED_FC = 0XFF000000;
+	public static int UGC_NOTE_SHARE_REJECT_IC_UNSELECTED_BGC = 0XFFFFFFFF;
+	public static int UGC_NOTE_SHARE_REJECT_IC_SELECTED_BGC = 0XFFFFFFFF;
+	
+	//Teacher Assessment
+	
+	public static String ASSESSMENTS_PEN_DEFAULT_IC_TEXT = "f";
+	public static int ASSESSMENTS_PEN_DEFAULT_IC_SELECTED_FC = 0XFFFFFFFF;
+	public static int ASSESSMENTS_PEN_DEFAULT_IC_UNSELECTED_FC = 0X00000000;
+	public static int ASSESSMENTS_PEN_DEFAULT_IC_SELECTED_BGC = 0XFFFFFFFF;
+	public static int ASSESSMENTS_PEN_DEFAULT_IC_UNSELECTED_BGC = 0X00000000;
+	
+	
+	public static String ASSESSMENTS_RED_DEFAULT_IC_TEXT = "M";
+	public static int ASSESSMENTS_RED_DEFAULT_IC_SELECTED_FC = 0XFFFF0000;
+	public static int ASSESSMENTS_RED_DEFAULT_IC_UNSELECTED_FC = 0X00000000;
+	public static int ASSESSMENTS_RED_DEFAULT_IC_SELECTED_BGC = 0XFFFFFFFF;
+	public static int ASSESSMENTS_RED_DEFAULT_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String ASSESSMENTS_GREEN_DEFAULT_IC_TEXT = "M";
+	public static int ASSESSMENTS_GREEN_DEFAULT_IC_SELECTED_FC = 0XFF93C50C;
+	public static int ASSESSMENTS_GREEN_DEFAULT_IC_UNSELECTED_FC = 0X00000000;
+	public static int ASSESSMENTS_GREEN_DEFAULT_IC_SELECTED_BGC = 0XFFFFFFFF;
+	public static int ASSESSMENTS_GREEN_DEFAULT_IC_UNSELECTED_BGC = 0X00000000;
+	
+	
+	public static String ASSESSMENTS_BIG_PEN_DEFAULT_IC_TEXT = "\"";
+	public static int ASSESSMENTS_BIG_PEN_DEFAULT_IC_SELECTED_FC = 0XFFFFB900;
+	public static int ASSESSMENTS_BIG_PEN_DEFAULT_IC_UNSELECTED_FC = 0X00000000;
+	public static int ASSESSMENTS_BIG_PEN_DEFAULT_IC_SELECTED_BGC = 0XFFFFFFFF;
+	public static int ASSESSMENTS_BIG_PEN_DEFAULT_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String ASSESSMENTS_SMALL_PEN_DEFAULT_IC_TEXT = "\"";
+	public static int ASSESSMENTS_SMALL_PEN_IC_SELECTED_FC = 0XFFFFB900;
+	public static int ASSESSMENTS_SMALL_PEN_DEFAULT_IC_UNSELECTED_FC = 0X00000000;
+	public static int ASSESSMENTS_SMALL_PEN_DEFAULT_IC_SELECTED_BGC = 0XFFFFFFFF;
+	public static int ASSESSMENTS_SMALL_PEN_DEFAULT_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String ASSESSMENTS_SUMBIT_DEFAULT_IC_TEXT = "F";
+	public static int ASSESSMENTS_SUMBIT_IC_SELECTED_FC = 0XFF808080;
+	
+	public static String BD_RESOURCES_YOUTUBE_VIDEO_IC_TEXT = "j";
+	public static int BD_RESOURCES_YOUTUBE_VIDEO_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_RESOURCES_YOUTUBE_VIDEO_IC_UNSELECTED_BGC = 0x00000000;
+	
+	public static String BD_RESOURCES_Standalone_Instruction_IC_TEXT = "ā";
+	public static int BD_RESOURCES_Standalone_Instruction_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_RESOURCES_Standalone_Instruction_IC_UNSELECTED_BGC = 0x00000000;
+
+    public static String BD_RESOURCES_SURVEY_IC_TEXT = "ǿ";
+
+    public static String BD_RESOURCES_MULTI_LINK_TEXT = "@";
+    public static int BD_RESOURCES_MULTI_LINK_UNSELECTED_FC = 0xFFFFFFFF;
+    public static int BD_RESOURCES_MULTI_LINK_UNSELECTED_BGC = 0x00000000;
+
+	public static String BD_RESOURCES_KALTURA_VIDEO_IC_TEXT = "j";
+	public static int BD_RESOURCES_KALTURA_VIDEO_IC_UNSELECTED_FC = 0xFFFFFFFF;
+	public static int BD_RESOURCES_KALTURA_VIDEO_IC_UNSELECTED_BGC = 0x00000000;
+
+    public static String BD_RESOURCES_VIMEO_VIDEO_IC_TEXT = "j";
+    public static int BD_RESOURCES_VIMEO_VIDEO_IC_UNSELECTED_FC = 0xFFFFFFFF;
+    public static int BD_RESOURCES_VIMEO_VIDEO_IC_UNSELECTED_BGC = 0x00000000;
+
+	//Instant feedback 
+	
+	public static String IF_FEEBBACK_STATUS_CORRECT_IC_TEXT = "F";
+	public static int IF_FEEBBACK_STATUS_CORRECT_IC_SELECTED_FC = 0XFF239B08;
+	public static int IF_FEEBBACK_STATUS_CORRECT_IC_UNSELECTED_FC = 0X00000000;
+	public static int IF_FEEBBACK_STATUS_CORRECT_IC_SELECTED_BGC = 0XFFFFFFFF;
+	public static int IF_FEEBBACK_STATUS_CORRECT_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String IF_FEEBBACK_STATUS_INCORRECT_IC_TEXT = "2";
+	public static int IF_FEEBBACK_STATUS_INCORRECT_IC_SELECTED_FC = 0XFFE40A06;
+	public static int IF_FEEBBACK_STATUS_INCORRECT_IC_UNSELECTED_FC = 0X00000000;
+	public static int IF_FEEBBACK_STATUS_INCORRECT_IC_SELECTED_BGC = 0XFFFFFFFF;
+	public static int IF_FEEBBACK_STATUS_INCORRECT_IC_UNSELECTED_BGC = 0X00000000;
+	
+	public static String IF_FEEBBACK_ANSWER_IC_TEXT = "#";
+	public static int IF_FEEBBACK_ANSWER_IC_SELECTED_FC = 0XFF536E76;
+	public static int IF_FEEBBACK_ANSWER_IC_UNSELECTED_FC = 0X00000000;
+	public static int IF_FEEBBACK_ANSWER_IC_SELECTED_BGC = 0XFFFFFFFF;
+	public static int IF_FEEBBACK_ANSWER_IC_UNSELECTED_BGC = 0X00000000;
+
+    public static String AUDIO_PLAY_IC_TEXT = "L";
+    public static int AUDIO_PLAY_IC_SELECTED_FC = 0XFFFFFFFF;
+    public static int AUDIO_PLAY_IC_UNSELECTED_FC = 0XFFFFFFFF;
+    public static int AUDIO_PLAY_IC_SELECTED_BGC = 0X00000000;
+    public static int AUDIO_PLAY_IC_UNSELECTED_BGC = 0X00000000;
+    public static int AUDIO_PLAY_IC_DISABLED_FC = 0X80FFFFFF;
+
+    public static String AUDIO_PAUSE_IC_TEXT = "K";
+    public static int DOWNLOAD_PAUSE_IC_TEXTCOLOR = 0XFFFFFFFF;
+    public static int DOWNLOAD_PAUSE_IC_BG_COLOR = 0X00000000;
+	
+	public static String SEARCHVIEW_CLOSE_IC_TEXT = "2";
+
+	public static String SEARCHVIEW_BACK_IC_TEXT = "G";
+
+    public static String HTML_WINDOW_DRAG_IC_TEXT = "ď";
+    public static String HTML_WINDOW_MINIMIZE_IC_TEXT = "Ʃ";
+    public static int HTML_WINDOW_IC_SELECTED_TEXT_COLOR = 0X66000000;
+
+	public static String TEACHER_ICON = "Ě";
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="close_width">39dp</dimen>
+    <dimen name="close_height">39dp</dimen>
+    <item name="action_bar_bottom_pdf_land_margin" format="integer" type="integer">320</item>
+    <item name="action_bar_bottom_reflowable_land_margin" format="integer" type="integer">400</item>
+    <item name="action_bar_bottom_pdf_land_margin_chrombook" format="integer" type="integer">90</item>
+
+    <item name="bottom_action_bar_land_FixedEpub_margin" type="integer" format="integer">470</item>
+    <item name="action_bar_top_pen_land_margin" format="integer" type="integer">630</item>
+    <dimen name="loginscreen_textsize">18sp</dimen>
+
+    <!--Bottom action bar icons size-->
+    <item name="action_icon_size" format="integer" type="integer">20</item>
+    <item name="action_icon_min_width" format="integer" type="integer">90</item>
+</resources>

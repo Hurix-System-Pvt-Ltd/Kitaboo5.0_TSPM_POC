@@ -1,0 +1,233 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:id="@+id/background_img"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animationCache="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".20">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.80">
+
+            <RelativeLayout
+                android:id="@+id/loginContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:id="@+id/languageChangeRelativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="5dp"
+                    android:visibility="visible">
+
+
+                    <LinearLayout
+                        android:id="@+id/tvPowerByIDContainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvPowerByID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="@string/powered_by"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/kitabooLogo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:paddingRight="2dp"
+                            android:text="Ù"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:layout_marginLeft="2dp"
+                            android:textSize="@dimen/kitaboo_logo_textsize" />
+                    </LinearLayout>
+
+
+                    <RelativeLayout
+                        android:id="@+id/languageRelativeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toStartOf="@+id/tvPowerByIDContainer">
+
+                        <TextView
+                            android:id="@+id/langLeftTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:lineSpacingExtra="-21sp"
+                            android:textColor="#ffffffff"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/selectedLangTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/langLeftTextView"
+                            android:lineSpacingExtra="-21sp"
+                            android:text=""
+                            android:textColor="#ffffffff"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            />
+
+                        <TextView
+                            android:id="@+id/langDropDownTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="5dp"
+                            android:layout_toEndOf="@+id/selectedLangTextView"
+                            android:lineSpacingExtra="-21sp"
+                            android:textColor="#ffffffff"
+                            android:textSize="12sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/nv_PoweredBy_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/nv_PowerByID"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="2dp"
+                            android:layout_centerVertical="true"
+                            android:text="@string/powered_by"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:id="@+id/nvPoweredbyLogo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/nv_PowerByID"
+                            android:padding="2dp"
+                            android:src="@drawable/bottom_logo_signin_1"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/kitabLogomobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp" />
+                <TextView
+                    android:id="@+id/txtTdee"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/kitabLogomobile"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="Ingresa tus credenciales y empieza a  disfrutar tus contenidos digitales"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:visibility="gone">
+
+                </TextView>
+                <RelativeLayout
+                    android:id="@+id/login_scroll1"
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_below="@+id/txtTdee"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <com.google.android.material.tabs.TabLayout
+                        android:id="@+id/tabs1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:tabGravity="fill"
+                        android:layout_gravity="center"
+                        app:tabIndicatorColor="#095e8e"
+                        app:tabPaddingEnd="20dp"
+                        app:tabPaddingStart="20dp"
+                        app:tabMode="fixed"
+                        app:tabSelectedTextColor="@color/white"
+                        app:tabTextAppearance="@style/TabLayoutTextStylelogin"
+                        app:tabTextColor="@color/white" />
+
+                    <View
+                        android:id="@+id/line"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tabs1"
+                        android:background="#095e8e"
+                        android:visibility="visible" />
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/vwpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/line"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/bottom_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_above="@+id/languageChangeRelativeLayout"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/black"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="@string/IIS_bottom_banner_name"
+                        android:textColor="@color/white">
+                    </TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

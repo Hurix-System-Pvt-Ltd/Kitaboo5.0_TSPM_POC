@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/exGridViewParent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/book_thumbnail_item_height" >
+
+    <com.hurix.kitaboocloud.bookshelf.ExpandableHeightGridView
+        android:id="@+id/gvexpandchild"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:listSelector="@android:color/transparent"
+        android:minHeight="@dimen/book_thumbnail_item_height"
+        android:numColumns="4"
+        android:verticalSpacing="10dp" >
+    </com.hurix.kitaboocloud.bookshelf.ExpandableHeightGridView>
+
+</FrameLayout>

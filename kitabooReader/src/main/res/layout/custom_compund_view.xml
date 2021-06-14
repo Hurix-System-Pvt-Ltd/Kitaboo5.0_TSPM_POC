@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/color_popup_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/btn_color_popup"
+        android:layout_width="60dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/color_selected_indicator1"
+        android:layout_width="30dp"
+        android:layout_height="3.5dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="15dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/color_selected_indicator2"
+        android:layout_width="30dp"
+        android:layout_height="5dp"
+        android:visibility="gone"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="15dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/color_selected_indicator3"
+        android:layout_width="30dp"
+        android:layout_height="6.5dp"
+        android:visibility="gone"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="15dp">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/color_selected_indicator4"
+        android:layout_width="30dp"
+        android:layout_height="7.5dp"
+        android:visibility="gone"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="15dp">
+
+    </TextView>
+
+</LinearLayout>

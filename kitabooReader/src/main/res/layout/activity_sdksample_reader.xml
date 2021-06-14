@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <fragment
+        android:id="@+id/custom_layout"
+        class="com.hurix.renderer.RendererView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+    </fragment>
+
+
+    <com.hurix.customui.actionbar.KitabooActionbar
+        android:id="@+id/topActionbarid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="top">
+
+    </com.hurix.customui.actionbar.KitabooActionbar>
+
+    <LinearLayout
+        android:id="@+id/thumbnailview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="48dp"
+        android:background="@color/Thumb"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+    <com.hurix.customui.actionbar.KitabooActionbar
+        android:id="@+id/bottomActionbarid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom">
+
+    </com.hurix.customui.actionbar.KitabooActionbar>
+
+    <LinearLayout
+        android:id="@+id/stickynotelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stickynote_add_msg"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/text_annotation_parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone"
+
+        android:weightSum="5">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/text_annotation_container"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey"></View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_keyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</FrameLayout>

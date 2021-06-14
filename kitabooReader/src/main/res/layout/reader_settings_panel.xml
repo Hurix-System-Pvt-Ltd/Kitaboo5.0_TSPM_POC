@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:slideswitch="http://schemas.android.com/tools"
+    android:id="@+id/ll_reader_main_panel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_mode_panel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/tv_mode_txt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+
+            android:gravity="center_vertical"
+            android:text="@string/mode" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/tv_night_mode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Aa"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:id="@+id/tv_day_mode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Aa"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:id="@+id/tv_sepia_mode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Aa"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ff_mode_panel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/font_mode_txt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+
+            android:gravity="center_vertical"
+            android:text="@string/font" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/font_sans_mode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Os"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:id="@+id/font_Georgia_mode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="G"
+                android:textSize="20sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_weight="0.5" />
+
+            <TextView
+                android:id="@+id/font_Serif_mode"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Ns"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/scroll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/tv_scroll_view_txt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="Scroll Enabled" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+                        <Switch
+                            android:id="@+id/simpleSwitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:switchMinWidth="56dp"
+                            android:textSize="25sp" />
+
+            <ToggleButton
+                android:id="@+id/toggBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.75"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/custom_switch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/switch_btn_left"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/setting_switch_track"
+                android:text="ON"
+                android:textColor="#065c87"
+                android:textSize="12dp" />
+
+            <Button
+                android:id="@+id/switch_btn_right"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-1dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/setting_switch_track"
+                android:text="OFF"
+                android:textColor="#e5e5e5"
+                android:textSize="12dp" />
+        </LinearLayout>-->
+
+        <!--<LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="3.3"
+            android:gravity="center_vertical">
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/switch_scroll_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textOff="ON"
+                android:textOn="OFF"
+                android:thumb="@drawable/setting_switch_selector"
+                android:visibility="visible"
+                app:showText="true"
+                app:track="@drawable/switch_custom_track"
+                slideswitch:shape="rectangle" />
+
+
+        </LinearLayout>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/resetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1.6" />
+
+        <TextView
+            android:id="@+id/tv_reset_setting"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1.2"
+            android:text="@string/reset_setting"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="1.2" />
+
+
+    </LinearLayout>
+    <!--<TextView
+        android:id="@+id/tv_reset_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:text="@string/reset_setting" />-->
+</LinearLayout>

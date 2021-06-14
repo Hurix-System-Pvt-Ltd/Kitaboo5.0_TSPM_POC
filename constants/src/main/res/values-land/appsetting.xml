@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="column_count" format="integer" type="integer">5</item>
+    <item name="toc_bottom_padding" format="integer" type="integer">60</item>
+    <item name="link_ic_font_size" format="integer" type="integer">14</item>
+    <item name="link_ic_size" format="integer" type="integer">24</item>
+    <item name="thumbnail_column_count" format="integer" type="integer">2</item>
+    <item name="number_search_ele" format="integer" type="integer">2</item>
+    <item name="load_factor" format="float" type="dimen">0.6</item>
+    <item name="books_in_a_row_count" format="integer" type="integer">4</item>
+</resources>

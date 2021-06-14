@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- <item name="book_thumbnail_layout_weight" format="float" type="string">2.5</item>-->
+    <integer name="book_thumbnail_layout_weight">2</integer>
+    <integer name="small_book_thumbnail_layout_weight">1</integer>
+    <dimen name="layoutshadow_Container_hight">430dp</dimen>
+    <dimen name="layoutshadow_Container_width">600dp</dimen>
+    <integer name="btn_layout_margintop">15</integer>
+    <integer name="btn_layout_marginbutton">5</integer>
+
+
+     <integer name="world_book_thumbnail_layout_weight">3</integer>
+    <dimen name="WBooklayoutshadow_Container_hight">430dp</dimen>
+    <integer name="book_description_container_weight">8</integer>
+</resources>

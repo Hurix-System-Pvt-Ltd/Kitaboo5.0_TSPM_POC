@@ -1,0 +1,21 @@
+{
+   "user":{
+      "id":"17",
+      "firstName":"Maths",
+      "lastName":"Teacher",
+      "email":"arvind.pandey@hurix.com",
+      "userName":"arvind.pandey@hurix.com",
+      "roles":[
+         {
+            "id":2,
+            "name":"LEARNER",
+            "desc":"Receives book"
+         }
+      ]
+   },
+   "clientID":1,
+   "userToken":"bWF0aHNAdGVzdC5jb206MTM5ODY2NTE4NDE0Ng==",
+   "responseCode":"200",
+   "responseMsg":"OK",
+   "timeStamp":"22:04:2014 14:23:45"
+}

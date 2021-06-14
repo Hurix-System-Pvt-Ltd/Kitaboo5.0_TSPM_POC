@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/profile_setting_drawable">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text= "@string/advanced_search_title"
+        android:lines="1"
+        android:padding="@dimen/button_padding"
+        android:textSize="22sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingLeft="@dimen/button_padding"
+        android:paddingRight="@dimen/button_padding">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkBox_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentStart="true"
+                    app:buttonTint="@color/kitaboo_main_color"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/text_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/checkBox_author"
+                    android:text="@string/author" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkBox_eISBN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentStart="true"
+                    app:buttonTint="@color/kitaboo_main_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_eISBN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/checkBox_eISBN"
+                    android:text="@string/eisbn" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:weightSum="4">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkBox_BookTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentStart="true"
+                    app:buttonTint="@color/kitaboo_main_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_BookTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/checkBox_BookTitle"
+                    android:text="@string/book_title" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkBox_Subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    app:buttonTint="@color/kitaboo_main_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_Subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/checkBox_Subject"
+                    android:text="@string/subject_search" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkBox_SeriesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    app:buttonTint="@color/kitaboo_main_color" />
+
+                <TextView
+                    android:id="@+id/text_SeriesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/checkBox_SeriesTitle"
+                    android:text="@string/series_title_search" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkBox_Publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentStart="true"
+                    app:buttonTint="@color/kitaboo_main_color"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/text_Publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/checkBox_Publisher"
+                    android:text="@string/publisher" />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkBox_Category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    app:buttonTint="@color/kitaboo_main_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/text_Category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/checkBox_Category"
+                    android:text="@string/category"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkBox_BookContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    app:buttonTint="@color/kitaboo_main_color" />
+
+                <TextView
+                    android:id="@+id/text_BookContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/checkBox_BookContent"
+                    android:text="@string/book_content" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/button_padding">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/interest_level_search"
+            android:textSize="@dimen/About_us_text_size"
+            android:paddingBottom="@dimen/About_us_text_size"/>
+        <!--<Spinner
+            android:id="@+id/gradeSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:scrollbarSize="5dp"
+            android:scrollIndicators="bottom">-->
+
+            <Spinner
+                android:id="@+id/gradeSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:dropDownWidth="wrap_content"
+                android:spinnerMode="dropdown"
+                android:paddingRight="@dimen/button_padding"/>
+            <View
+                android:id="@+id/spinnerLine"
+                android:layout_width="140dp"
+                android:layout_height="2dp"
+                android:background="@drawable/straight_line"
+                android:layerType="software"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="2dp"
+                />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+            <Button
+                android:id="@+id/resetFilter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset_filter"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:textSize="16sp"
+                android:textAllCaps="true"/>
+            <Button
+                android:id="@+id/apply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/apply"
+                android:background="@color/white"
+                android:textSize="16sp"
+                android:layout_alignParentRight="true"
+                android:paddingRight="@dimen/button_padding"
+                android:textAllCaps="true"/>
+
+
+        </RelativeLayout>
+        </LinearLayout>
+
+</LinearLayout>

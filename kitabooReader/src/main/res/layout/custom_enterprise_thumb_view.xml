@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/imageContainer"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/thumbView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="2dp"
+        android:background="@drawable/thumb_image_drawable"
+        android:adjustViewBounds="true"
+        android:src="@drawable/placeholder" />
+
+    <FrameLayout
+        android:id="@+id/textcontainer"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/thumbView"
+        android:background="@color/kitaboo_main_color">
+
+        <TextView
+            android:id="@+id/tpageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+</RelativeLayout>

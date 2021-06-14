@@ -1,0 +1,19 @@
+{
+ "LoginResponse": 
+  {
+    "clientId": "17",
+    "clientName": "Qctesting",
+    "color_code": "#800000",
+    "firstName": "Maths",
+    "instituteConfig": {
+      
+    },
+    "lastName": "Teacher",
+    "logo_url": "http://172.18.10.157:8180/test/17.jpg?500692920610550",
+    "profile_pic": "http://172.18.10.157:8180/test/users/782.jpg",
+    "roleName": "LEARNER",
+    "status": "200",
+    "token": "bWF0aHNAdGVzdC5jb206MTM5ODY2NTE4NDE0Ng==",
+    "type": "LEARNER"
+  }
+}

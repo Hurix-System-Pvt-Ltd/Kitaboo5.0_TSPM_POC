@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion '30.0.2'
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 30
+    }
+    buildTypes {
+        release {
+            lintOptions {
+                abortOnError false
+            }
+            minifyEnabled false
+        }
+    }
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+
+
+dependencies {
+    //compile files('libs/commons-httpclient-3.1.jar')
+    api files('libs/org.apache.http.legacy.jar')
+  //  api files('libs/crittercism_v4_5_4_sdkonly.jar')
+    api files('libs/svg-android-1.1.jar')
+    //compile files('libs/YouTubeAndroidPlayerApi.jar')
+
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0-rc01'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    api 'com.google.android.material:material:1.0.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    //compile group: 'com.nineoldandroids', name: 'library', version: '2.4.0'
+    api group: 'commons-io', name: 'commons-io', version: '2.4'
+    api group: 'org.jsoup', name: 'jsoup', version: '1.8.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+
+    //compile files('libs/photoview.jar')
+}
+repositories {
+    mavenCentral()
+}

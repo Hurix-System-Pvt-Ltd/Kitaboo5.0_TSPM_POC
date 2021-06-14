@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="innerbookcollection_preview_layout_height">370dp</dimen>
+    <dimen name="moreinfo_dialog_width">600dp</dimen>
+    <dimen name="moreinfo_dialog_height">420dp</dimen>
+    <dimen name="main_bottom_setting_panel_margin">350dp</dimen>
+    <!--Bottom action bar icons size-->
+    <item name="action_icon_size" format="integer" type="integer">20</item>
+    <item name="action_icon_min_width" format="integer" type="integer">90</item>
+</resources>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topbar_popup"
+    android:layout_width="240dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/acesscode_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/accesscode_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:lineSpacingExtra="22sp"
+                android:gravity="center_horizontal"
+                android:text="*"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/acesscode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_toRightOf="@+id/accesscode_icon"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:lineSpacingExtra="5sp"
+                android:layout_marginLeft="20dp"
+                android:text="Access Code"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/profile_setting_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:id="@+id/profile_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:textColor="#095e8e"
+                android:lineSpacingExtra="22sp"
+                android:gravity="center_horizontal"
+                android:text="Ƥ"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/profile_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profile_icon"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:lineSpacingExtra="5sp"
+                android:singleLine="true"
+                android:text="Profile Settings"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sortBy_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_setting_container"
+            android:visibility="visible"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:id="@+id/sortBy_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:textColor="#095e8e"
+                android:lineSpacingExtra="22sp"
+                android:gravity="center_horizontal"
+                android:text="7"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/sortBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/sortBy_icon"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:textStyle="normal"
+                android:lineSpacingExtra="5sp"
+                android:singleLine="true"
+                android:text="Sort by"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/category_sortby_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sortBy_container"
+            android:visibility="visible"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            >
+
+            <TextView
+                android:id="@+id/category_sortby_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="21sp"
+                android:textColor="#095e8e"
+                android:lineSpacingExtra="22sp"
+                android:gravity="center_horizontal"
+                android:text="∞"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"/>
+
+            <TextView
+                android:id="@+id/category_sortby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/category_sortby_icon"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:textStyle="normal"
+                android:lineSpacingExtra="5sp"
+                android:singleLine="true"
+                android:text="Category Sort by"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

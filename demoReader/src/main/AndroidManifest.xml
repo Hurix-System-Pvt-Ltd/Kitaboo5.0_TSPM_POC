@@ -18,17 +18,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.hurix.reader.kitaboosdkrenderer.PlayerActivity"
+            android:name="com.hurix.kitaboocloud.kitaboosdkrenderer.PlayerActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|fontScale"
             android:hardwareAccelerated="true"
             android:theme="@style/CustomActionBarTheme"/>
 
         <activity
-            android:name="com.hurix.reader.kitaboosdkrenderer.customviews.CustomMobileBackEnabledActivity"
+            android:name="com.hurix.kitaboocloud.kitaboosdkrenderer.customviews.CustomMobileBackEnabledActivity"
             android:configChanges="orientation|keyboardHidden|screenSize|fontScale|layoutDirection|locale"
             android:resizeableActivity="true"
             android:theme="@style/CustomActionBarThemeMobile" />
 
+
+        <activity
+            android:name="com.hurix.kitaboocloud.helpscreen.HelpScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|fontScale|layoutDirection|locale"
+            android:resizeableActivity="true"
+            android:theme="@style/CustomActionBarThemeMobile" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/resource_type"
+        android:paddingTop="2dp"
+        android:gravity="top|center"
+        android:layout_width="50dp"
+        android:layout_height="50dp" />
+
+
+    <LinearLayout
+        android:id="@+id/llayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/resource_type"
+        android:layout_toRightOf="@+id/resource_type"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:padding="2dp">
+
+        <TextView
+            android:id="@+id/tvSharedwithName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:ellipsize="end"
+            android:gravity="top|start"
+            android:maxLines="2"
+            android:textColor="@color/black"
+            android:textSize="19sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_accept"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/ugc_accept_btn_background"
+                android:gravity="center"
+                android:text="@string/ugc_accept_btn_text"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_reject"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:background="@drawable/ugc_reject_btn_background"
+                android:gravity="center"
+                android:text="@string/ugc_decline_btn_text"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/listdivider"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/llayout"
+        android:layerType="software"
+        android:visibility="visible" />
+
+</RelativeLayout>

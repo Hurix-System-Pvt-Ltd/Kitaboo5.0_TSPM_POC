@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <item name="seekbar_thumb_size" type="integer" format="integer">33</item>
+     <item name="load_factor" format="float" type="dimen">.4</item>
+     <dimen name="download_percent_text_size">14sp</dimen>
+     <dimen name="book_thumbnail_item_total_height">100dp</dimen>
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/errormessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/analytics_server_error_message"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/classandstudentholder"
+        android:layout_width="@dimen/class_student_holder_width"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_above="@+id/poweredByContainer">
+
+        <ImageView
+            android:id="@+id/bookThumbnail"
+            android:layout_width="@dimen/bookthumbnail_height_width"
+            android:layout_height="@dimen/bookthumbnail_height_width"
+            android:layout_margin="@dimen/student_image_margin"
+            android:src="@drawable/placeholder" />
+
+        <TextView
+            android:id="@+id/bookname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:textSize="@dimen/student_list_txt_size" />
+
+<!--         <LinearLayout -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_margin="5dp" -->
+<!--             android:background="@drawable/analytics_class_dropdown_background" -->
+<!--             android:gravity="center" -->
+<!--             android:orientation="horizontal" -->
+<!--             android:weightSum="1" > -->
+
+            <Spinner
+                android:id="@+id/spinnerClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dropDownVerticalOffset="-2dp"
+                android:dropDownWidth="match_parent"
+                android:gravity="center"
+                style="@style/spinner_style"
+                android:background="@color/analytics_stroke_color"
+            	android:popupBackground="@android:color/transparent"
+                android:spinnerMode="dropdown" />
+        <ListView
+            android:id="@+id/lstclassstudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:choiceMode="singleChoice">
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/analyticscomponentholder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/poweredByContainer"
+        android:layout_toRightOf="@+id/classandstudentholder"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/headingtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/analytics_component_grid_margin"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/analytics"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/analytics_component_heading_text_size" />
+
+        <GridView
+            android:id="@+id/analaticsComponent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/analytics_component_grid_margin"
+            android:horizontalSpacing="@dimen/analytics_component_grid_horizontal_spacing"
+            android:numColumns="@integer/analytics_component_grid_num_colmn"
+            android:listSelector="@android:color/transparent"
+            android:verticalSpacing="@dimen/analytics_component_grid_vertical_spacing" >
+        </GridView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/poweredByContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clickable="false"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <LinearLayout
+            android:id="@+id/tvPowerByIDContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|center_vertical"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tvPowerByID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/powered_by"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:paddingRight="1dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/poweredby_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:textSize="@dimen/kitaboo_logo_textsize"
+                android:text="Ù"
+                android:paddingRight="2dp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

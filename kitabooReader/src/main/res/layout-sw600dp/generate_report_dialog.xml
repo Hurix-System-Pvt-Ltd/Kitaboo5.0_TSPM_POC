@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Mainparent"
+    android:layout_width="500dp"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/generate_report_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:text="@string/generated_report"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black_grey"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/generate_report_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generate_report_title"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/generate_report_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <com.hurix.commons.utils.ClearableEditText
+        android:id="@+id/useridEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generate_report_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/grey"
+        android:digits="@string/emailid_field_character_allowed"
+        android:ems="10"
+        android:hint="@string/generate_report_hint"
+        android:inputType="textWebEmailAddress"
+        android:maxLength="255"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:singleLine="true"
+        android:textColor="@color/black_grey"
+        android:textColorHint="#b5b7b6"
+        android:textSize="@dimen/login_dialog_edittext_text_size" />
+
+    <TextView
+        android:id="@+id/generate_report_receive_report"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/useridEditText"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/generate_report_receive_report"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black_grey" />
+
+    <TextView
+        android:id="@+id/done"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/generate_report_receive_report"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/done"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/blue_dark"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

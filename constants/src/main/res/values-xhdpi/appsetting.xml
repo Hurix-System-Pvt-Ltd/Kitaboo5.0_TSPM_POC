@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <item name="seekbar_thumb_size" type="integer" format="integer">48</item>
+     <item name="link_ic_font_size" format="integer" type="integer">15</item>
+     <item name="link_ic_size" format="integer" type="integer">30</item>
+</resources>

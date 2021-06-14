@@ -1,57 +1,27 @@
 package com.hurix.demoreader;
 
 import android.Manifest;
-import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Environment;
-import android.os.Handler;
 import android.os.StrictMode;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.ProgressBar;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
-import androidx.core.content.FileProvider;
 
-import com.hurix.commons.Constants.Constants;
 import com.hurix.commons.datamodel.IDownloadable;
-import com.hurix.commons.utils.DialogUtils;
-import com.hurix.commons.utils.Utils;
 import com.hurix.customui.datamodel.UserVO;
-import com.hurix.database.datamodels.UserSettingVO;
-import com.hurix.downloadbook.controller.SDKDownloadController;
 import com.hurix.downloadbook.controller.UserController;
-import com.hurix.downloadbook.listener.SDKDownloadCompleteListener;
-import com.hurix.downloadbook.listener.SDKDownloadListener;
-import com.hurix.epubreader.fixedepubreader.enums.BookState;
-import com.hurix.reader.kitaboosdkrenderer.PlayerActivity;
-import com.hurix.reader.kitaboosdkrenderer.R;
-import com.hurix.service.Interface.IServiceResponse;
-import com.hurix.service.Interface.IServiceResponseListener;
-import com.hurix.service.adapter.KitabooServiceAdapter;
-import com.hurix.service.exception.ServiceException;
-import com.hurix.service.response.BookDownloadServiceResponse;
-import com.hurix.service.response.LoginResponse;
-import com.hurix.service.response.UserSetttingResponse;
-import com.hurix.service.response.ValidateUserTokenResponse;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.hurix.kitaboo.constants.dialog.DialogUtils;
+import com.hurix.kitaboocloud.kitaboosdkrenderer.PlayerActivity;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -59,16 +29,11 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.text.DecimalFormat;
 import java.util.Enumeration;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
-
-import static android.content.Intent.FLAG_GRANT_READ_URI_PERMISSION;
-import static android.content.Intent.FLAG_GRANT_WRITE_URI_PERMISSION;
-import static android.provider.ContactsContract.Directory.PACKAGE_NAME;
 
 public class DemoReaderActivity extends AppCompatActivity {
 

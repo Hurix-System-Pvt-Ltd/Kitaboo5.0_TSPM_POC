@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="150dp"
+        android:background="@drawable/userdata_resources_popup_bg"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:padding="2dp"
+            android:text="@string/addnewcategory"
+            android:textColor="@color/black_grey"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <com.hurix.kitaboocloud.common.ClearableEditText
+            android:id="@+id/createBox"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bookshelf_edit_mode_txt_bg"
+            android:ems="8"
+            android:hint="@string/addnewcategory_hint"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:textColorHint="@color/grey"
+            android:maxLength="50"
+            android:textSize="18sp" >
+
+            <requestFocus />
+        </com.hurix.kitaboocloud.common.ClearableEditText>
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/createBox"
+            android:layout_below="@+id/createBox"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cat_dlg_cancel_btn_bg"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/cancel"
+            android:textColor="@color/kitaboo_main_color"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/createBox"
+            android:layout_below="@+id/createBox"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cat_dlg_add_btn_bg"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/add"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

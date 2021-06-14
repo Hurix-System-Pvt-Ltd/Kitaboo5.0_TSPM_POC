@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animationCache="true">
+
+    <RelativeLayout
+        android:id="@+id/loginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ScrollView
+            android:id="@+id/login_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:id="@+id/login_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:padding="10dp"
+                android:visibility="visible">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/upLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:id="@+id/pinGeneration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/generatepin_code"
+                            android:textColor="@color/black"
+                            android:textSize="22sp" />
+
+                        <LinearLayout
+                            android:id="@+id/generatePinTxt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="20dp"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/code"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="left"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/kitaboo_main_color"
+                                android:textSize="22sp" />
+
+                            <TextView
+                                android:id="@+id/pincodeView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                android:gravity="start"
+                                android:text="@string/pingeneration_steps"
+                                android:textColor="@color/black"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/upLayout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <TextView
+                                android:id="@+id/pinTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:text="@string/enterpin_code"
+                                android:textColor="@color/black"
+                                android:textSize="22sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/pin_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/upLayout"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:background="@drawable/rect_round_cancel"
+                        >
+
+
+                        <EditText
+                            android:id="@+id/accesscodeedt"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:imeOptions="actionDone"
+                            android:singleLine="true"
+                            android:paddingTop="10dp"
+                            android:hint="@string/dialog_login_enter_pin_code"
+                            android:paddingBottom="10dp"
+                            android:maxLength="@integer/pincode_required_length"
+                            android:background="@color/transparent"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/grey" />
+
+
+                    </RelativeLayout>
+
+
+
+
+                    <Button
+                        android:id="@+id/btnloginsummit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/pin_layout"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="@dimen/About_us_text_size"
+                        android:background="@drawable/roundedshapes"
+                        android:text="@string/btn_submit"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:visibility="visible" />
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

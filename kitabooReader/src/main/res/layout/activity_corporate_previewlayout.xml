@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/preview_layout_margin_top"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6">
+
+            <!-- <android.support.v7.widget.CardView -->
+            <!-- android:id="@+id/shadowContainer" -->
+            <!-- android:layout_width="match_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_gravity="center" -->
+            <!-- android:layout_marginBottom="5dp" -->
+            <!-- android:layout_marginLeft="5dp" -->
+            <!-- android:layout_marginRight="5dp" -->
+            <!-- android:layout_marginTop="10dp" -->
+            <!-- app:cardBackgroundColor="@android:color/transparent" -->
+            <!-- app:cardElevation="3dp" > -->
+
+            <RelativeLayout
+                android:id="@+id/shadowContainer"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"                >
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/stackImages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/bookshelf_preview_container_height"
+                    android:layout_gravity="center"
+                    android:background="@color/grey"/>
+
+                <TextView
+                    android:id="@+id/bookUpdateTV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:shadowColor="@android:color/black"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="5"
+                    android:text="K"
+                    android:textSize="@dimen/bookshelf_preview_update_icon_size"
+                    android:visibility="gone" />
+                <!-- <ImageView -->
+                <!-- android:id="@+id/bookUpdateImage" -->
+                <!-- android:layout_width="match_parent" -->
+                <!-- android:layout_height="@dimen/bookshelf_preview_container_height" -->
+                <!-- android:layout_gravity="center" -->
+                <!-- android:scaleType="fitCenter" -->
+                <!-- android:src="@drawable/imgupdate" -->
+                <!-- android:visibility="gone" /> -->
+
+                <ProgressBar
+                    android:id="@+id/progressPreview"
+                    android:layout_width="@dimen/previewlayout_progressbar_width"
+                    android:layout_height="@dimen/previewlayout_progressbar_height"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtErrorMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/corporate_preview_loading_error"
+                    android:visibility="gone" />
+                <!-- </android.support.v7.widget.CardView> -->
+            </RelativeLayout>
+
+            <com.hurix.bookreader.views.link.CirclePageIndicator
+                android:id="@+id/previewIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shadowContainer"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:visibility="gone"
+                 />
+
+            <RelativeLayout
+                android:id="@+id/btnContainer"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:layout_below="@+id/previewIndicator"
+                android:paddingBottom="0dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="0dp">
+
+                <com.hurix.kitaboocloud.views.circularprogress.CircularProgressButton
+                    android:id="@+id/btnOpenDownload"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/previewlayout_circular_progressbar_height"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:visibility="gone"
+                    android:textSize="18sp"
+                    app:cpb_cornerRadius="0dp"
+                    android:textAllCaps="false"
+                    app:cpb_textComplete="@string/preview_launch_button"
+                    app:cpb_textError="Error"
+                    app:cpb_textIdle="@string/preview_download_button"
+                    app:cpb_textPause="@string/preview_resume_button"
+                    app:cpb_textUpdate="@string/preview_update_button" />
+
+                <Button
+                    android:id="@+id/btnArchive"
+                    android:layout_width="250dp"
+                    android:layout_height="@dimen/previewlayout_circular_progressbar_height"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:layout_below="@+id/btnOpenDownload"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:layout_marginTop="@dimen/preview_space_between_buttons"
+                    android:ellipsize="middle"
+                    android:textColor="@color/black_grey"
+                    android:visibility="visible"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                android:background="@drawable/green_rectangle_border_button"/>
+                <!--app:cpb_cornerRadius="0dp"
+                app:cpb_textComplete="@string/preview_archive_button"
+                app:cpb_textError="Error in Archive"
+                app:cpb_textIdle="@string/preview_archive_button"
+                app:cpb_textUpdate="@string/preview_update_button" />-->
+
+                <Button
+                    android:id="@+id/btnstatics"
+                    android:layout_width="250dp"
+                    android:layout_height="@dimen/previewlayout_circular_progressbar_height"
+                    android:layout_alignWithParentIfMissing="true"
+                    android:layout_below="@+id/btnArchive"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/preview_space_between_buttons"
+                    android:ellipsize="middle"
+                    android:textSize="18sp"
+                    android:textColor="@color/black_grey"
+                    android:visibility="visible"
+                    android:text="@string/preview_statistics_button"
+                    android:background="@drawable/green_rectangle_border_button"
+                    android:layout_centerHorizontal="true"
+                android:gravity="center"/>
+                <!--app:cpb_cornerRadius="0dp"
+                app:cpb_textComplete="@string/preview_statistics_button"
+                app:cpb_textError="Error in Archive"
+                app:cpb_textIdle="@string/preview_statistics_button"
+                app:cpb_textUpdate="@string/preview_update_button" />-->
+
+                <TextView
+                    android:id="@+id/tvProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/previewlayout_progress_text_height"
+                    android:layout_alignTop="@+id/btnOpenDownload"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tvUnzipping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/previewlayout_progress_text_height"
+                    android:layout_alignTop="@+id/btnOpenDownload"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:text="@string/unzipping"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+                <!-- <Button
+                     android:id="@+id/btnSurvey"
+                     android:layout_width="wrap_content"
+                     android:layout_height="@dimen/previewlayout_circular_progressbar_height"
+                     android:layout_alignWithParentIfMissing="true"
+                     android:layout_below="@+id/btnstatics"
+                     android:gravity="center"
+                     android:layout_marginTop="@dimen/preview_space_between_buttons"
+                     android:textColor="@color/white"
+                     android:visibility="visible"
+                     android:text="Survey"
+                     />-->
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/txtBookTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/txtBookFileSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtBookAuthorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/txtBookDescription"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:paddingRight="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,136 @@
+<resources>
+
+    <!-- <dimen name="drawer_category_list_txt_size">18sp</dimen>
+    <dimen name="drawer_category_list_item_height">55dp</dimen>
+    <dimen name="drawer_layout_name_text_size">22sp</dimen>
+    <dimen name="drawer_layout_width">350dp</dimen>
+    <dimen name="book_thumbnail_item_height">195dp</dimen>
+    <dimen name="book_thumbnail_item_width">150dp</dimen>
+    <dimen name="book_thumbnail_item_total_height">250dp</dimen>
+    <dimen name="corporate_book_thumbnail_item_total_height">240dp</dimen>
+    <dimen name="book_title_text_size">16sp</dimen>
+    <dimen name="instant_feedback_padding">3dp</dimen>
+    <dimen name="instant_feedback_textsize">18sp</dimen>
+    <dimen name="bookshelf_logo_height">50dp</dimen>
+    <dimen name="bookshelf_width">450dp</dimen>
+    <dimen name="bookshelf_search_text_margin_left">15dp</dimen>
+    <dimen name="bookshelf_search_text_margin_right">10dp</dimen>
+    <dimen name="teacherassesment_list_item_default_height">50dp</dimen>
+    <dimen name="previewlayout_progressbar_height">60dp</dimen>
+    <dimen name="previewlayout_progressbar_width">60dp</dimen>
+    <dimen name="previewlayout_circular_progressbar_height">60dp</dimen>
+    <dimen name="previewlayout_progress_text_height">60dp</dimen>
+    <dimen name="bookshelf_preview_container_height">300dp</dimen>
+    <dimen name="preview_space_between_buttons">7dp</dimen>
+    <dimen name="preview_layout_padding">10dp</dimen>
+    <dimen name="arrow_height">25dp</dimen>
+    <dimen name="arrow_width">25dp</dimen>
+    <dimen name="circular_progress_size">35sp</dimen>
+    <dimen name="class_student_holder_width">250dp</dimen>
+    <dimen name="spinner_class_margin">20dp</dimen>
+    <dimen name="analytics_component_grid_margin">10dp</dimen>
+    <dimen name="analytics_component_grid_vertical_spacing">10dp</dimen>
+    <dimen name="analytics_component_grid_horizontal_spacing">10dp</dimen>
+    <dimen name="analytics_component_heading_text_size">24sp</dimen>
+    <dimen name="student_list_txt_size">18sp</dimen>
+    <dimen name="student_image_margin">15dp</dimen>
+    <dimen name="student_txt_margin">10dp</dimen>
+    <dimen name="student_image_height">40dp</dimen>
+    <dimen name="student_list_total_height">60dp</dimen>
+    <dimen name="student_image_width">40dp</dimen>
+    <dimen name="bookthumbnail_height_width">200dp</dimen>
+    <dimen name="pentool_actionBar_padding_left">15dp</dimen>
+    <dimen name="pentool_actionBar_padding_right">10dp</dimen>
+    <dimen name="book_gallery_thumbnail_item_width">160dp</dimen>
+    <dimen name="book_gallery_thumbnail_item_height">200dp</dimen>
+    <dimen name="sidebar_width">50dp</dimen>
+    <dimen name="mydata_settings_text_size">16dp</dimen>
+    <dimen name="tab_hight">51dp</dimen>
+    <dimen name="toc_dialog_tab_hight">51dp</dimen>
+    <dimen name="selected_tab_height">5dp</dimen>
+    <dimen name="unselected_tab_height">1dp</dimen>
+    <dimen name="pentool_selected_border_size">3dp</dimen>
+    <dimen name="pentool_selected_border_stroke_width">1.5dp</dimen>
+    <dimen name="registration_screen_editext_size">20sp</dimen>
+    <dimen name="bookshelf_update_icon_size">60sp</dimen>
+    <dimen name="bookshelf_preview_update_icon_size">75sp</dimen>
+    <dimen name="toc_dialog_tabwidget_text_size">18sp</dimen>
+
+    Login screen dimension start
+    <dimen name="login_dialog_width">450dp</dimen>
+    <dimen name="login_dialog_headerContainer_padding_top">30dp</dimen>
+    <dimen name="login_dialog_headertext_padding_top">20dp</dimen>
+    <dimen name="login_dialog_headertext_padding_left">15dp</dimen>
+    <dimen name="login_dialog_headertext_padding_right">0dp</dimen>
+    <dimen name="login_dialog_headertext_padding_bottom">0dp</dimen>
+    <dimen name="login_dialog_helptextholder_padding_top">20dp</dimen>
+    <dimen name="login_dialog_helptext_padding_top">20dp</dimen>
+    <dimen name="login_dialog_helptext_padding_left">30dp</dimen>
+    <dimen name="login_dialog_helptext_padding_right">30dp</dimen>
+    <dimen name="login_dialog_helptext_padding_bottom">50dp</dimen>
+    <dimen name="login_dialog_instituteholder_padding_top">20dp</dimen>
+    <dimen name="login_dialog_nstituteholder_padding_left">20dp</dimen>
+    <dimen name="login_dialog_nstituteholder_padding_right">20dp</dimen>
+    <dimen name="login_dialog_nstituteholder_padding_bottom">10dp</dimen>
+    <dimen name="login_dialog_middleContainer_padding_top">30dp</dimen>
+    <dimen name="login_dialog_middleContainer_padding_left">20dp</dimen>
+    <dimen name="login_dialog_middleContainer_padding_right">20dp</dimen>
+    <dimen name="login_dialog_middleContainer_padding_bottom">20dp</dimen>
+    <dimen name="login_dialog_header_text_size">26sp</dimen>
+    <dimen name="login_dialog_edittext_text_size">20sp</dimen>
+    Login screen dimension End
+
+
+    Register screen dimension Start
+    <dimen name="register_dialog_header_text_size">26sp</dimen>
+    <dimen name="register_dialog_edittext_text_size">20sp</dimen>
+    <dimen name="register_dialog_headerContainer_padding_top">25dp</dimen>
+    <dimen name="register_dialog_headertext_padding_top">20dp</dimen>
+    <dimen name="register_dialog_instituteholder_margin_top">5dp</dimen>
+    Register screen dimension End
+
+
+    AccessCode screen dimension Start
+    <dimen name="accesscode_dialog_header_text_size">26sp</dimen>
+    <dimen name="accessCode_dialog_edittext_text_size">20sp</dimen>
+    <dimen name="accesscode_dialog_headerContainer_padding_top">100dp</dimen>
+    AccessCode screen dimension End
+
+
+    ForgetPassword screen dimension Start
+    <dimen name="forgetpassword_dialog_header_text_size">26sp</dimen>
+    <dimen name="forgetpassword_dialog_edittext_text_size">20sp</dimen>
+    <dimen name="forgetpassword_dialog_headerContainer_margin_top">100dp</dimen>
+    ForgetPassword screen dimension End
+
+
+    New enterprise reader dimensions
+    <dimen name="dialogfragment_height">300dp</dimen>
+    <dimen name="dialogfragment_width">200dp</dimen>
+    <dimen name="toc_dialogfragment_height">430dp</dimen>
+    <dimen name="toc_dialogfragment_width">380dp</dimen>
+    <dimen name="dialogfragment_comment_post">260dp</dimen>
+    <dimen name="enterprise_sticky_note_popup_dialog_width">300dp</dimen>
+    <dimen name="enterprise_sticky_note_popup_dialog_height">450dp</dimen>
+    <dimen name="enterprise_highlight_popup_corner">8dp</dimen>
+    <dimen name="link_dropdown_font_size">12sp</dimen>
+    <dimen name="link_fib_font_size">12sp</dimen>
+    <dimen name="audio_player_button_width">30dp</dimen>
+    <dimen name="audio_player_margin">10dp</dimen>
+    <dimen name="enterprise_mydata_title_text_size">20sp</dimen>
+    <dimen name="enterprise_mydata_settings_icon_size">25sp</dimen>
+    <dimen name="enterprise_thumbnail_holder">260dp</dimen>
+    <dimen name="highlightpopup_btn_height">55dp</dimen>
+    <dimen name="highlightpopup_btn_width">55dp</dimen>
+    <dimen name="highlightpopup_icon_size">32sp</dimen>
+    <dimen name="enterprise_reader_toc_text_size">20sp</dimen>
+    <dimen name="enterprise_reader_mydataview_text_size">18sp</dimen>
+    
+    AudioPlayer Popup
+    <dimen name="audio_popup_text_size">24dp</dimen> -->
+    <item name="gradient_svg" format="float" type="dimen">160</item>
+
+    <integer name="book_thumbnail_layout_weight">6</integer>
+    <integer name="world_book_thumbnail_layout_weight">5</integer>
+
+</resources>

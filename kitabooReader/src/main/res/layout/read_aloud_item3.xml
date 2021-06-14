@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/camera_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="@dimen/camera_gallery_item_padding">
+
+    <TextView
+        android:id="@+id/readtomeicon"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="@dimen/profile_setting_image_margin"
+        android:gravity="center"
+        android:text="Ş"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/readtome_text"
+        android:layout_marginTop="@dimen/read_aloud_padding"
+        android:layout_marginBottom="5dp"
+        android:layout_width="wrap_content"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:text="@string/read_to_me_text"
+        android:textColor="@color/black"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/readtome_text_"
+        android:layout_marginTop="@dimen/read_aloud_padding"
+        android:layout_marginBottom="@dimen/read_aloud_padding"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

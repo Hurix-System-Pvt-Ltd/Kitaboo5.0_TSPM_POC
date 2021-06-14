@@ -1,0 +1,409 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:visibility="visible">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_alignParentTop="true"
+        android:elevation="5dp"
+        android:minHeight="?android:attr/actionBarSize">
+    </androidx.appcompat.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_below="@+id/my_awesome_toolbar"/>
+
+    <View
+        android:id="@+id/parentbottomdottedline"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/tvPowerByIDContainer"
+        android:background="@color/darkgrey"
+        android:visibility="gone"
+        android:layerType="software" />
+
+    <LinearLayout
+        android:id="@+id/tvPowerByIDContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvPowerByID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/powered_by"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:paddingRight="2dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/kitabooLogo"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:paddingTop="0.75dp"
+            android:paddingRight="2dp"
+            android:textSize="@dimen/kitaboo_logo_textsize"
+            android:text="Ù"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSignOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/parentbottomdottedline"
+        android:layout_margin="5dp"
+        android:background="@color/red"
+        android:text="@string/signout_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/drawer_layout_name_text_size" />
+
+    <View
+        android:id="@+id/belowdottedline"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/btnSignOut"
+        android:background="@drawable/dottenline"
+        android:layerType="software"
+        android:padding="10dp" />
+
+    <ScrollView
+        android:id="@+id/scrlllayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/belowdottedline"
+        android:layout_below="@+id/my_awesome_toolbar"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        >
+
+        <LinearLayout
+            android:id="@+id/mailContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/profile_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.hurix.kitaboo.views.CircleImageView
+                    android:id="@+id/profile_setting_pic"
+                    android:layout_width="@dimen/profile_setting_item_size"
+                    android:layout_height="@dimen/profile_setting_item_size"
+                    android:layout_marginTop="@dimen/profile_setting_image_margin"
+                    android:src="@drawable/default_user" />
+
+                <TextView
+                    android:id="@+id/profile_setting_pic_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/camera_gallery_item_padding"
+                    android:text="@string/profile_setting_pic_change_text"
+                    android:textColor="@color/light_blue"
+                    android:textSize="@dimen/profile_name" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/dottedline"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginBottom="@dimen/profile_setting_image_margin"
+                android:layout_marginTop="@dimen/profile_setting_image_margin"
+                android:background="@drawable/dottenline"
+                android:layerType="software"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/displayNameEditbtn"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:textSize="28sp" />
+
+                <EditText
+                    android:id="@+id/profile_setting_firstnameTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/displayNameEditbtn"
+                    android:layout_toStartOf="@+id/displayNameEditbtn"
+                    android:hint="@string/registration_first_name_text"
+                    android:textColor="@color/edittext_enable_selector"
+                    android:gravity="center_vertical"
+                    android:maxLength="50"
+                    android:paddingEnd="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingStart="4dp"
+                    android:singleLine="true" />
+
+                <EditText
+                    android:id="@+id/profile_setting_secondnameText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profile_setting_firstnameTxt"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/edittext_enable_selector"
+                    android:layout_toLeftOf="@+id/displayNameEditbtn"
+                    android:hint="@string/registration_last_name_text"
+                    android:layout_toStartOf="@+id/displayNameEditbtn"
+                    android:gravity="center_vertical"
+                    android:maxLength="50"
+                    android:paddingEnd="4dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingStart="4dp"
+                    android:singleLine="true"
+                    />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/profile_setting_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/preview_layout_margin_top"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/profile_setting_welcome_text"
+                android:textSize="@dimen/profile_back"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/profile_setting_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_gravity="start|left"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="@string/profile_setting_welcome_text"
+                android:textColor="@color/darkgrey"
+                android:textSize="@dimen/profile_name" />
+
+            <View
+                android:id="@+id/bottomdottedline"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/profile_setting_image_margin"
+                android:background="@drawable/dottenline"
+                android:layerType="software"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+            <Button
+                android:id="@+id/profile_setting_change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/profile_setting_button_drawable"
+                android:text="@string/profile_setting_change_btn_text"
+                android:visibility="gone"
+                android:textSize="@dimen/drawer_layout_name_text_size"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/profile_setting_change_password_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/camera_gallery_padding"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:paddingBottom="25dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:textSize="@dimen/drawer_layout_name_text_size"
+                        android:text="Reset Password"
+                        android:textAppearance="?android:attr/textAppearanceMedium">
+
+                    </TextView>
+
+                    <com.hurix.kitaboocloud.common.ClearableEditText
+                        android:id="@+id/profile_setting_change_password_old"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/profile_setting_current_password_text"
+                        android:inputType="textPassword"
+                        android:maxLength="200"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black_grey"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/login_dialog_edittext_text_size" />
+
+                    <com.hurix.kitaboocloud.common.ClearableEditText
+                        android:id="@+id/profile_setting_change_password_new"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/profile_setting_current_new_password_text"
+                        android:inputType="textPassword"
+                        android:maxLength="200"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black_grey"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/login_dialog_edittext_text_size" />
+
+                    <com.hurix.kitaboocloud.common.ClearableEditText
+                        android:id="@+id/profile_setting_change_password_renew"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/profile_setting_current_confirm_new_password_text"
+                        android:inputType="textPassword"
+                        android:maxLength="200"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black_grey"
+                        android:textColorHint="@color/grey"
+                        android:textSize="@dimen/login_dialog_edittext_text_size" />
+
+                    <LinearLayout
+                        android:id="@+id/profile_setting_change_password_container_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Button
+                            android:id="@+id/profile_setting_change_password_container_button_done"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/camera_gallery_item_padding"
+                            android:layout_marginRight="@dimen/camera_gallery_item_padding"
+                            android:layout_weight="1"
+                            android:background="@color/kitaboo_main_color"
+                            android:gravity="center"
+                            android:text="@string/mobile_profile_setting_change_btn_text"
+                            android:textColor="@color/white" />
+
+                        <Button
+                            android:id="@+id/profile_setting_change_password_container_button_cancel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/profile_setting_button_drawable"
+                            android:gravity="center"
+                            android:text="@string/cancel"
+                            android:textColor="@color/grey" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/profile_setting_account_manager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/profile_setting_image_margin"
+                    android:layout_marginLeft="@dimen/profile_setting_image_margin"
+                    android:layout_marginRight="@dimen/profile_setting_image_margin"
+                    android:layout_marginStart="@dimen/profile_setting_image_margin"
+                    android:layout_marginTop="@dimen/profile_setting_image_margin"
+                    android:background="@drawable/button_border"
+                    android:gravity="center"
+                    android:text="@string/porto_profile_setting_account_manager"
+                    android:textColor="@color/black"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/profile_setting_device_manager"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/profile_setting_image_margin"
+                    android:layout_marginLeft="@dimen/profile_setting_image_margin"
+                    android:layout_marginRight="@dimen/profile_setting_image_margin"
+                    android:layout_marginStart="@dimen/profile_setting_image_margin"
+                    android:layout_marginTop="@dimen/profile_setting_image_margin"
+                    android:background="@drawable/button_border"
+                    android:gravity="center"
+                    android:text="@string/porto_profile_setting_device_manager"
+                    android:textColor="@color/black" />
+
+                <RelativeLayout
+                    android:id="@+id/aboutUsContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/AboutUs"
+                        android:textColor="@color/blue"
+                        android:textSize="20sp"
+                        android:id="@+id/txtAboutUs"
+                        android:paddingBottom="20dp"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

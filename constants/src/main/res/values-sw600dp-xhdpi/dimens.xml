@@ -1,0 +1,34 @@
+<resources>
+    <item name="gradient_svg" format="float" type="dimen">250</item>
+    <dimen name="login_logo_height">60dp</dimen>
+    <!--Access code container layout NEWLOGIN_SCREEN-->
+
+
+    <dimen name="login_dialog_middleContainer_padding_right">10dp</dimen>
+    <dimen name="login_dialog_middleContainer_padding_left">10dp</dimen>
+    <dimen name="login_dialog_middleContainer_padding_top">10dp</dimen>
+
+    <dimen name="reeedem_Accessscode_text_size">20dp</dimen>
+
+
+    <dimen name="access_code_edittext_height">20dp</dimen>
+    <dimen name="login_dialog_edittext_text_size">16sp</dimen>
+
+    <dimen name="accesscode_errortextview_height">30dp</dimen>
+    <dimen name="accesscode_errortextview_textsize">18sp</dimen>
+
+    <dimen name="accesscode_send_button_height">45dp</dimen>
+
+    <dimen name="edtaccesskey_edittext_layoutheight">50dp</dimen>
+
+
+    <!--NEW_LOGINScreen Registration dilog-->
+    <dimen name="registration_dialog_width">300dp</dimen>
+    <!--NEW_LOGINScreen SignIn-->
+    <dimen name="emailid_text_view_width">300dp</dimen>
+    <dimen name="signin_editteaxt_height">50dp</dimen>
+    <dimen name="edittext_layout_height">50dp</dimen>
+
+
+    <dimen name="emailid_textview_margin_left">15dp</dimen>
+</resources>

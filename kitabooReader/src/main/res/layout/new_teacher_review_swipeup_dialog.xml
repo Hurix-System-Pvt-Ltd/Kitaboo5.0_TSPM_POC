@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Mainparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/teacher_review_bottom_sheet_background"
+    android:backgroundTintMode="add"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <TextView
+        android:id="@+id/txtselectStudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:lineSpacingExtra="6sp"
+        android:paddingLeft="20dp"
+        android:text="@string/teacher_review_class_text"
+        android:textColor="@color/blue_dark"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/select_student_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtselectStudent"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:lineSpacingExtra="6sp"
+        android:paddingLeft="20dp"
+        android:text="@string/select_student_to_review"
+        android:textColor="@color/blue_dark"
+        android:textSize="18sp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/select_student_txt"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/teacher_review_tab"
+        app:tabIndicatorColor="@color/blue_dark">
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/generate_report_txt"
+        android:layout_below="@+id/tabLayout">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <TextView
+        android:id="@+id/generate_report_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:lineSpacingExtra="6sp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/teacher_review_generate_report_text"
+        android:textSize="18sp" />
+
+
+    <!--  <ScrollView
+          android:layout_width="match_parent"
+          android:id="@+id/scrollRoot"
+          android:layout_above="@+id/generate_report_txt"
+          android:layout_below="@+id/tabLayout"
+          android:layout_height="match_parent" >
+
+          <LinearLayout
+              android:id="@+id/expandListContainer"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:animateLayoutChanges="true"
+              android:orientation="vertical" >
+          </LinearLayout>
+
+      </ScrollView>
+  -->
+
+</RelativeLayout>

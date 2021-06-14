@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bookshelf_preview_update_icon_size">22sp</dimen>
+    <dimen name="kitaboo_logo_width">120dp</dimen>
+    <dimen name="kitaboo_logo_height">26dp</dimen>
+    <dimen name="topbar_icon_marginleft">20dp</dimen>
+    <dimen name="topbar_icon_size">22sp</dimen>
+
+    <!-- Profile settings-->
+
+    <dimen name="update_coverpic_camera">12sp</dimen>
+    <dimen name="update_coverpic_textsize">20sp</dimen>
+    <dimen name="new_profilesetting_camera_icon_size">12sp</dimen>
+    <dimen name="profilesetting_camera_icon_size">12dp</dimen>
+    <dimen name="update_coverpic">12sp</dimen>
+    <dimen name="save_click_size">25sp</dimen>
+    <dimen name="change_password_textsize">22sp</dimen>
+    <dimen name="version_textsize">14sp</dimen>
+    <dimen name="log_out_text_size">20sp</dimen>
+    <dimen name="old_Password_edittext_text_size">16sp</dimen>
+    <dimen name="new_password_edittext_text_size">16sp</dimen>
+    <dimen name="Confirm_newpassword_edittext_text_size">16sp</dimen>
+    <dimen name="username_edittextsize">12sp</dimen>
+    <dimen name="last_name_edittext_textsize">16sp</dimen>
+    <dimen name="Coverpic_size">300dp</dimen>
+    <dimen name="profile_setting_icon_margin">240dp</dimen>
+    <dimen name="profile_setting_container_margin">350dp</dimen>
+    <dimen name="user_details_container_margin">20dp</dimen>
+    <dimen name="profile_setting_container_size">400dp</dimen>
+    <dimen name="profile_setting_container">350dp</dimen>
+    <dimen name="profile_setting_main_container">450dp</dimen>
+    <dimen name="profile_setting_change_password_container_size">270dp</dimen>
+    <dimen name="user_details_container_size">280dp</dimen>
+    <dimen name="profile_pic_size">120dp</dimen>
+    <dimen name="updated_pic_size">120dp</dimen>
+    <dimen name="username_text_size">18sp</dimen>
+    <dimen name="main_container">400dp</dimen>
+    <dimen name="Profile_setting_cover_pic_size">250dp</dimen>
+    <dimen name="profile_setting_icon_size">120dp</dimen>
+    <dimen name="profile_name">14sp</dimen>
+    <dimen name="drawer_layout_name_text_size">22sp</dimen>
+    <dimen name="Cancel_btn_text_size">16sp</dimen>
+    <dimen name="Save_btn_text_size">16sp</dimen>
+    <dimen name="About_us_text_size">14sp</dimen>
+    <dimen name="Privacy_policy_text_size">14sp</dimen>
+    <dimen name="terms_conditon_text_size">14sp</dimen>
+    <dimen name="common_size_privacy_terms">14sp</dimen>
+
+    <dimen name="new_profilesetting_camera_icon_size_lang">10sp</dimen>
+    <dimen name="profilesetting_camera_icon_size_lang">10dp</dimen>
+    <dimen name="LangScrollViewHeight">250dp</dimen>
+</resources>

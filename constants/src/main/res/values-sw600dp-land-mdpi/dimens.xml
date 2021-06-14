@@ -1,0 +1,90 @@
+<resources>
+
+
+    <dimen name="helpscreen_got_position">400dp</dimen>
+    <dimen name="helpscreen_indicator_position">300dp</dimen>
+    <dimen name="paint_text_size">20dp</dimen>
+    <dimen name="paint_text_size_new">18dp</dimen>
+
+    <integer name="help_line_hight">60</integer>
+    <integer name="help_circle_hight">7</integer>
+    <integer name="help_line_width">3</integer>
+    <integer name="gap_helpline_txt">30</integer>
+
+    <!--Access code container layout NEWLOGIN_SCREEN-->
+
+
+    <dimen name="login_dialog_middleContainer_padding_right">10dp</dimen>
+    <dimen name="login_dialog_middleContainer_padding_left">10dp</dimen>
+    <dimen name="login_dialog_middleContainer_padding_top">10dp</dimen>
+
+    <dimen name="reeedem_Accessscode_text_size">20dp</dimen>
+
+
+    <dimen name="access_code_edittext_height">20dp</dimen>
+    <dimen name="login_dialog_edittext_text_size">16sp</dimen>
+
+    <dimen name="accesscode_errortextview_height">30dp</dimen>
+    <dimen name="accesscode_errortextview_textsize">18sp</dimen>
+
+    <dimen name="accesscode_send_button_height">45dp</dimen>
+
+    <dimen name="edtaccesskey_edittext_layoutheight">50dp</dimen>
+
+
+    <!--NEW_LOGINScreen Registration dilog-->
+    <dimen name="registration_dialog_width">300dp</dimen>
+    <!--NEW_LOGINScreen SignIn-->
+    <dimen name="emailid_text_view_width">300dp</dimen>
+    <dimen name="signin_editteaxt_height">50dp</dimen>
+    <dimen name="edittext_layout_height">50dp</dimen>
+
+
+    <dimen name="emailid_textview_margin_left">15dp</dimen>
+    <dimen name="update_coverpic_camera">10sp</dimen>
+    <!--ProfileSettings-->
+
+    <dimen name="Coverpic_size">550dp</dimen>
+    <dimen name="new_profilesetting_camera_icon_size">13dp</dimen>
+    <dimen name="profilesetting_camera_icon_size">13dp</dimen>
+    <dimen name="update_coverpic">10sp</dimen>
+    <dimen name="update_coverpic_textsize">20sp</dimen>
+    <dimen name="change_password_textsize">25sp</dimen>
+    <dimen name="version_textsize">18sp</dimen>
+    <dimen name="change_password_margin">20dp</dimen>
+    <dimen name="log_out_text_size">20sp</dimen>
+    <dimen name="old_Password_edittext_text_size">18sp</dimen>
+    <dimen name="new_password_edittext_text_size">18sp</dimen>
+    <dimen name="Confirm_newpassword_edittext_text_size">18sp</dimen>
+    <dimen name="username_edittextsize">16sp</dimen>
+    <dimen name="last_name_edittext_textsize">16sp</dimen>
+    <dimen name="profile_setting_container_size">800dp</dimen>
+    <dimen name="profile_setting_container">370dp</dimen>
+    <dimen name="profile_setting_main_container">450dp</dimen>
+    <dimen name="profile_setting_change_password_container_size">700dp</dimen>
+    <dimen name="docket_title_layout_size">40dp</dimen>
+    <dimen name="user_details_container_size">500dp</dimen>
+    <dimen name="profile_pic_size">150dp</dimen>
+    <dimen name="user_details_container_margin">87dp</dimen>
+    <dimen name="updated_pic_size">150dp</dimen>
+    <dimen name="profile_setting_change_password_container_margin">0dp</dimen>
+    <dimen name="username_text_size">20sp</dimen>
+    <dimen name="profile_setting_icon_margin">458dp</dimen>
+    <dimen name="profile_setting_container_margin">560dp</dimen>
+    <dimen name="main_container">400dp</dimen>
+    <dimen name="save_click_size">27sp</dimen>
+    <dimen name="Profile_setting_cover_pic_size">250dp</dimen>
+    <dimen name="profile_setting_icon_size">160dp</dimen>
+    <dimen name="profile_name">18sp</dimen>
+    <dimen name="drawer_layout_name_text_size">27sp</dimen>
+    <dimen name="Cancel_btn_text_size">16sp</dimen>
+    <dimen name="Save_btn_text_size">16sp</dimen>
+    <dimen name="About_us_text_size">16sp</dimen>
+    <dimen name="Privacy_policy_text_size">16sp</dimen>
+    <dimen name="terms_conditon_text_size">16sp</dimen>
+    <dimen name="common_size_privacy_terms">25sp</dimen>
+
+    <dimen name="new_profilesetting_camera_icon_size_lang">10dp</dimen>
+    <dimen name="profilesetting_camera_icon_size_lang">10dp</dimen>
+
+</resources>

@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- <string name="clientid">V29ybGRBZGFwdGVy</string>-->
+    <string name="clientid">cHJvZi1raXRhYm9v</string>
+
+
+    <string name="noofbooks_tobefetched_within_groupcategory">9</string> <!--Number of books as per client tobe fetched category wise.-->
+    <string name="noofbooks_tobefetched_within_childcollection">9</string> <!--Number of books as per client tobe fetched collection wise.-->
+    <string name="on_scroll_category_pagintion_count">10</string>
+
+    <!-- cHJvZi1raXRhYm9v - Kitaboo-->
+    <!-- Qi5FLkFkYXB0ZXI= - BE publishing-->
+    <!-- UG9ydG9BZGFwdGVy -Porto-->
+    <!-- TVNJRA== - MedStudy-->
+    <!-- UG9ydG9BZGFwdGVy - Porto -->
+    <!-- TUFDTUlMTEFOLTI=  - Dynamic-->
+    <!-- ZXN0b3JlLWNsaWVudDYzMw==  - Acadmix -->
+    <!-- UWVsYXN5SUQ=  - Qelasy -->
+    <!-- U1JTSUQ=  - SRS -->
+    <!-- Vm95Z2VySUQ=  - Voyager -->
+    <!-- UUFWb3lnZXJJRA==  - Voyager_RE -->
+    <!-- U1NJQWRhcHRlcg== - FOSSweb-->
+    <!-- U3BpcmFs - Spiral -->
+    <!-- KOIS RU5URVIxNDIw-->
+    <!-- U3VtbWl0SzEy   - SUMMITK12-->
+    <!-- UG9kYXJBZGFwdGVy - Podar -->
+    <!-- TWVkaWZhc3RBZGFwdGVy - Medifast -->
+    <!-- Q2hyaXNBZGFwdGVy - Infobase -->
+    <!-- U2VuZGFBZGFwdGVy - Senda De Vida-->
+    <!-- V29ybGRBZGFwdGVy   - WorldBook-->
+    <!-- TGVhcm5BZGFwdGVy - LTPM-->
+    <!-- RWRpY2lvbmVzQWRhcHRlcg== - ESE-->
+    <!-- TkJvZ0FkYXB0ZXJHcmVlbg==:V1 - Nanoq Greenlad-->
+    <!-- U1NJQWRhcHRlcg== - FOSSweb-->
+    <!-- QUNFUEFkYXB0ZXI= - ACEP-->
+    <!-- RWRpY2lvbmVzQWRhcHRlcg== - ESE-->
+    <!-- QUFPQWRhcHRlcg== - AAO -->
+    <!-- T1VQQWRhcHRlcg== - OUP -->
+    <!-- QWJyYWhhbUFkYXB0ZXI=  - ADA -->
+    <!-- SXNsYW1pY0FkYXB0ZXI= - Islamic Publication-->
+    <!-- Q2FybmVnaWVBZGFwdGVy - Carnegie-->
+    <!-- V2lsbG9BZGFwdGVy - Willo Labs-->
+    <!-- Q2FybmVnaWVBZGFwdGVy - Carnegie-->
+    <!-- TWVuYXJpbmlBZGFwdGVy - J&J-->
+    <!-- YW51YmlzQWRhcHRlcg== - Anubis-->
+    <!--VGVhY2hzdG9uZUFkYXB0ZXI= - Teachstone-->
+    <!-- UG9kYXJBZGFwdGVy - PODAR -->
+    <!-- QkgzNjVBZGFwdGVy BH-365-->
+    <!-- SmVmZkFkYXB0ZXI=  -  AHCA-->
+    <!-- aW5kaWFubmljYUFkYXB0ZXI=  -  Indiannica-->
+    <!--TmF2bmVldEFkYXB0ZXI=  - Navneet-->
+    <!-- V1NFVEFkYXB0ZXI= - WSET-->
+    <!-- Q3VzdG9taXplZEFkYXB0ZXI= - Customized Communication (readED)-->
+    <!-- RU5URVIxNDIw - KOIS-->
+    <!-- cHJvZi1raXRhYm9v - Great Books Foundation-->
+    <!-- Rmlyc3RBZGFwdGVy - FLI-->
+    <!-- QWRhcHRlcm1lZE1hc3Rlcg==  - medmaster -->
+    <!-- VGFsbGVyQWRhcHRlcg== - TDEE-->
+    <!-- TGlvbnNBZGFwdGVy - Lions Club-->
+    <!-- QkgzNjVBZGFwdGVy - BH-365-->
+    <!--QW1lcmljYW5BZGFwdGVy - ARC-->
+    <!-- V1NFVEFkYXB0ZXI= - WSET-->
+    <!--Um9kZ2Vyc0FkYXB0ZXI= - Concord-->
+    <!-- UHJvamVjdEFkYXB0ZXI= - WET-->
+    <!-- QWNhZGVtaWNBZGFwdGVy - Academic Approach -->
+    <!-- Z2JhZGFwdG9y - Great Books-->
+    <!-- R2liYnNBZGFwdGVy - Gibbs Smith -->
+
+    <string name="download_server_pointing">https://microservices.kitaboo.eu/</string>
+
+    <string name="content_server_pointing">https://read.kitaboo.com/ContentServer/</string>
+    <!-- Prod https://read.kitaboo.com/ContentServer/
+     <Staging https://qaread.kitaboo.com/ContentServer/ -->
+
+    <!--UGxhdGFub0FkYXB0ZXI= - Platano-->
+    <string name="server_pointing">https://cloud.kitaboo.com/DistributionServices/</string>
+    <!--PRODUCTION https://cloud.kitaboo.com/DistributionServices/ -->
+    <!--QC https://qc.kitaboo.com/DistributionServices/ -->
+    <!--Staging https://qacloud.kitaboo.com/DistributionServices/ -->
+    <!--POC https://poc.kitaboo.com/DistributionServices/ -->
+    <!--EU -  https://cloud.kitaboo.eu/DistributionServices/-->
+    <!-- ACEP - https://acepservices.kitaboo.com/DistributionServices/ -->
+    <!--AAO - https://aaoservices.kitaboo.com/DistributionServices/-->
+    <!-- Indiannica - https://indiannicaservices.kitaboo.com/DistributionServices/ -->
+    <!--Navneet - https://navneeteducationservices.kitaboo.com/DistributionServices/ -->
+    <!--Platano -  https://platanoeditoraservices.kitaboo.eu/DistributionServices/-->
+    <!--WET - https://wetservices.kitaboo.com/DistributionServices/ -->
+    <!--FLI - https://first-lawservices.kitaboo.eu/DistributionServices/-->
+    <!-- Medmaster - https://medmasterservices.kitaboo.com/DistributionServices/ -->
+    <!--Lions Club - https://lionsclubservices.kitaboo.com/DistributionServices/-->
+    <!--BH-365 - https://bhservices.kitaboo.com/DistributionServices/-->
+    <!--ARC - https://americanredcrossservices.kitaboo.com/DistributionServices/-->
+    <!--WSET -https://wsetservices.kitaboo.eu/DistributionServices/ -->
+    <!--Concord - https://concordservices.kitaboo.eu/DistributionServices/-->
+    <!--Academics Approach - https://academicservices.kitaboo.com/DistributionServices/-->
+   <!-- Gibbs Smith - https://gibbssmithservices.kitaboo.com/DistributionServices/ -->
+    <!-- porto = 2 -->
+    <!--qelasy = 1 -->
+    <!-- others = 4 -->
+    <integer name="minimum_password_limit">1</integer>
+
+    <!--for Kitaboo -->
+    <integer name="minimum_username_limit">1</integer>
+
+    <bool name="isPortoProduction">true</bool>
+    <!-- Porto customisation -->
+
+    <bool name="show_history_navigation">true</bool>
+
+    <bool name="allow_mobile_landscape">true</bool>
+    <!-- Porto feature required -->
+    <bool name="show_access_code">true</bool>
+    <bool name="show_bookshelf_access_code">true</bool>
+    <bool name="show_change_password_goto_weblink">false</bool>
+    <bool name="show_profile_setting">true</bool>
+    <bool name="show_context_glossary">false</bool>
+    <bool name="show_refresh_bookShelf">false</bool>
+    <bool name="show_download_file_size">true</bool>
+    <bool name="show_file_size_ondisk">true</bool>
+    <bool name="show_change_password">true</bool>
+    <bool name="show_forgot_password">true</bool>
+    <bool name="show_forgot_password_webview">false</bool>
+    <bool name="change_profile_pic">true</bool>
+    <!-- specific to client. For spiral will be false. -->
+    <bool name="show_login_help">true</bool>
+    <bool name="show_sign_up">false</bool>
+    <bool name="new_to_profili">false</bool>
+    <bool name="show_read_aloud_close">true</bool>
+    <bool name="sear_result_all_pages">false</bool>
+    <!-- True to check chapter label purchase -->
+    <bool name="check_chapter_access">false</bool>
+    <bool name="check_isFlexible_val">false</bool>
+    <!-- Consider isFlexible field while deciding hit area. True for Porto and false for any other build. -->
+
+    <!-- specific to spiral. For spiral will be true. -->
+    <bool name="show_markup_read_allowed">true</bool>
+    <!-- splash screen timeout for spiral.
+         spiral - 3000
+         others - 2000
+         border_visibility_under_logo will be false for spiral.
+    -->
+    <integer name="splash_screen_timeout">2000</integer>
+    <bool name="border_visibility_under_logo">true</bool>
+    <!-- specific to spiral. For spiral will be false. -->
+    <bool name="show_edit_profile_option">true</bool>
+    <bool name="pofile_edit_option">true</bool>
+
+    <bool name="login_back_arrow">true</bool>
+
+    <bool name="show_toc_folio_id">true</bool>
+    // false for insight otherwise true
+
+    <!-- setting for Search,TOC and Mydata visible or not -->
+    <bool name="show_highlight_search">true</bool>
+    <!--
+      for world ebook-->
+    <bool name="show_lastname">true</bool>
+    <bool name="about_us_txt">false</bool>
+
+    <!-- For Kodak specific -->
+    <bool name="show_player_search">true</bool>
+    <bool name="show_data_clear">true</bool>
+    <bool name="show_toc">true</bool>
+    <bool name="show_my_data">true</bool>
+    <bool name="show_pen_tool">true</bool>
+    <bool name="show_analytics">true</bool>
+    <bool name="show_data_submit">true</bool>
+    <bool name="show_resource_enable">true</bool>
+    <bool name="show_sticky_note">true</bool>
+    <bool name="show_audio_sync">true</bool>
+    <bool name="show_audio_play">false</bool>
+    <bool name="user_name_email_validation">false</bool>
+    <bool name="access_code_email_validation">false</bool>
+    <bool name="show_powered_by_kitaboo">true</bool>
+    <bool name="last_page_sync">true</bool>
+    <bool name="show_favourite_enable">true</bool>
+    <bool name="show_bookmark_enable">true</bool>
+    <bool name="fib_border_color">true</bool> <!-- false for insight -->
+    <bool name="drop_down_border_color">true</bool>
+
+    <!-- false for kitaboo
+    true for spiral-->
+    <bool name="show_book_title">false</bool>
+
+
+    <!-- 0 means unlimited and specific number means up-to that character-->
+
+    <integer name="player_search_limit">64</integer>
+
+    <!-- Logo -->
+    <bool name="isLogoConstant">true</bool>
+
+    <!-- Help screen -->
+    <bool name="isHelpvisible">false</bool>
+
+    <!-- Stand Alone App -->
+    <bool name="isStandAloneEnabled">false</bool>
+    <bool name="isPrepackagedAllowed">false</bool>
+    <bool name="isInstituteLogovisible">false</bool>
+
+    <!-- Show ReadAloud Choose Mode PopUp, true for Kitaboo, false for Spiral-->
+    <bool name="showAudioPopUp">true</bool>
+
+    <!-- Page Curl  -->
+    <!--  false for Kitaboo, true for Spiral-->
+    <bool name="isPageCurl">false</bool>
+
+
+    <!-- Open Enternal  -->
+    <bool name="isOpenExternalURl">false</bool>
+
+    <!-- Perfomance enabled  -->
+    <bool name="isPerfomanceEnabled">false</bool>
+
+    <!--
+     AudioPopup Position String
+     0. for top-left,
+     1 for top-right,
+     2 for botton-left,
+     3 for botton-right
+     4 for center
+    -->
+    <string name="audioPopupPosition">0</string>
+    <string name="crittercismAppID">54192cb1d478bc437e000006</string>
+    <string name="youtubeDeveloperKey">AIzaSyD453HhSiG9o6EF8U7DQVzGhRIM1M7vl9Y</string>
+    <string name="kalturaPartnerID">1764661</string>
+    <string name="kalturaExpiry">7200</string>
+    <string name="kalturaSecretkey">306095751c1b0edc6ddf667116c34ee9</string>
+    <string name="login_username_hint_text">Enter Email ID</string>
+
+    <!-- Highlight Color config -->
+    <string-array name="highlight_colors">
+        <item>@string/highlight_color_1</item>
+        <item>@string/highlight_color_2</item>
+    </string-array>
+    <!--sticky note colors-->
+    <string name="highlight_color_1">80FFFF00</string>
+    <string name="highlight_color_2">80FF7061</string>
+    <string name="highlight_impotant_color">80FF7061</string>
+    <string name="highlight_read_only_color">479CC3</string>
+    <string name="highlight_search_color">800080</string>
+
+    <!--
+    0 for Highlight Rect
+    1 for Highlight Underline
+    -->
+    <integer name="highlight_type">0</integer>
+    <color name="profileSettingButtonBackground">#3a3a3a</color>
+    <color name="signOutButtonBackground">#a2979b</color>
+    <color name="helpButtonButtonBackground">#ff9600</color>
+    <color name="audio_sync_background_color">#80800080</color>
+    <color name="highlight_read_aloud_color">#cde818</color>
+    <string name="kitabooreader_font_file_name">kitabooreader.ttf</string>
+    <string name="kitaboo_bookshelf_font_file_name">kitabooread.ttf</string>
+    <!--<string name="client_font_file_name">client.ttf</string>-->
+
+    <string name="text_font_file">bambino.ttf</string>
+    <string name="kitaboo_theme_file_name">theme.json</string>
+    <bool name="is_debug_enable">false</bool>
+    <bool name="customeurl">false</bool>
+
+    <!--markup_icon_ring_color & markup_icon_color for world book  should be  #4D000000 and as it is for others-->
+    <color name="font_reset_button">#ab0303</color>
+    <color name="markup_icon_ring_color">#FFFFFFFF</color> <!--change for markup icon-->
+    <color name="acep_favourite_icon_color">#cc3300</color>
+    <color name="acep_unfavourite_icon_color">#007bc3</color>
+    <color name="markup_icon_color">#000000</color> <!--change for markup icon-->
+    <string name="medstudy_highlight">#D4E9FF</string>
+    <color name="kitaboo_main_color">#095e8e</color> <!--CHANGE ONLY THIS COLOR FOR CLIENT BUILDS-->
+    <string name="app_name">Kitaboo eBook Reader</string>
+    <string name="app_version_name">5.0.5.5</string>
+    <string name="account_type">com.hurix.ACCOUNT</string>
+    <string name="account_authority">com.hurix.sync</string>
+    <string name="provider_label">User Generated Data</string>
+    <string name="account_sync_label">Kitaboo eBook Reader</string>
+    <string name="sync_adapter_label">Kitaboo Book Reader</string>
+    <bool name="sync_scheduler_status">true</bool>
+    <bool name="is_it_worldbook">false</bool>
+    <string name="sync_scheduler_timout_limit">600000</string>
+    <bool name="world_bookcollection_previewlayout">false</bool>
+
+    <color name="seek_bar_color">#FF05B8B5</color>
+    <color name="seek_bar_color_worldBook">#000000</color>
+    <color name="seek_bar_color_BE_Publishing">#ffffff</color>
+    <string name="authorization_consumer_key">aHVyaXhzeXN0ZW0xMy0xMC0yMDE1Zm9ydXM=</string>
+    <string name="authorization_secret_key">aHVyaXhzeXN0ZW0xMy0xMC0yMDE1Zm9ydXMtcGFzc3dvcmQ=</string>
+
+    <!-- specific to client. For spiral will be false.And for kitaboo true -->
+    <bool name="show_native_change_password">true</bool>
+    <!-- specific to client. For spiral will be true.And for kitaboo false -->
+    <bool name="show_audio_popup">false</bool>
+    <!-- specific to client. For spiral will be true.And for kitaboo false -->
+    <bool name="is_next_audiosync_play">true</bool>
+    <bool name="show_thumbnail_landscape">true</bool>
+    <bool name="insight_feature_submit">true</bool> <!-- false for insight -->
+    <color name="delete_button_color_background_spiral">#eb774B</color>
+
+    <!--aboutUs Screen-->
+    <string name="kitaboo">KITABOO</string>
+    <string name="copy_rights_worldbook">© 2021 World Book, Inc. All rights reserved.
+        WORLD BOOK and the GLOBE DEVICE are registered trademarks or trademarks of World Book, Inc.</string>
+    <bool name="show_prepackaged_books">false</bool>
+
+    <!--make TRUE for KOIS and FALSE for OTHER -->
+    <bool name="thiner_line">false</bool>
+    <bool name="pen_tool_initialy_at_start_position">false</bool>
+    <bool name="pentool_undo">true</bool>
+    <!--  <bool name = "pentool_delete_automatically">false</bool>-->
+    <bool name="multiple_color_pens">false</bool>
+    <bool name="kois_pen_tool">false</bool>
+    <bool name="kois_buttomBar_page_Text_color">false</bool>
+    <bool name="kois_Login_Error_Message">false</bool>
+    <bool name="kois_pen_background">false</bool>
+
+    <!--make FALSE for KOIS and TRUE for OTHERS-->
+    <bool name="pentool_delete">false</bool>
+    <bool name="show_Language_select">false</bool>
+
+    <!-- TRUE for Summit or webviewlogin otherwise FALSE-->
+    <bool name="webview_login">false</bool>
+
+    <!-- TRUE for New login Screen otherwise FALSE-->
+    <bool name="LoginScreen_V2">true</bool>
+
+    <!--TRUE only for SparkCapital client and FLASE for Insight-->
+    <bool name="is_sparkCapital_client">false</bool>
+
+    <!--TRUE only for LTPM client and FLASE for Insight-->
+    <bool name="is_ltpm_client">false</bool>
+    <color name="ltpm_mpo_icon_selected_background">#009900</color>
+
+    <bool name="show_protractor_enable">false</bool>
+    <bool name="password_validation_needed">true</bool>
+    <bool name="username_validation_needed">true</bool>
+    <bool name="tab_indiacator_visibility">true</bool>
+    <bool name="show_profile_name_edit">true</bool>
+    <color name="seek_bar_color_medifast">#EF6923</color>
+    <bool name="show_remember_me">true</bool>
+    <bool name="show_privacyPolicy_termsCondition">false</bool>
+    <bool name="make_refresh_feature_up">true</bool>
+    <bool name="is_normal_search_required">false</bool>
+    <bool name="name_and_email_visibile">true</bool>
+    <bool name="make_vertical_scroll_feature_up">true</bool>
+    <bool name="isEpubBookV1Encrypted">true</bool>
+    <integer name="default_average_time">30</integer>
+    <bool name="text_favorites">false</bool>
+    <bool name="make_addbook_onrefresh_feature_up">false</bool>
+    <bool name="show_insight_bookshelf">false</bool>
+    <string name="insight_ttf_file">insight.ttf</string>
+    <string name="privacy_policy_url">https://kitaboo.com/privacy-policy/</string>
+    <string name="terms_condition_url">https://kitaboo.com/terms-and-conditions/</string>
+
+    <!-- Client Configs -->
+    <bool name="is_Mills_and_Boon">false</bool>
+    <bool name="is_Oup_client">false</bool>
+    <bool name="is_medifast_client">false</bool>
+    <bool name="is_senda_client">false</bool>
+    <bool name="is_Infobase_Client">false</bool>
+    <bool name="is_storylt_client">false</bool>
+    <bool name="is_voyger_client">false</bool>
+    <bool name="is_nanoq_greenland">false</bool>
+    <bool name="is_ACEP_client">false</bool>
+    <bool name="is_ESE_client">false</bool>
+    <bool name="is_BE_Publishing">false</bool>
+    <bool name="is_AAO">false</bool>
+    <bool name="is_FOSS">false</bool>
+    <bool name="is_ADA_Client">false</bool>
+    <bool name="is_islamic_publication">false</bool>
+    <bool name="is_teach_stone">false</bool>
+    <bool name="is_JandJ_client">false</bool>
+    <bool name="is_Navneet_Client">false</bool>
+    <bool name="is_Anubis_Client">false</bool>
+    <bool name="is_Podar">false</bool>
+    <bool name="is_BH365_client">false</bool>
+    <bool name="is_Indiannica_client">false</bool>
+    <bool name="is_willo_labs">false</bool>
+    <bool name="is_Platano_client">false</bool>
+    <bool name="is_KOIS">false</bool>
+    <bool name="is_wet_client">false</bool>
+    <bool name="is_FLI_client">false</bool>
+    <bool name="is_medmaster">false</bool>
+    <bool name="is_ARC">false</bool>
+    <bool name="is_concord_client">false</bool>
+    <bool name="is_oncology_rehab">false</bool>
+    <bool name="is_Academic_Approach">false</bool>
+    <bool name="is_GreatBooks_Client">false</bool>
+    <bool name="is_WSET_client">false</bool>
+    <bool name="is_TDEE">false</bool>
+    <bool name="is_LionsClub_Client">false</bool>
+    <bool name="is_GibbsSmith_client">false</bool>
+
+
+
+    <!-- Multi-language support -->
+    <bool name="is_multi_lang_support">true</bool>
+    <bool name="is_language_change_view_tobe_shown">true</bool>
+
+
+    <bool name="disable_isbn_field">false</bool>
+    <bool name="pincode_login_enable">false</bool>
+    <bool name="enable_TeacherReview_clearAll">true</bool>
+    <bool name="font_setting_panel_all_feature_enable">true</bool>
+
+    <!-- ReflowEpub font setting configurations-->
+
+    <bool name="fontsize_setting_required">true</bool>
+    <bool name="scrollmode_setting_required">true</bool>
+
+    <!-- Readermode Day Night Sepia-->
+    <bool name="readermode_setting_required">true</bool>
+    <bool name="daymode_enable">true</bool>
+    <bool name="nightmode_enable">true</bool>
+    <bool name="sepiamode_enable">true</bool>
+
+    <!-- Line spacing setting-->
+    <bool name="linespacing_setting_required">true</bool>
+    <bool name="linespacing_one_enable">true</bool>
+    <bool name="linespacing_two_enable">true</bool>
+    <bool name="linespacing_three_enable">true</bool>
+
+    <!--    Margin setting-->
+    <bool name="margin_setting_required">true</bool>
+    <bool name="margin_one_enable">true</bool>
+    <bool name="margin_two_enable">true</bool>
+    <bool name="margin_three_enable">true</bool>
+
+    <!--Alignment setting-->
+    <bool name="alignment_setting_required">true</bool>
+    <bool name="alignLeft_enable">true</bool>
+    <bool name="alignCenter_enable">true</bool>
+    <bool name="alignRight_enable">true</bool>
+    <bool name="alignJustify_enable">true</bool>
+
+
+    <!-- fontStyle setting-->
+    <bool name="fontstyle_setting_required">true</bool>
+    <bool name="OpenSans_enable">true</bool>
+    <bool name="Georgia_enable">true</bool>
+    <bool name="NotoSerif_enable">true</bool>
+
+    <!--content security-->
+    <bool name="is_security_enabled">false</bool>
+    <bool name="is_virtual_page_count_enable">true</bool>
+    <!--ugc chunk and size based -->
+    <bool name="is_size_based_ugc">true</bool>
+
+    <integer name="ugc_chunk_limit">10</integer>
+    <integer name="ugc_chunk_size">10485760</integer>
+    <bool name="fetch_total_collection_books">false</bool>
+    <bool name="is_SVG_logo">false</bool>
+
+    <bool name="is_4_0_application_available">false</bool>
+
+    <!-- Configurable Settings -->
+    <bool name="is_highlight_button_enabled">true</bool>
+    <bool name="is_bell_icon_enabled">true</bool>
+    <bool name="is_two_page_line_enabled">true</bool>
+
+    <bool name="show_logo_onKeyboard">true</bool>
+    <bool name="main_color">false</bool>
+    <bool name="show_generateReport">true</bool>
+    <bool name="is_svgVector">false</bool>
+
+   <!--Math Keyboard configuration-->
+   <!--
+   Math Keyboard Phase 1: This phase is live and the customer is using this feature where we
+   will show the math keyboard throughout the ebook once we get config setting true in category service.
+
+   Math Keyboard Phase 2: We are currently working on this phase where we will use the math keyboard only
+   when the below condition is satisfied.
+   -->
+   <bool name="is_math_keyboard_phase_2_enabled">true</bool>
+   <bool name="duplicate_accesscode_feature">false</bool>
+    <integer name="navneet_access_max_length">30</integer>
+
+    <bool name="side_bookmark">true</bool>
+    <bool name="resizable_logo">false</bool>
+    <bool name="configurable_splashscreen">false</bool>
+
+</resources>

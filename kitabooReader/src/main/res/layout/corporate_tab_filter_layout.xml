@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:padding="5dp"
+    android:background="@drawable/tab_indicator_center_drawable">
+
+    <TextView
+        android:text="Hello"
+        android:id="@+id/textView" android:textStyle="bold" android:textColor="@drawable/tab_indicator_center_text_drawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+         />
+    
+
+</FrameLayout>

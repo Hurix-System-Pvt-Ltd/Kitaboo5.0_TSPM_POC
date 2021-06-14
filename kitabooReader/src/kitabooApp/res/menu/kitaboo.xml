@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/menu_accessCode" 
+    android:title="*"
+        android:showAsAction="ifRoom"/>
+    
+   <item android:id="@+id/menu_login" 
+    android:title="+"  
+    android:showAsAction="ifRoom"/> 
+
+ 
+
+ <item android:id="@+id/main_menu_about" 
+    android:title="Settings" 
+    android:showAsAction="never"/>
+
+</menu>

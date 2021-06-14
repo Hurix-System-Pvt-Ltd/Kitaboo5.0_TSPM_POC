@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mob_moreinfo_popup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <RelativeLayout
+            android:id="@+id/moreinfo_container"
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/moreinfo_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#de000000"
+                android:lineSpacingExtra="22sp"
+                android:layout_centerVertical="true"
+                android:gravity="center_horizontal"
+                android:text="*"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"/>
+
+
+            <TextView
+                android:id="@+id/moreinfo_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/moreinfo_icon"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#de000000"
+                android:lineSpacingExtra="5sp"
+                android:text="About this eBook"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_marginLeft="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/analytics_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:layout_below="@+id/moreinfo_container"
+     >
+
+            <TextView
+                android:id="@+id/analytics_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp"
+                android:gravity="center_horizontal"
+                android:lineSpacingExtra="22sp"
+                android:text="Z"
+                android:textColor="#de000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/analytics_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/analytics_icon"
+                android:fontFamily="sans-serif"
+                android:layout_marginLeft="10dp"
+                android:lineSpacingExtra="5sp"
+                android:singleLine="true"
+                android:text="Analytics"
+                android:textColor="#de000000"
+                android:textSize="12sp"
+                android:textStyle="normal" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/delete_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_below="@+id/analytics_container">
+
+            <TextView
+                android:id="@+id/delete_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="#de000000"
+                android:lineSpacingExtra="22sp"
+                android:gravity="center_horizontal"
+                android:text="C"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="10dp" />
+
+            <TextView
+                android:id="@+id/delete_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/delete_icon"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="normal"
+                android:textColor="#de000000"
+                android:lineSpacingExtra="5sp"
+                android:singleLine="true"
+                android:text="Delete" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

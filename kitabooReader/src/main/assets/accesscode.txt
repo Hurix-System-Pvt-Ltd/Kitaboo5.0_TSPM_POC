@@ -1,0 +1,13 @@
+{
+  "accesscode": 
+  {
+    "deviceType": "ANDROID",
+    "result": "success",
+    "code": "55555",
+    "isUserLoggedIn": "N",
+    "userinfo": 
+	{
+      
+    }
+  }
+}

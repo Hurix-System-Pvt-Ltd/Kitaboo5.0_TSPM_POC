@@ -1,0 +1,1071 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10.3">
+
+
+    <RelativeLayout
+        android:id="@+id/relative01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3.7">
+
+        <LinearLayout
+            android:id="@+id/classandstudentholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.4">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/imagebackArrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:textColor="#1e709f"
+                            android:text="A"
+                            android:textAlignment="center"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/txtAnalytics"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/imagebackArrow"
+                            android:gravity="center"
+                            android:text="@string/analytics_text"
+                            android:paddingLeft="8dp"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="28sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:id="@+id/class_details_layout">
+
+                        <TextView
+                            android:id="@+id/txtClasses"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:layout_toStartOf="@+id/topCircularImage"
+                            android:gravity="center"
+                            android:longClickable="true"
+                            android:paddingRight="10dp"
+                            android:text="Class 8"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="21sp" />
+
+                        <com.mikhaellopez.circularimageview.CircularImageView
+                            android:id="@+id/topCircularImage"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="10dp"
+                            android:src="@drawable/default_icon" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_below="@id/RelativeLayout1"
+                android:layout_weight="1.5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="0.9">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="25dp"
+                        android:layout_weight="0.66">
+
+                        <ImageView
+                            android:id="@+id/bookThumbnail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitStart"
+                            android:layout_alignParentLeft="true"
+                            android:src="@drawable/placeholder" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:paddingLeft="30dp">
+
+                        <LinearLayout
+
+                            android:id="@+id/textLayoutHeading"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:gravity="top"
+                            android:orientation="vertical"
+
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/txtBookName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:paddingBottom="5dp"
+                                android:text="My Book"
+                                android:textColor="#000000"
+                                android:textSize="20sp" />
+
+                            <RelativeLayout
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <TextView
+                                    android:id="@+id/bookTypeIcon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="T"
+                                    android:textSize="22sp"/>
+
+
+                                <TextView
+                                    android:id="@+id/txtBookType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toEndOf="@+id/bookTypeIcon"
+                                    android:text="Book Type"
+                                    android:gravity="center"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="#666666"
+                                    android:textSize="16sp" />
+
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/txtBookAuthor"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txtBookType"
+                                android:layout_weight="1"
+                                android:paddingBottom="5dp"
+                                android:text="Book Author"
+                                android:textColor="#666666"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.8">
+
+        <LinearLayout
+            android:id="@+id/contentsRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/classandstudentholder"
+            android:layout_weight=".8"
+            tools:ignore="NotSibling">
+
+            <ScrollView
+                android:id="@+id/scrollViewContents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+                <RelativeLayout
+                    android:id="@+id/allComponentHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="30dp">
+
+                    <LinearLayout
+                        android:id="@+id/RelativeLayoutRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:id="@+id/bookAssigned"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="0.8"
+                            android:background="@color/components_color">
+
+                            <TextView
+                                android:id="@+id/txtBookAssigned1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:text="Book Assigned"
+                                android:textColor="@color/Black_Color"
+                                android:textSize="18sp" />
+
+                            <RelativeLayout
+                                android:id="@+id/rlpbBookAssigned"
+                                android:layout_width="140dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/txtBookAssigned1">
+
+                                <ProgressBar
+                                    android:id="@+id/pbBookAssigned"
+                                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                    android:layout_width="140dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:indeterminate="false"
+                                    android:max="100"
+                                    android:progress="20"
+                                    android:progressDrawable="@drawable/circular_pg_purple"
+                                    android:secondaryProgress="100" />
+
+                                <TextView
+                                    android:id="@+id/bookAsgnIcon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:gravity="center"
+                                    android:padding="5dp"
+                                    android:textSize="30sp"
+                                    android:text="T" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/txtBookAssigned2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_toEndOf="@+id/rlpbBookAssigned"
+                                android:paddingLeft="15dp"
+                                android:text="2"
+                                android:textColor="#6620c2"
+                                android:textSize="60dp" />
+
+                            <TextView
+                                android:id="@+id/txtBookAssigned3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@id/txtBookAssigned2"
+                                android:layout_toEndOf="@+id/txtBookAssigned2"
+                                android:layout_toRightOf="@+id/txtBookAssigned2"
+                                android:text="/10"
+                                android:textColor="@color/Black_Color"
+                                android:textSize="40dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:padding="10dp"
+                                android:text="A"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/AvgReadingTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/bookAssigned"
+                            android:layout_weight="1.2"
+                            android:background="@color/components_color">
+
+
+                            <TextView
+                                android:id="@+id/avgReadIcon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:padding="10dp"
+                                android:textSize="22sp"
+                                android:text="T" />
+
+                            <TextView
+                                android:id="@+id/txtAvgReadingTime1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:text="Avg Reading Time"
+                                android:textColor="@color/Black_Color"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/txtAvgReadingTime2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/txtAvgReadingTime1"
+                                android:paddingBottom="20dp"
+                                android:paddingLeft="15dp"
+                                android:text="25"
+                                android:textColor="#820082"
+                                android:textSize="60dp" />
+
+                            <TextView
+                                android:id="@+id/txtAvgReadingTime3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/txtAvgReadingTime2"
+                                android:layout_toEndOf="@+id/txtAvgReadingTime2"
+                                android:layout_toRightOf="@+id/txtAvgReadingTime2"
+                                android:paddingLeft="10dp"
+                                android:text="mins"
+                                android:textColor="@color/Black_Color"
+                                android:textSize="40dp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:padding="10dp"
+                                android:text="A"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/RelativeLayoutRow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_below="@id/RelativeLayoutRow1"
+                        android:paddingTop="20dp">
+
+                        <RelativeLayout
+                            android:id="@+id/AvgPagesRead"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/components_color">
+
+
+                            <TextView
+                                android:id="@+id/avgPageIcon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:padding="10dp"
+                                android:textSize="24sp"
+                                android:text="T" />
+
+                            <TextView
+                                android:id="@+id/txtAvgPagesRead1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:padding="15dp"
+                                android:text="Avg Pages Read"
+                                android:textColor="@color/Black_Color"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/txtAvgPagesRead2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/txtAvgPageRead1"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@id/txtAvgPageRead1"
+                                android:layout_centerVertical="true"
+                                android:paddingLeft="15dp"
+                                android:text="10"
+                                android:textColor="#1313af"
+                                android:textSize="60dp" />
+
+                            <TextView
+                                android:id="@+id/txtAvgPagesRead3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_toEndOf="@+id/txtAvgPagesRead2"
+                                android:layout_toRightOf="@+id/txtAvgPagesRead2"
+                                android:paddingBottom="7dp"
+                                android:text="/20"
+                                android:textColor="@color/Black_Color"
+                                android:textSize="40dp" />
+
+                            <ProgressBar
+                                android:id="@+id/pbhAvgPageRead"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_toEndOf="@+id/txtAvgPagesRead3"
+                                android:layout_toRightOf="@+id/txtAvgPagesRead3"
+                                android:paddingBottom="20dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="40dp"
+                                android:progress="50"
+                                android:progressBackgroundTint="#767171"
+                                android:progressTint="#1313af" />
+
+                            <TextView
+                                android:id="@+id/downArrow3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:padding="10dp"
+                                android:text="A"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/RelativeLayoutRow3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@id/RelativeLayoutRow2"
+                        android:paddingTop="20dp"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:id="@+id/AvgReadingSession"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@color/components_color">
+
+
+                            <TextView
+                                android:id="@+id/avgSessIcon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:padding="10dp"
+                                android:textSize="22sp"
+                                android:text="T" />
+
+                            <TextView
+                                android:id="@+id/txtAvgReadingSession1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:text="Avg Reading Session"
+                                android:textColor="@color/Black_Color"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/txtAvgReadingSession2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/txtAvgReadingSession1"
+                                android:layout_centerHorizontal="true"
+                                android:layout_alignParentBottom="true"
+                                android:gravity="center"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="12dp"
+                                android:text="2"
+                                android:textColor="#178200"
+                                android:textSize="60dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:padding="10dp"
+                                android:text="A"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/AvgReadingSessionTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@color/components_color">
+
+                            <TextView
+                                android:id="@+id/avgTimeIcon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:padding="10dp"
+                                android:textSize="22sp"
+                                android:text="T" />
+
+                            <TextView
+                                android:id="@+id/txtAvgReadingSessionTime1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:text="Avg Reading Time"
+                                android:textColor="@color/Black_Color"
+                                android:textSize="18sp" />
+
+                            <RelativeLayout
+                                android:layout_below="@+id/txtAvgReadingSessionTime1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:gravity="center|top">
+
+                                <TextView
+                                    android:id="@+id/txtAvgReadingSessionTime2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentStart="true"
+                                    android:gravity="center"
+                                    android:paddingBottom="25dp"
+                                    android:text="10"
+                                    android:textColor="#1e53ae"
+                                    android:textSize="60dp" />
+
+                                <TextView
+                                    android:id="@+id/txtAvgReadingSessionTime3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBaseline="@+id/txtAvgReadingSessionTime2"
+                                    android:layout_toEndOf="@+id/txtAvgReadingSessionTime2"
+                                    android:layout_toRightOf="@+id/txtAvgReadingSessionTime2"
+                                    android:foregroundGravity="center"
+                                    android:paddingLeft="10dp"
+                                    android:text="Min"
+                                    android:textColor="@color/Black_Color"
+                                    android:textSize="40dp" />
+
+                            </RelativeLayout>
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:padding="10dp"
+                                android:text="A"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/AvgPageRead"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="end"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:background="@color/components_color">
+
+
+                            <TextView
+                                android:id="@+id/readPageIcon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:padding="10dp"
+                                android:textSize="22sp"
+                                android:text="T" />
+
+                            <TextView
+                                android:id="@+id/txtAvgPageRead1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="15dp"
+                                android:text="Avg Page Read"
+                                android:textColor="@color/Black_Color"
+                                android:textSize="18sp" />
+
+                            <RelativeLayout
+                                android:layout_below="@+id/txtAvgPageRead1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center|top">
+
+                                <TextView
+                                    android:id="@+id/txtAvgPageRead2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_below="@+id/txtAvgPageRead1"
+                                    android:paddingBottom="25dp"
+                                    android:text="1"
+                                    android:gravity="center"
+                                    android:textColor="#005c4d"
+                                    android:textSize="60dp" />
+
+                                <TextView
+                                    android:id="@+id/avg_pages_read_per_seesion_unit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignBaseline="@+id/txtAvgPageRead2"
+                                    android:layout_toEndOf="@+id/txtAvgPageRead2"
+                                    android:layout_toRightOf="@+id/txtAvgPageRead2"
+                                    android:gravity="center"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="20dp"
+                                    android:text="Page"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/Black_Color"
+                                    android:textSize="40dp" />
+
+
+                            </RelativeLayout>
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:padding="10dp"
+                                android:text="A"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/RelativeLayoutRow4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/RelativeLayoutRow3"
+                        android:paddingTop="20dp"
+                        android:weightSum="2">
+
+                        <RelativeLayout
+                            android:id="@+id/AvgNotesShared"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/components_color">
+
+                            <TextView
+                                android:id="@+id/txtAvgNotesShared1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="Avg Notes Shared"
+                                android:textColor="@color/Black_Color"
+                                android:textSize="18sp" />
+
+                            <RelativeLayout
+                                android:id="@+id/rlPgAvgNotesShared"
+                                android:layout_width="140dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/txtAvgNotesShared1">
+
+                                <ProgressBar
+                                    android:id="@+id/pgAvgNotesShared"
+                                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                    android:layout_width="140dp"
+                                    android:layout_height="match_parent"
+                                    android:indeterminate="false"
+                                    android:max="100"
+                                    android:progress="100"
+                                    android:progressDrawable="@drawable/circular_pg_brown"
+                                    android:secondaryProgress="100" />
+
+                                <TextView
+                                    android:id="@+id/avgNotesicon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:gravity="center"
+                                    android:textSize="30sp"
+                                    android:padding="5dp"
+                                    android:text="T" />
+
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/txtAvgNotesShared2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="71dp"
+                                android:layout_alignParentBottom="true"
+                                android:layout_below="@+id/txtAvgNotesShared1"
+                                android:layout_toEndOf="@+id/rlPgAvgNotesShared"
+                                android:gravity="bottom"
+                                android:paddingLeft="15dp"
+                                android:text="2"
+                                android:textColor="#804d00"
+                                android:textSize="60dp" />
+
+                            <TextView
+                                android:id="@+id/txtAvgNotesShared3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_toEndOf="@+id/txtAvgNotesShared2"
+                                android:gravity="bottom"
+                                android:paddingBottom="7dp"
+                                android:text="/2"
+                                android:textColor="@color/Black_Color"
+                                android:textSize="40dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="A"
+                                android:visibility="gone" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/AvgHighlightShared"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@color/components_color">
+
+
+                            <TextView
+                                android:id="@+id/txtAvgHighlightShared1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="Avg Highlight Shared"
+                                android:textColor="@color/Black_Color"
+                                android:textSize="18sp" />
+
+                            <RelativeLayout
+                                android:id="@+id/rlpbAvgHighlightShared"
+                                android:layout_width="140dp"
+                                android:layout_height="match_parent"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_below="@+id/txtAvgHighlightShared1">
+
+                                <ProgressBar
+                                    android:id="@+id/pbAvgHighlightShared"
+                                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                    android:layout_width="140dp"
+                                    android:layout_height="match_parent"
+                                    android:indeterminate="false"
+                                    android:max="100"
+                                    android:progress="50"
+                                    android:progressDrawable="@drawable/circular_pg_green"
+                                    android:secondaryProgress="100" />
+
+                                <TextView
+                                    android:id="@+id/avgHighIcon"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_centerVertical="true"
+                                    android:gravity="center"
+                                    android:textSize="30sp"
+                                    android:padding="5dp"
+                                    android:text="T" />
+
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/txtAvgHighlightShared2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_alignBottom="@+id/pbAvgHighlightShared"
+                                android:layout_below="@+id/txtAvgHighlightShared1"
+                                android:layout_toEndOf="@+id/rlpbAvgHighlightShared"
+                                android:layout_toRightOf="@+id/rlpbAvgHighlightShared"
+                                android:gravity="bottom"
+                                android:paddingLeft="15dp"
+                                android:text="1"
+                                android:textColor="#006630"
+                                android:textSize="60dp" />
+
+                            <TextView
+                                android:id="@+id/txtAvgHighlightShared3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_toEndOf="@+id/txtAvgHighlightShared2"
+                                android:paddingBottom="7dp"
+                                android:text="/2"
+                                android:textColor="@color/Black_Color"
+                                android:textSize="40dp" />
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:padding="10dp"
+                                android:text="A"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/RelativeLayoutRow5"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_below="@id/RelativeLayoutRow4"
+                        android:paddingTop="20dp">
+
+                        <RelativeLayout
+                            android:id="@+id/AvgResourceViewed"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/components_color">
+
+
+                            <TextView
+                                android:id="@+id/resourceIcon"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:padding="10dp"
+                                android:textSize="24sp"
+                                android:text="T" />
+
+                            <TextView
+                                android:id="@+id/txtAvgResourceView1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_alignParentTop="true"
+                                android:padding="15dp"
+                                android:text="Avg Resource Viewed"
+                                android:textColor="@color/Black_Color"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/txtAvgResourceView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:paddingLeft="15dp"
+                                android:text="4"
+                                android:textColor="#783505"
+                                android:textSize="60dp" />
+
+                            <TextView
+                                android:id="@+id/txtAvgResourceView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/txtAvgResourceView2"
+                                android:layout_toEndOf="@+id/txtAvgResourceView2"
+                                android:layout_toRightOf="@+id/txtAvgResourceView2"
+                                android:text="/20"
+                                android:textColor="@color/Black_Color"
+                                android:textSize="40dp" />
+
+                            <ProgressBar
+                                android:id="@+id/pbhAvgResourceView"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_toEndOf="@+id/txtAvgResourceView3"
+                                android:layout_toRightOf="@+id/txtAvgResourceView3"
+                                android:paddingBottom="20dp"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="40dp"
+                                android:progress="20"
+                                android:progressBackgroundTint="#767171"
+                                android:progressTint="#783505" />
+
+                            <TextView
+                                android:id="@+id/downArrow9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentBottom="true"
+                                android:layout_alignParentEnd="true"
+                                android:padding="10dp"
+                                android:text="A"
+                                android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4.8">
+
+        <FrameLayout
+            android:id="@+id/poweredByContainer"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:clickable="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/nvtvLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nvtvPowerByID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="2dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/powered_by"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/nvpoweredby_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding ="2dp"
+                    android:src="@drawable/bottom_logo_2"
+                    android:textSize="@dimen/kitaboo_logo_textsize"
+                    android:layout_marginLeft="-20dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/powederedByLinearLyout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPowerByID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="2dp"
+                    android:paddingTop="2dp"
+                    android:text="@string/powered_by"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/poweredby_logo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:paddingRight="2dp"
+                    android:text="U"
+                    android:textSize="@dimen/kitaboo_logo_textsize" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

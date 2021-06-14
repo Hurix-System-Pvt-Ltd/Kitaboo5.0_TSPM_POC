@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="home_menu_btn" type="id"></item>
+    <item name="toc_menu_btn" type="id"></item>
+    <item name="search_menu_btn" type="id"></item>
+    <item name="setting_menu_btn" type="id"></item>
+    <item name="overflow_menu_btn" type="id"></item>
+
+    <item name="teacher_review_undo" type="id" />
+    <item name="teacher_review_redo" type="id" />
+    <item name="teacher_review_previous" type="id" />
+    <item name="teacher_review_next" type="id" />
+    <item name="teacher_review_eraser" type="id" />
+    <item name="teacher_review_green" type="id" />
+    <item name="teacher_review_red" type="id" />
+    <item name="teacher_review_done" type="id" />
+    <item name="teacher_review_page" type="id" />
+    <item name="teacher_review_firstname" type="id" />
+    <item name="teacher_review_clear_all" type="id" />
+    <item name="teacher_review_profile_image" type="id" />
+
+    <!-- Read Aloud-->
+    <item name="read_speed" type="id" />
+    <item name="read_next" type="id" />
+    <item name="read_previous" type="id" />
+    <item name="read_pause" type="id" />
+    <item name="read_play" type="id" />
+    <item name="read_close" type="id" />
+    <item name="read_aloud" type="id" />
+    <item name="speed_inc" type="id" />
+    <item name="speed_dec" type="id" />
+    <item name="color_picker" type="id" />
+
+    <!-- Audio Sync Color-->
+    <item name="yellow_col" type="id" />
+    <item name="red_col" type="id" />
+    <item name="violet_col" type="id" />
+    <item name="green_col" type="id" />
+    <item name="blue_col" type="id" />
+
+
+
+
+
+    <!-- zoom page-->
+    <item name="action_page_zoom" type="id"/>
+    <item name="action_page_zoom_out" type="id"/>
+    <item name="action_page_zoom_percentage" type="id"/>
+    <item name="action_pagetextview" type="id"/>
+    <item name="action_page_mode" type="id"/>
+
+</resources>

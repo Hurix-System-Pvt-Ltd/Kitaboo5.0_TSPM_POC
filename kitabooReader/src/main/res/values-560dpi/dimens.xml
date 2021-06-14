@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Reflowable Book-->
+    <item name="mobile_bottombar_epub_toc_margin" format="integer" type="integer">40</item>
+    <item name="mobile_bottombar_epub_search_margin" format="integer" type="integer">290</item>
+    <item name="mobile_bottombar_epub_common_margin" type="integer" format="integer">290</item>
+
+    <item name="mobile_bottombar_epub_land_toc_margin" format="integer" type="integer">500</item>
+    <item name="mobile_bottombar_epub_land_margin" format="integer" type="integer">600</item>
+    <item name="mobile_bottombar_epub_land_common_margin" type="integer" format="integer">150</item>
+
+    <!--PDF Book-->
+    <item name="mobile_bottombar_pdf_toc_margin" format="integer" type="integer">200</item>
+    <item name="mobile_bottombar_pdf_land_margin" type="integer" format="integer">770</item>
+
+    <item name="toc_margin_for_generic_user" format="integer" type="integer">400</item>
+    <item name="toc_land_margin_for_generic_user" format="integer" type="integer">840</item>
+    <item name="search_margin_for_generic_user" format="integer" type="integer">180</item>
+    <item name="search_land_margin_for_generic_user" format="integer" type="integer">100</item>
+    <item name="font_margin_for_generic_user" format="integer" type="integer">110</item>
+    <item name="font_land_margin_for_generic_user" format="integer" type="integer">100</item>
+
+    <item name="toc_margin_for_generic_user_fixed" format="integer" type="integer">600</item>
+    <item name="toc_land_margin_for_generic_user_fixed" format="integer" type="integer">1040</item>
+    <item name="mobile_bottombar_fixed_epub_common_margin" format="integer" type="integer">100</item>
+    <item name="mobile_bottombar_fixed_epub_margin" format="integer" type="integer">200</item>
+    <!--Bottom action bar icons size-->
+    <item name="action_icon_size" format="integer" type="integer">20</item>
+    <item name="action_icon_min_width" format="integer" type="integer">90</item>
+</resources>

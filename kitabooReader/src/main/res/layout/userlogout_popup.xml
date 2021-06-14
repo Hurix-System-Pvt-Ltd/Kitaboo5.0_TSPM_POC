@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="262dp"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/imgPointer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="26dp"
+        android:src="@drawable/sign_out_top_arrow" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgPointer"       
+        android:background="@drawable/log_out_bg"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp" >
+
+        <TextView
+            android:id="@+id/txtusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"            
+            android:layout_weight="1"
+            android:text="user"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" android:paddingBottom="10dp" />
+        <Button
+            android:id="@+id/btnprofilesetting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"           
+            android:layout_weight="1"
+            android:background="@color/darkgrey"
+            android:padding="5dp"
+            android:paddingBottom="10dp"
+            android:text="@string/profile_setting_button_text"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnhelp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:background="@color/orange"
+            android:padding="5dp"
+            android:paddingBottom="10dp"
+            android:text="@string/help_text"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/btnsignout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/signout_bg"
+            android:padding="5dp"
+            android:textSize="16sp"
+            android:text="@string/signout_text"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

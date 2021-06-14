@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/Mainparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:layout_gravity="center"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/generate_report_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="6sp"
+            android:text="@string/teacher_review_generate_report_text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/about_us_bg_color" />
+
+        <TextView
+            android:id="@+id/select_student_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/generate_report_txt"
+            android:fontFamily="sans-serif"
+            android:lineSpacingExtra="6sp"
+            android:paddingTop="5dp"
+            android:text="@string/generate_report_select_chapter_student"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/blue_dark" />
+
+        <RelativeLayout
+            android:id="@+id/selection_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/select_student_text"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/num_txt1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/review_background"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/select_chapter_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/num_txt1"
+                android:paddingLeft="5dp"
+                android:text="@string/generate_report_select_chapter"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/about_us_bg_color" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="50dp"
+                android:layout_height="5dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/select_chapter_txt"
+                android:background="@drawable/dash_line"
+                android:layerType="software" />
+
+            <TextView
+                android:id="@+id/num_txt2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/divider"
+                android:background="@drawable/review_background"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#FFFFFF"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/select_student_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/num_txt2"
+                android:paddingLeft="5dp"
+                android:text="@string/generate_report_select_student"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/about_us_bg_color" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/selection_layout"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/dash_line"
+            android:layerType="software"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone" />
+
+        <!-- <com.google.android.material.tabs.TabLayout
+             android:id="@+id/tabLayout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_above="@+id/bottom_layout"
+             android:layout_below="@+id/divider2"
+             android:background="?attr/colorPrimary"
+             android:minHeight="?attr/actionBarSize"
+             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/divider2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:tabGravity="fill"
+            app:tabIndicatorColor="@color/transparent"
+            app:tabInlineLabel="true"
+            app:tabMaxWidth="0dp"
+            app:tabMode="fixed"
+            app:tabTextAppearance="@style/CustomTabTextAppearanc">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <!-- View pager to swipe views -->
+        <com.hurix.kitaboocloud.views.CustomViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_layout"
+            android:layout_below="@+id/tabLayout" />
+
+
+        <RelativeLayout
+            android:id="@+id/bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:padding="20dp"
+                android:text="@string/generate_report_next"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/next"
+                android:padding="20dp"
+                android:text="@string/generate_report_cancel"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/grey" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

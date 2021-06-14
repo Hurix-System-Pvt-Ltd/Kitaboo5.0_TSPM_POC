@@ -1,0 +1,92 @@
+{
+    "responseCode": 200,
+    "responseMsg": "OK",
+    "timestamp": "2014-12-01 17:04:34",
+    "clientSetting": {
+        "logoURL": "cga_logo.png"
+    },
+    "instituteSetting": {
+        "logoURL": "cga_logo.png",
+        "theme": {
+            "bookShell": {
+                "header": "#2a6c85",
+                "downloaded_Area": "#79929a",
+                "bookshelf_back": "#dae5e7",
+                "footer": "#e6eef1",
+                "font_color": "#ffffff",
+                "icons_color": "#dae5e7",
+                "sub_header": "#e6eef1",
+                "usertxt": "#778e9b",
+                "poweredByKitaboo": "#ffffff"
+            },
+            "reader": {
+                "menu_note": "#39565e",
+                "panel_selection": "#287a8b",
+                "menu_selection": "#010101",
+                "panel_header": "#8b8c8c",
+                "menu_icons_color": "#ffffff",
+                "tab_selection": "#b8df2c",
+                "font": "#ffffff",
+                "footer": "#e6eef1",
+                "second_coloumn": "#bdbdbd",
+                "poweredByKitaboo": "#ffffff",
+                "bookmark": "#0df0f8",
+                "menu_icon_select": "#ffff00"
+            }
+        },
+        "readerSetting": {
+            "userDataList": [
+                {
+                    "id": 3,
+                    "name": "NOTES",
+                    "enable": true
+                },
+                {
+                    "id": 4,
+                    "name": "HIGHLIGHT",
+                    "enable": true
+                },
+                {
+                    "id": 5,
+                    "name": "ENABLE SHARING",
+                    "enable": true
+                }
+            ],
+            "toolList": [
+                {
+                    "id": 1,
+                    "name": "PEN",
+                    "enable": true
+                },
+                {
+                    "id": 2,
+                    "name": "SEARCH",
+                    "enable": true
+                }
+            ],
+            "annotationList": [
+                {
+                    "id": 6,
+                    "name": "PEN TOOL",
+                    "enable": true
+                },
+                {
+                    "id": 7,
+                    "name": "ENABLE REVIEW",
+                    "enable": true
+                }
+            ],
+            "miscList": [
+                {
+                    "id": 8,
+                    "name": "ANALYTICS",
+                    "enable": true
+                },
+                {
+                    "id": 9,
+                    "name": "AUTO LOG OFF"
+                }
+            ]
+        }
+    }
+}

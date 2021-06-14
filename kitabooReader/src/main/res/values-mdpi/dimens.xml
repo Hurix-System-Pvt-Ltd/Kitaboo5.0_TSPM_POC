@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="useridtextmargin">12dp</dimen>
+    <dimen name="passidtextmargin">15dp</dimen>
+    <dimen name="registration_dialog_width_new">300dp</dimen>
+        <item name="mobile_bottombar_left_margin" type="integer" format="integer">240</item>
+        <item name="mobile_bottombar_left_margin_fixed_epub" type="integer" format="integer">350</item>
+        <item name="mobile_bottombar_epub_common_margin" type="integer" format="integer">20</item>
+        <item name="mobile_bottombar_epub_land_common_margin" type="integer" format="integer">80</item>
+        <dimen name="color_popup_width">300dp</dimen>
+        <item name="mobile_topbar_pen_port_common_margin" type="integer" format="integer">24</item>
+        <item name="mobile_topbar_pen_land_left_margin" type="integer" format="integer">240</item>
+        <item name="mobile_topbar_pen_land_common_margin" type="integer" format="integer">18</item>
+        <item name="action_bar_bottom_common_margin" type="integer" format="integer">0</item>
+         <dimen name="book_thumbnail_item_height">130dp</dimen>
+    <dimen name="book_thumbnail_item_width">102dp</dimen>
+
+    <item name="mobile_bottombar_pdf_toc_margin" format="integer" type="integer">-10</item>
+    <item name="mobile_bottombar_pdf_land_margin" type="integer" format="integer">85</item>
+    <item name="mobile_bottombar_epub_toc_margin" format="integer" type="integer">10</item>
+    <item name="mobile_bottombar_epub_land_toc_margin" format="integer" type="integer">70</item>
+    <item name="mobile_bottombar_epub_search_margin" format="integer" type="integer">20</item>
+    <item name="toc_margin_for_generic_user" format="integer" type="integer">350</item>
+    <item name="search_margin_for_generic_user" format="integer" type="integer">160</item>
+    <item name="toc_land_margin_for_generic_user" format="integer" type="integer">650</item>
+    <item name="search_land_margin_for_generic_user" format="integer" type="integer">100</item>
+    <item name="font_margin_for_generic_user" format="integer" type="integer">90</item>
+    <item name="font_land_margin_for_generic_user" format="integer" type="integer">100</item>
+    <item name="toc_margin_for_generic_user_fixed" format="integer" type="integer">500</item>
+    <item name="toc_land_margin_for_generic_user_fixed" format="integer" type="integer">780</item>
+    <item name="toc_land_margin_for_chrome_book" format="integer" type="integer">900</item>
+    <item name="toc_land_margin_for_chromebook" format="integer" type="integer">700</item>
+    <item name="search_land_margin_for_chrome_book" format="integer" type="integer">50</item>
+    <item name="toc_margin_for_chromebook" format="integer" type="integer">550</item>
+    <item name="search_margin_for_chromebook" format="integer" type="integer">50</item>
+    <dimen name="book_title_layout_size">50dp</dimen>
+    <dimen name="moreinfo_textsize">15sp</dimen>
+    <!--Bottom action bar icons size-->
+    <item name="action_icon_size" format="integer" type="integer">20</item>
+    <item name="action_icon_min_width" format="integer" type="integer">90</item>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_checked="false"
+        android:drawable="@color/grey_transparency"
+        >
+        <shape android:shape="oval">
+            <corners android:radius="40sp" />
+        </shape>
+    </item>
+    <item
+        android:state_checked="true"
+        android:drawable="@color/kitaboo_main_color"
+        >
+        <shape android:shape="rectangle">
+            <corners android:radius="40sp" />
+            <solid android:color="#8c8c8c" />
+            <stroke android:color="#8c8c8c" android:width="1dp"/>
+            <size android:height="20dp" />
+        </shape>
+    </item>
+    </selector>

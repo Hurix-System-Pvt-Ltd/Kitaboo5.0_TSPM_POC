@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Thumb"
+    >
+    <TextView
+        android:id="@+id/txtViewCategories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|left"
+        android:minWidth="12dp"
+        android:paddingTop="@dimen/help_categories_padding"
+        android:paddingLeft="3dp"
+        android:paddingRight="5dp"
+        android:text="3"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:visibility="gone"
+        />
+    <ImageView
+        android:id="@+id/imagelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_above="@+id/tvcaption"/>
+    <TextView
+        android:id="@+id/txthelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/help_skip_txt"
+        android:textSize="12dp"
+        android:textAllCaps="true"
+        android:padding="9dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:background="@drawable/ripple"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:id="@+id/rlTopFeatureTextContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3" >
+
+            <!--<RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true">
+                <TextView
+                    android:id="@+id/tempText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="text" />
+
+                <View
+                    android:id="@+id/topView"
+                    android:layout_width="4dp"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/tempText"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/white" />
+            </RelativeLayout>-->
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llBottomFeatureTextContainer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.7"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</FrameLayout>

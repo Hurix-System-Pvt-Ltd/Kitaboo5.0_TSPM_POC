@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="help_screens">
+        <item>help_screen1</item>
+        <item>help_screen2</item>
+    </string-array>
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="no_internet_try_again">Não tem ligação à Internet. Verifique a ligação e tente novamente.</string>
+    <string name="bookshelf_category_default_category">Mostrar todos os itens.</string>
+    <string name="bookshelf_category_default_category_books">Todos os itens</string>
+    <string name="bookshelf_category_download">Mostrar descargas</string>
+    <string name="bookshelf_category_download_books">Descarregado</string>
+    <string name="action_settings">Configurações</string>
+    <string name="dummy_accessCode">55555</string>
+    <string name="need_permission">Permissão necessária</string>
+    <string name="forgot_email_send_success_msg">As instruções para reconfigurar a palavra-passe foram enviadas para o endereço de e-mail</string>
+    <string name="forgot_email_send_fail_msg">O endereço de e-mail não está registado. Tente com um endereço de e-mail diferente</string>
+    <string name="alert_empty_accesscode">Insira o código de acesso</string>
+    <string name="alert_empty_emailid">Insira o e-mail de registo</string>
+    <string name="alert_invalid_accesscode">Insira um código de acesso válido</string>
+    <string name="network_error">Ligação de Internet indisponível</string>
+    <string name="network_error_new">Ligação de Internet indisponível</string>
+    <string name="alert_bookshelf_empty">O nome da estante não pode estar vazio</string>
+    <string name="alert_bookshelf_already_exist">A estante já existe. Altere o nome da estante.</string>
+    <string name="alert_book_delete">Deseja eliminar este livro?</string>
+    <string name="alert_video_delete">Deseja eliminar este vídeo?</string>
+    <string name="alert_delete_book_title">Apagar este livro?</string>
+    <string name="alert_delete_book_msg">A ação é irreversível</string>
+    <string name="alert_shelf_delete">Deseja apagar a estante?</string>
+    <string name="pentool_delete_alert_msg">Esta ação eliminará permanentemente os desenhos. Continuar?</string>
+    <string name="pentool_delete_alert_title">Apagar todas as notas da caneta?</string>
+    <string name="shelf_delete_alert_title">Apagar estante</string>
+    <string name="delete_note_title">Apagar</string>
+    <string name="delete_protractor">Tem a certeza de que deseja apagar?</string>
+    <string name="delete_note_message">Apagar esta nota?</string>
+    <string name="alert_title">Atenção</string>
+    <string name="booktype_epub">ePub</string>
+    <string name="logout_title">Sair</string>
+    <string name="sync_title">Submeter os dados</string>
+    <string name="sync_clear_title">Apagar os dados</string>
+    <string name="sync_message">As respostas serão submetidas e não poderão ser alteradas. Continuar?</string>
+    <string name="individual_sync_message">Respostas submetidas. Continuar?</string>
+    <string name="sync_clear_message">Respostas apagadas. Continuar?</string>
+    <string name="sync_message_nodata">Não há dados submetidos</string>
+    <string name="sync_message_fib_data_clear">Dados apagados. </string>
+    <string name="al_book_delete_title">Apagar livro</string>
+    <string name="al_video_delete_title">Apagar vídeo</string>
+    <string name="msg_accesscode_and_downloading">O código de acesso não é válido enquanto o livro está a descarregar</string>
+    <string name="page_not_found">Insira um número de página válido</string>
+    <string name="page_not_exist">A página não existe</string>
+    <string name="alert_no_shared_notes">Notas partilhadas não encontradas</string>
+    <string name="alert_no_notes">Notas não encontradas</string>
+    <string name="alert_no_shared_highlight">Destaques partilhados não encontrados</string>
+    <string name="al_no_highlight">Destaques não encontrados</string>
+    <string name="alert_no_shared_all_data">Dados partilhados não encontrados</string>
+    <string name="alert_no_data">Dados não encontrados</string>
+    <string name="alert_exit_title">Sair</string>
+    <string name="delete_all">Apagar tudo</string>
+    <string name="delete_all_message_while_download_all">Os livros descarregados serão eliminados. O restante será descarregado. Deseja contrinuar?</string>
+    <string name="alert_password_validation">A palavra-passe deverá ter entre 8 e 15 caracteres</string>
+    <string name="alert_password_minimum_limit">A palavra-passe deve ter, pelo menos, 8 caracteres. Tente novamente.</string>
+    <string name="alert_password_maximum_limit">A palavra-passe deve ter menos de 20 caracteres. Tente novamente.</string>
+    <string name="ugc_setting_select_message">Escolha pelo menos um.</string>
+    <string name="validation_empty_data">Dados não encontrados. Tente novamente.</string>
+    <string name="server_sucess_msg">Dados não encontrados. Tente novamente.</string>
+    <string name="server_fail_msg">Dados não encontrados. Tente novamente.</string>
+    <string name="server_empty_field_msg">Preencha todos os campos.</string>
+    <string name="server_invalid_field_msg">Insira dados válidos em todos os campos.</string>
+    <string name="server_invalid_type_msg">Insira dados válidos em todos os campos.</string>
+    <!--    <string name="server_token_expired_msg">A sessão expirou. Entre novamente para sincronizar os seus dados.</string>-->
+    <string name="server_token_expired_msg">A sessão não é válida.</string>
+    <string name="reset_setting">Restaurar</string>
+    <string name="not_purchased">Não tem autorização para aceder a este livro. Não foi subscrito ou comprado por si.</string>
+    <string name="error_on_file_access_content">Sorry ePub kindly contact</string>
+    <string name="server_multiple_client_msg">Cliente múltiplo. Tente novamente.</string>
+    <string name="server_multiple_institutes_msg">Multiple institutes, Please try again.</string>
+    <string name="server_duplicate_emailid_msg">O endereço de e-mail inserido já existe.</string>
+    <string name="server_accesscode_invalid_msg">O código de acesso é inválido.</string>
+    <string name="server_accesscode_invalid_with_other_user_msg">O código de acesso inserido foi usado por um utilizador diferente.</string>
+    <string name="server_accesscode_invalid_with_same_user_msg">O código de acesso inserido já foi usado.</string>
+    <string name="server_accesscode_invalid_with_other_institute">Não tem autorização para usar o código de acesso inserido para esta instituição.</string>
+    <string name="server_accesscode_invalid_distribustion_fail_msg">Erro ao utilizar o código de acesso. Tente novamente.</string>
+    <string name="server_client_invalid_msg">Dados não encontrados. Tente novamente.</string>
+    <string name="server_book_licence_limit_reached">Excedeu o número limite de descargas do livro em vários dispositivos</string>
+    <string name="server_video_licence_limit_reached">Excedeu o número limite de descargas do vídeo em vários dispositivos</string>
+    <string name="server_book_licence_expired">O livro não pode ser descarregado porque a licença expirou.</string>
+    <string name="server_book_not_available">Livro não disponível</string>
+    <string name="server_client_trial_redirect">Client trial redirect.</string>
+    <string name="server_account_inactive">Conta inativa</string>
+    <string name="server_time_out_erros">Não é possível encontrar o servidor. Tente mais tarde.</string>
+    <string name="server_unknown_error">A ligação de Internet está fraca. Tente novamente.</string>
+    <string name="please_wait">Aguarde</string>
+    <string name="alert_invalid_emailid">Insira um endereço de e-mail válido</string>
+    <string name="alert_empty_mail_id">Endereço de e-mail necessário</string>
+    <string name="alert_empty_password">Palavra-passe necessária</string>
+    <string name="alert_empty_first_name">Nome próprio necessário</string>
+    <string name="alert_empty_user_name">Apelido necessário</string>
+    <string name="alert_downloading_progress">A descarga do livro está a decorrer</string>
+    <!--<string name="first_name_mandatory">Obrigatório o nome próprio</string>-->
+    <string name="alert_invalid_input">Inserção inválida</string>
+    <string name="alert_full_name_character_limit">O nome completo deve ter entre 1 e%1$s caracteres</string>
+    <string name="alert_user_name_character_limit">O nome de utilizador deve ter entre 1 e %1$s caracteres</string>
+    <string name="alert_empty_confirm_password">Confirme a palavra-passe</string>
+    <string name="alert_empty_last_name">Apelido necessário</string>
+    <string name="alert_last_name_character_limit">O apelido deve ter entre 1 e %1$s caracteres</string>
+    <string name="alert_emailid_character_limit">O endereço de e-mail deve ter entre 1 e %1$s caracteres</string>
+    <string name="alert_password_character_limit">A palavra-passe deve ter entre 1 e %1$s caracteres</string>
+    <string name="alert_wrong_password">As palavras-passe inseridas não coincidem</string>
+    <string name="alert_wrong_email_id">O endereço de e-mail inserido pertence a outra conta</string>
+    <string name="confirm_password_not_match">As palavras-passe não coincidem</string>
+    <string name="password_not_match">A palavra-passe antiga e atual não coincidem</string>
+    <string name="password_and_newpassword_match">Insira uma palavra-passe diferente</string>
+    <string name="confirmpassword_and_newpassword_mismatch">A nova palavra-passe e a confirmação da nova palavra-passe não coincidem</string>
+    <string name="alert_all_field_required">Os campos obrigatórios não podem ficar vazios</string>
+    <string name="toast_rest_password_success">A palavra-passe foi alterada com sucesso</string>
+    <string name="toast_rest_password_in_progress">Aguarde</string>
+    <string name="alert_rest_password_success">A palavra-passe foi redefinida Verifique a sua caixa de correio.</string>
+    <string name="alert_rest_password_title">Redefinir palavra-passe</string>
+    <string name="download_browser_dialog_message">Vamos direcionar para a instalação do browser Firefox. Continuar?</string>
+    <string name="download_browser_dialog_title">Descarregar Firefox</string>
+    <string name="wrong_password">Palavra-passe errada</string>
+    <string name="alert_highlight_delete_title">Eliminar</string>
+    <string name="alert_highlight_delete_message">Deseja apagar este destaque?</string>
+    <string name="toast_message">Toast message</string>
+    <string name="alert_signout_message">Sair?</string>
+    <string name="alert_signout_title">Sair</string>
+    <string name="alert_signout_message_internet_unavailable">Ligação à Internet indisponível. Não é possível sincronizar os dados. Sair?</string>
+    <string name="alert_signout_message_data_syncing">A sincronizar dados. Sair?</string>
+    <string name="alert_signout_title_while_data_sync_going">Sair</string>
+    <string name="alert_error_save_settings">Erro ao guardar as configurações</string>
+    <string name="alert_successfully_submit_data">Dados guardados com sucesso</string>
+    <string name="title_section1">Secção 1</string>
+    <string name="title_section2">Secção 2</string>
+    <string name="title_section3">Secção 3</string>
+    <string name="resource_search_hint">Pesquisar por palavras-chave</string>
+    <string name="no_search_result_found">Reultados não encontrados</string>
+    <string name="coverage">Coverage</string>
+    <string name="time_spent">Tempo gasto</string>
+    <string name="network_not_available_msg">A ligação à Internet está indisponível.</string>
+    <string name="ugc_data_all">Tudo</string>
+    <string name="ugc_tab_notes">Notas</string>
+    <string name="ugc_tab_highlights">Destaques</string>
+    <string name="ugc_tab_bookmark">Notas</string>
+    <string name="btn_note">Notas</string>
+    <string name="ugc_mobile_tab_my_data">Os meus dados</string>
+    <string name="ugc_mobile_tab_my_notes">A minha nota</string>
+    <string name="ugc_mobile_tab_shared_with_me">Partilhar comigo</string>
+    <string name="btn_highlight">Destaques</string>
+    <string name="toc_not_found">Tabela de conteúdos não encontrada</string>
+    <string name="btn_all_data">Todos os dados</string>
+    <string name="btn_shared_with_me">Pratilhar comigo</string>
+    <string name="btn_settings">Configurações</string>
+    <string name="comments">Comentários</string>
+    <string name="share">Partilhar </string>
+    <string name="receive">Receber</string>
+    <string name="done">Feito</string>
+    <string name="teacher">Professores</string>
+    <string name="student">Todos os alunos</string>
+    <string name="share_this_note_with">Partilhar esta nota com</string>
+    <string name="select_class">Selecionar turma</string>
+    <string name="post">Publicar</string>
+    <string name="TotalComments">Comentários</string>
+    <string name="note_share_title">Partilhar nota</string>
+    <string name="stickynote_imp_text">Marcar esta nota como importante</string>
+    <string name="enterprise_stickynote_imp_text">Marcar esta nota como importante</string>
+    <string name="stickynote_imp_undo_text">Marcar esta nota como normal</string>
+    <string name="note_empty_msg">Insira os dados da nota</string>
+    <string name="BOOKMARK_READONLY_TITLE">Só leitura</string>
+    <string name="BOOKMARK_READONLY_MSG">Ligue-se à Internet para alterar a nota</string>
+    <string name="UGC_ACCESS_INTERNET_NEEDED_TITLE">Ligação à Internet necessária</string>
+    <string name="UGC_ACCESS_INTERNET_NEEDED_MSG">Certifique-se de que tem ligação à Internet e tente novamente.</string>
+    <string name="stop">Parar</string>
+    <string name="pause">Pausa</string>
+    <string name="play">Play</string>
+    <string name="status">Estado</string>
+    <string name="empty_message">00:00</string>
+    <string name="analytics_server_error_message">Erro de servidor</string>
+    <string name="analytics_server_nodata_message">Dados não encontrados</string>
+    <string name="teacher_review_class_text">Turma</string>
+    <string name="teacher_review_select_student_text">Selecionar aluno</string>
+    <string name="teacher_review_student_text">Aluno</string>
+    <string name="teacher_review_teacher_text">Professor</string>
+    <string name="teacher_review_done_text">Feito</string>
+    <string name="ugc_mydata_chapter_label">Capítulo:&#160;</string>
+    <string name="ugc_mydata_chapter_label_fixedLayout">Capítulo:&#160;</string>
+    <string name="ugc_mydata_page_label">Capítulo:&#160;</string>
+    <string name="ugc_mydata_shared_by_label">Partilhado por</string>
+    <string name="alert_toc_no_bookmarks_found">Notas não encontradas</string>
+    <string name="alert_tor_no_resources_found">Recurso não encontrado</string>
+    <string name="ok">Ok</string>
+    <string name="bookmark_page_label">Página</string>
+    <string name="delete_shelf_title">Apagar categoria</string>
+    <string name="delete_shelf_msg">Tem a certeza de que deseja apagar esta categoria?</string>
+    <string name="delete_book_msg">Tem a certeza de que deseja apagar o livro selecionado?</string>
+    <string name="category_name_already_exists_msg">A estante já existe. Altere o nome da estante.</string>
+    <string name="download_btn_text">ebooks para descarregar</string>
+    <string name="login_btn_text">Entrar</string>
+    <string name="login_header_text">Iniciar Sessáo</string>
+    <string name="login_webview_text">Entrar</string>
+    <string name="dialog_login_email_id_text">Endereço de e-mail</string>
+    <string name="dialog_login_email_id_hint_text">Inserir endereço de e-mail</string>
+    <string name="dialog_login_username_hint_text">Utilizador</string>
+    <string name="dialog_login_password_text">Palavra-passe</string>
+    <string name="dialog_login_password_hint_text">Inserir palavra-passe</string>
+    <string name="dialog_login_submit_text">Entrar</string>
+    <string name="dialog_login_forgot_password_text">Esqueceu-se da palavra-passe?</string>
+    <string name="remember_me">Lembrar-me</string>
+    <string name="dialog_login_accesscode_have_text">Tem um código de acesso?</string>
+    <string name="dialog_login_accesscode_message_text">Utilize o código de acesso para visualizar o eBook</string>
+    <string name="dialog_login_edit_access_code">Código de acesso</string>
+    <string name="dialog_login_btn_go_text">Ir</string>
+    <string name="access_code_text">Repor código de acesso</string>
+    <string name="forgot_password_text">Esqueceu-se da palavra-passe</string>
+    <string name="forgot_password_hint">endereço de e-mail</string>
+    <string name="access_code_submit_text">submeter</string>
+    <string name="access_code_cancel_text">cancelar</string>
+    <string name="registration_header_text">entrar</string>
+    <string name="new_to_profil">Novo perfil?</string>
+    <string name="registration_first_name_text">Nome próprio</string>
+    <string name="registration_first_name_hint_text">Inserir o nome próprio</string>
+    <string name="registration_last_name_text">apelido</string>
+    <string name="registration_last_name_hint_text">Inserir o apelido</string>
+    <string name="registration_email_id_text">endereço de e-mail</string>
+    <string name="registration_email_id_hint_text">endereço de e-mail</string>
+    <string name="registration_Password_text">Terminar sessão</string>
+    <string name="registration_Password_hint_text">palavra-passe</string>
+    <string name="registration_ComfirmPassword_text">Confrimar a palavra-passe</string>
+    <string name="registration_ComfirmPassword_hint_text">Confrimar a palavra-passe</string>
+    <string name="registration_bottom_text">Está a 1 passo de visualizar os seus eBooks</string>
+    <string name="registration_bottom_msg">Ao clicar em "Submeter" confirma que tem 16 anos ou mais e concorda com os nossos Termos e Condições.</string>
+    <string name="registration_bottom_msg1"><u>Terms and conditions</u></string>
+    <string name="terms_of_services_txt">Termos do serviço</string>
+    <string name="accesscode_condition_msg">Li e aceito</string>
+    <string name="registration_msg">Crie a sua conta, inserindo os dados solicitados abaixo</string>
+    <string name="No_Downloadable_Books_Msg">Não tem eBooks disponíveis para descarregar</string>
+    <string name="signout_text">Sair da sessão</string>
+    <string name="profile_setting_button_text">Configurações do Perfil</string>
+    <string name="help_text">Ajuda</string>
+    <string name="profile_setting_welcome_text">Bem-vindo</string>
+    <string name="profile_setting_emailid_text">E-mail:</string>
+    <string name="profile_setting_change_btn_text"><u>Alterar palavra-passe</u></string>
+    <string name="profile_setting_change_btn_text_header">Definições do utilizador</string>
+    <string name="profile_setting_change_btn_description">Alterar a palavra-passe atual</string>
+    <string name="profile_setting_cancel_btn_text">Cancelar</string>
+    <string name="profile_setting_current_password_text">Palavra-passe atual</string>
+    <string name="profile_setting_current_new_password_text">Nova palavra-passe</string>
+    <string name="profile_setting_current_confirm_new_password_text">Confirmar a nova palavra-passe</string>
+    <string name="profile_setting_change_animation_header_text">Alterar a animação da página</string>
+    <string name="profile_setting_change_animation_category_header">Animação da página</string>
+    <string name="profile_setting_change_animation_category_description">Alterar a animação da página consoante o livro</string>
+    <string name="exit_msg_when_downloading">Não é possível sair enquanto descarrega um livro</string>
+    <string name="exit_msg_when_refreshing">Não é possível atualizar enquanto descarrega um livro</string>
+    <string name="exit_msg">Sair?</string>
+    <string name="logout_msg_when_downloading">Não é possível sair enquanto descarrega um livro</string>
+    <string name="logout_msg">Encerrar sessão?</string>
+    <string name="loading_ebook_msg">A carregar o eBook</string>
+    <string name="login_forgot_password">Esqueceu-se da palavra-passe</string>
+    <string name="login_new_user">novo utilizador?</string>
+    <string name="registration_bottom_last_msg">está a 1 passo de visualizar os seus eBooks</string>
+    <string name="launch_msg_for_epub">Disponibilizar um ePub</string>
+    <string name="launch_msg_for_ebook">A carregar o eBook</string>
+    <string name="cancel">Cancelar</string>
+    <string name="add">Adicionar</string>
+    <string name="addnewcategory">Adicionar nova estante</string>
+    <string name="addnewcategory_hint">Inserir nome da estante</string>
+    <string name="menu_settings">Configurações</string>
+    <string name="no_internet">A Internet não está disponível</string>
+    <string name="custome_url_download_book">Deseja descarregar o livro?</string>
+    <string name="blank_field">Todos os campos são obrigatórios</string>
+    <string name="failed_login">Dados inválidos</string>
+    <string name="book_delete_alert">Deseja eliminar o livro selecionado?</string>
+    <string name="register_submit_button">Inscrever-se</string>
+    <string name="enter_password">Inserir palavra-passe</string>
+    <string name="forgot_password_email_id_label">Redefinir palavra-passe</string>
+    <string name="registration_user_name_text">Nome de utilizador</string>
+    <string name="registration_user_name_hint_text">Nome completo</string>
+    <string name="alert_invalid_userName">Insira um nome completo válido</string>
+    <string name="alert_youtube_player_initialisation_error">Ocorreu um erro ao iniciar o youtubeplayer</string>
+    <string name="alert_instant_feedback_title">A resposta correta é</string>
+    <string name="alert_kaltura_player_initialisation_error">ocorreu um erro ao iniciar o vídeo Kaltura</string>
+    <string name="alert_video_player_initialisation_error">ocorreu um erro ao iniciar o vídeo </string>
+    <string name="alert_vimeo_player_initialisation_error">Ocorreu um erro ao iniciar o vídeo Vimeo</string>
+    <string name="alert_no_space_left_on_device">Erro</string>
+    <string name="alert_no_space_left_msg">Não existe espaço suficiente para descarregar o livro. Remova ficheiros e tente novamente</string>
+    <string name="alert_bookshelf_no_search_found_title">Lamentamos</string>
+    <string name="alert_bookshelf_no_search_found_message">Não foram encontrados resultados para a pesquisa</string>
+    <string name="alert_webView_loading_error">Ocorreu um erro ao carregar o url</string>
+    <string name="alert_session_expired">A sessão expirou. Entre novamente.</string>
+    <string name="bookshelf_category_all_books">Todos os livros</string>
+    <string name="drawer_open">Abrir a ferramenta de desenho</string>
+    <string name="drawer_close">Fechar a ferramenta de desenho</string>
+    <string name="copy">Copiar o texto abaixo</string>
+    <string name="select">Copiar o texto abaixo</string>
+    <string name="dialog_yes_button">Sim</string>
+    <string name="dialog_no_button">Não</string>
+    <string name="ugc_share_note_message">Foi iniciada uma partilha de dados consigo</string>
+    <string name="alert_book_download_waiting">Aguarde</string>
+    <string name="alert_book_download_installing">A instalar</string>
+    <string name="toc_tab_resource">Recursos</string>
+    <string name="toc_tab_contents">Conteúdos</string>
+    <string name="thumbnail_nav_page">Ir para</string>
+    <string name="thumbnail_chaptername_not_present">Capítulo não encontrado</string>
+    <string name="ugc_data_important">Importante</string>
+    <string name="alert_search_validation">A pesquisa de texto deve ter entre %1$s e %1$s carcateres</string>
+    <string name="alert_download_intrupt">Sem ligação à Internet</string>
+    <string name="user_search_hint">Pesquisar por palavras-chave</string>
+    <string name="note_hint_msg">Inserir a nota</string>
+    <string name="comment_hint_msg">Inserir o comentário</string>
+    <string name="note_comment_hint_msg">Escrever o comentário aqui</string>
+    <string name="dialog_login_kitaboo_message_text">Inscreva-se em %1$s para experimentar os eBooks </string>
+    <string name="login_help_worldbook">Inscreva-se na sua conta de eBooks. Não tem uma conta? Inscreva-se no World Book online</string>
+    <string name="dialog_login_accesscode_body_text">Utilize o código de acesso para visualizar os eBooks</string>
+    <string name="alert_book_licence_limit_reached">Excedeu o limite de descargas do livro em vários dispositivos</string>
+    <string name="alert_book_licence_expired">O livro não pode ser descarregado, porque a licença expirou</string>
+    <string name="emailid_field_character_allowed">0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM.@_-</string>
+    <string name="forgetpassword_field_character_allowed">0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM.@_-</string>
+    <string name="msg_progress_when_downloading">Não é possível enquanto os ebooks estão a ser descarregados</string>
+    <string name="reader_page">Página</string>
+    <string name="reader_page_epub">Capítulo</string>
+    <string name="privacy_policy_text">Concordo com Kitaboo</string>
+    <string name="privacy_policy">Política de privacidade</string>
+    <string name="privacy">Política de privacidade</string>
+    <string name="terms_conditions">Termos e Condições</string>
+    <string name="privacy_text_new">Ao inscrever-se, concorda com a nossa Política de privacidade e Termos e Condições</string>
+    <string name="only_privacy_text">Ao inscrever-se, concorda com a nossa Política de privacidade e Termos e Condições</string>
+    <string name="only_terms_text">Ao inscrever-se, concorda com os Termos e Condições</string>
+
+    <string name="reader_page_of">de</string>
+    <string name="msg_invalid_login_kois">Palavra-passe ou utilizador não preenchido ou inválidos</string>
+    <string name="msg_invalid_login">Palavra-passe ou utilizador inválido</string>
+    <string name="msg_youtub_video_not_supported">Vídeo do Youtube não suportado</string>
+    <string name="stickynote_add_msg">Clique em qualquer local para colocar uma nota.</string>
+    <string name="stickynote_tap_outside_msg">Clique no interior da página para adicionar uma nota</string>
+    <string name="dialog_forgetPassword_body_text">Insira o seu endereço de e-mail para redefinir a palavra-passe</string>
+    <string name="dialog_forgetPassword_new">Insira o seu endereço de e-mail abaixo, para lhe enviarmos um link com a nova palavra-passe</string>
+    <string name="msg_unable_to_play_video">Impossível abrir o vídeo</string>
+    <string name="alert_bookshelf_no_search_found_message_bookshelf">Não há livros para a pesquisa</string>
+    <string name="profile_pic_camera">Câmara</string>
+    <string name="profile_pic_gallery">Biblioteca</string>
+    <string name="profile_pic_option">Altere a fotografia de perfil</string>
+    <string name="profile_pic_option_mob">Altere a fotografia de perfil</string>
+    <string name="profile_pic_option_message">Como deseja colocar a sua fotografia?</string>
+    <string name="profile_pic_not_found">Há um problema com a imagem. Selecione outra.</string>
+    <string name="note_share_tag">Partilhar esta nota com</string>
+    <!-- EPUB reader Messages start -->
+    <string name="epub_initialization_error">ePub não suportado</string>
+    <!-- EPUB reader Messages end -->
+
+    <!-- Enterprise New Mydata texts -->
+
+
+    <!-- Enterprise New Mydata texts end -->
+    <string name="enterprise_my_data">Os meus dados</string>
+    <string name="enterprise_my_notes">A Minha Nota</string>
+    <string name="enterprise_my_highlights">Os meus destaques</string>
+    <!-- Corporate Messages Start -->
+
+    <string name="corporate_preview_loading_error">Erro ao carregar pré-visualização</string>
+    <string name="category_list_heading">Categoria</string>
+
+    <!-- Corporate Messages End -->
+    <!-- New Bookshelf Text -->
+    <string name="preview_launch_button">Abiri</string>
+    <string name="preview_download_button">Descarregar</string>
+    <string name="preview_resume_button">Resumo /resumir</string>
+    <string name="preview_archive_button">Eliminar</string>
+    <string name="preview_open_button">Abrir</string>
+    <string name="preview_statistics_button">Análise</string>
+    <string name="preview_update_button">Atualização</string>
+    <string name="preview_video_launch_button">Abrir vídeo</string>
+    <string name="preview_video_delete_button">Apagar vídeo</string>
+    <string name="preview_downloading_button">A decarregar</string>
+    <string name="preview_read_now">Ler agora</string>
+    <string name="preview_continoue_reading">Continuar a leitura</string>
+    <!-- Topbar localizations start -->
+
+    <item name="topbar_ugc_data" type="id" />
+
+    <string name="topbar_ugc_data">Os meus dados</string>
+
+    <item name="topbar_pen_tool" type="id" />
+
+    <string name="topbar_book_data">Dados do livro</string>
+
+    <item name="topbar_book_data" type="id" />
+
+    <string name="topbar_pen_tool">Caneta</string>
+
+    <item name="topbar_search" type="id" />
+
+    <string name="topbar_search">Pesquisar</string>
+
+    <item name="topbar_review" type="id" />
+
+
+    <string name="topbar_review">Rever</string>
+    <string name="topbar_submit">Submeter utilizador</string>
+
+    <item name="topbar_readaloud" type="id" />
+
+    <string name="topbar_readaloud">Ler em voz alta</string>
+
+    <item name="topbar_aloudplay" type="id" />
+    <string name="topbar_aloudplay">Abrir automaticamente</string>
+
+    <item name="topbar_settings" type="id" />
+
+    <string name="topbar_settings">Configurações</string>
+    <string name="accessibility_overflow">Mais opções</string>
+    <string name="color_picker_default_title">Selecionar cor</string>
+    <string name="pentool_size_default_title">Selecionar tamanho</string>
+
+    <item name="topbar_stickynote" type="id" />
+    <string name="topbar_stickynote">Nota</string>
+
+    <item name="topbar_clear" type="id" />
+    <string name="topbar_clear">Eliminar</string>
+
+    <item name="topbar_protractor" type="id" />
+    <string name="topbar_protractor">Transferidor</string>
+    <!-- Topbar localizations end -->
+
+
+    <!-- BottomBar localizations start -->
+
+    <string name="bottombar_thumbnail">Miniaturas</string>
+    <string name="bottombar_toc">Tabela de Conteúdos</string>
+    <string name="topbar_teacher_review">Avaliação do professor</string>
+
+    <!-- BottomBar localizations end -->
+
+    <!-- New Analytics heading start -->
+    <string name="analytics">Estatísticas</string>
+    <string name="book_opened_assigned">Livro aberto</string>
+    <string name="video_opened_assigned">Video apresentado/atribuído</string>
+    <string name="video_opened">Vídeo apresentado</string>
+    <string name="video_completed_assigned">Vídeo completo /atribuído</string>
+    <string name="video_completed">Vídeo completo</string>
+    <string name="avg_reading_sessions">Média das sessões de leitura</string>
+    <string name="total_reading_sessions">Sessões de leitura</string>
+    <string name="avg_video_reading_sessions">Média do número de visualizações</string>
+    <string name="total_video_reading_sessions">número de visualizações</string>
+
+    <string name="avg_notes_shared_created">Média das notas partilhadas</string>
+    <string name="notes_shared_created">Notas partilhadas/criadas</string>
+    <string name="avg_reading_time">Média de tempo de leitura</string>
+    <string name="reading_time">Tempo de leitura</string>
+    <string name="video_reading_time">Total de tempo gasto</string>
+    <string name="avg_reading_time_session">Média de tempo de leitura/sessão</string>
+    <string name="avg_video_reading_time_session">Média de tempo gasto por sessão</string>
+    <string name="avg_highlight_created_shared">Média de destaques partilhados/criados</string>
+    <string name="highlight_created_shared">Destaques partilhados/criados</string>
+    <string name="avg_pages_read">Média de páginas lidas</string>
+    <string name="pages_read">Páginas lidas</string>
+    <string name="avg_pages_read_session">Média de páginas lidas/sessão</string>
+    <string name="avg_resources_viewed_available">Média de recursos visualizados/disponíveis</string>
+    <string name="resources_viewed_available">Recursos visualizados/disponíveis</string>
+    <string name="Yes">sim</string>
+    <string name="No">não</string>
+    <string name="statistics_pages">páginas</string>
+    <string name="statistics_mins">minutos</string>
+    <string name="average_pages_read_per_session_unit_multiple">páginas</string>
+    <!-- New Analytics heading end -->
+
+    <string name="alert_cannot_delete_book">Impossível apagar livro agora. Contacte o administrador</string>
+    <string name="msg_sticky_note_cannot_placed">Não é possível colocar a nota no recurso assinalado.</string>
+    <string name="ERROR_BOOK_UNAVAILABLE">Este eBook não está disponível para download.</string>
+    <string name="ERROR_VIDEO_UNAVAILABLE">Este vídeo não está disponível para download.</string>
+
+
+    <!--Profile setting-->
+    <string name="profile_setting_pic_change_text">Alterar a fotografia de perfil</string>
+    <string name="default_text">padrão</string>
+    <string name="profile_pic_upload_failed">Erro no carregamento da fotografia de perfil. Tente novamente.</string>
+    <string name="or">Ou</string>
+    <string name="porto_title_access">Sem dados de acesso?</string>
+    <string name="porto_hint_access">Insira o seu endereço de e-mail</string>
+    <string name="alert_invalid_porto_email">Insira um endereço de e-mail válido</string>
+    <string name="porto_registration_success">Registo efetuado com sucesso. Verifique a sua caixa de correio para ver os detalhes dos dados de acesso.</string>
+    <string name="porto_profile_setting_account_manager">Administrador de conta</string>
+    <string name="porto_profile_setting_device_manager">Administrador de dispositivo</string>
+    <string name="crop_save_text">Crop</string>
+    <string name="runningFaceDetection">Aguarde</string>
+    <string name="wallpaper">Configurar papel de parede</string>
+    <string name="savingImage">Guardar fotografia</string>
+    <string name="device_not_supported">Esta função não é suportada neste dispositivo.</string>
+    <string name="wrote">&#160;</string>
+    <string name="book_download_alert">O tamanho deste livro é de %1$s MB. \nO seu dispositivo está ligado a uma rede móvel. Continuar?</string>
+    <string name="book_download_alert_wifi">O tamanho deste livro é de %1$s MB. \nContinuar?</string>
+    <string name="refreshing_books">Atualizar livros</string>
+    <string name="glossary_no_description_message">Descrição não disponível</string>
+    <string name="download_package_filesize">Tamanho %1$s MB</string>
+    <string name="author_name">Autor:&#160;</string>
+    <string name="series_title">Títutlo:&#160;</string>
+    <string name="publisher_name">Editora:&#160;</string>
+    <string name="book_reference_id">Referência:&#160;</string>
+    <string name="copy_right_year">Ano:&#160;</string>
+    <string name="isbn">ISBN:&#160;</string>
+    <string name="pages">Páginas:&#160;</string>
+    <string name="interest_level">Nível de interesse:&#160;</string>
+    <string name="lexile_measure">Lexile Measure:&#160;</string>
+    <string name="a_r_level">AR Level:&#160;</string>
+    <string name="subject">Assunto:&#160;</string>
+    <string name="description">Descrição:&#160;</string>
+    <string name="category_name">Categoria:&#160;</string>
+
+
+    <string name="no_application_available">Aplicação indisponível para abrir o documento.</string>
+    <string name="noUserGroup">As anotações partilhadas não estão acessíveis para esta turma.</string>
+    <string name="sticky_note_not_supported">Esta função pode ser otimizada no modo retrato. Rode o ecrã.</string>
+    <string name="protractor_not_supported">Esta função pode ser otimizada no modo retrato. Rode o ecrã.</string>
+    <string name="default_category_name">Outros</string>
+    <string name="unzipping">A descompactar</string>
+    <string name="alert_error">Erro</string>
+    <string name="no_instruction_markup">Sem instruções disponíveis</string>
+    <!--<string name="choose_readaloud_option">Selecione o modo</string>
+    <string name="let_me_read_text_option_title">Selecione abrir o livro sem áudio</string>
+    <string name="auto_play_option_title">Selecione abrir o livro com leitura em voz alta e virar de página automático.</string>
+    <string name="read_to_me_option_title">Selecione abrir o livro com leitura em voz alta e visualização página a página.</string>
+    <string name="let_me_read_text">Deixe-me ler</string>
+    <string name="auto_play_text">Auto play</string>
+    <string name="read_to_me_text">Leia</string>
+    <string name="text_download_all">Descarregar tudo</string>
+    <string name="text_delete_all">Apagar tudo</string>
+    <string name="text_collection_lebel">Itens</string>
+    <string name="text_collection_lebel_mobile">todos os itens</string>
+    <string name="text_collection_page_lebel">Páginas</string>
+    <string name="Others_collection_Catogory">Outros</string>
+    <string name="book_mode_Online">Online</string>
+
+    <string name="dictHeaderText"></string>
+    <string name="alert_check_coorect_answer_submit_data">Escreva uma resposta errada para ver a resposta.</string>
+    <string name="incorrect_answer_message">Esta é a resposta errada.</string>
+    <string name="book_error">Erro</string>
+    <string name="error_in_open_book">Ocorreu um erro no livro. Descarregar novamente?</string>
+    <string name="my_collection">Coleção</string>
+    <string name="loading_items">A carregar itens. Aguarde.</string>
+    <string name="no_downloaded_books">Não há livros descarregados</string>
+    <string name="loading">A carregar itens.</string>
+    <string name="loading_progress">A carregar.</string>
+    <string name="search_drawable_position_name">Certo</string>
+    <string name="noAccount">Sem conta?</string>
+    <string name="profile_setting_email_text">endereço de e-mail</string>
+    <string name="mobile_profile_setting_change_btn_text">Alterar</string>
+    <string name="submitted_pentool_error">Esta resposta foi submetida e não pode ser alterada.</string>
+    <string name="pentool_enabled_error">A ferramenta da caneta não pode ser colocada no recurso de notas.</string>
+    <string name="msg_dropdown_cannot_open">A caixa de opções não pode ser aberta </string>
+    <string name="msg_resources_not_open">Não pode abrir os recursos com a caixa de pesquisa aberta.</string>
+    <string name="bookmark_hint">Adicionar nota ao título</string>
+    <string name="first_name_mandatory">O nome próprio é obrigatório</string>
+    <string name="permission_request">É necessária autorização</string>
+    <string name="permission_grantd_message">Autorização concedida. Pode continuar a usar a App</string>
+    <string name="storage_permission_not_granted">É necessária autorização para guardar, para ler/escrever. Altere nas configurações no dispositivo. Apps, autorização, Autorizar guardar </string>
+    <string name="camera_permission_not_granted">É necessária autorização para aceder à câmara. Altere nas configurações no dispositivo. Apps, autorização, câmara </string>
+    <string name="video_download_alert">O tamanho deste vídeo é de %MB. O dispositivo está ligado a uma rede móvel. Continuar?</string>
+    <string name="video_download_alert_wifi">O tamanho deste vídeo é de %MB. Continuar?</string>
+    <string name="window_permission_not_granted">Autorização negada por alerta do sistema windows. Clique novamente para que a autirização seja concedida.</string>
+    <string name="no_items_available">Não há itens disponíveis.</string>
+    <string name="resource_not_available">Compre para poder ter acesso a este capítulo.</string>
+    <string name="msg_max_authorised_device">Atingiu o número máximo de dispositivos autorizados.</string>
+    <string name="forgot_password_submit_text">Submeter</string>
+
+    <string name="try_again">Tente novamente</string>
+    <string name="no_book_downloade">Nenhum ebook descarregado ou a descarregar</string>
+
+
+    <string name="about_us">Sair</string>
+
+
+
+    <!-Help Screen-->
+    <string name="help_skip_txt">Sair</string>
+    <string name="help_got_txt">Entendi</string>
+    <string name="help_Accesscode_txt">Inserir o código de acesso</string>
+    <string name="view_profile_setting_text">Visualizar asdefinições de perfil</string>
+    <string name="help_screen_search_text">Pesquisar livros por autor, título, ISBN</string>
+    <string name="help_table_content_text">Ajuda na Tabela de Conteúdos</string>
+    <string name="help_my_data_text">Ajuda Meus dados</string>
+    <string name="help_add_pen_annotation">Adicionar nota com a caneta</string>
+    <string name="help_add_protractor_annotation">usar Transferidor</string>
+    <string name="help_audio_to_Bookshelf">áudio para a estante</string>
+    <string name="help_play_pause">Play/Pausa</string>
+    <string name="help_addbookmark_txt">Adicionar nota</string>
+    <string name="help_placenote_txt">Escreva em qualquer lugar para colocar uma nota</string>
+    <string name="help_submit_data_txt">submeter dados</string>
+    <string name="help_clear_data_txt">Apagar dados</string>
+    <string name="help_search_content_txt">Pesquisar por conteúdo de livro</string>
+    <string name="help_show_thumbnail_txt">Mostrar miniaturas</string>
+    <string name="help_view_categories">Visulaizar categorias</string>
+    <string name="review_enabled_error">a marcação não pode ser aberta no modo revisão</string>
+    <string name="terms_conditon">Termos e condições</string>
+    <string name="AboutUs">sobre nós</string>
+    <string name="PrivacyPolicy">Política de privacidade</string>
+    <string name="and">e</string>
+
+    <string name="delete_all_books">Eliminar todos os livros</string>
+    <string name="delete_conformation">Eliminar todo os livros desta coleção?</string>
+
+    <string name="delete_book">Eliminar</string>
+
+    <string name="signout_title">Sair?</string>
+    <string name="signout_message">Será direcionado para o ecrã de entrada</string>
+    <string name="app_exit_message">Clique em anterior novamente para sair</string>
+
+    <string name="delete_all_error">Eliminar todos os erros de servidor</string>
+    <string name="delete_error">Eliminar erros do servidor</string>
+
+    <string name="overall">Em geral</string>
+    <string name="permission_title">Autorização necessária</string>
+    <string name="permission_msg">%1$s</string>
+    <string name="permission_never_ask_msg">A autorização de armazenamento permite aceder ao armazenamento de dados. Altere as configurações da App.</string>
+    <string name="alert_book_error">Não é possível abrir este capítulo do livro</string>
+    <string name="protractor">Apagar transferidor</string>
+    <string name="note_and_highlight">Utilizar destaque e nota</string>
+
+    <string name="signin">Iniciar Sessáo</string>
+    <string name="accesscode">Código de acesso</string>
+    <string name="hint_access">Inserir código de acesso</string>
+    <string name="page_no">Número de página</string>
+    <string name="syncing">A carregar</string>
+    <string name="more_info_title">Sobre</string>
+
+
+
+    <string name="MyData_Bookmark_Comment_title">Comentário</string>
+
+    <string name="inline_video_play_icon">ɼ</string>
+
+    <string name="msg_no_fib_data">Não existem dados para apagar</string>
+
+    <string name="update_coverpic_text">Alterar capa</string>
+    <string name="title_activity_camera">Câmara</string>
+    <string name="title_activity_newprofile_setting">Configurações de novo perfil</string>
+    <string name="title_activity_new_profilesetting">Novas configurações de perfil</string>
+    <string name="profile_username">Utilizador</string>
+    <string name="last_name">Apelido</string>
+    <string name="update_profile_text">Editar</string>
+    <string name="Changepassword_text"><u>Alterar palavra-passe</u></string>
+    <string name="Resetpassword_text"><u>Alterar palavra-passe</u></string>
+    <string name="Savebtn">Guardar</string>
+    <string name="saveclick">Guardar </string>
+    <string name="Cancelbtn">Cancelar</string>
+    <string name="version_txt">Versão</string>
+    <string name="poweredBy">Desenvolvido por</string>
+
+    <string name="search_empty">Insira um dado válido</string>
+
+
+    <!--Strings related to analytics-->
+    <string name="header_text_open_book_per_assign">Livro aberto/atribuído</string>
+    <string name="text_avg_reading_time">Média de tempo de leitura</string>
+    <string name="text_avg_reading_time_unit">minutos</string>
+    <string name="text_avg_reading_time_unit_in_sec">segundos</string>
+    <string name="text_avg_pages_read">Média de páginas lidas</string>
+    <string name="avg_reading_session">média de sessão de leitura</string>
+    <string name="avg_reading_time_per_session">Média de tempo de leitura/sessão</string>
+    <string name="avg_reading_time_per_session_unit">minuto</string>
+    <string name="average_pages_read_per_session">Média de páginas lidas/sessão</string>
+    <string name="average_pages_read_per_session_unit">página</string>
+    <string name="avg_notes_share_per_create">média de notas partilhadas/criadas</string>
+    <string name="avg_highlight_shared_per_create">Média de destaques partilhados/criados</string>
+    <string name="avg_resource_viewed_per_available">Média de recursos visualizados/disponíveis</string>
+    <string name="text_reading_time">Tempo de leitura</string>
+    <string name="text_pages_read">páginas lidas</string>
+    <string name="reading_session">sessão de leitura</string>
+    <string name="notes_share_per_create">notas partilhadas/criadas</string>
+    <string name="highlight_shared_per_create">destaques partilhados/criados</string>
+    <string name="resource_viewed_per_available">Recurso visualizado/disponível</string>
+    <string name="all_students_text">todos os alunos</string>
+    <string name="alert_search_fetch_book_error">Ocorreu um erro ao pesquisar o livro</string>
+    <string name="book_not_found">livro não encontrado</string>
+    <string name="topic">tópico</string>
+    <string name="search_result_found_for">resultados para</string>
+    <string name="text_select_a_student">Selecione um aluno</string>
+    <string name="text_cancel">Cancelar</string>
+
+    <!-- Strings Related Bookshelf-->
+    <string name="bookshelf_category_view_all">Ver todos</string>
+    <string name="bookshelf_book_category_ebook">ebook</string>
+    <string name="bookshelf_book_category_collection">Coleção</string>
+    <string name="bookshelf_book_category_video">Vídeo</string>
+    <string name="bookshelf_book_category_audio">áudio</string>
+    <string name="moreinfo_popup_title_tab">Mais informações</string>
+    <string name="profile_setting_text_profile">Perfil</string>
+
+
+    <!--5.0 reader settings-->
+
+    <string name="search_no_result_found_hint">A pesquisa não tem resultados.</string>
+    <string name="note_yellow_color">#ffc000</string>
+    <string name="note_red_color">#fc816c</string>
+    <string name="note_purple_color">#d68fff</string>
+    <string name="note_lightgreen_color">#a5d94c</string>
+    <string name="note_skyblue_color">#38d1db</string>
+    <string name="copy_rights"> © 2021 todos os direitos reservados.</string>
+
+
+    <string name="note_orange_color">#D17D00</string>
+    <string name="note_pink_color">#FC5454</string>
+    <string name="note_new_purple_color">#C061FF</string>
+    <string name="note_green_color">#6F9C21</string>
+    <string name="note_blue_color">#009CC7</string>
+
+    <string name="note_lightyellow_color">#fcf9a3</string>
+    <string name="sticky_note_title">Nota</string>
+    <string name="sticky_just_now_text">Agora</string>
+
+    <string name="toc_title">Tabela de conteúdos</string>
+    <string name="bottombar_toc_title">Conteúdos</string>
+    <string name="ugc_tab_bookmark_title">Nota</string>
+    <string name="search_result_hint_text">Resultado da procura</string>
+
+    <string name="note_title">Notas</string>
+    <string name="terms_conditons">Termos e condições</string>
+    <string name="about_us_text">sobre nós</string>
+    <string name="version_text">Versão</string>
+    <string name="my_data_filter_text">Filtrar por</string>
+    <string name="my_data_filter_all_text">Tudo</string>
+    <string name="new_kitaboo_v5_font_file">kitabooread_new_design.ttf</string>
+    <string name="recently_viewed">Recentemente visualizado</string>
+
+    <string name="my_data_apply_all_text">Aplicar</string>
+    <string name="open">ª</string>
+    <string name="delete">C</string>
+    <string name="bookshelf_Video">L</string>
+    <string name="bookshelf_Audio">i</string>
+    <string name="download">s</string>
+    <string name="pause_state">K</string>
+    <string name="empty_note_first_line">Notas adicionadas/partilhadas aparecem na cor na página recentemente criada/partilhada.</string>
+    <string name="empty_note_second_line"></string>
+    <string name="empty_note_third_line"></string>
+    <string name="empty_highlight_first_line">Destaque o texto para adicionar a nota ou assinale como importante</string>
+    <string name="empty_highlight_second_line"></string>
+    <string name="ugc_accept_all_text">Aceitar tudo</string>
+    <string name="ugc_decline_all_text">Rejeitar tudo</string>
+    <string name="ugc_accept_btn_text">Aceitar </string>
+    <string name="ugc_decline_btn_text">Rejeitar</string>
+
+
+    <string name="highlight_title">Destaques</string>
+    <string name="ugc_my_data">Meus Dados</string>
+
+    <string name="no_filter_note_msg">Nenhuma nota disponível para o filtro</string>
+    <string name="no_filter_highlight_msg">Nenhum destaque disponível para o filtro</string>
+
+
+
+    <string name="delete_popup_title">Eliminar?</string>
+
+    <string name="delete_popup_ok">Ok</string>
+    <string name="delete_popup_cancel">Cancelar</string>
+
+    <!-- Cleae All-->
+
+    <string name="clearAll_title">Apagar tudo</string>
+    <string name="clearAll_message">Os dados da ferramenta da caneta serão apagados. Continuar?</string>
+    <string name="clearAll_Data_message">Os daos da caixa de texto serão apagados. Continuar?</string>
+    <string name="no_books_found">Não foram encontrados livros</string>
+
+
+    <string name="font_setting">Configurações de tipo de letra</string>
+    <string name="font_setting_">Configurações de tipo de letra</string>
+
+    <string name="reader_setting">Configurações de leitura</string>
+    <string name="align">Alinhar</string>
+    <string name="justify">Justificar</string>
+    <string name="margins">Margens</string>
+    <string name="scroll_setting">Scroll indisponível</string>
+    <string name="spacings">Espaçamento de linha</string>
+    <string name="mode">Modo</string>
+    <string name="font">Tipo de letra</string>
+    <string name="scroll_view">Vista em scroll</string>
+    <string name="need_internet_to_play_audio">É necessária ligação à Internet para abrir o vídeo</string>
+
+
+    <string name="accounts_page"><u>Accounts Page</u></string>
+    <string name="profile_setting">Configurações do perfil</string>
+    <string name="refresh">Atualizar</string>
+
+    <!--Help Screen 5.0-->
+    <string name="more_Settings">Mais configurações</string>
+    <string name="more_Settings_">Clicar para ver mais ferramentas</string>
+    <string name="more_Settings_extra">Adicionar conteúdos e configurações do perfil</string>
+    <string name="search">Pesquisar</string>
+    <string name="search_">Pesquisar palavras</string>
+    <string name="search_1">o Conteúdo</string>
+    <string name="helpsearch">Pesquisar palavras no contéudo</string>
+    <string name="profile">Perfil</string>
+    <string name="profile_">Personalizar as configurações</string>
+    <string name="more_setting">Mais configurações</string>
+    <string name="more_setting_">Clicar para ver o conteúdo adicional e configurações do perfil</string>
+    <string name="more_setting_1">and Profile Settings</string>
+    <string name="home">Início</string>
+    <string name="home_">ir para a biblioteca</string>
+    <string name="toc">Tabela de conteúdos</string>
+    <string name="pen">Ferramenta da caneta</string>
+    <string name="pen_content1">Anotar e assinalar numa cor diferente</string>
+    <string name="pen_content2">in different color</string>
+
+    <string name="addnote">Adicionar nota</string>
+    <string name="thumbnail">miniatura</string>
+    <string name="settings">Configurações</string>
+    <string name="bookmark">Nota</string>
+    <string name="addnote_">Anotar e partilhar</string>
+    <string name="thumbnail_1">Visualizar conteúdos em minatura</string>
+    <string name="thumbnail_2">the content</string>
+    <string name="settings_">Ver detalhes da análise</string>
+    <string name="bookmark_">Marcar esta página</string>
+    <string name="clearall">Apagar tudo</string>
+    <string name="clearall_">Apagar todos os dados FIB</string>
+
+    <string name="add_new">Adicionar novo</string>
+    <string name="add_new_content">Adicionar novo conteúdo</string>
+    <string name="help_screen_search_text_new">Pesquisar conteúdo por</string>
+    <string name="help_screen_search_text_new_">Autor, título, ISBN</string>
+
+    <string name="bookMark">Nota</string>
+    <string name="bookMark_">Marcar esta página</string>
+    <string name="table_Contents">Tabela de conteúdos</string>
+    <string name="table_Contents_">Síntese dos conteúdos</string>
+    <string name="my_data">Os meus dados</string>
+    <string name="my_data_1">Visualizar notas e destaques</string>
+    <string name="my_data_2"></string>
+    <string name="pentool">ferramenta da caneta</string>
+    <string name="pentool_">Anotar e assinalar a diferentes cores</string>
+
+    <string name="student_profile">Perfil do aluno</string>
+    <string name="student_profile1">Visualizar e alterar da lista de alunos</string>
+    <string name="student_profile2">students list</string>
+    <string name="marker_1">Marcador</string>
+    <string name="marker_2">Marcador sem cor</string>
+    <string name="marker1">Anotar e marcar a verde e vermelho</string>
+    <string name="marker2">in green and red</string>
+    <string name="arrow1">Seta</string>
+    <string name="arrow2"></string>
+    <string name="arrow_1">Para a frente e para trás no contéudo</string>
+    <string name="arrow_2">in the content</string>
+
+
+    <string name="eraser">Borracha</string>
+    <string name="undo">Desfazer</string>
+    <string name="redo">Pronto</string>
+    <string name="clear_All">Apagar tudo</string>
+    <string name="done1">Feito</string>
+
+
+    <string name="eraser_">Apagar os dados</string>
+    <string name="undo_">Desfazer e finalizar os dados</string>
+    <string name="undo_1">your data</string>
+    <string name="clear_all">Apagar todos os dados</string>
+    <string name="done2">Submeter a edição</string>
+
+
+    <!--Help Screen 5.0-->
+    <string name="auto_log_out_alert_msg">É necessário ter ligação à Internet para entrar na conta</string>
+
+    <!--  Read Aloud -->
+    <string name="choose_readaloud_option">Alterar o seu modo</string>
+    <string name="let_me_read_text_option_title">Selecionar abrir o livro sem áudio.</string>
+    <string name="auto_play_option_title">Seleccionar abrir o livro com leitura em voz alta e mudança automática de página.</string>
+    <string name="read_to_me_option_title">Selecionar abrir o livro com leitura em voz alta página a página.</string>
+    <string name="let_me_read_text">Deixe-me ler</string>
+    <string name="auto_play_text">Auto-play</string>
+    <string name="read_to_me_text">Leia para mim</string>
+
+    <!--  tabs for 5.0 -->
+    <string name="all_tab">Tudo</string>
+    <string name="downloaded_tab">Descarregado</string>
+    <string name="recently_viewd_tab">Visualizado recentemente</string>
+    <string name="favourites">Favoritos</string>
+    <string name="my_book">Os meus livros</string>
+
+    <string name="favourites_book_tab">Os meus livros</string>
+    <string name="favorites">Favoritos</string>
+    <string name="explore">Explorar</string>
+    <string name="analytics_text">Análise</string>
+    <string name="profile_text">Perfil</string>
+    <string name="enter_note">Inserir nota</string>
+    <string name="contextual_note">Notas contextuais</string>
+    <string name="notes">Notas</string>
+    <string name="added_bookmark">As marcações feitas são listadas aqui</string>
+    <string name="bookmark_list"></string>
+    <string name="more_info">Mais informações</string>
+    <string name="language">Língua</string>
+    <string name="series">Séries</string>
+    <string name="dialog_districtID_text">District ID (Optional)</string>
+    <string name="add_percentage">%%</string>
+
+    <string name="min_left">minutos restantes</string>
+    <string name="category_sort_by_msg">Isto não será aplicado a tudo, descargas, visualizados recentemente e a categorias favoritas.</string>
+
+    <!--Insight Changes-->
+
+    <string name="forgotpassword_hinttext">Endereço de e-mail</string>
+    <string name="forgotpassword_send">Enviar</string>
+    <string name="forgotpassword_cancel">Cancelar</string>
+    <string name="forgotpassword_title">Esqueci a palavra-passe</string>
+    <string name="forgotpassword_label">Insira abaixo o seu e-mail e enviaremos um link para redifinir a palavra-passe</string>
+    <string name="forgotpassword_successful_msg">O link de redefinição de palavra-passe foi enviado para o endereço de e-mail registado</string>
+    <string name="txt_preview_char">©</string>
+    <string name="password_icon_char">¶</string>
+    <string name="confirm_password_icon_char">1</string>
+    <string name="facebook_icon">ƒ</string>
+    <string name="email_icon_char">ă</string>
+    <string name="share_icon_char">ƽ</string>
+    <string name="delete_icon_char">C</string>
+    <string name="page_number_toast">número de página</string>
+
+    <string name="acep_view_book_text">visualizar livro</string>
+
+    <string name="oup_login_register_msg">Não tem uma conta? Registe-se aqui</string>
+    <string name="aboutus_for_millsandboon">Sobre nós</string>
+    <string name="privacy_policy_millsandBoon">Política de privacidade</string>
+    <string name="terms_conditonsmillsandboon">Termos e condições</string>
+
+    <string-array name="font_item">
+        <item>padrão</item>
+        <item>Open sans</item>
+        <item>Georgia</item>
+        <item>Noto Serif</item>
+    </string-array>
+
+    <string name="thumbnails">Miniaturas</string>
+    <string name="more_setting_2"></string>
+    <string name="downlaod_fail">Falha descarga</string>
+    <string name="profile_update_msg">Perfil atualizado com sucesso</string>
+    <string name="sign_in_btn_text">Continuar</string>
+
+    <string name="My_Bookshelf">A minha estante</string>
+    <string name="Register">Registar</string>
+
+    <string name="acep_log_in_text">Entrar</string>
+    <string name="acep_log_out_text">Sair</string>
+    <string name="no_audio_sync">Não há áudio disponível para este capítulo</string>
+    <string name="powered_by">Desenvolvido por</string>
+    <string name="accesscode_send_txt">Enviar</string>
+    <string name="match">correspondências</string>
+    <string name="matches">correspondências</string>
+    <string name="check_message_nodata">Não há dados para eliminar.</string>
+    <string name="internl_resource">RECURSOS</string>
+    <string name="internl_resource_tab">Recursos</string>
+    <string name="bookmark_hint">Adicionar título</string>
+    <string name="add_content">Adicionar conteúdos</string>
+    <string name="access_code_info">Utilize o código de acesso para adicionar conteúdo à estante.</string>
+    <string name="text_average_completion_status">Média preenchimento estado/condição</string>
+    <string name="average_cfid_read_per_session">Média preenchimento/sessão</string>
+    <string name="font_setting_hint">Configurações</string>
+    <string name="text_completion_status_unit">%</string>
+    <string name="language_code">pt</string>
+    <string name="default_string">padrão</string>
+    <string name="internal_resources">Recursos</string>
+    <string name="first_name_mandatory">Nome é obrigatório</string>
+    <string name="no_next_search_available">Próxima pesquisa indisponível</string>
+    <string name="no_previous_search_available">Pesquisa anterior indisponível</string>
+
+</resources>

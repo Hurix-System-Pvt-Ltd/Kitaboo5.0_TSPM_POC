@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hurix.kitaboocloud"
+    android:installLocation="auto"
+    android:versionCode="28"
+    android:versionName="@string/app_version_name">
+
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+
+<!--        <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+     permissions for crittercism
+    <uses-permission android:name="android.permission.READ_LOGS"
+    tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+        <uses-feature
+            android:name="android.hardware.microphone"
+            android:required="false" />
+        <uses-feature
+            android:name="android.hardware.telephony"
+            android:required="false" />
+
+        <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+        <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+        <uses-permission android:name="android.permission.READ_SYNC_STATS" />
+        <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+        <uses-permission android:name="android.permission.WAKE_LOCK" />-->
+
+
+ <!--   <receiver android:name="com.myBroadcastReceiver">
+        <intent-filter>
+            <action android:name="android.net.wifi.supplicant.CONNECTION_CHANGE" />
+            <action android:name="android.net.wifi.STATE_CHANGE" />
+        </intent-filter>
+    </receiver>
+-->
+
+    <!--
+    <application
+        android:name="com.hurix.database.user.controller.ApplicationController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.hurix.kitaboocloud.LauncherActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|fontScale"
+            android:launchMode="singleTop"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="kitabooreader" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hurix.kitaboocloud.SplashScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|fontScale"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden" >
+           &lt;!&ndash; <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="kitabooreader" />
+            </intent-filter>&ndash;&gt;
+        </activity>
+        <activity
+            android:name="com.hurix.kitaboo.epubreader.EpubBookReader"
+            android:configChanges="keyboard|orientation|screenSize|fontScale"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.Light" />
+        <activity
+            android:name="com.hurix.kitaboocloud.KitabooActivity"
+            android:configChanges="keyboard|orientation|screenSize|fontScale"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name="com.hurix.kitaboocloud.KitabooMobileActivity"
+            android:configChanges="keyboard|orientation|screenSize|fontScale"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name="com.hurix.kitaboocloud.views.MobilePreviewActivity"
+            android:configChanges="keyboard|orientation|screenSize|fontScale"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name="com.hurix.kitaboocloud.KitabooCorporate"
+            android:configChanges="keyboard|orientation|screenSize|fontScale"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@style/CustomActionBarTheme" />
+        <activity
+            android:name="com.hurix.bookreader.KitabooMobilePlayer"
+            android:configChanges="keyboard|orientation|screenSize|fontScale"
+            android:theme="@style/CustomActionBarThemeWithActionBar.Transparent"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.hurix.bookreader.KitabooEnterpriseReader"
+            android:configChanges="keyboard|orientation|screenSize|fontScale"
+            android:theme="@style/CustomActionBarThemeWithActionBar.Transparent"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.hurix.bookreader.KitabooBookReader"
+            android:configChanges="keyboard|orientation|screenSize|fontScale"
+            android:theme="@style/CustomActionBarTheme.Transparent"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.hurix.bookreader.views.link.LinkVideoPlayer"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@style/TransparentActivity" />
+        <activity
+            android:name="com.hurix.bookreader.views.link.LinkWebViewPlayer"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.hurix.bookreader.views.link.LinkSlideShowActivity"
+            android:noHistory="true"
+            android:theme="@style/Theme.Transparent" />
+        <activity
+            android:name="com.hurix.bookreader.HelpActivity"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.hurix.bookreader.views.analytics.AnalyticsActivity"
+            android:configChanges="keyboard|screenSize"
+            android:screenOrientation="sensorPortrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        &lt;!&ndash; Activities for Mobile &ndash;&gt;
+
+        <activity
+            android:name="com.hurix.bookreader.GenericBackEnabledActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.hurix.kitaboo.epubreader.view.toc.EpubTOCActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.hurix.bookreader.views.mydata.UGCMobileSharingSettingActivity"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.hurix.bookreader.views.mydata.UGCMobileItemCommentsScreen"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.hurix.bookreader.views.mydata.UGCMobileItemSharingScreen"
+            android:configChanges="keyboard|orientation|screenSize"
+            android:windowSoftInputMode="adjustResize" />
+
+        &lt;!&ndash; END &ndash;&gt;
+        <service
+            android:name="com.hurix.database.services.background.SyncService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/account" />
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/sync" />
+        </service>
+
+        <provider
+            android:name="com.hurix.database.services.background.SyncProvider"
+            android:authorities="@string/account_authority"
+            android:exported="false"
+            android:label="@string/provider_label" />
+
+        <activity
+            android:name="com.hurix.kitaboocloud.SettingActivity"
+            android:theme="@style/CustomActionBarThemeWithActionBar.White" />
+        <activity android:name="com.hurix.kitaboo.epubreader.activity.EpubPreferenceActivity" />
+    </application>
+    -->
+
+</manifest>

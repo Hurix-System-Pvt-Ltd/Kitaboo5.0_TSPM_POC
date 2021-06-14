@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="help_screens">
+        <item>help_screen1</item>
+        <item>help_screen2</item>
+    </string-array>
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+    <string name="theme_reader">reader_theme.json</string>
+    <string name="reader_theme_json_5_0">reader_theme_json_5.0.json</string>
+    <string name="no_internet_try_again">Internetimut attaveqanngilaq. Attaveqaatit misissoriarlugit misileeqqigit.</string>
+    <string name="bookshelf_category_default_category">Atuakkat taamsa takukkit</string>
+    <string name="bookshelf_category_default_category_books">Atuakkat tamarmik</string>
+    <string name="bookshelf_category_download">Downloadikkat takukkit</string>
+    <string name="bookshelf_category_download_books">Downloadikkatr</string>
+    <string name="action_settings">Inissiinerit</string>
+    <string name="dummy_accessCode">55555</string>
+    <string name="need_permission">Need to give permission</string>
+    <string name="forgot_email_send_success_msg">Instructions to reset your password has been sent to your eMail.</string>
+    <string name="forgot_email_send_fail_msg">Entered mail id not register please try again with different mail id</string>
+    <string name="alert_empty_accesscode">Please enter Access Code</string>
+    <string name="alert_empty_emailid">Please enter Email id</string>
+    <string name="alert_invalid_accesscode">Please enter valid Access Code</string>
+    <string name="network_error">Internet connection unavailable.</string>
+    <string name="network_error_new">Internet connection unavailable.</string>
+    <string name="alert_bookshelf_empty">Shelf name can not be empty</string>
+    <string name="alert_bookshelf_already_exist">Shelf already exists. Please edit shelf name.</string>
+    <string name="alert_book_delete">Do you wish to delete this book?</string>
+    <string name="alert_video_delete">Do you wish to delete this video?</string>
+    <string name="alert_delete_book_title">Kas kustutada see raamat?</string>
+    <string name="alert_delete_book_msg">See toiming on pöördumatu</string>
+    <string name="alert_shelf_delete">Do you wish to delete book Shelf?</string>
+    <string name="pentool_delete_alert_msg">This action will permanently clear the selected drawings. Do you wish to continue?</string>
+    <string name="pentool_delete_alert_title">Peeruk</string>
+    <string name="shelf_delete_alert_title">Delete Shelf</string>
+    <string name="delete_note_title">Peeruk</string>
+    <string name="delete_protractor">Ilumut peerniarpiuk?</string>
+    <string name="delete_note_message">Ilumut allataq peerniarpiuk?</string>
+    <string name="alert_title">Alert</string>
+    <string name="logout_title">Anigitt</string>
+    <string name="sync_title">Submit Data</string>
+    <string name="sync_clear_title">Clear Data</string>
+    <string name="sync_message">Answers will be submitted and cannot be changed.\nDo you wish to continue?</string>
+    <string name="individual_sync_message">Answers will be submitted. Do you wish to continue?</string>
+    <string name="sync_clear_message">Answers will be cleared. Do you wish to continue?</string>
+    <string name="sync_message_nodata">No data to submit.</string>
+    <string name="sync_message_fib_data_clear">Selected Fib has been cleared.</string>
+    <string name="al_book_delete_title">Delete Book</string>
+    <string name="al_video_delete_title">Delete Video</string>
+    <string name="msg_accesscode_and_downloading">Access code is not allowed while a book is downloading.</string>
+    <string name="page_not_found">Qupperneq ajunngitsoq allaguk</string>
+    <string name="alert_no_shared_notes">Allatanik tunniussaqarsimanngilatit</string>
+    <string name="alert_no_notes">Allataqanngilaq</string>
+    <string name="alert_no_shared_highlight">Erseqqissakkanik tunineqarsimanngilatit</string>
+    <string name="al_no_highlight">Erseqqissagaqanngilaq</string>
+    <string name="alert_no_shared_all_data">Paasissutissanik tunniussisimanngilatit</string>
+    <string name="alert_no_data">Paasissutissaqanngilaq</string>
+    <string name="alert_exit_title">Naggaseruk</string>
+    <string name="alert_password_validation">Password must be between 8 and 15 characters.</string>
+    <string name="alert_password_minimum_limit">Your password must be at least 8 characters long. Please try another.</string>
+    <string name="alert_password_maximum_limit">Your password must smaller than 20 characters. Please try another.</string>
+    <string name="ugc_setting_select_message">Please select atleast one</string>
+    <string name="validation_empty_data">No Data found, Please try again.</string>
+    <string name="server_sucess_msg">No Data found, Please try again.</string>
+    <string name="server_fail_msg">No Data found, Please try again.</string>
+    <string name="server_empty_field_msg">Please enter all the fields.</string>
+    <string name="server_invalid_field_msg">Please enter valid data for all the fields.</string>
+    <string name="server_invalid_type_msg">Please enter valid data for all the fields.</string>
+    <string name="server_token_expired_msg">Your session has expired, Please login again to sync your data.</string>
+    <string name="server_multiple_client_msg">Multiple client. Please try again!</string>
+    <string name="server_multiple_institutes_msg">Multiple institutes, Please try again.</string>
+    <string name="server_duplicate_emailid_msg">Entered eMail ID already exists.</string>
+    <string name="server_accesscode_invalid_msg">Access code entered is Invalid !</string>
+    <string name="server_accesscode_invalid_with_other_user_msg">Access code entered is redeemed by a different user !</string>
+    <string name="server_accesscode_invalid_with_same_user_msg">Access code entered is already redeemed !</string>
+    <string name="server_accesscode_invalid_with_other_institute">You are not allowed to redeem Access code for this Institute.</string>
+    <string name="server_accesscode_invalid_distribustion_fail_msg">Error in redeeming Access code. Please try again later.</string>
+    <string name="server_client_invalid_msg">No Data found, Please try again.</string>
+    <string name="server_book_licence_limit_reached">You have exceeded the limit to download the book on multiple devices.</string>
+    <string name="server_video_licence_limit_reached">You have exceeded the limit to download the video on multiple devices.</string>
+    <string name="server_book_licence_expired">The book cannot be downloaded as the license of the book has expired.</string>
+    <string name="server_book_not_available">The book not available.</string>
+    <string name="server_client_trial_redirect">Client trial redirect.</string>
+    <string name="server_account_inactive">Account inactive.</string>
+    <string name="server_time_out_erros">Serverimut attavilersinnaanngilaq. Attaveqaatit misissoriarlugit misileeqqigit.</string>
+    <string name="server_unknown_error"> Serverimut attavilersinnaanngilaq. Attaveqaatit misissoriarlugit misileeqqigit.</string>
+    <string name="please_wait">Utaqqigit&#8230;</string>
+    <string name="alert_invalid_emailid">Please enter a valid Email ID</string>
+    <string name="alert_empty_mail_id">Email ID is required</string>
+    <string name="alert_empty_password">Password is required</string>
+    <string name="alert_empty_first_name">First Name is required</string>
+    <string name="alert_empty_user_name">Full Name is required</string>
+    <!--<string name="first_name_mandatory">First name is mandatory</string>-->
+    <string name="alert_invalid_input">Invalid input</string>
+    <string name="alert_full_name_character_limit">Full Name must be between 1 and %1$s characters</string>
+    <string name="alert_user_name_character_limit">User Name must be between 1 and %1$s characters</string>
+    <string name="alert_empty_confirm_password">Confirm your password</string>
+    <string name="alert_empty_last_name">Last Name is required</string>
+    <string name="alert_last_name_character_limit">Last Name must be between 1 and %1$s characters</string>
+    <string name="alert_emailid_character_limit">Email ID must be between 1 and %1$s characters</string>
+    <string name="alert_password_character_limit">Password must be between %1$s and %2$s characters</string>
+    <string name="alert_wrong_password">Passwords entered do not match</string>
+    <string name="alert_wrong_email_id">Email ID belongs to an existing account</string>
+    <string name="confirm_password_not_match">Passwords do not match.</string>
+    <string name="password_not_match">Old Password and New Password Cannot be Same.</string>
+    <string name="password_and_newpassword_match">Please enter different password</string>
+    <string name="confirmpassword_and_newpassword_mismatch">New Password and Confirm Password Don\'t Match</string>
+    <string name="alert_all_field_required">Required field cannot be left blank</string>
+    <string name="toast_rest_password_success">Your password has been changed successfully</string>
+    <string name="toast_rest_password_in_progress">Please wait</string>
+    <string name="alert_rest_password_success">Your password has been reset. Please check your eMail for new password..</string>
+    <string name="alert_rest_password_title">Reset Password</string>
+    <string name="download_browser_dialog_message">You will be redirected to install Firefox browser. Do you want to continue?</string>
+    <string name="download_browser_dialog_title">Download Firefox?</string>
+    <string name="wrong_password">Wrong Password</string>
+    <string name="alert_highlight_delete_title">Peeruk</string>
+    <string name="alert_highlight_delete_message">Erseqqissaanerit piissava?</string>
+    <string name="toast_message">Toast message</string>
+    <string name="alert_signout_message">Aniniarpit?</string>
+    <string name="alert_signout_title">Anigit</string>
+    <string name="alert_signout_message_internet_unavailable">Synkroniserersinnaanngilaq. Suli aniniarpit?</string>
+    <string name="alert_signout_message_data_syncing">Synkroniserpoq. Suli aniniarpit?</string>
+    <string name="alert_signout_title_while_data_sync_going">Anigit</string>
+    <string name="alert_error_save_settings">Inissiinerit toqqorsinnaanngillat.</string>
+    <string name="alert_successfully_submit_data">Your data has been successfully saved.</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="resource_search_hint">Search with Keywords</string>
+    <string name="no_search_result_found">Ujakkat nassaarineqanngilaq.</string>
+    <string name="coverage">Coverage</string>
+    <string name="time_spent">Time Spent</string>
+    <string name="network_not_available_msg">Internetimut attaveqanngilatit.</string>
+    <string name="ugc_data_all">Tamaasa</string>
+    <string name="ugc_tab_notes">Allatat</string>
+    <string name="ugc_tab_highlights">Erseqqissakkat</string>
+    <string name="ugc_tab_bookmark">Nalunaaqutsikkat</string>
+    <string name="btn_note">Allatat</string>
+    <string name="ugc_mobile_tab_my_data">Paasissutissaatikka</string>
+    <string name="ugc_mobile_tab_my_notes">Allatakka</string>
+    <string name="ugc_mobile_tab_shared_with_me">Uannuttunniussat</string>
+    <string name="btn_highlight">Atuakkami erseqqissakkat</string>
+    <string name="toc_not_found">Imaqarnerinik allaqqasoqanngilaq</string>
+    <string name="btn_all_data">Paasissutissat tamaasa</string>
+    <string name="btn_shared_with_me"> Uannut tunniussat </string>
+    <string name="btn_settings">Inissiinerit</string>
+    <string name="comments">Oqaaseqaatit</string>
+    <string name="share">Siammaruk</string>
+    <string name="receive">Tigujuk</string>
+    <string name="done">Naammassivoq</string>
+    <string name="teacher">Ilinniartitsisoq</string>
+    <string name="student">Atuartoq</string>
+    <string name="share_this_note_with">Allataq uunga tunniuguk</string>
+    <string name="select_class">Klasse toqqaruk</string>
+    <string name="post">Nassiuguk</string>
+    <string name="TotalComments">Oqaaseqaatit</string>
+    <string name="note_share_title">Allataq siammaruk</string>
+    <string name="stickynote_imp_text">Tap to make this note important</string>
+    <string name="enterprise_stickynote_imp_text">Tap to make this note important</string>
+    <string name="stickynote_imp_undo_text">Tap to make this note normal</string>
+    <string name="note_empty_msg">Please enter the note data</string>
+    <string name="BOOKMARK_READONLY_TITLE">Read only</string>
+    <string name="BOOKMARK_READONLY_MSG">Internetimut attaveqanngilatit. Attaveqaatit misissoriarlugit misileeqqigit.</string>
+    <string name="UGC_ACCESS_INTERNET_NEEDED_TITLE"> Internetimut attaveqanngilatit.</string>
+    <string name="UGC_ACCESS_INTERNET_NEEDED_MSG"> Internetimut attaveqanngilatit. Attaveqaatit misissoriarlugit misileeqqigit.</string>
+    <string name="powered_by">Powered by</string>
+    <string name="stop">Unigit</string>
+    <string name="pause">Unikkallarit</string>
+    <string name="play">Appisigukl</string>
+    <string name="status">Status</string>
+    <string name="empty_message">00:00</string>
+    <string name="analytics_server_error_message">Ajutoorpoq.</string>
+    <string name="analytics_server_nodata_message">No data found.</string>
+    <string name="teacher_review_class_text">Klasse</string>
+    <string name="teacher_review_select_student_text">Atuartoq toqqaruk</string>
+    <string name="teacher_review_student_text">Atuartoq</string>
+    <string name="teacher_review_teacher_text">ilinniartitsisoq</string>
+    <string name="teacher_review_done_text">Naammassivoq</string>
+    <string name="ugc_mydata_chapter_label">Kapitel:&#160;</string>
+    <string name="ugc_mydata_chapter_label_fixedLayout">Kapitel:&#160;</string>
+    <string name="ugc_mydata_page_label">Kapitel:&#160;</string>
+    <string name="ugc_mydata_shared_by_label">Siammaasoq: </string>
+    <string name="alert_toc_no_bookmarks_found">Nalunaaqutsigaanngilaq</string>
+    <string name="alert_tor_no_resources_found">Sakkussaqanngilaq</string>
+    <string name="ok">OK</string>
+    <string name="bookmark_page_label">"qupperneq - "</string>
+    <string name="delete_shelf_title">Delete Category</string>
+    <string name="delete_shelf_msg">Are you sure if you want to delete this category?</string>
+    <string name="delete_book_msg">Are you sure if you want to delete selected book?</string>
+    <string name="category_name_already_exists_msg">Shelf already exists. Please edit Shelf name.</string>
+    <string name="download_btn_text">Downloadable eBooks</string>
+    <string name="login_btn_text">Iserit</string>
+    <string name="login_header_text"> Iserit</string>
+    <string name="login_webview_text"> Iserit</string>
+    <string name="dialog_login_email_id_text">Email ID</string>
+    <string name="dialog_login_email_id_hint_text">Enter Email ID</string>
+    <string name="dialog_login_username_hint_text">Username</string>
+    <string name="dialog_login_password_text">Password</string>
+    <string name="dialog_login_password_hint_text">Enter Password</string>
+    <string name="dialog_login_submit_text">Iserit</string>
+    <string name="dialog_login_forgot_password_text">Forgot Password?</string>
+    <string name="remember_me">Remember me</string>
+    <string name="dialog_login_accesscode_have_text">Have an Access Code?</string>
+    <string name="dialog_login_accesscode_message_text">Use access code to view the eBooks</string>
+    <string name="dialog_login_edit_access_code">Access Code</string>
+    <string name="dialog_login_btn_go_text">Go</string>
+    <string name="access_code_text">Redeem Access Code</string>
+    <string name="forgot_password_text">Forgot Password</string>
+    <string name="forgot_password_hint">Email ID </string>
+    <string name="access_code_submit_text">Submit</string>
+    <string name="access_code_cancel_text">Sussa</string>
+    <string name="registration_header_text">Sign Up</string>
+    <string name="new_to_profil">New to Profile?</string>
+    <string name="registration_first_name_text">First Name</string>
+    <string name="registration_first_name_hint_text">Enter First Name</string>
+    <string name="registration_last_name_text">Last Name</string>
+    <string name="registration_last_name_hint_text">Enter Last Name</string>
+    <string name="registration_email_id_text">Email ID</string>
+    <string name="registration_email_id_hint_text">Email Address</string>
+    <string name="registration_Password_text">Password</string>
+    <string name="registration_Password_hint_text">Password</string>
+    <string name="registration_ComfirmPassword_text">Confirm Password</string>
+    <string name="registration_ComfirmPassword_hint_text">Confirm Password</string>
+    <string name="registration_bottom_text">You are 1 step away from viewing your eBooks!</string>
+    <string name="registration_bottom_msg">By clicking on Submit you confirm that you are at least \n 13 years of age and agree to our </string>
+    <string name="registration_bottom_msg1"><u>Terms and conditions</u></string>
+    <string name="registration_msg">Create your %1$s account by entering the information below.</string>
+    <string name="No_Downloadable_Books_Msg">No eBooks available for download</string>
+    <string name="signout_text">Anigit</string>
+    <string name="profile_setting_button_text">Profilit inissinneri</string>
+    <string name="help_text">Ikiorneqarit</string>
+    <string name="profile_setting_welcome_text">Tikilluarit, %1$s</string>
+    <string name="profile_setting_emailid_text">&lt;B&gt;Email ID:&lt;/B&gt; %1$s</string>
+    <string name="profile_setting_change_btn_text">Change Password</string>
+    <string name="profile_setting_change_btn_text_header">User Settings</string>
+    <string name="profile_setting_change_btn_description">Change current password</string>
+    <string name="profile_setting_cancel_btn_text">Sussa</string>
+    <string name="profile_setting_current_password_text">Current Password</string>
+    <string name="profile_setting_current_new_password_text">New Password</string>
+    <string name="profile_setting_current_confirm_new_password_text">Re - enter  Password</string>
+    <string name="profile_setting_change_animation_header_text">Change Page Animation</string>
+    <string name="profile_setting_change_animation_category_header">Page Animation</string>
+    <string name="profile_setting_change_animation_category_description">Change the page animation type of the book</string>
+    <string name="exit_msg_when_downloading">Downloadernerani naammassisinnaanngilaq</string>
+    <string name="exit_msg_when_refreshing">Downloadernerani nutartersinnaanngilaq</string>
+    <string name="exit_msg">Naammassiniarpiuk</string>
+    <string name="logout_msg_when_downloading"> Downloadernerani nutartersinnaanngilaq </string>
+    <string name="logout_msg">Aniniarpit?</string>
+    <string name="loading_ebook_msg">Atuagaq ammarpaa</string>
+    <string name="login_forgot_password">Forgot Password?</string>
+    <string name="login_new_user">New User?</string>
+    <string name="registration_bottom_last_msg">You are 1 Step away from viewing your eBooks! </string>
+    <string name="launch_msg_for_epub">Launch an ePub Book</string>
+    <string name="launch_msg_for_ebook"> Atuagaq ammarpaa </string>
+    <string name="cancel">Sussa</string>
+    <string name="add">Add</string>
+    <string name="addnewcategory">Add new shelf</string>
+    <string name="addnewcategory_hint">Enter shelf title</string>
+    <string name="menu_settings">Settings</string>
+    <string name="no_internet">Internetimut attaveqanngilaq</string>
+    <string name="custome_url_download_book">Atuagaq downloaderniarpiuk?</string>
+    <string name="blank_field">All Fields Are Mandatory.</string>
+    <string name="failed_login">Invalid Login Credentials.</string>
+    <string name="book_delete_alert">Are you sure if you want to delete selected book?</string>
+    <string name="register_submit_button">Sign Up</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="forgot_password_email_id_label">Reset Password</string>
+    <string name="registration_user_name_text">User Name</string>
+    <string name="registration_user_name_hint_text">Full Name</string>
+    <string name="alert_invalid_userName">Please enter valid Full Name</string>
+    <string name="alert_youtube_player_initialisation_error">There was an error initializing the YouTubePlayer (%1$s)</string>
+    <string name="alert_instant_feedback_title">Correct Answer is \"</string>
+    <string name="alert_kaltura_player_initialisation_error">Error occurred while initializing Kaltura Video.</string>
+    <string name="alert_video_player_initialisation_error">Error occurred while initializing Video.</string>
+    <string name="alert_vimeo_player_initialisation_error">Error occurred while initializing Vimeo Video.</string>
+    <string name="alert_no_space_left_on_device">Inissaqanngilaq.</string>
+    <string name="alert_no_space_left_msg">nissaqanngilaq.</string>
+    <string name="alert_bookshelf_no_search_found_title">Inerneqanngilaq</string>
+    <string name="alert_bookshelf_no_search_found_message">Ujaasineq inerneqanngilaq</string>
+    <string name="alert_webView_loading_error">Ajutoorpoq.</string>
+    <string name="alert_session_expired">Piffissarititaq qaangiuppoq. Iseqqigit.</string>
+    <string name="bookshelf_category_all_books">Atuakaat tamarmik</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="copy">Copy the below text</string>
+    <string name="select">Copy the below text</string>
+    <string name="dialog_yes_button">aap</string>
+    <string name="dialog_no_button">Naagga</string>
+    <string name="ugc_share_note_message">Imarisaanik tunerusuppaatit.</string>
+    <string name="alert_book_download_waiting">Waiting&#8230;</string>
+    <string name="alert_book_download_installing">Installing&#8230;</string>
+    <string name="toc_tab_resource">Sakkussat</string>
+    <string name="toc_tab_contents">Imarisai</string>
+    <string name="thumbnail_nav_page">Uungarit</string>
+    <string name="thumbnail_chaptername_not_present">Kapitali nassaarineqanngilaqt</string>
+    <string name="ugc_data_important">Important</string>
+    <string name="alert_search_validation">Search text  must be between %1$s and %2$s characters.</string>
+    <string name="alert_download_intrupt">Internetimut attabeqanngilaq</string>
+    <string name="user_search_hint">Search by keywords</string>
+    <string name="note_hint_msg">Enter your note</string>
+    <string name="comment_hint_msg">Enter your comment</string>
+    <string name="note_comment_hint_msg">Write your comment here.</string>
+    <string name="dialog_login_kitaboo_message_text">Sign in to your %1$s to experience the digital eBooks.</string>
+    <string name="login_help_worldbook">Sign in to your personal ebooks account.\nDon’t have an account? Sign up for one on World Book Online. </string>
+    <string name="dialog_login_accesscode_body_text">Use access code to view the eBooks.</string>
+    <string name="alert_book_licence_limit_reached">You have exceeded the limit to download the book on multiple devices.</string>
+    <string name="alert_book_licence_expired">The book cannot be downloaded as the license of the book has expired.</string>
+    <string name="emailid_field_character_allowed">0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM.@_-</string>
+    <string name="forgetpassword_field_character_allowed">0123456789qwertzuiopasdfghjklyxcvbnmQWERTZUIOPASDFGHJKLYXCVBNM.@_-</string>
+    <string name="msg_progress_when_downloading">Cannot proceed while eBooks are being downloaded!</string>
+    <string name="reader_page">Qupperneq:&#160;</string>
+    <string name="reader_page_epub">Kapitali:&#160;</string>
+    <string name="privacy_policy_text">Kitaboomi inummut piumasaqaatit</string>
+    <string name="privacy_policy"><u>akuerivakka</u></string>
+    <string name="privacy"><u>Privacy Policy</u></string>
+    <string name="terms_conditions"><u>Terms &amp; Conditions</u></string>
+    <string name="privacy_text_new">By clicking Sign Up, you agree to our Privacy Policy and Terms &amp; Conditions&#160;&#160; </string>
+    <string name="only_privacy_text">By clicking Sign Up, you agree to our Privacy Policy&#160;&#160; </string>
+    <string name="only_terms_text">By clicking Sign Up, you agree to our Terms &amp; Conditions&#160;&#160; </string>
+
+    <string name="reader_page_of">uannga</string>
+    <string name="msg_invalid_login_kois">Password or User ID are either empty or invalid.</string>
+    <string name="msg_invalid_login">Password or Username are either empty or invalid.</string>
+    <string name="msg_youtub_video_not_supported">Youtube video not supported.</string>
+    <string name="stickynote_add_msg"> Allataq inissinniarlugu tooruk</string>
+    <string name="stickynote_tap_outside_msg"> Allataq inissinniarlugu tooruk </string>
+    <string name="dialog_forgetPassword_body_text">Enter your email address to reset your password.</string>
+    <string name="dialog_forgetPassword_new">Enter your email address below and we will send you a link with a new password!</string>
+    <string name="msg_unable_to_play_video">Video appissinnaanngilaq</string>
+    <string name="alert_bookshelf_no_search_found_message_bookshelf">Atuakkat nanineqanngillat.</string>
+    <string name="profile_pic_camera">Camera</string>
+    <string name="profile_pic_gallery">Library</string>
+    <string name="profile_pic_option">Change your profile picture</string>
+    <string name="profile_pic_option_mob">Change your profile\npicture</string>
+    <string name="profile_pic_option_message">How do you want to set your picture?</string>
+    <string name="profile_pic_not_found">Some problem in parsing image, select another one</string>
+    <string name="note_share_tag">Unalu allatat takusiuk</string>
+    <!-- EPUB reader Messages start -->
+    <string name="epub_initialization_error">Epub not supported</string>
+    <!-- EPUB reader Messages end -->
+
+    <!-- Enterprise New Mydata texts -->
+
+
+    <!-- Enterprise New Mydata texts end -->
+    <string name="enterprise_my_data">Paasissutissakka</string>
+    <string name="enterprise_my_notes">Allatakka</string>
+    <string name="enterprise_my_highlights">Erseqqissakkakka</string>
+    <!-- Corporate Messages Start -->
+
+    <string name="corporate_preview_loading_error">Ajutoorpoq. misileqqiguk.</string>
+    <string name="category_list_heading">Kategori</string>
+
+    <!-- Corporate Messages End -->
+    <!-- New Bookshelf Text -->
+    <string name="preview_launch_button">Ammaruk</string>
+    <string name="preview_download_button">Download</string>
+    <string name="preview_resume_button">Atuaqqigit</string>
+    <string name="preview_archive_button">Peeruk</string>
+    <string name="preview_open_button">Ammaruk</string>
+    <string name="preview_statistics_button">Statistik</string>
+    <string name="preview_update_button">Nutarteruk</string>
+    <string name="preview_video_launch_button">Video appiguk</string>
+    <string name="preview_video_delete_button">Video peeruk</string>
+    <string name="preview_downloading_button">Downloaderpaa</string>
+    <!-- Topbar localizations start -->
+
+    <item name="topbar_ugc_data" type="id" />
+
+    <string name="topbar_ugc_data">Paasissutissakka</string>
+
+    <item name="topbar_pen_tool" type="id" />
+
+    <string name="topbar_book_data">Atuakkamut paasissutissat</string>
+
+    <item name="topbar_book_data" type="id" />
+
+    <string name="topbar_pen_tool">Aqerluusaq</string>
+
+    <item name="topbar_search" type="id" />
+
+    <string name="topbar_search">Ujaasineq</string>
+
+    <item name="topbar_review" type="id" />
+
+
+    <string name="topbar_review">Misikkukkit</string>
+    <string name="topbar_submit">User Submission</string>
+
+    <item name="topbar_readaloud" type="id" />
+
+    <string name="topbar_readaloud">Nipituumik atuarit</string>
+
+    <item name="topbar_aloudplay" type="id" />
+    <string name="topbar_aloudplay">Auto Play</string>
+
+    <item name="topbar_settings" type="id" />
+
+    <string name="topbar_settings">Inissiinerit</string>
+    <string name="accessibility_overflow">Inissiinerit allat</string>
+    <string name="color_picker_default_title">Qalipaat toqqaruk</string>
+    <string name="pentool_size_default_title">Angissuseq toqqaruk</string>
+
+    <item name="topbar_stickynote" type="id" />
+    <string name="topbar_stickynote">Allataq</string>
+
+    <item name="topbar_clear" type="id" />
+    <string name="topbar_clear">Peeruk</string>
+
+    <item name="topbar_protractor" type="id" />
+    <string name="topbar_protractor">Protractor</string>
+    <!-- Topbar localizations end -->
+
+
+    <!-- BottomBar localizations start -->
+
+    <string name="bottombar_thumbnail">Mikisunngorlugu takujuk</string>
+    <string name="bottombar_toc">Imaa</string>
+    <string name="topbar_teacher_review">Teacher Assesment</string>
+
+    <!-- BottomBar localizations end -->
+
+    <!-- New Analytics heading start -->
+    <string name="analytics">Statistics</string>
+    <string name="book_opened_assigned">Book Opened/Assigned</string>
+    <string name="video_opened_assigned">Video Launched/Assigned</string>
+    <string name="video_opened">Video Launched</string>
+    <string name="video_completed_assigned">Video Completed/Assigned</string>
+    <string name="video_completed">Video completed</string>
+    <string name="avg_reading_sessions">Avg. Reading Sessions</string>
+    <string name="total_reading_sessions">Reading Sessions</string>
+    <string name="avg_video_reading_sessions">Average no. of views</string>
+    <string name="total_video_reading_sessions">No. of views</string>
+
+    <string name="avg_notes_shared_created">Avg. Notes Shared/Created</string>
+    <string name="notes_shared_created">Notes Shared/Created</string>
+    <string name="avg_reading_time">Avg. Reading Time</string>
+    <string name="reading_time">Reading Time</string>
+    <string name="video_reading_time">Total Time spent</string>
+    <string name="avg_reading_time_session">Avg. Reading Time/Session</string>
+    <string name="avg_video_reading_time_session">Average Time Spent per session</string>
+    <string name="avg_highlight_created_shared">Avg. Highlights Shared/Created</string>
+    <string name="highlight_created_shared">Highlights Shared/Created</string>
+    <string name="avg_pages_read">Avg. Pages Read</string>
+    <string name="pages_read">Pages Read</string>
+    <string name="avg_pages_read_session">Avg. Pages Read/Session</string>
+    <string name="avg_resources_viewed_available">Avg. Resources viewed/Available</string>
+    <string name="resources_viewed_available">Resources viewed/Available</string>
+    <string name="Yes">Aap</string>
+    <string name="No">Naaggaj</string>
+    <string name="statistics_pages">quppernerit</string>
+    <string name="statistics_mins">minuttit</string>
+    <!-- New Analytics heading end -->
+
+    <string name="alert_cannot_delete_book">Unable to delete book at the moment. Please contact admin.</string>
+    <string name="msg_sticky_note_cannot_placed">Allataq uunga inissinneqarsinnaanngilaq. Misileeqqigit</string>
+    <string name="ERROR_BOOK_UNAVAILABLE">This eBook is not available for download.</string>
+    <string name="ERROR_VIDEO_UNAVAILABLE">This Video is not available for download.</string>
+
+
+    <!--Profile setting-->
+    <string name="profile_setting_pic_change_text">Change Profile Picture</string>
+    <string name="default_text">Default</string>
+    <string name="profile_pic_upload_failed">Profile pic Upload failed! Please try again.</string>
+    <string name="or">Or</string>
+    <string name="porto_title_access">No access data?</string>
+    <string name="porto_hint_access">Enter your e-mail ID</string>
+    <string name="alert_invalid_porto_email">Please enter valid Email ID</string>
+    <string name="porto_registration_success">Your registration has been successful. Check your email for login details.</string>
+    <string name="porto_profile_setting_account_manager">Account Manager</string>
+    <string name="porto_profile_setting_device_manager">Device Manager</string>
+    <string name="crop_save_text">Crop</string>
+    <string name="runningFaceDetection">Please wait\u2026</string>
+    <string name="wallpaper">Setting wallpaper\u2026</string>
+    <string name="savingImage">Saving picture\u2026</string>
+    <string name="device_not_supported">This feature is not supported in your device.</string>
+    <string name="wrote">&#160;</string>
+    <string name="book_download_alert">Atuakkap imaqassusaa %1$s MB. \n Mobilikkut attaveqarputit. Atuagaq downloaderniarpiuk?</string>
+    <string name="book_download_alert_wifi">Atuakkap imaqassusaa %1$s MB. \n Atuagaq downloaderniarpiuk?</string>
+    <string name="refreshing_books">Atuakkat nutarterpai</string>
+    <string name="glossary_no_description_message">Description not available.</string>
+    <string name="download_package_filesize">Angissusaa: %1$s MB</string>
+    <string name="author_name">Atuakkiortoq:&#160;</string>
+    <string name="series_title">Qulequtaa :&#160;</string>
+    <string name="publisher_name">Publisher :&#160;</string>
+    <string name="copy_right_year">Copyright Year :&#160;</string>
+    <string name="isbn">ISBN :&#160;</string>
+    <string name="pages">Quppernerit :&#160;</string>
+    <string name="interest_level">Interest Level :&#160;</string>
+    <string name="lexile_measure">Lexile Measure :&#160;</string>
+    <string name="a_r_level">AR Level :&#160;</string>
+    <string name="description">Nassuiaat</string>
+    <string name="category_name">Kategori:&#160;</string>
+
+
+    <string name="no_application_available">No application available to open this document.</string>
+    <string name="noUserGroup">Annotations sharing not allowed for this class.</string>
+    <string name="sticky_note_not_supported">This feature can be best used in portrait mode. Please rotate the screen.</string>
+    <string name="protractor_not_supported">This feature can be best used in portrait mode. Please rotate the screen.</string>
+    <string name="default_category_name">Others</string>
+    <string name="unzipping">Unzipping...</string>
+    <string name="alert_error">Error</string>
+    <string name="no_instruction_markup">No instruction available </string>
+    <string name="choose_readaloud_option">Choose your mode</string>
+    <string name="let_me_read_text_option_title">Select to open the book without audio.</string>
+    <string name="auto_play_option_title">Select to open the book in read aloud and auto flips to next page.</string>
+    <string name="read_to_me_option_title">Select to open the book in read aloud on page by page basis.</string>
+    <string name="let_me_read_text">Let me read</string>
+    <string name="auto_play_text">Auto play</string>
+    <string name="read_to_me_text">Read to me</string>
+    <string name="text_download_all">Tamaasa downloadikkit</string>
+    <string name="text_delete_all">Tamaasa piikkit</string>
+    <string name="text_collection_lebel">Atuakkat</string>
+    <string name="text_collection_lebel_mobile">Atuakkat tamaasa</string>
+    <string name="text_collection_page_lebel">Quppernerit</string>
+    <string name="Others_collection_Catogory">Allat</string>
+    <string name="book_mode_Online">Online</string>
+
+    <string name="dictHeaderText">Dicionário da Língua Portuguesa da Porto Editora</string>
+    <string name="alert_check_coorect_answer_submit_data">Tap on incorrect response to view the answer.</string>
+    <string name="incorrect_answer_message">That is an incorrect answer !</string>
+    <string name="book_error">Ajutoorpoq.</string>
+    <string name="error_in_open_book">Kukkuneqapoq. Downloadeqqissaviuk?</string>
+    <string name="my_collection">Atuagaatikka</string>
+    <string name="loading_items">Atuagaatitit aavai... Utaqqilaarit</string>
+    <string name="no_downloaded_books">Atuakkanik downloadigaqarsimanngilatit</string>
+    <string name="loading">Atuagassatit aaneqaput...</string>
+    <string name="loading_progress">Aallerpoq...</string>
+    <string name="search_drawable_position_name">RIGHT</string>
+    <string name="noAccount">No account?</string>
+    <string name="profile_setting_email_text">Email ID:</string>
+    <string name="mobile_profile_setting_change_btn_text">Change</string>
+    <string name="submitted_pentool_error">Sorry, this answer is already submitted and cannot be changed.</string>
+    <string name="pentool_enabled_error">Uani titartaasinnaanngilatit. Misileeqqigit.</string>
+    <string name="msg_dropdown_cannot_open">Dropdown can\'t open when search open</string>
+    <string name="msg_resources_not_open">Resources not open when serch box open</string>
+    <string name="bookmark_hint">Add Bookmark Title </string>
+    <string name="first_name_mandatory">First name is mandatory</string>
+    <string name="permission_request">Request Permission</string>
+    <string name="permission_grantd_message">Permission Granted. Now you can continue using the app.</string>
+    <string name="storage_permission_not_granted">Permission required to Read/Write External Storage. \n\nEnable through Device Setting -> Apps -> Permission -> Enable Storage.></string>
+    <string name="camera_permission_not_granted">Permission  required to access camera. \nEnable through Device Setting -> Apps -> Permission -> Camera.</string>
+    <string name="video_download_alert">This video size is %1$s MB. \nYour device is currently connected on Mobile network. Do you still wish to proceed with downloading the video?</string>
+    <string name="video_download_alert_wifi">This video size is %1$s MB. \nDo you still wish to proceed with downloading the video?</string>
+    <string name="window_permission_not_granted">Permission denied for system alert window. \nClick again to enable permission.</string>
+    <string name="no_items_available">No Items available</string>
+    <string name="resource_not_available">Please buy to get access to this chapter.</string>
+    <string name="msg_max_authorised_device">It has reached the maximum number of authorized devices</string>
+    <string name="forgot_password_submit_text">Submit</string>
+
+    <string name="try_again">Misileqqiguk</string>
+    <string name="no_book_downloade">No e-books are downloaded or downloading is in progress</string>
+
+
+    <string name="about_us"><u>Ingerlaannarit</u></string>
+
+    <!--for World Ebooks-->
+    <string name="about_us_world_e_books"><u>About World Book eBooks</u></string>
+
+    <!--Help Screen-->
+    <string name="help_skip_txt"><u> Ingerlaannarit </u></string>
+    <string name="help_got_txt"><u>Naammassiuk</u></string>
+    <string name="help_Accesscode_txt">Enter Access Code</string>
+    <string name="view_profile_setting_text">Profilimi inissiinerit</string>
+    <string name="help_screen_search_text">Ujaruk</string>
+    <string name="help_table_content_text">Ikiorneqarit</string>
+    <string name="help_my_data_text">Paasissutissakka</string>
+    <string name="help_add_pen_annotation">Aqerluusaq</string>
+    <string name="help_add_protractor_annotation">Use Protractor</string>
+    <string name="help_audio_to_Bookshelf">Audio To BookShelf</string>
+    <string name="help_play_pause">Play/Pause</string>
+    <string name="help_addbookmark_txt">Nalunaaqutseruk</string>
+    <string name="help_placenote_txt">Allakkat iliniarlugu tooruk</string>
+    <string name="help_submit_data_txt">Submit Data</string>
+    <string name="help_clear_data_txt">Clear Data</string>
+    <string name="help_search_content_txt">Atuakkami ujaasigit</string>
+    <string name="help_show_thumbnail_txt">mikisunngorlugu takujuk</string>
+    <string name="help_view_categories">Kategoriit takukkit</string>
+    <string name="review_enabled_error">Markup cant be opened in Review mode</string>
+    <string name="terms_conditon"><u>Terms &amp; Conditions</u></string>
+    <string name="AboutUs"><u>Kikkuuvugut</u></string>
+    <string name="PrivacyPolicy"><u>Privacy Policy</u></string>
+    <string name="and">and</string>
+
+    <string name="delete_all_books">Delete All books</string>
+    <string name="delete_conformation">Are you sure you want to delete all books from this collection?</string>
+
+    <string name="delete_book">Peeruk</string>
+
+    <string name="signout_title">log outernissat kissaatigaajuk?</string>
+    <string name="signout_message">You will be returned to the signin screen</string>
+    <string name="app_exit_message">Please click BACK again to exit</string>
+
+    <string name="delete_all_error">Delete All get error from server</string>
+    <string name="delete_error">Delete get error from server</string>
+
+    <string name="overall">Overall</string>
+    <string name="permission_title">Need Permission</string>
+    <string name="permission_msg"> %1$s saves your eBooks and data to device storage, kindly allow access to continue reading using device storage.</string>
+    <string name="permission_never_ask_msg">Storage permission allows us to access storage data. Please allow in App Settings for additional functionality.</string>
+    <string name="alert_book_error">This chapter of the book can not be opened.</string>
+    <string name="protractor">Delete Protractor</string>
+    <string name="note_and_highlight">Use Highlight and Note</string>
+
+    <string name="signin">Sign In</string>
+    <string name="accesscode">Access code</string>
+    <string name="hint_access">Enter Access Code</string>
+    <string name="page_no">Page No. </string>
+    <string name="syncing">Waiting for Response</string>
+    <string name="more_info_title">About this</string>
+    <string name="copy_rights"> © 2021 All rights reserved.</string>
+
+    // Strings not having translations.
+    <string name="MyData_Bookmark_Comment_title">Oqaaseqaat</string>
+
+    <string name="inline_video_play_icon">ɼ</string>
+
+    <string name="msg_no_fib_data">No data to clear.</string>
+
+    <string name="update_coverpic_text">Change Cover</string>
+    <string name="title_activity_camera">Camera</string>
+    <string name="title_activity_newprofile_setting">Newprofile_setting</string>
+    <string name="title_activity_new_profilesetting">New_profilesetting</string>
+    <string name="profile_username">Username</string>
+    <string name="last_name">Last Name</string>
+    <string name="update_profile_text">Edit</string>
+    <string name="Changepassword_text">Change Password</string>
+    <string name="Resetpassword_text"><u>Change Password</u></string>
+    <string name="Savebtn">Toqqoruk</string>
+    <string name="saveclick">Toqqoruk</string>
+    <string name="Cancelbtn">Sussa</string>
+    <string name="version_txt">Versioni</string>
+    <string name="poweredBy">Powered by HurixDigital</string>
+
+    <string name="search_empty">Please enter valid data.</string>
+
+
+    <!--Strings related to analytics-->
+    <string name="header_text_open_book_per_assign">Book Opened/Assigned</string>
+    <string name="text_avg_reading_time">Average Reading Time</string>
+    <string name="text_avg_reading_time_unit">Mins</string>
+    <string name="text_avg_pages_read">Average Pages Read</string>
+    <string name="avg_reading_session">Average Reading Session</string>
+    <string name="avg_reading_time_per_session">Average Reading Time/Session</string>
+    <string name="avg_reading_time_per_session_unit">Min</string>
+    <string name="average_pages_read_per_session">Average Pages Read/Session</string>
+    <string name="average_pages_read_per_session_unit">Page</string>
+    <string name="avg_notes_share_per_create">Average Notes Shared/Created</string>
+    <string name="avg_highlight_shared_per_create">Average Highlight Shared/Created</string>
+    <string name="avg_resource_viewed_per_available">Avg. Resource Viewed/Available</string>
+    <string name="text_reading_time">Reading Time</string>
+    <string name="text_pages_read">Pages Read</string>
+    <string name="reading_session">Reading Session</string>
+    <string name="notes_share_per_create">Notes Shared/Created</string>
+    <string name="highlight_shared_per_create">Highlight Shared/Created</string>
+    <string name="resource_viewed_per_available">Resource Viewed/Available</string>
+    <string name="all_students_text">"All Students"</string>
+    <string name="alert_search_fetch_book_error">Error occurred while fetching book.</string>
+    <string name="book_not_found">Book Not Found.</string>
+    <string name="topic">Topic: </string>
+    <string name="search_result_found_for">search results found for</string>
+    <string name="text_select_a_student">Select a Student</string>
+    <string name="text_cancel">Sussa</string>
+
+    <!-- Strings Related Bookshelf-->
+    <string name="bookshelf_category_view_all">Tamaasa takukkit</string>
+    <string name="bookshelf_book_category_ebook">Atuagaatikka</string>
+    <string name="bookshelf_book_category_collection">Atuagaatikka</string>
+    <string name="bookshelf_book_category_video">Video</string>
+    <string name="moreinfo_popup_title_tab">Paasisaqarnerugit</string>
+    <string name="profile_setting_text_profile">Profiili</string>
+    <string name="bookshelf_book_category_audio">Audio</string>
+
+
+    <!--5.0 reader settings-->
+
+    <string name="search_no_result_found_hint">Nassaartoqanngilaq</string>
+    <string name="note_yellow_color">#ffc000</string>
+    <string name="note_red_color">#fc816c</string>
+    <string name="note_purple_color">#d68fff</string>
+    <string name="note_lightgreen_color">#a5d94c</string>
+    <string name="note_skyblue_color">#38d1db</string>
+
+    <string name="note_orange_color">#D17D00</string>
+    <string name="note_pink_color">#FC5454</string>
+    <string name="note_new_purple_color">#C061FF</string>
+    <string name="note_green_color">#6F9C21</string>
+    <string name="note_blue_color">#009CC7</string>
+
+    <string name="note_lightyellow_color">#fcf9a3</string>
+    <string name="sticky_note_title">Allatat</string>
+    <string name="sticky_just_now_text">Massakkut</string>
+
+    <string name="toc_title">Imarisaa</string>
+    <string name="bottombar_toc_title">Imarisaa</string>
+    <string name="ugc_tab_bookmark_title">Nalunaaqutsikkat</string>
+    <string name="search_result_hint_text">Nassaat</string>
+
+    <string name="note_title">Allatat</string>
+    <string name="terms_conditons"><u>Piumasaqaatit</u></string>
+    <string name="about_us_text"><u>Uagut pilluta</u></string>
+    <string name="version_text">Versioni</string>
+    <string name="my_data_filter_text">Immikkoortitikkit</string>
+    <string name="my_data_filter_all_text">Tamaasa</string>
+    <string name="new_kitaboo_v5_font_file">kitabooread_new_design.ttf</string>
+    <string name="recently_viewed">Ammagaq kingulleq</string>
+
+    <string name="my_data_apply_all_text">Atoruk</string>
+    <string name="open">Âª </string>
+    <string name="delete">C</string>
+    <string name="bookshelf_Video">L</string>
+    <string name="bookshelf_Audio">Ã­  strengjalistarsamsuÃ°a</string>
+    <string name="download">s</string>
+    <string name="pause_state">K</string>
+    <string name="empty_note_first_line">Allatat/siammartikkat</string>
+    <string name="empty_note_second_line">Unatut qalipaateqassaaq</string>
+    <string name="empty_note_third_line">Allataq/siammartigaq kingulleq.</string>
+    <string name="empty_highlight_first_line">Allanniarlutit ersarissaagit</string>
+    <string name="empty_highlight_second_line">pingaarutillit ersarissarnianngikkukkit.</string>
+    <string name="ugc_accept_all_text">Tamaasa akuerikkit</string>
+    <string name="ugc_decline_all_text">Tamaasa itigartikkit</string>
+    <string name="ugc_accept_btn_text">Akuersigit</string>
+    <string name="ugc_decline_btn_text">Itigartitsigit</string>
+
+
+    <string name="highlight_title">Allatat ersarissakkat</string>
+    <string name="no_filter_note_msg">Allataqanngilaq</string>
+    <string name="no_filter_highlight_msg">Ersarissagaqanngilaq</string>
+
+    // Delete conformation
+
+    <string name="delete_popup_title">Er du sikker på, du vil slette?</string>
+    <string name="delete_popup_message">The nuggets will return to its non-downloaded state.</string>
+    <string name="delete_popup_ok">Ok</string>
+    <string name="delete_popup_cancel">Sussa</string>
+
+    <!-- Cleae All-->
+
+    <string name="clearAll_title">Tamaasa piikkit</string>
+    <string name="clearAll_message">Titartakkatit tamaasa piilerpatit. Ilumut?</string>
+
+    <string name="no_books_found">Atuakkanik nassaartoqanngilaq</string>
+
+
+    <string name="font_setting">Font Setting</string>
+    <string name="reader_setting">Reader Setting</string>
+    <string name="justify">Justify</string>
+    <string name="mode">Mode</string>
+    <string name="scroll_view">Scroll View</string>
+    <string name="need_internet_to_play_audio">Need internet connection to play Audio.</string>
+
+
+    <string name="accounts_page"><u>Profiilit</u></string>
+    <string name="profile_setting"><u>Profiilit aaqqissuutiguk</u></string>
+    <string name="refresh">Nutarteruk</string>
+
+    <!--Help Screen 5.0-->
+    <string name="more_Settings">Aaqqitassat allat</string>
+    <string name="more_Settings_">Takuniarlugu tooruk</string>
+    <string name="more_Settings_extra">Profiilit aaqqissuuguk immerlugulu</string>
+    <string name="search">Ujarlerit</string>
+    <string name="search_">Oqaatsimik ujarlerit</string>
+    <string name="helpsearch">Oqaatsimik ujarlerit</string>
+    <string name="profile">Profiili</string>
+    <string name="profile_">Uannut tunngasut</string>
+    <string name="home">Atuagaatinnut</string>
+    <string name="home_">Atuagaatinnut</string>
+    <string name="toc">Imarisai</string>
+    <string name="pen">Aqerluusaq</string>
+    <string name="pen_content1">Allallutillu titartaagit</string>
+    <string name="pen_content2">qalipaatini assigiinngitsuni</string>
+
+    <string name="addnote">Allagit</string>
+    <string name="thumbnail">Millisitat</string>
+    <string name="settings">Inissiinerit</string>
+    <string name="bookmark">Nalunaaqutsikkat</string>
+    <string name="addnote_">Allagit siammarterillutillu</string>
+    <string name="thumbnail_1">Millisitat</string>
+    <string name="thumbnail_2">imarisai</string>
+    <string name="settings_">Takulluakkit</string>
+    <string name="bookmark_">Nalunaaqutsiigit</string>
+
+    <string name="add_new">Nutaamik ikkussigit</string>
+    <string name="add_new_content">Nutaamik ikkussigit</string>
+    <string name="help_screen_search_text_new">Imarisaanik ujarlerit</string>
+    <string name="help_screen_search_text_new_">by Author,title &amp; ISBN </string>
+
+    <string name="bookMark">Nalunaaqut</string>
+    <string name="bookMark_">Nalunaaqutsiigit</string>
+    <string name="table_Contents">Imarisai</string>
+    <string name="table_Contents_">Imarisai</string>
+    <string name="my_data">Paasissutissaatikka</string>
+    <string name="my_data_1">Allatat erseqqissakkallu takukkit</string>
+    <string name="my_data_2">and highlights</string>
+    <string name="pentool">Aqerluusaq</string>
+    <string name="pentool_">qalipaatini assigiinngitsuni</string>
+
+    <string name="student_profile">Student Profile</string>
+    <string name="student_profile1">View and change from</string>
+    <string name="student_profile2">students list</string>
+    <string name="marker_1">Marker</string>
+    <string name="marker_2"></string>
+    <string name="marker1">Annotate and doodle</string>
+    <string name="marker2">in red and green</string>
+    <string name="arrow1">Arrow</string>
+    <string name="arrow2"></string>
+    <string name="arrow_1">Go forward and backward</string>
+    <string name="arrow_2">in the content</string>
+
+
+    <string name="eraser">Eraser</string>
+    <string name="undo">Undo</string>
+    <string name="redo">Redo</string>
+    <string name="clear_All">Clear All</string>
+    <string name="done1">Done</string>
+
+
+    <string name="eraser_">Erase your data</string>
+    <string name="undo_">Undo and redo</string>
+    <string name="undo_1">your data</string>
+    <string name="clear_all">Clear all the data</string>
+    <string name="done2">done</string>
+
+
+    <!--Help Screen 5.0-->
+    <string name="auto_log_out_alert_msg">You need to be online for login using you account.</string>
+
+    <string name="language">Oqaatsit:&#160;</string>
+    <string name="forgot_submit">Submit</string>
+    <string name="book_reference_id">Book Reference Id:&#160;</string>
+    <string name="skill_level">Skill Level:&#160;</string>
+    <string name="series">Series:&#160;</string>
+    <string name="add_content">ADD CONTENT</string>
+    <string name="access_code_info">Use Access Code to add content on your shelf.</string>
+    <string name="client_add_content_data"><b>"\"You trail period runs out soon. Sign up for full \n membership to prevent losing access"\"</b></string>
+
+    <!--  tabs for 5.0 -->
+    <string name="all_tab">Tamaasa</string>
+    <string name="downloaded_tab">Atuakkat downloadikkat</string>
+    <string name="recently_viewd_tab">Kingullermik ammarneqarpoq</string>
+    <string name="favourites">Piukkunnerusaq</string>
+    <string name="favourites_book_tab">My Books</string>
+    <string name="favorites">Favorites</string>
+    <string name="analytics_text">Analytics</string>
+    <string name="profile_text">Profile</string>
+    <string name="enter_note">Enter note</string>
+    <string name="contextual_note">Contextual Notes</string>
+    <string name="added_bookmark">Your Added Bookmarks</string>
+    <string name="bookmark_list">will be listed here</string>
+    <string name="more_info">More Info</string>
+    <string name="acep_view_book_text">View Book</string>
+    <string name="no_audio_sync">No Audio available for this Chapter.</string>
+    <string name="no_previous_search_available">No Previous search available</string>
+    <string name="no_next_search_available">No next search available</string>
+    <string name="accesscode_send_txt">SEND</string>
+
+</resources>

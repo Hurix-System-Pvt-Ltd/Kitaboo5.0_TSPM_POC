@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="load_factor" format="float" type="dimen">0.5</item>
+    <dimen name="download_percent_text_size">14sp</dimen>
+</resources>

@@ -1,0 +1,102 @@
+<resources>
+    <item name="actionbar_menu_width_mobile" format="integer" type="integer">133</item>
+
+    <dimen name="main_bottom_setting_panel_margin">150dp</dimen>
+    <dimen name="main_bottom_setting_panel_margin_new">150dp</dimen>
+    <dimen name="setting_left_right_margin">40dp</dimen>
+    <dimen name="custom_panel_screen_height_factor">1.6</dimen>
+
+    <dimen name="font_setting_margin_from_top">12dp</dimen>
+    <dimen name="reader_setting_margin_from_top">50dp</dimen>
+    <dimen name="moreinfo_dialog_width">300dp</dimen>
+    <dimen name="moreinfo_dialog_height">120dp</dimen>
+
+    <dimen name="search_result_test_top_margin">10dp</dimen>
+    <dimen name="search_container_height">150dp</dimen>
+    <dimen name="search_bookthumb_width">100dp</dimen>
+    <dimen name="search_bookthumb_height">130dp</dimen>
+    <dimen name="search_container_left_right_margin">12dp</dimen>
+    <dimen name="search_container_top_margin">8dp</dimen>
+    <dimen name="search_container_bottom_margin">33dp</dimen>
+    <dimen name="search_common_margin">6dp</dimen>
+    <dimen name="search_margin_between_text_view">8dp</dimen>
+    <dimen name="search_book_title_max_width">200dp</dimen>
+    <dimen name="willo_logo_width">210dp</dimen>
+    <dimen name="willo_logo_height">40dp</dimen>
+    <dimen name="media_padding">2dp</dimen>
+    <!--UGC share receive checkbox padding-->
+    <dimen name="share_left_padding">0dp</dimen>
+    <dimen name="share_right_padding">10dp</dimen>
+    <dimen name="share_top_padding">0dp</dimen>
+    <dimen name="share_bottom_padding">0dp</dimen>
+
+    <dimen name="rec_left_padding">0dp</dimen>
+    <dimen name="rec_right_padding">0dp</dimen>
+    <dimen name="rec_top_padding">0dp</dimen>
+    <dimen name="rec_bottom_padding">0dp</dimen>
+
+
+    <dimen name="reader_setting_left_right_margin">35dp</dimen>
+
+
+    <dimen name="media_list_image_width">110dp</dimen>
+    <dimen name="media_list_image_height">80dp</dimen>
+
+    <dimen name="audio_image_width">150dp</dimen>
+    <dimen name="audio_image_height">120dp</dimen>
+
+    <dimen name="audio_button_size">25dp</dimen>
+
+    <dimen name="docket_height_potrait_mob">300px</dimen>
+
+    <dimen name="audio_image_right_margin">0dp</dimen>
+
+    <dimen name="media_title_txt_size">17dp</dimen>
+
+    <dimen name="media_list_title_size">16dp</dimen>
+    <dimen name="media_list_discptn_size">15dp</dimen>
+
+
+    <item name="mobile_bottombar_left_margin" type="integer" format="integer">500</item>
+    <item name="mobile_bottombar_epub_common_margin" type="integer" format="integer">140</item>
+    <item name="mobile_bottombar_epub_land_common_margin" type="integer" format="integer">160</item>
+    <dimen name="color_popup_width">250dp</dimen>
+    <item name="mobile_topbar_pen_port_common_margin" type="integer" format="integer">40</item>
+    <item name="mobile_topbar_pen_land_left_margin" type="integer" format="integer">400</item>
+    <item name="mobile_topbar_pen_land_common_margin" type="integer" format="integer">30</item>
+    <item name="mobile_bottombar_left_margin_fixed_epub" type="integer" format="integer">600</item>
+    <item name="action_bar_bottom_common_margin" type="integer" format="integer">20</item>
+
+    <dimen name="innerbook_thumbnail_item_height">160dp</dimen>
+    <dimen name="innerbook_thumbnail_item_width">125dp</dimen>
+
+    <item name="mobile_bottombar_pdf_toc_margin" format="integer" type="integer">50</item>
+    <item name="mobile_bottombar_fixed_epub_margin" format="integer" type="integer">100</item>
+    <item name="mobile_bottombar_epub_land_margin" format="integer" type="integer">450</item>
+    <item name="mobile_bottombar_fixed_epub_common_margin" format="integer" type="integer">50</item>
+    <item name="mobile_bottombar_pdf_land_margin" type="integer" format="integer">470</item>
+    <item name="mobile_bottombar_epub_toc_margin" format="integer" type="integer">80</item>
+    <item name="mobile_bottombar_epub_land_toc_margin" format="integer" type="integer">380</item>
+    <item name="mobile_bottombar_epub_search_margin" format="integer" type="integer">160</item>
+    <item name="teacher_review_bottombar_margin" type="integer" format="integer">60</item>
+
+    <item name="toc_margin_for_generic_user" format="integer" type="integer">250</item>
+    <item name="search_margin_for_generic_user" format="integer" type="integer">170</item>
+    <item name="toc_land_margin_for_generic_user" format="integer" type="integer">610</item>
+    <item name="search_land_margin_for_generic_user" format="integer" type="integer">100</item>
+    <item name="font_margin_for_generic_user" format="integer" type="integer">100</item>
+    <item name="font_land_margin_for_generic_user" format="integer" type="integer">100</item>
+    <item name="mobile_bottombar_pdf_common_margin" format="integer" type="integer">28</item>
+    <item name="mobile_bottombar_aduioSync_common_margin" format="integer" type="integer">80</item>
+
+    <item name="toc_margin_for_generic_user_fixed" format="integer" type="integer">450</item>
+    <item name="toc_land_margin_for_generic_user_fixed" format="integer" type="integer">810</item>
+    <dimen name="password_lable_text_size">15sp</dimen>
+    <dimen name="book_title_layout_size">55dp</dimen>
+    <dimen name="moreinfo_textsize">15sp</dimen>
+    <dimen name="moreinfo_title_text_size">16sp</dimen>
+    <!--Bottom action bar icons size-->
+    <item name="action_icon_size" format="integer" type="integer">16</item>
+    <item name="action_icon_min_width" format="integer" type="integer">90</item>
+
+</resources>

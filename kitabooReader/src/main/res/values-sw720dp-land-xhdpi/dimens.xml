@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="book_gallery_thumbnail_item_width">180dp</dimen>
+    <dimen name="book_gallery_thumbnail_item_height">230dp</dimen>
+
+     //For Tab - A 10 inch
+    <dimen name="main_bottom_setting_panel_margin">350dp</dimen>
+    <dimen name="custom_panel_screen_height_factor">1.6</dimen>
+    //For Tab - A 10 inch
+
+
+    <dimen name="main_bottom_setting_panel_margin_new">140dp</dimen>
+    <dimen name="setting_left_right_margin">170dp</dimen>
+
+    <dimen name="font_setting_margin_from_top">35dp</dimen>
+    <dimen name="book_thumbnail_item_height">220dp</dimen>
+    <dimen name="book_thumbnail_item_width">180dp</dimen>
+    <dimen name="innerbookcollection_preview_layout_height">370dp</dimen>
+
+    <dimen name="moreinfo_dialog_width">600dp</dimen>
+    <dimen name="moreinfo_dialog_height">420dp</dimen>
+    <item name="action_bar_bottom_reflowable_land_margin" format="integer" type="integer">600</item>
+    <item name="bottom_action_bar_land_FixedEpub_margin_320" type="integer" format="integer">650</item>
+    <item name="bottom_action_bar_land_FixedEpub_margin" type="integer" format="integer">760</item>
+
+    <!--Bottom action bar icons size-->
+    <item name="action_icon_size" format="integer" type="integer">20</item>
+    <item name="action_icon_min_width" format="integer" type="integer">90</item>
+</resources>

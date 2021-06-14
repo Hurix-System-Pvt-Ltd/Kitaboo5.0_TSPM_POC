@@ -1,0 +1,371 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppBaseTheme" parent="@android:style/Theme.Holo.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+    <style name="InputLayout">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:keyTextSize">22sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:color">@color/white</item>
+        <item name="android:colorAccent">@color/white</item>
+
+    </style>
+
+
+    <style name="InputLayout_Text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:scaleType">center</item>
+
+
+    </style>
+    <style name="TextAppearance.AppTheme.Toolbar" parent="TextAppearance.MaterialComponents.Button">
+        <item name="android:textSize">50sp</item>
+    </style>
+    <style name="TextLabel" parent="InputLayout">
+
+    </style>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Theme.Transparent" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="DialogThemeTransparent" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+
+    </style>
+
+    <style name="CustomDialogFragment" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="DialogThemeWhite" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="DialogThemeColor" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="Transparent" parent="@style/Theme.AppCompat.Light">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="TransparentActivity" parent="@android:style/Theme.Translucent.NoTitleBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@anim/zoom_in</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <declare-styleable name="CircularProgressButton">
+        <attr name="cpb_selectorIdle" format="reference" />
+        <attr name="cpb_selectorComplete" format="reference" />
+        <attr name="cpb_selectorError" format="reference" />
+        <attr name="cpb_selectorPaused" format="reference" />
+        <attr name="cpb_selectorUpdated" format="reference" />
+        <attr name="cpb_textComplete" format="string" />
+        <attr name="cpb_textIdle" format="string" />
+        <attr name="cpb_textError" format="string" />
+        <attr name="cpb_textProgress" format="string" />
+        <attr name="cpb_textPause" format="string" />
+        <attr name="cpb_textUpdate" format="string" />
+        <attr name="cpb_colorProgress" format="color" />
+        <attr name="cpb_colorIndicator" format="color" />
+        <attr name="cpb_colorIndicatorBackground" format="color" />
+        <attr name="cpb_iconError" format="reference" />
+        <attr name="cpb_iconComplete" format="reference" />
+        <attr name="cpb_cornerRadius" format="dimension" />
+        <attr name="cpb_paddingProgress" format="dimension" />
+        <attr name="cpb_showProgressOnly" format="boolean" />
+    </declare-styleable>
+
+    <style name="CustomActionBarThemeParent" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!--  <item name="android:actionOverflowButtonStyle">@style/OverflowButton</item>-->
+    </style>
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">@dimen/drawer_textsize</item>
+        <item name="android:minWidth">12dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:itemTextAppearance">@style/TextAppearance.AppTheme.Toolbar</item>
+        <item name="android:paddingRight">0dp</item>
+
+    </style>
+
+    <style name="LoginActivity_Theme" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorPrimary">@color/kitaboo_main_color</item>
+
+    </style>
+    <style name="Profile_Setting_Theme" parent="Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="CustomActionBarTheme" parent="@style/CustomActionBarThemeParent">
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorPrimary">#4aaf7c</item>
+        <item name="toolbarNavigationButtonStyle">@style/Navigation</item>
+    </style>
+
+    <style name="MobileCustomActionBarTheme" parent="@style/CustomActionBarThemeParent">
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorPrimary">#4aaf7c</item>
+        <item name="toolbarNavigationButtonStyle">@style/MobileNavigation</item>
+    </style>
+    <style name="CustomHelpScreenTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorPrimary">@color/kitaboo_main_color</item>
+        <item name="toolbarNavigationButtonStyle">@style/Navigation</item>
+    </style>
+    <!-- OverFlow menu Styles -->
+    <style name="PopupMenuListView" parent="@style/Base.Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="android:divider">@android:color/transparent</item>
+        <item name="android:dividerHeight">2dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#4baf7b</item>
+        <item name="android:listSelector">@color/light_grey</item>
+
+
+    </style>
+
+    <style name="CustomActionBarTheme.Transparent" parent="@style/CustomActionBarTheme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:actionOverflowButtonStyle">@style/Widget.ActionButton.Overflow</item>
+    </style>
+
+    <style name="CustomActionBarThemeWithActionBar.Transparent" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="actionBarDivider">@null</item>
+        <item name="android:textColor">@color/kitaboo_main_color</item>
+
+    </style>
+
+    <style name="CustomActionBarThemeWithActionBar.White" parent="@android:style/Theme.Holo.Light">
+        <item name="android:textColor">@color/kitaboo_main_color</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:actionOverflowButtonStyle">@style/Widget.ActionButton.Overflow</item>
+    </style>
+    <style name="CustomActionBarThemeWithActionBar.White.Medifast" parent="@android:style/Theme.Holo.Light">
+        <item name="android:textColor">@color/kitaboo_main_color</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:actionOverflowButtonStyle">@style/Widget.ActionButton.Overflow</item>
+    </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/white</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="contentInsetStart">5dp</item>
+        <item name="contentInsetLeft">5dp</item>
+
+
+    </style>
+
+
+    <style name="toolbarStyle" >
+        <item name="contentInsetStart">16dp</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">0dp</item>
+        <item name="titleMargins">4dp</item>
+    </style>
+
+    <style name="Navigation">
+        <item name="android:minWidth">12dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:paddingLeft">-3dp</item>
+        <item name="android:paddingRight">4dp</item>
+    </style>
+    <style name="MobileNavigation">
+        <item name="android:minWidth">12dp</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingRight">4dp</item>
+    </style>
+    <style name="Widget.ActionButton.Overflow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
+        <item name="android:contentDescription">@string/accessibility_overflow</item>
+    </style>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="SeekBarHint">
+        <attr name="popupWidth" format="dimension" />
+        <attr name="popupResource" format="reference" />
+        <attr name="yOffset" format="dimension" />
+        <attr name="popupStyle" format="enum">
+            <enum name="follow" value="0" />
+            <enum name="fixed" value="1" />
+            <enum name="centered" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="DividerView">
+        <attr name="dashColor" format="color" />
+        <attr name="dashLength" format="dimension" />
+        <attr name="dashGap" format="dimension" />
+        <attr name="dashThickness" format="dimension" />
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- <style name="fade_animation">
+         <item name="@android:windowEnterAnimation">@anim/fade_in</item>
+         <item name="@android:windowExitAnimation">@anim/fade_out</item>
+     </style>-->
+
+    <style name="DefaultTextStyle">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <!--   <style name="PopupAnimation">
+           <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+           <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+       </style>
+   -->
+    <style name="ActionBarItemStyle">
+        <item name="android:background">?android:attr/actionBarItemBackground</item>
+        <item name="android:minWidth">@dimen/action_button_min_width</item>
+        <item name="android:minHeight">?android:attr/actionBarSize</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:background">@drawable/styled_spinner_bg</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+    <style name="spinner_style_white" parent="@style/spinner_style">
+        <item name="android:background">@drawable/styled_spinner_bg_white</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+    </style>
+
+    <style name="autoscroll">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:marqueeRepeatLimit">marquee_forever</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="Theme_Dialog" parent="android:Theme.Holo.Dialog">
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme_Custom_Dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:textColor">#ffffff</item>
+
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="MySwitch">
+        <item name="colorControlActivated">@color/kitaboo_main_color</item>
+        <item name="colorSwitchThumbNormal">@color/white</item>
+        <item name="android:colorForeground">@color/book_coll_close_btn_color</item>
+    </style>
+
+</resources>

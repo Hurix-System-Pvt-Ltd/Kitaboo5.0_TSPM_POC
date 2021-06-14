@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<!--     <PreferenceCategory -->
+<!--         android:textSize="40sp" -->
+<!--         android:title="@string/profile_setting_change_btn_text_header" > -->
+        <Preference
+            android:key="profile_setting_username"
+            android:shouldDisableView="true" />
+
+        <com.hurix.kitaboocloud.preference.ChangePasswordPreferences
+            android:dialogTitle="@string/profile_setting_change_btn_text"
+            android:key="change_password_preference"
+            android:summary="@string/profile_setting_change_btn_description"
+            android:title="@string/profile_setting_change_btn_text" />
+<!--     </PreferenceCategory> -->
+    
+<!--     <PreferenceCategory -->
+<!--         android:key="change_effect_preference" -->
+<!--         android:title="@string/profile_setting_change_animation_header_text" > -->
+<!--         <com.hurix.kitaboocloud.preference.ListPreferenceShowSummary -->
+<!--             android:defaultValue="0" -->
+<!--             android:dialogTitle="@string/profile_setting_change_animation_category_description" -->
+<!--             android:entries="@array/jazzy_effects" -->
+<!--             android:entryValues="@array/jazzy_effects" -->
+<!--             android:key="change_password_preference_list" -->
+<!--             android:title="@string/profile_setting_change_animation_category_header" /> -->
+<!--     </PreferenceCategory> -->
+
+</PreferenceScreen>

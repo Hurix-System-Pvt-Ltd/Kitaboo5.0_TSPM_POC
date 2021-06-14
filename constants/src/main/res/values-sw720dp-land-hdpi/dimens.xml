@@ -1,0 +1,4 @@
+<resources>
+    <item name="link_ic_font_size" format="integer" type="integer">35</item>
+    <item name="link_ic_size" format="integer" type="integer">60</item>
+</resources>

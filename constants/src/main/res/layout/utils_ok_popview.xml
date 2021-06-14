@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/oklayout"
+    android:layout_width="350dp"
+    android:layout_height="180dp"
+    android:background="@drawable/popup_bg"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/popup_bottom_bg"
+        android:gravity="bottom" android:paddingTop="1dp">
+
+        <Button
+            android:id="@+id/btnok"
+            android:layout_width="0dip"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/okbtn"
+            android:text="@string/ok"
+            android:textColor="#097efe"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+      <TextView
+        android:id="@+id/txtalerttitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Do you want to exit ?"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtmessage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtalerttitle"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="19sp" android:minLines="2"/>
+
+</RelativeLayout>

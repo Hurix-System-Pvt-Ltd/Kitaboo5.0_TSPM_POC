@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="read_only_color">#80479CC3</string>
+    <string name="red_or_imp_color">#80FF0000</string>
+    <string name="yellow_color">#80FFFF00</string>
+    <string name="authorization_consumer_key">aHVyaXhzeXN0ZW0xMy0xMC0yMDE1Zm9ydXM=</string>
+    <string name="authorization_secret_key">aHVyaXhzeXN0ZW0xMy0xMC0yMDE1Zm9ydXMtcGFzc3dvcmQ=</string>
+    <bool name="show_bookmark">true</bool>
+    <!-- Side Static BookMark configuration -->
+    <bool name="side_bookmark">true</bool>
+    <bool name="show_resource">false</bool>
+    <bool name="show_shareing_setting">false</bool>
+    <bool name="is_prepackageBookProvided">true</bool>
+<!--KitabooFixedLayout related configuration-->
+    <string name="youtubeDeveloperKey">AIzaSyD453HhSiG9o6EF8U7DQVzGhRIM1M7vl9Y</string>
+    <string name="kalturaPartnerID">1764661</string>
+    <string name="kalturaExpiry">7200</string>
+    <string name="kalturaSecretkey">306095751c1b0edc6ddf667116c34ee9</string>
+  <!--  <string name="thumbnail_transition_name">Thumbnailtransition</string>-->
+ <!--   <string name="player_transition_name">linkTransition</string>-->
+  <!--  <string name="share_edittext_hint_text">Enter Email Address</string>-->
+
+    <string name="highlight_read_only_color">479CC3</string>
+    <string name="highlight_search_color">9c9b9b</string>
+    <string name="kitaboo_font_file_name">kitabooread.ttf</string>
+    <string name="porto_font_file_name">kitabooread.ttf</string>
+   <!-- <string name="signup_label">Sign Up</string>-->
+  <!--  <string name="firstname_hinttext">First Name</string>-->
+
+   <!-- <string name="lastname_hinttext">Last Name</string>-->
+  <!--  <string name="email_address_hinttext">Email Address</string>-->
+ <!--   <string name="password_hinttext">Password</string>-->
+   <!-- <string name="signup_tems_condition_label">By creating an account, you agree to our <a href="http://www.kitaboo.com/terms" >terms</a></string>-->
+  <!--  <string name="books_share_lable">Share your Book with </string>-->
+   <!-- <string name="accessibility_overflow">More options</string>
+-->
+    <bool name="show_markup_read_allowed">true</bool>
+    <integer name="player_search_limit">0</integer>
+
+
+    <color name="highlight_read_aloud_color">#cde818</color>
+   <!-- <color name ="white">#ffffff</color>-->
+    <color name="signup_font_color">#ffffff</color>
+    <color name="signup_hint_color">#ffffff</color>
+    <color name="signin_signout_btnbg">#f55845</color>
+    <color name="kitaboo_share_popup_color">#f55845</color>
+    <color name="kitaboo_button_color">#f55845</color>
+ <!--   <color name="black">#000000</color>-->
+    <color name="seek_bar_color">#FF05B8B5</color>
+    <color name="edittext_border">#ffffff</color>
+    <color name="audio_sync_background_color">#80800080</color>
+    <string name="highlight_color_1">80FFFF00</string>
+    <string name="highlight_impotant_color">80FF7061</string>
+    <bool name="show_toc_folio_id">true</bool> // false for insight otherwise true
+    <string name="text_font_file">bambino.ttf</string>
+
+    <!-- setting for Search,TOC and Mydata visible or not -->
+    <bool name="show_highlight_search">true</bool>
+    <bool name="show_context_glossary">false</bool>
+    <bool name="pen_feature_under_development">true</bool>
+    <bool name="search_feature_under_development">true</bool>
+    <bool name = "pentool_delete_automatically">true</bool>
+    <bool name = "kois_pen_tool">false</bool>
+
+    <!-- setting for Markups-Audio -->
+    <string name="audioPopupPosition">4</string>
+    <bool name="show_audio_popup">false</bool>
+    <bool name="is_next_audiosync_play">true</bool>
+
+    <string name="viewPager">view</string>
+
+    <!--Insight-->
+    <color name="download_layout_background">#095E8E</color>
+    <color name="open_layout_background">#098E7C</color>
+    <color name="delete_layout_background">#B15050</color>
+    <!---->
+
+
+    <!--Search Color-->
+
+    <string name="search_color">#800080</string>
+
+
+    <!--Elastic-Search Color-->
+    <string name="elastic_search_color">#bba3d0</string>
+    <!-- Search Color -->
+
+</resources>

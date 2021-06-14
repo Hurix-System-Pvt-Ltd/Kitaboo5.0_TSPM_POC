@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <fragment
+        android:id="@+id/custom_layout"
+        class="com.hurix.renderer.RendererView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center">
+
+    </fragment>
+
+
+    <com.hurix.kitaboocloud.kitaboosdkrenderer.customviews.CustomKitabooTopActionbar
+        android:id="@+id/topActionbarid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bottomActionbarid"
+        android:layout_below="@+id/topActionbarid"
+        android:layout_centerVertical="true"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtprevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/red"
+            android:text="A"
+            android:textSize="40sp"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtnext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:textColor="@color/red"
+            android:text="A"
+            android:textSize="40sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/thumbnailview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/thumbnail_background"
+        android:orientation="horizontal"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ll_scroll_toast_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomActionbarid"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rounded_vertical_scroll_text"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/vertical_scroll_chapter"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="chapter"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/vertical_scroll_pageno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="chapter"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/vertical_scroll_timeLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:text="chapter"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/time_left_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rounded_time_left_text"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/time_left_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#595959"
+            android:textStyle="normal" />
+
+
+    </RelativeLayout>
+
+
+    <com.hurix.kitaboocloud.kitaboosdkrenderer.customviews.CustomKitabooActionbar
+        android:id="@+id/bottomActionbarid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom">
+
+    </com.hurix.kitaboocloud.kitaboosdkrenderer.customviews.CustomKitabooActionbar>
+
+    <LinearLayout
+        android:id="@+id/stickynotelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/stickynote_add_msg"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/text_annotation_parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:visibility="gone"
+
+        android:weightSum="5">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/text_annotation_container"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <View
+            android:layout_width="1dp"
+            android:background="@color/grey"
+            android:layout_height="match_parent"></View>
+
+        <LinearLayout
+            android:id="@+id/text_keyboard_parent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_keyboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/searchListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/empty_view_search_container"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/search_list_background"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="7dp"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/empty_view_search_container"
+        layout="@layout/empty_search_view"
+        android:background="@drawable/search_list_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sv_search_layout_tab"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        android:paddingTop="7dp"
+        android:visibility="gone">
+
+    </include>
+
+    <ScrollView
+        android:id="@+id/sv_search_layout_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:id="@+id/search_layout_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/search_edit_text_background_color"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:weightSum="10"
+            android:windowSoftInputMode="adjustPan">
+
+            <LinearLayout
+                android:id="@+id/elastic_search_cancel_container"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="0"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/elastic_search_cancel"
+                    android:layout_marginLeft="10dp"
+                    android:text="∞"
+                    style="@style/ElasticSearchPanel_btn_properties"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/edittextholder"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/accesscode_send_button_height"
+                android:layout_marginBottom="@dimen/button_padding"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/button_padding"
+                android:layout_weight="8"
+                android:background="@color/white"
+                android:clickable="true"
+                android:gravity="start">
+
+                <TextView
+                    android:id="@+id/search_icon_text"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Ç"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/kitaboo_main_color"
+                    android:textSize="15sp" />
+
+                <com.hurix.customui.views.KitabooSearchView
+                    android:id="@+id/editTxtSearchBox"
+                    style="@style/SearchView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/search_icon_text"
+                    android:background="@android:color/transparent"
+                    android:gravity="start|center"
+                    android:padding="0dp"
+                    app:iconifiedByDefault="false"
+                    app:searchIcon="@null">
+
+                </com.hurix.customui.views.KitabooSearchView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/search_right_container"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/elastic_search_panel"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    android:weightSum="3"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/search_prev_text"
+                        android:text="G"
+                        style="@style/ElasticSearchPanel_btn_properties"/>
+
+                    <TextView
+                        android:id="@+id/search_next_text"
+                        android:text="H"
+                        style="@style/ElasticSearchPanel_btn_properties" />
+
+                    <TextView
+                        android:id="@+id/search_maximize_text"
+                        android:text="ɺ"
+                        style="@style/ElasticSearchPanel_btn_properties" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/search_cancel_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/kitaboo_main_color"
+                    android:textSize="16sp"
+                    android:visibility="visible"/>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <com.hurix.customui.iconify.IconButton
+        android:id="@+id/btnKeyboard"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="ệ"
+        android:visibility="gone"
+        android:textSize="30sp"
+        android:background="@drawable/keyboard_background"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:scaleType="fitXY" />
+
+
+</RelativeLayout>

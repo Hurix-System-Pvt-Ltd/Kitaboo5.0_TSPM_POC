@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ugctab"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+
+    <RelativeLayout
+        android:id="@+id/ugcMainLayoutID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.Toolbar xmlns:local="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            local:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <RelativeLayout
+                android:id="@+id/shareSettinglayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/share_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <View
+                    android:id="@+id/alert_round_indicator"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_alignBottom="@+id/share_notification"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/accept_reject_indicator"
+                    android:visibility="gone"></View>
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:id="@+id/middleContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tabHolder"
+            android:layout_below="@+id/toolbar"
+            android:paddingTop="10dp">
+
+
+            <ListView
+                android:id="@+id/lstNoteshareAcceptReject"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+                android:divider="@null"></ListView>
+
+            <include
+                android:id="@+id/empty_view"
+                layout="@layout/highlight_empty_view"
+                android:visibility="gone"></include>
+
+            <include
+                android:id="@+id/note_empty_view"
+                layout="@layout/note_empty_view"
+                android:visibility="gone"></include>
+
+            <TextView
+                android:id="@+id/filter_empty_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ProgressBar
+                    android:id="@+id/progLoading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txtmessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="TextView"
+                    android:textColor="@color/kitaboo_main_color"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/tabHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:weightSum="12">
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingTop="1dp" />
+
+            <TextView
+                android:id="@+id/text_filer"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/sharingSettings"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:lineSpacingExtra="0dp"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+
+</TabHost>

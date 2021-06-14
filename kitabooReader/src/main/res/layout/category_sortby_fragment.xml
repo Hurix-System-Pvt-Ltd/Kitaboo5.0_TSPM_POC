@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:outlineAmbientShadowColor="@color/red">
+    <RadioGroup
+        android:id="@+id/categorySortRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/categorySortByTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CATEGORY SORT BY "
+            android:textSize="25dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/kitaboo_main_color">
+        </TextView>
+        <View
+            android:id="@+id/viewline"
+            android:layout_width="360dp"
+            android:layout_height="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/categorySortByTitle"
+            android:background="@color/grey">
+        </View>
+
+        <TextView
+            android:id="@+id/alertMsgTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/categorySortByTitle"
+            android:text="@string/category_sort_by_msg"
+            android:lines="3"
+            android:layout_margin="10dp"
+            android:textColor="#333333">
+        </TextView>
+
+        <RadioButton
+                android:id="@+id/CategoryTxtAtoZ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A to Z"
+                android:textSize="19dp"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/alertMsgTxt"
+                android:layout_marginBottom="10dp">
+        </RadioButton>
+        <RadioButton
+                android:id="@+id/CategoryTxtZtoA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Z to A"
+                android:textSize="19dp"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/CategoryTxtAtoZ">
+        </RadioButton>
+    </RadioGroup>
+
+</RelativeLayout>

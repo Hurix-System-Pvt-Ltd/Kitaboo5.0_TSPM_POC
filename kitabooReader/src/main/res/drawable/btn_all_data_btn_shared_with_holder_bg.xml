@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <corners
+        android:bottomLeftRadius="8dp"
+        android:bottomRightRadius="8dp"
+        android:topLeftRadius="8dp"
+        android:topRightRadius="8dp" />
+
+    <solid android:color="@color/btn_allData_btn_shared_holder_bg_colr" />
+
+    <stroke
+        android:width="1dp"
+        android:color="@color/btn_allData_btn_shared_holder_stroke_colr" />
+
+</shape>

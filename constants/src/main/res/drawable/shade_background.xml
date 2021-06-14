@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+   >
+    <solid android:color="@color/kitaboo_main_color" />
+    <gradient
+        android:endColor="@color/kitaboo_main_color"
+        android:gradientRadius="290"
+        android:startColor="@color/kitaboo_main_color"
+        />
+</shape>

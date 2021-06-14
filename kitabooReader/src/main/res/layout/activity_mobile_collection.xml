@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_awesome_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:id="@+id/topContainer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal"
+            android:weightSum="11">
+
+            <Button
+                android:id="@+id/btndownload"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:background="@null"
+                android:gravity="start|center_vertical"
+                android:text="="
+                android:textAllCaps="false"
+                android:textColor="@color/black_grey"
+                android:textSize="28sp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/imglogo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:adjustViewBounds="true"
+                android:background="@color/transparent"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|center"
+                android:layout_weight="3.5"
+                android:paddingLeft="15dp">
+
+                <Button
+                    android:id="@+id/btnaccesscode"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|center"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:padding="5dp"
+                    android:text="*"
+                    android:textSize="28sp"
+                    android:visibility="visible" />
+
+                <com.hurix.kitaboo.views.CircleImageView
+                    android:id="@+id/circleImageView1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="end|center"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/default_user" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_awesome_toolbar">
+
+        <RelativeLayout
+            android:id="@+id/bookshelfLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_grey">
+
+            <LinearLayout
+                android:id="@+id/mainContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/poweredByContainer"
+                android:background="@color/black_grey"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/categoryNameHolder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black_grey"
+                    app:cardCornerRadius="1dp"
+                    app:cardElevation="1dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="true">
+
+                    <RelativeLayout
+                        android:id="@+id/mobilesortinglayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/grey">
+
+                        <TextView
+                            android:id="@+id/categoryLabel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:background="@color/grey"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:paddingLeft="6dp"
+                            android:text=""
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:textColor="@color/white" />
+
+                        <LinearLayout
+                            android:id="@+id/btn_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true">
+
+                            <Button
+                                android:id="@+id/mobileimgserach"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:text="d"
+                                android:textAlignment="center"
+                                android:textSize="28sp" />
+
+                            <Button
+                                android:id="@+id/mobilerefresh"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@null"
+                                android:gravity="center"
+                                android:text="Ü"
+                                android:textAlignment="center"
+                                android:textSize="28sp"
+                                android:visibility="gone" />
+
+
+                        </LinearLayout>
+
+                        <com.hurix.kitaboocloud.views.BookshelfEditSerach
+                            android:id="@+id/mobileedtserachtext"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@id/btn_layout"
+                            android:background="@drawable/bookshelf_search_txt_bg"
+                            android:drawablePadding="5dp"
+                            android:ems="15"
+                            android:focusable="false"
+                            android:hint="@string/user_search_hint"
+                            android:imeOptions="actionSearch"
+                            android:minHeight="40dp"
+                            android:paddingLeft="@dimen/bookshelf_search_text_margin_left"
+                            android:paddingRight="@dimen/bookshelf_search_text_margin_right"
+                            android:singleLine="true"
+                            android:textColor="@color/kitaboo_main_color"
+                            android:textColorHint="@color/kitaboo_main_color"
+                            android:textSize="@dimen/bookshelf_mobile_search_text_size"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:id="@+id/mainContainer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/poweredByContainer">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true">
+
+                        <TextView
+                            android:id="@+id/txtViewNothingToDownloadMobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:text="@string/loading"
+                            android:textColor="@color/black"
+                            android:textSize="22sp"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <com.hurix.kitaboocloud.views.KitabooSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:id="@+id/swipe_refresh_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ListView
+                            android:id="@+id/mobile_listView"
+                            style="@android:style/Widget.ListView.Menu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:choiceMode="singleChoice"
+                            android:divider="@null"
+                            android:dividerHeight="10dp"></ListView>
+
+                    </com.hurix.kitaboocloud.views.KitabooSwipeRefreshLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/parentbottomdottedline"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_above="@+id/poweredByContainer"
+                android:background="@color/light_grey"
+                android:layerType="software" />
+
+            <FrameLayout
+                android:id="@+id/poweredByContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:clickable="false"
+                android:elevation="2dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:id="@+id/tvPowerByIDContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvPowerByID"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="2dp"
+                        android:text="@string/powered_by"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/poweredby_logo"
+                        android:layout_width="80dp"
+                        android:layout_height="25dp"
+                        android:paddingRight="2dp"
+                        android:paddingTop="4dp"
+                        android:text="Ù"
+                        android:textSize="@dimen/kitaboo_logo_textsize" />
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/left_drawer"
+            android:layout_width="@dimen/drawer_layout_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/white_transparency"
+            android:clickable="true"
+            android:elevation="3dp"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <View
+                android:id="@+id/dottedline"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_below="@+id/bottomBarSidePanelUserInfo"
+                android:background="@drawable/dottenline"
+                android:layerType="software"
+                android:padding="10dp" />
+
+            <LinearLayout
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/drawer_category_list_item_height"
+                android:layout_below="@+id/dottedline"
+                android:background="@android:color/transparent"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="15">
+
+                <TextView
+                    android:id="@+id/tvcategoryicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="`"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/listheading"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="14"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="@string/category_list_heading"
+                    android:textColor="@color/black_grey"
+                    android:textSize="@dimen/drawer_layout_name_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/emptyView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/sideBarBottomArea"
+                android:layout_below="@+id/category"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+
+
+                <ListView
+                    android:id="@+id/listCategories"
+                    style="@android:style/Widget.ListView.Menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:choiceMode="singleChoice"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:listSelector="@android:color/transparent"
+                    android:paddingBottom="10dp"></ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/sideBarBottomArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+</RelativeLayout>

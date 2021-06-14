@@ -1,0 +1,4 @@
+{ 
+	"responseCode" : 200, 
+	"responseMsg" : "http://172.18.10.157:8180/mayur_test/9874562320120.zip", "timeStamp" : "2014-05-02 15:54:25.158"
+}

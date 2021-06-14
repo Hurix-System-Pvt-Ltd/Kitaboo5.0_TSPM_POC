@@ -1,0 +1,289 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bookshelfLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:id="@+id/topContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bookshelf_logo_height"
+        android:background="@color/topbar_bg_color"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:weightSum="11">
+
+        <Button
+            android:id="@+id/btndownload"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@null"
+            android:gravity="left|center_vertical"
+            android:text="="
+            android:textStyle="bold"
+            android:textAllCaps="false"
+            android:textColor="@color/black_grey"
+            android:textSize="28sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imglogo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:background="@color/transparent"
+            android:padding="4dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="3" >
+
+            <Button
+                android:id="@+id/btnaccesscode"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:gravity="center"
+                android:layout_toLeftOf="@+id/btnLogin"
+                android:layout_toStartOf="@+id/btnLogin"
+                android:padding="5dp"
+                android:text="*"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                android:visibility="visible" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="+"
+                android:textStyle="bold"
+                android:textSize="28sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/downloadContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topContainer"
+        android:visibility="gone">
+
+        <com.devsmart.android.ui.HorizontalListView
+            android:id="@+id/downloadbooklayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ProgressBar
+            android:id="@+id/downloadBookProgressWheel"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+        <TextView
+            android:id="@+id/txtViewNothingToDownload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/No_Downloadable_Books_Msg"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutfilters"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/downloadContainer"
+        android:background="@color/gried_bg_topbar"
+        android:orientation="vertical"
+        android:padding="4dp" >
+
+        <RelativeLayout
+            android:id="@+id/editlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:padding="4dp"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btndone"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/done_btn_bg"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="Done"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnaddcategory"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@+id/btndone"
+                android:background="@drawable/bookshelf_add_btn"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="5"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/imgedit"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="r"
+            android:textAlignment="center"
+            android:textSize="28sp" />
+
+        <RelativeLayout
+            android:id="@+id/sortinglayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgedit"
+            android:padding="4dp" >
+
+            <Spinner
+                android:id="@+id/spinnerCategory"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/category_drop_down"
+                android:dropDownVerticalOffset="-2dp"
+                android:dropDownWidth="match_parent"
+                android:gravity="left|center"
+                android:popupBackground="@android:color/transparent"
+                android:spinnerMode="dropdown"
+                android:visibility="invisible" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="#FF778E9B" >
+            </View>
+
+            <Button
+                android:id="@+id/imgserach"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="25dp"
+                android:layout_toLeftOf="@id/divider1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="d"
+                android:textAlignment="center"
+                android:textSize="28sp" />
+
+            <com.hurix.kitaboocloud.views.BookshelfEditSerach
+                android:id="@+id/edtserachtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/bookshelf_search_text_margin_right"
+                android:layout_marginEnd="@dimen/bookshelf_search_text_margin_right"
+                android:paddingLeft="@dimen/bookshelf_search_text_margin_left"
+                android:paddingStart="@dimen/bookshelf_search_text_margin_left"
+                android:paddingRight="@dimen/bookshelf_search_text_margin_right"
+                android:paddingEnd="@dimen/bookshelf_search_text_margin_right"
+                android:layout_toLeftOf="@id/divider1"
+                android:layout_toStartOf="@id/divider1"
+                android:background="@drawable/bookshelf_search_txt_bg"
+                android:drawableRight="@drawable/search_context"
+                android:drawableEnd="@drawable/search_context"
+                android:ems="15"
+                android:focusable="false"
+                android:hint="@string/user_search_hint"
+                android:imeOptions="actionSearch"
+                android:drawablePadding="5dp"
+                android:minHeight="40dp"
+                android:singleLine="true"
+                android:textColor="@color/kitaboo_main_color"
+                android:textColorHint="@color/kitaboo_main_color"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ExpandableListView
+        android:id="@+id/downloadedList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/poweredByContainer"
+        android:layout_below="@+id/layoutfilters"
+        android:groupIndicator="@null"
+        android:listSelector="@drawable/listitem_selector" >
+    </ExpandableListView>
+
+    <RelativeLayout
+        android:id="@+id/poweredByContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:clickable="false"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="80dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tvPowerByID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/imageView1"
+            android:text="@string/powered_by"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

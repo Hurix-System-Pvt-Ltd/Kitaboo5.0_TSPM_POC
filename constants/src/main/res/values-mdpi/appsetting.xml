@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <item name="seekbar_thumb_size" type="integer" format="integer">28</item>
+     <item name="load_factor" format="float" type="dimen">1</item>
+</resources>

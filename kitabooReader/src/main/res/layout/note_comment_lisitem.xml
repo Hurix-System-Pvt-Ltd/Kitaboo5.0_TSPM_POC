@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_comment_item_main_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_comment_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/personDetailTvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="200dp"
+            android:text="Mhvggcbjhmkhmf,l,hfykgmh"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/dateTvId"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/dateTvId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="2dp"
+            android:text="12 oct 2018 10:07 Pm"
+            android:textSize="12dp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/personDetailTvId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/personDetailTvId" />
+
+        <TextView
+            android:id="@+id/descriptionTvId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="4"
+            android:minWidth="180dp"
+            android:text="comment"
+            android:scrollbars = "vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/personDetailTvId" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

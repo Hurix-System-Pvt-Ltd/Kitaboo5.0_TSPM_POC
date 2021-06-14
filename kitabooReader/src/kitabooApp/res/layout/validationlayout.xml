@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_mobile_login_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animationCache="true"
+    android:background="@drawable/background_portrait"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/loginContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/tvPowerByIDContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:id="@+id/tvPowerByID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="2dp"
+                android:text="@string/powered_by"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/kitabooLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="2dp"
+                android:paddingBottom="2dp"
+                android:text="Ù"
+                android:visibility="gone"
+                android:textSize="@dimen/kitaboo_logo_textsize" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tvPowerByIDContainer"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/kitabLogomobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/kitab_logo_mobile" />
+
+            <RelativeLayout
+                android:id="@+id/login_scroll1"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:layout_below="@+id/kitabLogomobile"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:id="@+id/fetchdata"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/fetchdatatxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/loader_view"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/fetch_data"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                        android:visibility="visible" />
+
+
+                    <pl.droidsonroids.gif.GifImageView
+                        android:id="@+id/loader_view"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/loader"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+
+</RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

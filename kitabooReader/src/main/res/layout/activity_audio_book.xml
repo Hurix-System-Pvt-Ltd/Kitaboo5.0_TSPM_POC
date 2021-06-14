@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6">
+
+        <TextView
+            android:id="@+id/backTextViewView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/tvSleepTimer"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/audio_sleep_timer_circle"
+            android:gravity="center"
+            android:text="x"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/chapterThumbnailImageView"
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/chapterTitlesRelativeLayout"
+            android:layout_below="@+id/backTextViewView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/chapterTitlesRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/seekBarRelativeLayout"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp">
+
+            <TextView
+                android:id="@+id/previousAudioTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:textColor="@color/black"
+
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/nextAudioTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/audioTitleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_toStartOf="@+id/nextAudioTextView"
+                android:layout_toEndOf="@+id/previousAudioTextView"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingStart="30dp"
+                android:paddingEnd="30dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/chapterOfTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/audioTitleTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_toStartOf="@+id/nextAudioTextView"
+                android:layout_toEndOf="@+id/previousAudioTextView"
+                android:gravity="center"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:text="rer"
+                android:textColor="@color/black_grey"
+                android:textSize="12sp"
+
+                />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/seekBarRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/audioControlRelativeLayout"
+            android:layout_marginBottom="10dp">
+
+            <SeekBar
+                android:id="@+id/audioSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="10dp"
+                android:progress="30"
+                android:progressBackgroundTint="@color/transparent_kitaboo_main_color"
+                android:thumb="@drawable/thumb" />
+
+            <TextView
+                android:id="@+id/currentTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/audioSeekBar"
+                android:layout_marginStart="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text=""
+                android:textColor="@color/black_grey"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/endTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/audioSeekBar"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="15dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text=""
+                android:textColor="@color/black_grey"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/audioControlRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:id="@+id/audioBookMarkTextViewView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/ic_bookmark" />
+
+            <TextView
+                android:id="@+id/audioPlayPauseButtonTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/thumb"
+                android:gravity="center"
+                android:lineSpacingExtra="2sp"
+                android:padding="15dp"
+                android:text=""
+                android:textSize="16.5sp" />
+
+            <TextView
+                android:id="@+id/audioForwardTextViewView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@+id/audioPlayPauseButtonTextView"
+                android:gravity="center"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/audioRewindTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="40dp"
+                android:layout_toStartOf="@+id/audioPlayPauseButtonTextView"
+                android:src="@drawable/default_user" />
+
+            <TextView
+
+                android:id="@+id/audioSpeedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="30dp"
+                android:gravity="center"
+                android:lineSpacingExtra="-4.5sp"
+                android:textColor="#125c87"
+                android:textSize="15sp"
+                tools:text="1x" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            app:tabIndicatorColor="@color/kitaboo_main_color"
+            app:tabSelectedTextColor="@color/kitaboo_main_color"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabTextColor="@color/transparent_kitaboo_main_color" />
+
+        <View
+            android:id="@+id/tabLineView"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tabs"
+            android:background="@color/kitaboo_main_color" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/audioBookPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabLineView"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>

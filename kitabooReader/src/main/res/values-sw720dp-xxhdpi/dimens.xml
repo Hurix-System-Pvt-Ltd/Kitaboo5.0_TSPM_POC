@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_bar_pen_left_margin" type="integer" format="integer" >375</item>
+    <item name="action_bar_pen_common_margin" type="integer" format="integer">50</item>
+    <item name="action_bar_bottom_common_margin" type="integer" format="integer">25</item>
+    <item name="action_bar_bottom_pdf_margin" type="integer" format="integer">200</item>
+    <item name="action_bar_bottom_epub_margin" type="integer" format="integer">375</item>
+    <item name="action_bar_bottom_pdf_land_margin" type="integer" format="integer">750</item>
+    <item name="action_bar_top_pen_land_margin" type="integer" format="integer">750</item>
+    <item name="action_bar_bottom_epub_land_margin" type="integer" format="integer">1000</item>
+    <item name="action_bar_bottom_epub_margin_fixed" type="integer" format="integer">450</item>
+    <item name="action_bar_bottom_reflowable_margin" type="integer" format="integer">200</item>
+
+    <!--Bottom action bar icons size-->
+    <item name="action_icon_size" format="integer" type="integer">20</item>
+    <item name="action_icon_min_width" format="integer" type="integer">90</item>
+</resources>

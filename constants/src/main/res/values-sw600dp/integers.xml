@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!--  <integer name="book_thumbnail_layout_weight">4</integer>-->
+    <integer name="small_book_thumbnail_layout_weight">1</integer>
+    <integer name="textContainer_layout_weight">5</integer>
+    <integer name="btn_layout_margintop">20</integer>
+    <integer name="btn_layout_marginbutton">5</integer>
+ <!--   <integer name="book_description_container_weight">6</integer>-->
+</resources>

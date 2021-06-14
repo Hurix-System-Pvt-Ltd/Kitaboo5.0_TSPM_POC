@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loginContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background_portrait">
+
+
+    <RelativeLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="@dimen/accesscode_dialog_width"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/logi_image"
+            android:layout_width="@dimen/dialogfragment_height"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/login_dialog_middleContainer_padding_left"
+            android:paddingRight="@dimen/login_dialog_middleContainer_padding_left"
+            android:paddingTop="5dp"
+            android:scaleType="fitCenter"
+            android:visibility="visible"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="@dimen/topbar_icon_marginleft"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/btnloginsummit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logi_image"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:text="@string/login_btn_text"
+            android:background="@color/kitaboo_main_color"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginBottom="@dimen/About_us_text_size"/>
+
+
+        <Spinner
+            android:id="@+id/langSelectSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/languageText"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:dropDownWidth="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingEnd="4dp"
+            android:paddingStart="4dp"
+            android:visibility="gone"
+            android:spinnerMode="dropdown"
+            android:layout_marginBottom="@dimen/About_us_text_size"/>
+
+        <TextView
+            android:id="@+id/languageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnloginsummit"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:paddingTop="10dp"
+            android:visibility="gone"
+            android:text="Choose Your Languauge"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_marginBottom="@dimen/About_us_text_size"/>
+
+        <View
+            android:id="@+id/spinnerLine"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/langSelectSpinner"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/straight_line"
+            android:layerType="software"
+            android:visibility="gone"
+            android:layout_marginBottom="@dimen/About_us_text_size"/>
+
+
+        <TextView
+            android:id="@+id/textWelcome"
+            android:layout_below="@+id/spinnerLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Welcome"
+            android:textSize="26dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:textColor="#0099cc"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/_error"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="@string/no_internet_try_again"
+        android:textColor="@color/kitaboo_main_color"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/About_us_text_size"/>
+
+</RelativeLayout>

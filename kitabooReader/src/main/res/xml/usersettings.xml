@@ -1,0 +1,25 @@
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="User Settings">
+
+        <CheckBoxPreference
+                android:key="checkbox_preference"
+                android:title="Dummy Title 1"
+                android:summary="Dummy summary 1" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="dialog based preferences">
+
+        <EditTextPreference
+                android:key="edittext_preference"
+                android:title="string/title_edittext_preference"
+                android:summary="string/summary_edittext_preference"
+                android:dialogTitle="string/dialog_title_edittext_preference" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/topContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bookshelf_logo_height"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/btncancel"
+            android:layout_width="32dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:gravity="left|center_vertical"
+            android:text="G"
+            android:textColor="@color/ugcItemSharingScreenTitleTextColor"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/imglogo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="5"
+            android:background="#00000000"
+            android:padding="4dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/topContainer"
+        android:background="@drawable/dash_line"
+        android:layerType="software" />
+
+    <ScrollView
+        android:id="@+id/loginmiddlebar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view"
+        android:layout_above="@+id/institutegholder" >
+
+        <LinearLayout
+            android:id="@+id/registrationDialog"
+            android:layout_width="@dimen/registration_dialog_width"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/login_dialog_headerContainer_padding_top">
+
+                <TextView
+                    android:id="@+id/txtbookname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingTop="@dimen/register_dialog_headertext_padding_top"
+                    android:text="@string/registration_header_text"
+                    android:textColor="#3d4f58"
+                    android:textSize="@dimen/register_dialog_header_text_size" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/registration_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingTop="@dimen/register_dialog_headertext_padding_top"
+                    android:text="@string/registration_msg"
+                    android:textColor="#b5b7b6"
+                    android:textSize="@dimen/register_dialog_edittext_text_size" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/loginmiddleholder"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingRight="20dp"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"/>
+
+            <TextView
+                android:id="@+id/txtaccesscode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/rightaccesscode"
+                android:gravity="center"
+                android:padding="2dp"
+                android:paddingBottom="30dp"
+                android:text="#Access Code"
+                android:textColor="#689418" />
+
+            <com.hurix.kitaboocloud.common.ClearableEditText
+                android:id="@+id/usernameedt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/login_dialog_middleContainer_padding_left"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/registration_user_name_hint_text"
+                android:inputType="textPersonName"
+                android:maxLength="255"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#3f515b"
+                android:textColorHint="#b5b7b6"
+                android:textSize="@dimen/register_dialog_edittext_text_size" />
+
+            <com.hurix.kitaboocloud.common.ClearableEditText
+                android:id="@+id/emailedt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/login_dialog_middleContainer_padding_left"
+                android:layout_weight="1"
+                android:digits="@string/emailid_field_character_allowed"
+                android:ems="10"
+                android:hint="@string/registration_email_id_hint_text"
+                android:inputType="textWebEmailAddress"
+                android:maxLength="255"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#3f515b"
+                android:textColorHint="#b5b7b6"
+                android:textSize="@dimen/register_dialog_edittext_text_size" />
+
+            <com.hurix.kitaboocloud.common.ClearableEditText
+                android:id="@+id/passwordedt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/login_dialog_middleContainer_padding_left"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/registration_Password_hint_text"
+                android:inputType="textPassword"
+                android:maxLength="200"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="#3f515b"
+                android:textColorHint="#b5b7b6"
+                android:textSize="@dimen/register_dialog_edittext_text_size" />
+
+            <com.hurix.kitaboocloud.common.ClearableEditText
+                android:id="@+id/confermpasswordedt"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/login_dialog_middleContainer_padding_left"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/registration_ComfirmPassword_hint_text"
+                android:inputType="textPassword"
+                android:maxLength="200"
+                android:padding="10dp"
+                android:paddingBottom="30dp"
+                android:singleLine="true"
+                android:textColor="#3f515b"
+                android:textColorHint="#b5b7b6"
+                android:textSize="@dimen/register_dialog_edittext_text_size"
+                android:focusable="false"/>
+
+            <LinearLayout
+                android:id="@+id/btnHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:paddingTop="15dp">
+
+                <Button
+                    android:id="@+id/btnsubmit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#4baf7b"
+                    android:padding="10dp"
+                    android:text="@string/register_submit_button"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/institutegholder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/register_dialog_instituteholder_margin_top"
+        android:background="#fbf2b9"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#fbf2b9"
+            android:gravity="center_horizontal"
+            android:textColor="#a18e3a"
+            android:textSize="14sp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#b1ab93" />
+
+        <TextView
+            android:id="@+id/txtuserid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#fbf2b9"
+            android:gravity="center_horizontal"
+            android:text="@string/registration_bottom_text"
+            android:textColor="#828326"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

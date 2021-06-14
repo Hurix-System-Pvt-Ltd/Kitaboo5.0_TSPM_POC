@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/background_portrait"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/topContainer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bookshelf_logo_height"
+                android:layout_marginTop="40dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/btncancel"
+                    android:layout_width="32dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:clickable="false"
+                    android:gravity="left|center_vertical"
+                    android:text="G"
+                    android:textColor="@color/ugcItemSharingScreenTitleTextColor"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/imglogo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="5"
+                    android:background="#00000000"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/kitab_logo" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+
+                android:background="@drawable/dash_line"
+                android:layerType="software"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:id="@+id/loginmiddlebar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:gravity="center_horizontal">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/registration_dialog_width_new"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/registrationDialog"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:animateLayoutChanges="true"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:visibility="visible">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/registration_msg"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text="@string/registration_header_text"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="#b5b7b6"
+                                android:textSize="@dimen/register_dialog_edittext_text_size" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/loginmiddleholder"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:descendantFocusability="beforeDescendants"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical"
+                            android:layout_marginTop="5dp"
+                            android:paddingRight="20dp" />
+
+                        <View
+                            android:id="@+id/line"
+                            android:layout_width="wrap_content"
+                            android:layout_height="2dp"
+                            android:background="#095e8e"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/txtaccesscode"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:paddingBottom="30dp"
+                            android:text="#Access Code"
+                            android:textColor="@color/white" />
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:hint="@string/registration_user_name_hint_text"
+                            android:textColorHint="#ffffff">
+
+                            <TextView
+                                android:id="@+id/first_name_hint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/useridtextmargin"
+                                android:layout_marginTop="2dp"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="top"
+                                android:hint="@string/registration_user_name_hint_text"
+                                android:textColor="#3f515b"
+                                android:textColorHint="#b5b7b6"
+                                android:textSize="@dimen/login_dialog_edittext_text_size"
+                                android:visibility="invisible" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/first_name_edit_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/first_name_hint"
+                                android:background="@drawable/backwithborder"
+                                android:hint="@string/registration_user_name_hint_text">
+
+                                <com.hurix.kitaboocloud.common.ClearableEditText
+                                    android:id="@+id/usernameedt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:alpha="0.2"
+                                    android:background="@drawable/transparent"
+                                    android:ems="10"
+                                    android:fontFamily="sans-serif-light"
+                                    android:hint="@string/registration_user_name_hint_text"
+                                    android:imeOptions="flagNoExtractUi"
+                                    android:inputType="textPersonName"
+                                    android:maxLength="255"
+                                    android:padding="10dp"
+                                    android:singleLine="true"
+                                    android:textColor="#3f515b"
+                                    android:textColorHint="#b5b7b6"
+                                    android:textSize="@dimen/login_dialog_edittext_text_size"
+                                    android:windowSoftInputMode="adjustPan" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp">
+
+                            <TextView
+                                android:id="@+id/email_edit_hint_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/useridtextmargin"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="top"
+                                android:hint="@string/registration_email_id_hint_text"
+                                android:maxLines="1"
+                                android:textColor="#3f515b"
+                                android:textColorHint="#b5b7b6"
+                                android:textSize="@dimen/login_dialog_edittext_text_size"
+                                android:visibility="invisible" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/email_edit_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/email_edit_hint_text"
+                                android:background="@drawable/backwithborder">
+
+                                <com.hurix.kitaboocloud.common.ClearableEditText
+                                    android:id="@+id/emailedt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:alpha="0.2"
+                                    android:background="@drawable/transparent"
+                                    android:digits="@string/emailid_field_character_allowed"
+                                    android:ems="10"
+                                    android:fontFamily="sans-serif-light"
+                                    android:hint="@string/registration_email_id_hint_text"
+                                    android:imeOptions="flagNoExtractUi"
+                                    android:inputType="textWebEmailAddress"
+                                    android:maxLength="255"
+                                    android:padding="10dp"
+                                    android:singleLine="true"
+                                    android:textColor="#3f515b"
+                                    android:textColorHint="#b5b7b6"
+                                    android:textSize="@dimen/login_dialog_edittext_text_size" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp">
+
+
+                            <TextView
+                                android:id="@+id/first_password_hint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/useridtextmargin"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="top"
+                                android:hint="@string/registration_Password_hint_text"
+                                android:textColor="#3f515b"
+                                android:textColorHint="#b5b7b6"
+                                android:textSize="@dimen/login_dialog_edittext_text_size"
+                                android:visibility="invisible" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/confirm_password_layout_first"
+                                android:layout_below="@+id/first_password_hint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:background="@drawable/backwithborder">
+
+                                <EditText
+                                    android:id="@+id/passwordedt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_toLeftOf="@+id/preview1"
+                                    android:alpha="0.2"
+                                    android:background="@drawable/transparent"
+                                    android:ems="10"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="sans-serif-light"
+                                    android:hint="@string/registration_Password_hint_text"
+                                    android:imeOptions="flagNoExtractUi"
+                                    android:inputType="textNoSuggestions|textPassword"
+                                    android:maxLength="200"
+                                    android:padding="10dp"
+                                    android:singleLine="true"
+                                    android:textColor="#3f515b"
+                                    android:textColorHint="#b5b7b6"
+                                    android:textSize="@dimen/login_dialog_edittext_text_size" />
+
+                                <TextView
+                                    android:id="@+id/preview1"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_alignBaseline="@+id/passwordedt"
+                                    android:layout_alignBottom="@+id/passwordedt"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:clickable="true"
+                                    android:gravity="center_horizontal|center"
+                                    android:text="¿"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/kitaboo_main_color"
+                                    android:textSize="25sp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp">
+
+
+                            <TextView
+                                android:id="@+id/second_password_hint"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/useridtextmargin"
+                                android:layout_marginTop="5dp"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="top"
+                                android:hint="@string/registration_ComfirmPassword_hint_text"
+                                android:textColor="#3f515b"
+                                android:textColorHint="#b5b7b6"
+                                android:textSize="@dimen/login_dialog_edittext_text_size"
+                                android:visibility="invisible" />
+
+
+                            <RelativeLayout
+                                android:id="@+id/confirm_password_layout"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/second_password_hint"
+
+                                android:background="@drawable/backwithborder">
+
+                                <EditText
+                                    android:id="@+id/confermpasswordedt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_weight="1"
+                                    android:alpha="0.2"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@drawable/transparent"
+                                    android:ems="10"
+                                    android:fontFamily="sans-serif-light"
+                                    android:hint="@string/registration_ComfirmPassword_hint_text"
+                                    android:imeOptions="actionDone"
+                                    android:inputType="textNoSuggestions|textPassword"
+                                    android:maxLength="200"
+                                    android:padding="10dp"
+                                    android:singleLine="true"
+                                    android:textColor="#3f515b"
+                                    android:textColorHint="#b5b7b6"
+                                    android:textSize="@dimen/login_dialog_edittext_text_size" />
+
+                                <TextView
+                                    android:id="@+id/preview2"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_alignBaseline="@+id/confermpasswordedt"
+                                    android:layout_alignBottom="@+id/confermpasswordedt"
+                                    android:layout_alignParentEnd="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginTop="5dp"
+                                    android:background="@android:color/transparent"
+                                    android:clickable="true"
+                                    android:gravity="center_vertical|center"
+                                    android:text="¿"
+                                    android:textAlignment="center"
+                                    android:textColor="@color/kitaboo_main_color"
+                                    android:textSize="25sp" />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/btnHolder"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp">
+
+                            <Button
+                                android:id="@+id/btnsubmit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/loginwithborder"
+                                android:fontFamily="sans-serif-light"
+                                android:padding="10dp"
+                                android:text="@string/register_submit_button"
+                                android:textAllCaps="false"
+                                android:textColor="#ffffff"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <CheckBox
+                                android:id="@+id/termsCheckBox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:buttonTint="@color/white"
+                                android:gravity="center"
+                                android:scaleX="0.80"
+                                android:scaleY="0.80" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="false"
+                            android:lineSpacingExtra="0.6sp"
+                            android:layout_marginTop="10sp"
+                            android:layout_toRightOf="@+id/termsCheckBox"
+                            android:textColor="@color/white"
+                            android:textSize="14sp" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/institutegholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/register_dialog_instituteholder_margin_top"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#b1ab93"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtuserid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/registration_bottom_text"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

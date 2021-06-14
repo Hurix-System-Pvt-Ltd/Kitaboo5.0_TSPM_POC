@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/note_filter_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/check_box_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_data_filter_text"
+            android:textAllCaps="false"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/check_all"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="@string/my_data_filter_all_text"
+                app:buttonTint="@color/kitaboo_main_color"
+                android:textSize="15sp" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/check_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:buttonTint="@color/kitaboo_main_color"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/check_all"
+                android:gravity="start|center"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/notes_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/check_notes"
+                android:gravity="center"
+                android:text="@string/sticky_note_title" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/check_context_notes"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                app:buttonTint="@color/kitaboo_main_color"
+                android:layout_marginLeft="50dp"
+                android:layout_toRightOf="@+id/notes_text"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/context_note_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/check_context_notes"
+                android:gravity="center|start"
+                android:text="@string/contextual_note" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/first_check_container"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/check_yellow"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:buttonTint="@color/kitaboo_main_color"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:text="H"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/check_green"
+                android:layout_width="50dp"
+                app:buttonTint="@color/kitaboo_main_color"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="start|center"
+                android:text="H"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/check_red"
+                android:layout_width="50dp"
+                app:buttonTint="@color/kitaboo_main_color"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end"
+                android:text="H"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/second_check_container"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:weightSum="3"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/check_blue"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                app:buttonTint="@color/kitaboo_main_color"
+                android:layout_alignParentLeft="true"
+                android:text="H"
+                android:textSize="18sp" />
+
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/check_violet"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:buttonTint="@color/kitaboo_main_color"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:text="H"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/check_share"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                app:buttonTint="@color/kitaboo_main_color"
+                android:layout_alignParentEnd="true"
+                android:gravity="start|center"
+                android:text="H"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/trasparent_view"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_margin="1dp"
+        android:background="@color/transparent">
+
+    </View>
+
+    <LinearLayout
+        android:id="@+id/apply_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/apply_btn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/appy_btn_new"
+                android:layout_width="150dp"
+                android:layout_height="45dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="@string/my_data_apply_all_text"
+                android:textAllCaps="false"
+                android:textColor="@color/kitaboo_main_color"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/appy_btn_text"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:text="@string/my_data_apply_all_text"
+                android:textAllCaps="false"
+                android:textColor="@color/kitaboo_main_color"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

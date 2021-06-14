@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_dialog_width_new">300dp</dimen>
+    <dimen name="forgot_passwordilog_width">400dp</dimen>
+    <dimen name="forgot_password_underline_width">400dp</dimen>
+
+</resources>

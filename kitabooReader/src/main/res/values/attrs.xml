@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomSeekBar">
+        <attr name="tickMarkFixed" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomMediaSeekBar">
+        <attr name="mediatickMarkFixed" format="reference"/>
+    </declare-styleable>
+</resources>

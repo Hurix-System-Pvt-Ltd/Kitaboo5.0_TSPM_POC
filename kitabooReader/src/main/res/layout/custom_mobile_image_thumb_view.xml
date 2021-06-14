@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shadowContainer"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/chapter_title"
+        android:layout_width="@dimen/book_gallery_thumbnail_item_width"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/kitaboo_main_color"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/imageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chapter_title"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/thumbView"
+            android:layout_width="@dimen/book_gallery_thumbnail_item_width"
+            android:layout_height="@dimen/book_gallery_thumbnail_item_height"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:adjustViewBounds="true"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/placeholder" />
+
+        <FrameLayout
+            android:id="@+id/textcontainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/thumbView"
+            android:layout_alignTop="@+id/thumbView"
+            android:background="@color/kitaboo_main_color"
+            android:minWidth="50dp"
+            android:minHeight="50dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tpageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/white_transparency"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
