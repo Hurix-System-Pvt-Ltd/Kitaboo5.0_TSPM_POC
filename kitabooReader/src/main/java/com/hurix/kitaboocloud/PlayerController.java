@@ -9,23 +9,24 @@ public class PlayerController implements IDestroyable {
     public static PlayerController mInstance;
     private String profilePic="";
     private String loginHeaderFontFace;
-    private String startDate;
-    private String expiryDate;
-    private long userID;
-    private String displayName;
     private String token;
-    private String roleName;
-    private String eMail;
+    private String eMail ="sdk.test@yopmail.com";
     private boolean isAutoLogOffEnabled;
     private boolean isUgcShareEnabled;
-    private String readerMenuIconsColor;
-    private String defaultPanelChapterFontSize;
-    private String reader_default_panel_actions;
-    private String sideMenuHeaderTitleColor;
-    private String defaultChapterNameColor;
     private boolean checkLogin;
     private boolean isBookPlayerHelpScreenSeen;
     private boolean isBookDownloaded;
+
+    private String startDate ="";
+    private String expiryDate =" ";
+    private String roleName = "SDK Role ";
+    private long userID = 1234;
+    private String displayName =" Default Name";
+    private String readerMenuIconsColor ="#000000";
+    private String defaultPanelChapterFontSize ="16";
+    private String reader_default_panel_actions ="#000000";
+    private String sideMenuHeaderTitleColor = "#000000";
+    private String defaultChapterNameColor = "#000000";
 
 
     public static PlayerController getInstance(Context context) {
